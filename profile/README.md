@@ -10,20 +10,27 @@ Wanneer je leverancier bepaalt hoe jouw governance eruitziet, ben je niet in con
 
 Wij geloven dat:
 
-- **Samenwerken sterker is dan inkopen.** Eén gemeente die bouwt is kwetsbaar. Tien gemeenten die samen bouwen zijn een beweging.
+- **Samenwerken sterker is dan inkopen.** Één gemeente die bouwt is kwetsbaar. Tien gemeenten die samen bouwen zijn een beweging.
 - **Soevereiniteit geen luxe is, maar een verplichting.** Publieke data, publieke processen, publieke verantwoordelijkheid. Dan ook publieke tooling.
 - **Open source de standaard moet zijn.** Publiek geld, publieke code.
 - **AI een middel is, geen doel.** Altijd lokaal of EU-gehost. Altijd adviserend. Altijd transparant.
 
 ## Projecten
 
+### Software
+
+| Domein | Project | Wat het is |
+|--------|---------|------------|
+| ISMS / Privacy / BCM | [grc-platform](https://github.com/security-commons-nl/grc-platform) | GRC-platform voor inrichting en beheer van ISMS, PIMS en BCMS |
+| ISMS | [cisochat](https://github.com/security-commons-nl/cisochat) | Chat met de CISO — gedachtegang en overwegingen |
+| BCM | [weerbaarheid-game](https://github.com/security-commons-nl/weerbaarheid-game) | Interactief bestuursdashboard dat kwetsbaarheid zichtbaar maakt |
+| Privacy / ISMS | [anonimizer](https://github.com/security-commons-nl/anonimizer) | AI-tool om documenten te anonimiseren voor publicatie |
+
+### Kennis
+
 | Project | Wat het is |
-|---|---|
-| [grc-platform](https://github.com/security-commons-nl/grc-platform) | GRC-platform voor gemeenten (ISMS, PIMS, BCMS) |
-| [weerbaarheid-game](https://github.com/security-commons-nl/weerbaarheid-game) | Interactief bestuursdashboard — maakt kwetsbaarheid zichtbaar |
-| [cisochat](https://github.com/security-commons-nl/cisochat) | Chat met de CISO — gedachtegang en overwegingen |
-| [anonimizer](https://github.com/security-commons-nl/anonimizer) | AI-tool om documenten te anonimiseren voor publicatie |
-| [kennisbank](https://github.com/security-commons-nl/kennisbank) | Gedeelde kennis van CISO's en ISO's in de publieke sector |
+|---------|------------|
+| [kennisbank](https://github.com/security-commons-nl/kennisbank) | Gedeelde kennis van CISO’s en ISO’s in de publieke sector |
 
 ## Meedoen
 
