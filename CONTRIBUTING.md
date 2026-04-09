@@ -29,12 +29,21 @@ kennisbank/
 ### 3. Meediscussiëren
 Ga naar [Discussions](../../discussions) voor vragen, ervaringen en ideeën. Geen git-kennis vereist.
 
+## Documentatie bij software-repos
+
+Elke software-repo heeft een minimale documentatiestructuur. Zie [DOCUMENTATION-STANDARD.md](DOCUMENTATION-STANDARD.md) voor de volledige standaard.
+
+Kort gezegd: een PR die **gedrag wijzigt dat zichtbaar is voor gebruikers**, bevat ook een update van de relevante docs (`docs/gebruik.md`, `docs/architectuur.md` of `docs/configuratie.md`). PRs die dit missen worden teruggestuurd.
+
+Bij het aanmaken van een nieuwe software-repo: volg de structuur in [DOCUMENTATION-STANDARD.md](DOCUMENTATION-STANDARD.md) vanaf het eerste commit.
+
 ## Review
 
 Pull requests worden beoordeeld door de maintainers. We kijken naar:
 - Inhoudelijke relevantie
 - Anonimisering (geen persoonsgegevens)
 - Plaatsing in de juiste map
+- Documentatie bijgewerkt (bij software-repos)
 
 ## Vragen?
 
