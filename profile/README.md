@@ -19,7 +19,7 @@ Wij geloven dat:
 
 | Project | Wat het is |
 |---|---|
-| [IMS-tooling](https://github.com/security-commons-nl/IMS-tooling) | GRC-platform voor gemeenten (ISMS, PIMS, BCMS) |
+| [grc-platform](https://github.com/security-commons-nl/grc-platform) | GRC-platform voor gemeenten (ISMS, PIMS, BCMS) |
 | [weerbaarheid-game](https://github.com/security-commons-nl/weerbaarheid-game) | Interactief bestuursdashboard — maakt kwetsbaarheid zichtbaar |
 | [cisochat](https://github.com/security-commons-nl/cisochat) | Chat met de CISO — gedachtegang en overwegingen |
 | [anonimizer](https://github.com/security-commons-nl/anonimizer) | AI-tool om documenten te anonimiseren voor publicatie |
@@ -32,6 +32,10 @@ Dit is geen verkooppraatje. Er is niets te kopen.
 Dit is een uitnodiging om samen te bouwen aan tooling die van ons allemaal is. Begin met kijken, draai het lokaal, geef feedback, of bouw mee.
 
 Neem contact op via [LinkedIn](https://linkedin.com/in/bas-stevens) of open een issue in een van de repositories.
+
+## Over dit platform
+
+Deze community staat momenteel op GitHub. Op termijn zullen we overstappen naar een EU-gebaseerd alternatief (zoals [Codeberg](https://codeberg.org)) — in lijn met onze principes van digitale soevereiniteit.
 
 ---
 
