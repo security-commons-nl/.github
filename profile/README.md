@@ -21,16 +21,17 @@ Wij geloven dat:
 
 | Domein | Project | Wat het is |
 |--------|---------|------------|
-| ISMS / Privacy / BCM | [grc-platform](https://github.com/security-commons-nl/grc-platform) | GRC-platform voor inrichting en beheer van ISMS, PIMS en BCMS |
-| ISMS | [cisochat](https://github.com/security-commons-nl/cisochat) | Chat met de CISO — gedachtegang en overwegingen |
+| Security / Privacy / BCM | [grc-platform](https://github.com/security-commons-nl/grc-platform) | GRC-platform voor inrichting en beheer van ISMS, PIMS en BCMS |
+| Security | [cisochat](https://github.com/security-commons-nl/cisochat) | Chat met de CISO — gedachtegang en overwegingen |
 | BCM | [weerbaarheid-game](https://github.com/security-commons-nl/weerbaarheid-game) | Interactief bestuursdashboard dat kwetsbaarheid zichtbaar maakt |
-| Privacy / ISMS | [anonimizer](https://github.com/security-commons-nl/anonimizer) | AI-tool om documenten te anonimiseren voor publicatie |
+| Privacy / Security | [anonimizer](https://github.com/security-commons-nl/anonimizer) | AI-tool om documenten te anonimiseren voor publicatie |
+| Privacy / Security / BCM | [beleid-assistent](https://github.com/security-commons-nl/beleid-assistent) | AI-ondersteunde beleidsassistent voor publieke organisaties |
 
 ### Kennis
 
 | Project | Wat het is |
 |---------|------------|
-| [kennisbank](https://github.com/security-commons-nl/kennisbank) | Gedeelde kennis van CISO’s en ISO’s in de publieke sector |
+| [kennisbank](https://github.com/security-commons-nl/kennisbank) | Gedeelde kennis van CISO's en ISO's in de publieke sector |
 
 ## Meedoen
 
