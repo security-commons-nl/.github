@@ -40,6 +40,10 @@ Dit is een uitnodiging om samen te bouwen aan tooling die van ons allemaal is. B
 
 Neem contact op via [LinkedIn](https://linkedin.com/in/bas-stevens) of open een issue in een van de repositories.
 
+## Principes
+
+De architectuur- en communityprincipes die alle projecten sturen staan in [PRINCIPLES.md](https://github.com/security-commons-nl/.github/blob/main/PRINCIPLES.md).
+
 ## Over dit platform
 
 Deze community staat momenteel op GitHub. Op termijn zullen we overstappen naar een EU-gebaseerd alternatief (zoals [Codeberg](https://codeberg.org)) — in lijn met onze principes van digitale soevereiniteit.
