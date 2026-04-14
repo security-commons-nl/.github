@@ -17,21 +17,23 @@ Wij geloven dat:
 
 ## Projecten
 
-### Software
-
-| Domein | Project | Wat het is |
-|--------|---------|------------|
-| Security / Privacy / BCM | [grc-platform](https://github.com/security-commons-nl/grc-platform) | GRC-platform voor inrichting en beheer van ISMS, PIMS en BCMS |
-| Security | [cisochat](https://github.com/security-commons-nl/cisochat) | Chat met de CISO — gedachtegang en overwegingen |
-| BCM | [weerbaarheid-game](https://github.com/security-commons-nl/weerbaarheid-game) | Interactief bestuursdashboard dat kwetsbaarheid zichtbaar maakt |
-| Privacy / Security | [anonimizer](https://github.com/security-commons-nl/anonimizer) | AI-tool om documenten te anonimiseren voor publicatie |
-| Privacy / Security / BCM | [beleid-assistent](https://github.com/security-commons-nl/beleid-assistent) | AI-ondersteunde beleidsassistent voor publieke organisaties |
-
 ### Kennis
 
 | Project | Wat het is |
 |---------|------------|
 | [kennisbank](https://github.com/security-commons-nl/kennisbank) | Gedeelde kennis van CISO's en ISO's in de publieke sector |
+
+### Software
+
+| Domein | Project | Wat het is |
+|--------|---------|------------|
+| Security | [security-posture-tool](https://github.com/security-commons-nl/security-posture-tool) | Evidence-based security posture assessment — Defense in Depth met echte data (firewall logs, Entra ID, NMAP) |
+| Security / Privacy / BCM | [grc-platform](https://github.com/security-commons-nl/grc-platform) | GRC-platform voor inrichting en beheer van ISMS, PIMS en BCMS |
+| Security | [cisochat](https://github.com/security-commons-nl/cisochat) | Chat met de CISO — gedachtegang en overwegingen |
+| BCM | [weerbaarheid-game](https://github.com/security-commons-nl/weerbaarheid-game) | Interactief bestuursdashboard dat kwetsbaarheid zichtbaar maakt |
+| Privacy / Security | [anonimizer](https://github.com/security-commons-nl/anonimizer) | AI-tool om documenten te anonimiseren voor publicatie |
+| Privacy / Security | [anonimizer-web](https://github.com/security-commons-nl/anonimizer-web) | Browser-gebaseerde UI voor de anonimizer — geen Python-kennis vereist |
+| Privacy / Security / BCM | [beleid-assistent](https://github.com/security-commons-nl/beleid-assistent) | AI-ondersteunde beleidsassistent voor publieke organisaties |
 
 ## Meedoen
 
