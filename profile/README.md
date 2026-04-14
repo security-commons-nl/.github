@@ -4,16 +4,16 @@
 
 ## Waarom dit bestaat
 
-Nederlandse gemeenten en publieke organisaties zijn voor hun meest kritieke processen — informatiebeveiliging, privacy, business continuity — afhankelijk van commerciële partijen. Die afhankelijkheid is geen technisch probleem. Het is een bestuurlijk risico.
+Nederlandse gemeenten en publieke organisaties werken voor hun meest kritieke processen — informatiebeveiliging, privacy en business continuity — intensief samen met externe partners. Die samenwerking is waardevol, maar vraagt tegelijkertijd om een sterke, onafhankelijke positie vanuit de overheid zelf.
 
-Wanneer je leverancier bepaalt hoe jouw governance eruitziet, ben je niet in control. Je bent klant.
+Wanneer de inrichting van onze governance te veel afhankelijk wordt van de markt, geven we onbedoeld de regie uit handen. Echte controle eist publiek eigenaarschap.
 
 Wij geloven dat:
 
-- **Samenwerken sterker is dan inkopen.** Één gemeente die bouwt is kwetsbaar. Tien gemeenten die samen bouwen zijn een beweging.
-- **Soevereiniteit geen luxe is, maar een verplichting.** Publieke data, publieke processen, publieke verantwoordelijkheid. Dan ook publieke tooling.
-- **Open source de standaard moet zijn.** Publiek geld, publieke code.
-- **AI een middel is, geen doel.** Altijd lokaal of EU-gehost. Altijd adviserend. Altijd transparant.
+- **Samen optrekken sterker is dan afzonderlijk inkopen.** Één enkele gemeente die het wiel opnieuw moet uitvinden, is kwetsbaar. Tien gemeenten die bestaande kennis en tools delen, vormen een robuuste beweging.
+- **Ontwerpvrijheid (soevereiniteit) geen luxe is, maar een plicht.** Publieke data, publieke processen en publieke verantwoordelijkheid vragen om transparante en onafhankelijke tooling.
+- **Open source de standaard moet zijn.** Publiek geld betekent publieke code, zodat iedere publieke organisatie mee kan profiteren en voortbouwen.
+- **AI een middel is, geen doel.** Getraind en ingezet volgens onze eigen normen: bij voorkeur lokaal of EU-gehost, altijd ter ondersteuning en áltijd controleerbaar en transparant.
 
 ## Projecten
 
