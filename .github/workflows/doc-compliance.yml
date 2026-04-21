@@ -1,0 +1,72 @@
+name: Doc-compliance (herbruikbaar)
+
+# Valideert of een caller-repo de documentatiestructuur heeft zoals beschreven
+# in DOCUMENTATION-STANDARD.md:
+#
+#   README.md           (altijd vereist)
+#   CONTRIBUTING.md     (altijd vereist)
+#   docs/gebruik.md     (vereist voor software met UI)
+#   docs/architectuur.md (vereist voor code-repos)
+#   docs/configuratie.md (vereist als repo configureerbaar is)
+#
+# Gebruik in caller-repo (.github/workflows/ci.yml):
+#
+#   jobs:
+#     docs:
+#       uses: security-commons-nl/.github/.github/workflows/doc-compliance.yml@main
+#       with:
+#         require-gebruik: true
+#         require-architectuur: true
+#         require-configuratie: false
+
+on:
+  workflow_call:
+    inputs:
+      require-gebruik:
+        description: "Eis docs/gebruik.md (default: true voor software met UI)"
+        required: false
+        type: boolean
+        default: true
+      require-architectuur:
+        description: "Eis docs/architectuur.md (default: true voor code-repos)"
+        required: false
+        type: boolean
+        default: true
+      require-configuratie:
+        description: "Eis docs/configuratie.md (default: false, aanzetten als repo configureerbaar is)"
+        required: false
+        type: boolean
+        default: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Controleer minimum-documentatiestructuur
+        run: |
+          set -e
+          MISSING=""
+
+          [ -f README.md ] || MISSING="$MISSING README.md"
+          [ -f CONTRIBUTING.md ] || MISSING="$MISSING CONTRIBUTING.md"
+
+          if [ "${{ inputs.require-gebruik }}" = "true" ]; then
+            [ -f docs/gebruik.md ] || MISSING="$MISSING docs/gebruik.md"
+          fi
+          if [ "${{ inputs.require-architectuur }}" = "true" ]; then
+            [ -f docs/architectuur.md ] || MISSING="$MISSING docs/architectuur.md"
+          fi
+          if [ "${{ inputs.require-configuratie }}" = "true" ]; then
+            [ -f docs/configuratie.md ] || MISSING="$MISSING docs/configuratie.md"
+          fi
+
+          if [ -n "$MISSING" ]; then
+            echo "::error::Ontbrekende verplichte documentatie:$MISSING"
+            echo ""
+            echo "Deze bestanden zijn vereist volgens de documentatiestandaard:"
+            echo "  https://github.com/security-commons-nl/.github/blob/main/DOCUMENTATION-STANDARD.md"
+            exit 1
+          fi
+          echo "✓ Documentatie voldoet aan de minimumeis"

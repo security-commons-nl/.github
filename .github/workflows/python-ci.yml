@@ -1,0 +1,60 @@
+name: Python CI (herbruikbaar)
+
+# Herbruikbare workflow voor Python-projecten onder security-commons-nl.
+#
+# Gebruik in caller-repo (.github/workflows/ci.yml):
+#
+#   jobs:
+#     tests:
+#       uses: security-commons-nl/.github/.github/workflows/python-ci.yml@main
+#       with:
+#         python-version: "3.12"
+#         test-command: "pytest tests/ -v"
+
+on:
+  workflow_call:
+    inputs:
+      python-version:
+        description: "Python-versie (default 3.12)"
+        required: false
+        type: string
+        default: "3.12"
+      test-command:
+        description: "Commando om tests uit te voeren (default: pytest tests/ -v)"
+        required: false
+        type: string
+        default: "pytest tests/ -v"
+      install-extras:
+        description: "Extra pip-packages naast requirements.txt (default: pytest)"
+        required: false
+        type: string
+        default: "pytest"
+      working-directory:
+        description: "Werkdir voor installatie en tests (default: repo root)"
+        required: false
+        type: string
+        default: "."
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ${{ inputs.working-directory }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python ${{ inputs.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ inputs.python-version }}
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          if [ -n "${{ inputs.install-extras }}" ]; then pip install ${{ inputs.install-extras }}; fi
+
+      - name: Run tests
+        run: ${{ inputs.test-command }}

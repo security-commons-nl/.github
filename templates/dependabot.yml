@@ -1,0 +1,53 @@
+# Dependabot-template voor security-commons-nl repos.
+#
+# Kopieer naar .github/dependabot.yml in je repo en pas package-ecosystem
+# aan op wat je project gebruikt (pip / npm / gomod / etc.).
+#
+# Dependabot is gratis voor publieke repos, houdt dependencies actueel en
+# flagt security-kwetsbaarheden.
+#
+# Documentatie: https://docs.github.com/code-security/dependabot
+
+version: 2
+updates:
+  # Python-dependencies (requirements.txt)
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: "deps"
+    labels:
+      - "dependencies"
+
+  # GitHub Actions versies (actions/checkout@v4 etc.)
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    open-pull-requests-limit: 3
+    commit-message:
+      prefix: "ci"
+    labels:
+      - "dependencies"
+      - "ci"
+
+  # Docker base-images (indien Dockerfile aanwezig)
+  # Verwijder dit blok als er geen Dockerfile is.
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 3
+    commit-message:
+      prefix: "deps(docker)"
+
+  # Npm-dependencies — alleen inschakelen als er een package.json is.
+  # - package-ecosystem: "npm"
+  #   directory: "/"
+  #   schedule:
+  #     interval: "weekly"
+  #   open-pull-requests-limit: 5
