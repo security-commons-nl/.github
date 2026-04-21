@@ -21,7 +21,7 @@ Wij geloven dat:
 |---|---|---|---|
 | [grc-platform](https://github.com/security-commons-nl/grc-platform) | Actief | GRC-platform voor ISMS, PIMS en BCMS in één systeem | CISO's, ISO's en privacy officers bij gemeenten |
 | [weerbaarheid-game](https://github.com/security-commons-nl/weerbaarheid-game) | Actief | Interactief bestuursdashboard dat gemeentelijke kwetsbaarheid zichtbaar maakt | College van B&W, directies, bestuurders |
-| [anonimizer](https://github.com/security-commons-nl/anonimizer) | Actief | AI-tool om persoonsgegevens uit documenten te verwijderen | CISO's en ISO's die intern materiaal willen delen |
+| [anonimizer](https://github.com/security-commons-nl/anonimizer) | Actief | AI-tool om gevoelige gegevens uit documenten te verwijderen | CISO's en ISO's die intern materiaal willen delen |
 | [security-posture-tool](https://github.com/security-commons-nl/security-posture-tool) | Actief | Evidence-based security posture langs Defense-in-Depth | Blue teams en interventieteams |
 | [kennisbank](https://github.com/security-commons-nl/kennisbank) | Actief | Gedeelde kennis van CISO's en ISO's in de publieke sector | CISO's en ISO's in de publieke sector |
 | [hosting-bouwblokken](https://github.com/security-commons-nl/hosting-bouwblokken) | In ontwikkeling | Referentiearchitecturen en IaC voor veilige AI/security-hosting | Infra- en platformteams bij gemeenten |
