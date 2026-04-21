@@ -17,16 +17,16 @@ Wij geloven dat:
 
 ## Projecten
 
-| Project | Status | Doelgroep |
-|---|---|---|
-| [grc-platform](https://github.com/security-commons-nl/grc-platform) | Actief | CISO's, ISO's en privacy officers bij gemeenten |
-| [weerbaarheid-game](https://github.com/security-commons-nl/weerbaarheid-game) | Actief | College van B&W, directies, bestuurders |
-| [anonimizer](https://github.com/security-commons-nl/anonimizer) | Actief | CISO's en ISO's die intern materiaal willen delen |
-| [security-posture-tool](https://github.com/security-commons-nl/security-posture-tool) | Actief | Blue teams en interventieteams |
-| [kennisbank](https://github.com/security-commons-nl/kennisbank) | Actief | CISO's en ISO's in de publieke sector |
-| [hosting-bouwblokken](https://github.com/security-commons-nl/hosting-bouwblokken) | In ontwikkeling | Infra- en platformteams bij gemeenten |
-| [beleid-assistent](https://github.com/security-commons-nl/beleid-assistent) | Concept | Beleidsmedewerkers en juridisch adviseurs |
-| [cisochat](https://github.com/security-commons-nl/cisochat) | Concept | Security-professionals in de publieke sector |
+| Project | Status | Wat is het? | Doelgroep |
+|---|---|---|---|
+| [grc-platform](https://github.com/security-commons-nl/grc-platform) | Actief | GRC-platform voor ISMS, PIMS en BCMS in één systeem | CISO's, ISO's en privacy officers bij gemeenten |
+| [weerbaarheid-game](https://github.com/security-commons-nl/weerbaarheid-game) | Actief | Interactief bestuursdashboard dat gemeentelijke kwetsbaarheid zichtbaar maakt | College van B&W, directies, bestuurders |
+| [anonimizer](https://github.com/security-commons-nl/anonimizer) | Actief | AI-tool om persoonsgegevens uit documenten te verwijderen | CISO's en ISO's die intern materiaal willen delen |
+| [security-posture-tool](https://github.com/security-commons-nl/security-posture-tool) | Actief | Evidence-based security posture langs Defense-in-Depth | Blue teams en interventieteams |
+| [kennisbank](https://github.com/security-commons-nl/kennisbank) | Actief | Gedeelde kennis van CISO's en ISO's in de publieke sector | CISO's en ISO's in de publieke sector |
+| [hosting-bouwblokken](https://github.com/security-commons-nl/hosting-bouwblokken) | In ontwikkeling | Referentiearchitecturen en IaC voor veilige AI/security-hosting | Infra- en platformteams bij gemeenten |
+| [beleid-assistent](https://github.com/security-commons-nl/beleid-assistent) | Concept | AI-ondersteunde beleidsassistent voor publieke organisaties | Beleidsmedewerkers en juridisch adviseurs |
+| [cisochat](https://github.com/security-commons-nl/cisochat) | Concept | Chat met de gedachtegang van een CISO in de publieke sector | Security-professionals in de publieke sector |
 
 ## Meedoen
 
