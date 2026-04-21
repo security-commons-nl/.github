@@ -36,6 +36,39 @@ Dit is een uitnodiging om samen te bouwen aan tooling die van ons allemaal is. B
 
 Neem contact op via [LinkedIn](https://linkedin.com/in/bas-stevens) of open een issue in een van de repositories.
 
+## Voor het eerst hier?
+
+Nog nooit een issue geopend? Geen probleem. In vier stappen deel je een document, idee of verbetering.
+
+![Bijdrage-flow in vier stappen](profile/bijdrage-flow.svg)
+
+### Direct aan de slag
+
+Klik op een van de onderstaande knoppen — er wordt een formulier voor je klaargezet. Je hoeft alleen de vragen in te vullen die voor jou relevant zijn, wij helpen je met de rest.
+
+| Voor | Repository | Start hier |
+|---|---|---|
+| Iets delen over informatiebeveiliging, privacy of continuïteit | kennisbank | [Bijdrage aanbieden](https://github.com/security-commons-nl/kennisbank/issues/new?template=bijdrage-aanbieden.md) |
+| Bestuursdashboard (game) verbeteren of scenario toevoegen | weerbaarheid-game | [Bijdrage aanbieden](https://github.com/security-commons-nl/weerbaarheid-game/issues/new?template=bijdrage-aanbieden.md) |
+| Feedback op het GRC-platform | grc-platform | [Bijdrage aanbieden](https://github.com/security-commons-nl/grc-platform/issues/new?template=bijdrage-aanbieden.md) |
+| Testdocument of verbeterpunt voor de anonimizer | anonimizer | [Bijdrage aanbieden](https://github.com/security-commons-nl/anonimizer/issues/new?template=bijdrage-aanbieden.md) |
+| Ervaring met security-posture uit een interventie | security-posture-tool | [Bijdrage aanbieden](https://github.com/security-commons-nl/security-posture-tool/issues/new?template=bijdrage-aanbieden.md) |
+| Hosting-scenario of referentiearchitectuur | hosting-bouwblokken | [Bijdrage aanbieden](https://github.com/security-commons-nl/hosting-bouwblokken/issues/new?template=bijdrage-aanbieden.md) |
+| Idee voor beleidsassistent of CISO-chat | beleid-assistent / cisochat | [beleid](https://github.com/security-commons-nl/beleid-assistent/issues/new?template=bijdrage-aanbieden.md) · [chat](https://github.com/security-commons-nl/cisochat/issues/new?template=bijdrage-aanbieden.md) |
+
+### Geen GitHub-account?
+
+Twee opties:
+
+1. **Aanmelden duurt 2 minuten** — [github.com/signup](https://github.com/signup). Alleen e-mail en wachtwoord.
+2. **Of vraag iemand in je netwerk** die al een account heeft om namens jou een issue te openen. De inhoud is wat telt, niet wie klikt.
+
+### Wat kan ik verwachten?
+
+- **Snelheid**: we reageren doorgaans binnen een week.
+- **Privacy**: bevat je document persoonsgegevens? Meld het in het formulier — wij helpen je anonimiseren met de [anonimizer](https://github.com/security-commons-nl/anonimizer) vóór publicatie.
+- **Erkenning**: bijdragen worden in de versiegeschiedenis zichtbaar vermeld, tenzij je anoniem wilt blijven.
+
 ## Principes
 
 De architectuur- en communityprincipes die alle projecten sturen staan in [PRINCIPLES.md](https://github.com/security-commons-nl/.github/blob/main/PRINCIPLES.md).
