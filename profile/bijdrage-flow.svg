@@ -1,18 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 280" width="100%" style="max-width:860px">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" width="100%" style="max-width:900px">
   <style>
     .panel { fill: #ffffff; stroke: #d0d7de; stroke-width: 1.5; }
     .panel-header { fill: #f6f8fa; }
     .step-num { font: bold 14px system-ui, sans-serif; fill: #0969da; }
     .step-title { font: 600 13px system-ui, sans-serif; fill: #1f2328; }
     .small { font: 11px system-ui, sans-serif; fill: #656d76; }
-    .code { font: 11px ui-monospace, monospace; fill: #1f2328; }
+    .small-dark { font: 11px system-ui, sans-serif; fill: #1f2328; }
     .btn-green { fill: #1f883d; }
     .btn-blue  { fill: #0969da; }
     .btn-gray  { fill: #f6f8fa; stroke: #d0d7de; stroke-width: 1; }
-    .btn-text  { font: 600 11px system-ui, sans-serif; fill: #ffffff; text-anchor: middle; }
+    .btn-text  { font: 600 10px system-ui, sans-serif; fill: #ffffff; text-anchor: middle; }
     .btn-text-dark { font: 600 11px system-ui, sans-serif; fill: #1f2328; text-anchor: middle; }
     .arrow-path { stroke: #0969da; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
-    .cursor { fill: #1f2328; }
     .pulse-ring { fill: none; stroke: #1f883d; stroke-width: 2; opacity: 0; }
   </style>
   <defs>
@@ -21,86 +20,113 @@
     </marker>
   </defs>
 
-  <!-- Panel 1: Issues tab -->
-  <rect class="panel" x="10" y="20" width="200" height="230" rx="6"/>
-  <rect class="panel-header" x="10" y="20" width="200" height="30" rx="6"/>
-  <rect class="panel-header" x="10" y="40" width="200" height="10"/>
+  <!-- Panel 1: README met knoppen -->
+  <rect class="panel" x="10" y="20" width="220" height="250" rx="6"/>
+  <rect class="panel-header" x="10" y="20" width="220" height="30" rx="6"/>
+  <rect class="panel-header" x="10" y="40" width="220" height="10"/>
   <text class="step-num" x="22" y="40">Stap 1</text>
-  <text class="step-title" x="22" y="75">Ga naar een repository</text>
-  <text class="small" x="22" y="95">github.com/security-</text>
-  <text class="small" x="22" y="110">commons-nl/anonimizer</text>
-  <text class="step-title" x="22" y="140">Klik op "Issues"</text>
-  <rect class="btn-gray" x="22" y="155" width="80" height="26" rx="4"/>
-  <text class="btn-text-dark" x="62" y="172">Code</text>
-  <rect x="106" y="155" width="80" height="26" rx="4" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
-  <text class="btn-text-dark" x="146" y="172" fill="#0969da">Issues</text>
-  <circle cx="146" cy="168" r="14" class="pulse-ring">
-    <animate attributeName="r" values="14;22;14" dur="2s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.8;0;0.8" dur="2s" repeatCount="indefinite"/>
+  <text class="step-title" x="22" y="72">Op de README van</text>
+  <text class="step-title" x="22" y="88">een repo</text>
+  <text class="small" x="22" y="108">Zie de twee knoppen</text>
+  <text class="small" x="22" y="122">bovenaan:</text>
+
+  <!-- Groene Bijdragen-knop -->
+  <rect class="btn-green" x="22" y="140" width="110" height="36" rx="4"/>
+  <text class="btn-text" x="77" y="157">📝 Bijdragen</text>
+  <text class="btn-text" x="77" y="170" style="font-size:9px;opacity:.85">Open een bericht</text>
+  <circle cx="77" cy="158" r="22" class="pulse-ring">
+    <animate attributeName="r" values="22;34;22" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.9;0;0.9" dur="2s" repeatCount="indefinite"/>
   </circle>
 
-  <!-- Arrow 1→2 -->
-  <path class="arrow-path" d="M 215 140 L 238 140"/>
+  <!-- Blauwe Discussions-knop -->
+  <rect class="btn-blue" x="22" y="184" width="110" height="36" rx="4"/>
+  <text class="btn-text" x="77" y="201">💬 Discussions</text>
+  <text class="btn-text" x="77" y="214" style="font-size:9px;opacity:.85">Meepraten</text>
 
-  <!-- Panel 2: New Issue -->
-  <rect class="panel" x="245" y="20" width="200" height="230" rx="6"/>
-  <rect class="panel-header" x="245" y="20" width="200" height="30" rx="6"/>
-  <rect class="panel-header" x="245" y="40" width="200" height="10"/>
-  <text class="step-num" x="257" y="40">Stap 2</text>
-  <text class="step-title" x="257" y="75">Klik op "New issue"</text>
-  <rect class="btn-green" x="257" y="90" width="100" height="30" rx="6"/>
-  <text class="btn-text" x="307" y="110">New issue</text>
-  <circle cx="307" cy="105" r="16" class="pulse-ring">
-    <animate attributeName="r" values="16;26;16" dur="2s" repeatCount="indefinite" begin="0.5s"/>
-    <animate attributeName="opacity" values="0.8;0;0.8" dur="2s" repeatCount="indefinite" begin="0.5s"/>
+  <text class="small" x="22" y="242">Klik op de groene knop.</text>
+
+  <!-- Arrow 1 → 2 -->
+  <path class="arrow-path" d="M 235 160 L 258 160"/>
+
+  <!-- Panel 2: Template-picker -->
+  <rect class="panel" x="265" y="20" width="220" height="250" rx="6"/>
+  <rect class="panel-header" x="265" y="20" width="220" height="30" rx="6"/>
+  <rect class="panel-header" x="265" y="40" width="220" height="10"/>
+  <text class="step-num" x="277" y="40">Stap 2</text>
+  <text class="step-title" x="277" y="75">Kies een template</text>
+
+  <rect class="btn-gray" x="277" y="90" width="195" height="40" rx="3" fill="#ddf4ff" stroke="#0969da" stroke-width="1.5"/>
+  <text class="small-dark" x="285" y="105" style="font-weight:600">📝 Bijdrage aanbieden</text>
+  <text class="small" x="285" y="120" style="font-size:10px">Ik heb iets om te delen</text>
+  <circle cx="375" cy="110" r="22" class="pulse-ring">
+    <animate attributeName="r" values="22;34;22" dur="2s" repeatCount="indefinite" begin="0.5s"/>
+    <animate attributeName="opacity" values="0.9;0;0.9" dur="2s" repeatCount="indefinite" begin="0.5s"/>
   </circle>
-  <text class="small" x="257" y="155">Je ziet nu drie opties:</text>
-  <rect class="btn-gray" x="257" y="165" width="175" height="20" rx="3"/>
-  <text class="small" x="265" y="178">📝 Bijdrage aanbieden</text>
-  <rect class="btn-gray" x="257" y="190" width="175" height="20" rx="3"/>
-  <text class="small" x="265" y="203">🔧 Fout of verbetering</text>
-  <rect class="btn-gray" x="257" y="215" width="175" height="20" rx="3"/>
-  <text class="small" x="265" y="228">💬 Meediscussiëren</text>
 
-  <!-- Arrow 2→3 -->
-  <path class="arrow-path" d="M 450 140 L 473 140"/>
+  <rect class="btn-gray" x="277" y="138" width="195" height="40" rx="3"/>
+  <text class="small-dark" x="285" y="153" style="font-weight:600">🔧 Fout of verbetering</text>
+  <text class="small" x="285" y="168" style="font-size:10px">Iets klopt niet of kan beter</text>
 
-  <!-- Panel 3: Template -->
-  <rect class="panel" x="480" y="20" width="170" height="230" rx="6"/>
-  <rect class="panel-header" x="480" y="20" width="170" height="30" rx="6"/>
-  <rect class="panel-header" x="480" y="40" width="170" height="10"/>
-  <text class="step-num" x="492" y="40">Stap 3</text>
-  <text class="step-title" x="492" y="75">Vul vragen in</text>
-  <text class="small" x="492" y="95">Wat wil je bijdragen?</text>
-  <rect class="btn-gray" x="492" y="102" width="146" height="22"/>
-  <text class="small" x="498" y="118">Beleid datalekken...</text>
-  <text class="small" x="492" y="140">Voor welk onderwerp?</text>
-  <rect x="496" y="146" width="10" height="10" fill="#0969da" rx="1"/>
-  <text class="small" x="510" y="156">Privacy</text>
-  <text class="small" x="492" y="178">Bijlagen?</text>
-  <rect class="btn-gray" x="492" y="185" width="146" height="40" stroke-dasharray="4 2"/>
-  <text class="small" x="498" y="200">Sleep hier je bestand</text>
-  <text class="small" x="498" y="215">(of beschrijf het)</text>
+  <rect class="btn-gray" x="277" y="186" width="195" height="32" rx="3"/>
+  <text class="small-dark" x="285" y="200" style="font-weight:600">💬 Meediscussiëren</text>
+  <text class="small" x="285" y="212" style="font-size:10px">Vragen zonder directe actie</text>
 
-  <!-- Arrow 3→4 -->
-  <path class="arrow-path" d="M 655 140 L 678 140"/>
+  <rect class="btn-gray" x="277" y="226" width="195" height="32" rx="3"/>
+  <text class="small-dark" x="285" y="240" style="font-weight:600">❓ Geen GitHub-account?</text>
+  <text class="small" x="285" y="252" style="font-size:10px">Gratis account in 2 minuten</text>
+
+  <!-- Arrow 2 → 3 -->
+  <path class="arrow-path" d="M 490 160 L 513 160"/>
+
+  <!-- Panel 3: Formulier invullen -->
+  <rect class="panel" x="520" y="20" width="175" height="250" rx="6"/>
+  <rect class="panel-header" x="520" y="20" width="175" height="30" rx="6"/>
+  <rect class="panel-header" x="520" y="40" width="175" height="10"/>
+  <text class="step-num" x="532" y="40">Stap 3</text>
+  <text class="step-title" x="532" y="75">Vul de vragen in</text>
+
+  <text class="small" x="532" y="95">Wat wil je bijdragen?</text>
+  <rect class="btn-gray" x="532" y="100" width="151" height="24"/>
+  <text class="small-dark" x="540" y="116">Beleid datalekken...</text>
+
+  <text class="small" x="532" y="140">Voor welk onderwerp?</text>
+  <rect x="536" y="146" width="10" height="10" fill="#0969da" rx="1"/>
+  <text class="small-dark" x="550" y="156">Privacy</text>
+  <rect x="536" y="160" width="10" height="10" fill="#0969da" rx="1"/>
+  <text class="small-dark" x="550" y="170">Informatiebeveiliging</text>
+
+  <text class="small" x="532" y="192">Bijlage?</text>
+  <rect class="btn-gray" x="532" y="198" width="151" height="40" stroke-dasharray="4 2"/>
+  <text class="small" x="540" y="213">Sleep je bestand hier</text>
+  <text class="small" x="540" y="228">(of laat leeg)</text>
+
+  <text class="small" x="532" y="258" style="font-style:italic">Alleen velden die jou</text>
+  <text class="small" x="532" y="270" style="font-style:italic">relevant lijken.</text>
+
+  <!-- Arrow 3 → 4 -->
+  <path class="arrow-path" d="M 700 160 L 723 160"/>
 
   <!-- Panel 4: Submit -->
-  <rect class="panel" x="685" y="20" width="165" height="230" rx="6"/>
-  <rect class="panel-header" x="685" y="20" width="165" height="30" rx="6"/>
-  <rect class="panel-header" x="685" y="40" width="165" height="10"/>
-  <text class="step-num" x="697" y="40">Stap 4</text>
-  <text class="step-title" x="697" y="75">Submit</text>
-  <text class="small" x="697" y="95">We reageren zo snel</text>
-  <text class="small" x="697" y="110">mogelijk en helpen je</text>
-  <text class="small" x="697" y="125">verder met de rest.</text>
-  <rect class="btn-green" x="697" y="150" width="140" height="30" rx="6"/>
-  <text class="btn-text" x="767" y="170">Submit new issue</text>
-  <circle cx="767" cy="165" r="18" class="pulse-ring">
-    <animate attributeName="r" values="18;28;18" dur="2s" repeatCount="indefinite" begin="1s"/>
-    <animate attributeName="opacity" values="0.8;0;0.8" dur="2s" repeatCount="indefinite" begin="1s"/>
+  <rect class="panel" x="730" y="20" width="160" height="250" rx="6"/>
+  <rect class="panel-header" x="730" y="20" width="160" height="30" rx="6"/>
+  <rect class="panel-header" x="730" y="40" width="160" height="10"/>
+  <text class="step-num" x="742" y="40">Stap 4</text>
+  <text class="step-title" x="742" y="75">Submit</text>
+
+  <text class="small" x="742" y="100">We reageren binnen</text>
+  <text class="small" x="742" y="115">een week en helpen</text>
+  <text class="small" x="742" y="130">je verder.</text>
+
+  <rect class="btn-green" x="742" y="150" width="140" height="32" rx="6"/>
+  <text class="btn-text" x="812" y="170" style="font-size:12px">Submit new issue</text>
+  <circle cx="812" cy="166" r="20" class="pulse-ring">
+    <animate attributeName="r" values="20;32;20" dur="2s" repeatCount="indefinite" begin="1s"/>
+    <animate attributeName="opacity" values="0.9;0;0.9" dur="2s" repeatCount="indefinite" begin="1s"/>
   </circle>
-  <text class="small" x="697" y="210">🎉 Klaar!</text>
-  <text class="small" x="697" y="228">Geen GitHub-account?</text>
-  <text class="small" x="697" y="243" fill="#0969da">Zie signup-link</text>
+
+  <text class="step-title" x="742" y="210" fill="#1f883d">🎉 Klaar!</text>
+  <text class="small" x="742" y="228">Geen GitHub-account?</text>
+  <text class="small" x="742" y="242">Zie de signup-link in</text>
+  <text class="small" x="742" y="256">het template-menu.</text>
 </svg>
