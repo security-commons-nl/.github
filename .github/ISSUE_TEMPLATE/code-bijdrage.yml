@@ -1,0 +1,77 @@
+name: 💻 Code-bijdrage of -idee
+description: Bug report, feature-voorstel, refactor-idee of code-discussie. Voor ontwikkelaars.
+title: "[CODE] "
+labels: ["code"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gebruik dit formulier voordat je code indient — even afstemmen voorkomt dubbel werk.
+        Heb je al een werkende wijziging? Open direct een **Pull Request**, daar is geen issue voor nodig.
+
+  - type: input
+    id: onderdeel
+    attributes:
+      label: Welk project of onderdeel?
+      description: Noem de repo en eventueel het bestand of de module.
+      placeholder: bv. anonimizer/patronen.py, grc-platform backend API /api/v1/risks
+    validations:
+      required: true
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type bijdrage
+      options:
+        - 🐛 Bug report — iets werkt niet zoals verwacht
+        - ✨ Nieuwe feature of uitbreiding
+        - 🔧 Refactor / code-kwaliteit / testverbetering
+        - 📚 Documentatie of voorbeeld
+        - 💬 Discussie / vraag over aanpak
+        - Anders (licht hieronder toe)
+    validations:
+      required: true
+
+  - type: textarea
+    id: beschrijving
+    attributes:
+      label: Wat wil je veranderen, melden of bespreken?
+      description: |
+        Voor bugs: wat gebeurt er, wat verwachtte je, hoe reproduceer je het?
+        Voor features: welk probleem los je op, waarom vind je dit belangrijk?
+        Voor refactors: wat is het huidige probleem in de codebase?
+      placeholder: |
+        Bijvoorbeeld — "De regex in patronen.py matcht KVK-nummers met dubbele spatie niet. Reproduceer met: ..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: voorstel
+    attributes:
+      label: Voorstel of PR-link (optioneel)
+      description: Een schets van je oplossing, een codefragment, of een link naar een PR die je al hebt gemaakt.
+      placeholder: |
+        ```python
+        # Mogelijke aanpassing...
+        ```
+        Of een link: https://github.com/security-commons-nl/.../pull/...
+
+  - type: dropdown
+    id: wil-oppakken
+    attributes:
+      label: Wil je dit zelf oppakken?
+      options:
+        - Ja, ik maak (of heb) een Pull Request
+        - Ja, maar ik wil eerst afstemmen
+        - Nee, ik signaleer het alleen
+        - Nee, liever dat iemand anders het oppakt
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Voor ik submit heb ik
+      options:
+        - label: gecontroleerd dat er nog geen [vergelijkbaar open issue](../issues?q=is%3Aissue) bestaat
+        - label: de README en CONTRIBUTING gelezen
