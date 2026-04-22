@@ -40,7 +40,7 @@ Neem contact op via [LinkedIn](https://linkedin.com/in/bas-stevens), open een [d
 
 Nog nooit een issue geopend? Geen probleem. In vier stappen deel je een document, idee of verbetering.
 
-![Bijdrage-flow in vier stappen](bijdrage-flow.svg)
+![Bijdrage-flow in vier stappen](bijdrage-flow.svg?v=2)
 
 ### Direct aan de slag
 
