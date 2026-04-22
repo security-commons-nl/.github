@@ -1,6 +1,6 @@
 # security-commons-nl
 
-> Publieke organisaties kunnen samen betere governance-tooling bouwen dan ze kunnen kopen — soeverein, transparant, en van ons allemaal.
+> Publieke organisaties bouwen samen aan digitale weerbaarheid — kennis, tooling en aanpakken die van ons allemaal zijn.
 
 ## Waarom dit bestaat
 
