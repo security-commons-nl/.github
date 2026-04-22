@@ -23,7 +23,7 @@ Wij geloven dat:
 | [weerbaarheid-game](https://github.com/security-commons-nl/weerbaarheid-game) | Actief | Interactief bestuursdashboard dat gemeentelijke kwetsbaarheid zichtbaar maakt | College van B&W, directies, bestuurders |
 | [anonimizer](https://github.com/security-commons-nl/anonimizer) | Actief | AI-tool om gevoelige gegevens uit documenten te verwijderen | CISO's en ISO's die intern materiaal willen delen |
 | [security-posture-tool](https://github.com/security-commons-nl/security-posture-tool) | Actief | Evidence-based security posture langs Defense-in-Depth | Blue teams en interventieteams |
-| [kennisbank](https://github.com/security-commons-nl/kennisbank) | Actief | Gedeelde kennis van CISO's en ISO's in de publieke sector | CISO's en ISO's in de publieke sector |
+| [kennisbank](https://github.com/security-commons-nl/kennisbank) | Actief | Werkende kennis uit de publieke sector — security, privacy, continuïteit en alles wat er tussen zit | Security-, privacy- en continuïteitsprofessionals |
 | [hosting-bouwblokken](https://github.com/security-commons-nl/hosting-bouwblokken) | In ontwikkeling | Referentiearchitecturen en IaC voor veilige AI/security-hosting | Infra- en platformteams bij gemeenten |
 | [beleid-assistent](https://github.com/security-commons-nl/beleid-assistent) | Concept | AI-ondersteunde beleidsassistent voor publieke organisaties | Beleidsmedewerkers en juridisch adviseurs |
 | [cisochat](https://github.com/security-commons-nl/cisochat) | Concept | Chat met de gedachtegang van een CISO in de publieke sector | Security-professionals in de publieke sector |
