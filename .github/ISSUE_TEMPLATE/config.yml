@@ -2,7 +2,7 @@ blank_issues_enabled: false
 
 contact_links:
   - name: Meediscussiëren
-    url: https://github.com/orgs/security-commons-nl/discussions
+    url: https://github.com/security-commons-nl/.github/discussions
     about: Vragen, ervaringen of ideeën delen zonder directe actie
 
   - name: Geen GitHub-account?

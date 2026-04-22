@@ -34,7 +34,7 @@ Dit is geen verkooppraatje. Er is niets te kopen.
 
 Dit is een uitnodiging om samen te bouwen aan tooling die van ons allemaal is. Begin met kijken, draai het lokaal, geef feedback, of bouw mee.
 
-Neem contact op via [LinkedIn](https://linkedin.com/in/bas-stevens) of open een issue in een van de repositories.
+Neem contact op via [LinkedIn](https://linkedin.com/in/bas-stevens), open een [discussion](https://github.com/security-commons-nl/.github/discussions) of een issue in een van de repositories.
 
 ## Voor het eerst hier?
 
