@@ -1,0 +1,44 @@
+name: 🔧 Fout of verbetering
+description: Iets klopt niet, kan beter, of mist context.
+title: "[VERBETERING] "
+labels: ["verbetering"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Bedankt voor het melden. Hoe concreter je bent, hoe sneller we het kunnen oppakken.
+
+  - type: input
+    id: waar
+    attributes:
+      label: Welke repo of bestand?
+      description: Link of pad naar het betreffende document of de code.
+      placeholder: bv. kennisbank/privacy/bia-template-gemeente.docx
+    validations:
+      required: true
+
+  - type: textarea
+    id: probleem
+    attributes:
+      label: Wat klopt er niet of kan beter?
+      description: Beschrijf het probleem zo concreet mogelijk.
+      placeholder: Bijvoorbeeld — de stap "classificeer data" verwijst naar BIO v1 maar zou v2 moeten zijn
+    validations:
+      required: true
+
+  - type: dropdown
+    id: oplossing
+    attributes:
+      label: Stel je ook een oplossing voor?
+      options:
+        - Ja, zie hieronder
+        - Nee, ik signaleer het alleen
+    validations:
+      required: true
+
+  - type: textarea
+    id: voorstel
+    attributes:
+      label: Voorstel (optioneel)
+      description: Hoe zou het beter kunnen?
+      placeholder: ...

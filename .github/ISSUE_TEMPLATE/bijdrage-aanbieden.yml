@@ -1,0 +1,84 @@
+name: 📝 Bijdrage aanbieden
+description: Ik heb iets om te delen — een document, idee, werkende aanpak of verbetering.
+title: "[BIJDRAGE] "
+labels: ["bijdrage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Welkom! Dit formulier helpt je om je bijdrage aan de commons te delen.
+        Vul alleen in wat voor jou van toepassing is — we helpen je met de rest.
+
+  - type: textarea
+    id: wat
+    attributes:
+      label: Wat wil je bijdragen?
+      description: Schets kort wat het is. Een beleid? Draaiboek? Idee? Werkende aanpak?
+      placeholder: Bijvoorbeeld — een concept privacybeleid dat bij ons is vastgesteld, met toelichting op de keuzes
+    validations:
+      required: true
+
+  - type: dropdown
+    id: onderwerp
+    attributes:
+      label: Voor welk onderwerp?
+      description: Meerdere keuzes mogelijk.
+      multiple: true
+      options:
+        - Informatiebeveiliging (BIO, ISO 27001, NIS2)
+        - Privacy / gegevensbescherming (AVG, ISO 27701)
+        - Bedrijfscontinuïteit (BCM, ISO 22301)
+        - Incident- en crisismanagement
+        - Aanbestedingen / leveranciersmanagement
+        - Governance en rollen
+        - Anders (licht hieronder toe)
+
+  - type: dropdown
+    id: vorm
+    attributes:
+      label: In welke vorm?
+      options:
+        - Document dat ik kan delen (Word, PDF)
+        - Alleen een idee of beschrijving (nog geen bestand)
+        - Verbetering op een bestaand document in de commons
+        - Verwijzing naar een externe bron
+    validations:
+      required: true
+
+  - type: dropdown
+    id: persoonsgegevens
+    attributes:
+      label: Bevat het persoonsgegevens of organisatie-specifieke informatie?
+      options:
+        - Nee, ik heb het al geanonimiseerd
+        - Ja, maar ik weet niet hoe — help me met de anonimizer
+        - Weet ik niet — graag meedenken
+    validations:
+      required: true
+
+  - type: dropdown
+    id: contact
+    attributes:
+      label: Mag iemand contact met je opnemen om het samen op te pakken?
+      options:
+        - Ja, via GitHub reageert prima
+        - Ja, ik noem hieronder een andere manier
+        - Liever niet, ik wacht zelf op reactie
+    validations:
+      required: true
+
+  - type: textarea
+    id: contact-anders
+    attributes:
+      label: Andere contactwens (optioneel)
+      description: Laat hier je voorkeur achter als GitHub niet werkt (bv. e-mailadres, LinkedIn).
+      placeholder: Bereikbaar via ...
+
+  - type: textarea
+    id: bijlagen
+    attributes:
+      label: Bijlagen en vrije toelichting
+      description: |
+        Sleep bestanden direct in dit tekstvak — ze worden geüpload naar GitHub.
+        Geen GitHub-ervaring? Gewoon beschrijven wat je hebt kan ook, wij nemen contact op.
+      placeholder: Sleep hier je bestand, of beschrijf het in eigen woorden...
