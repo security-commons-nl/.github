@@ -48,14 +48,14 @@ Klik op een van de onderstaande knoppen — er wordt een formulier voor je klaar
 
 | Voor | Repository | Start hier |
 |---|---|---|
-| Iets delen over informatiebeveiliging, privacy of continuïteit | kennisbank | [Bijdrage aanbieden](https://github.com/security-commons-nl/kennisbank/issues/new?template=bijdrage-aanbieden.md) |
-| Bestuursdashboard (game) verbeteren of scenario toevoegen | weerbaarheid-game | [Bijdrage aanbieden](https://github.com/security-commons-nl/weerbaarheid-game/issues/new?template=bijdrage-aanbieden.md) |
-| Feedback op het GRC-platform | grc-platform | [Bijdrage aanbieden](https://github.com/security-commons-nl/grc-platform/issues/new?template=bijdrage-aanbieden.md) |
-| Testdocument of verbeterpunt voor de anonimizer | anonimizer | [Bijdrage aanbieden](https://github.com/security-commons-nl/anonimizer/issues/new?template=bijdrage-aanbieden.md) |
-| Ervaring met security-posture uit een interventie | security-posture-tool | [Bijdrage aanbieden](https://github.com/security-commons-nl/security-posture-tool/issues/new?template=bijdrage-aanbieden.md) |
-| Hosting-scenario of referentiearchitectuur | hosting-bouwblokken | [Bijdrage aanbieden](https://github.com/security-commons-nl/hosting-bouwblokken/issues/new?template=bijdrage-aanbieden.md) |
-| Idee voor een AI-beleidsassistent | beleid-assistent | [Bijdrage aanbieden](https://github.com/security-commons-nl/beleid-assistent/issues/new?template=bijdrage-aanbieden.md) |
-| Idee voor een CISO-chat | cisochat | [Bijdrage aanbieden](https://github.com/security-commons-nl/cisochat/issues/new?template=bijdrage-aanbieden.md) |
+| Iets delen over informatiebeveiliging, privacy of continuïteit | kennisbank | [Bijdrage aanbieden](https://github.com/security-commons-nl/kennisbank/issues/new?template=bijdrage-aanbieden.yml) |
+| Bestuursdashboard (game) verbeteren of scenario toevoegen | weerbaarheid-game | [Bijdrage aanbieden](https://github.com/security-commons-nl/weerbaarheid-game/issues/new?template=bijdrage-aanbieden.yml) |
+| Feedback op het GRC-platform | grc-platform | [Bijdrage aanbieden](https://github.com/security-commons-nl/grc-platform/issues/new?template=bijdrage-aanbieden.yml) |
+| Testdocument of verbeterpunt voor de anonimizer | anonimizer | [Bijdrage aanbieden](https://github.com/security-commons-nl/anonimizer/issues/new?template=bijdrage-aanbieden.yml) |
+| Ervaring met security-posture uit een interventie | security-posture-tool | [Bijdrage aanbieden](https://github.com/security-commons-nl/security-posture-tool/issues/new?template=bijdrage-aanbieden.yml) |
+| Hosting-scenario of referentiearchitectuur | hosting-bouwblokken | [Bijdrage aanbieden](https://github.com/security-commons-nl/hosting-bouwblokken/issues/new?template=bijdrage-aanbieden.yml) |
+| Idee voor een AI-beleidsassistent | beleid-assistent | [Bijdrage aanbieden](https://github.com/security-commons-nl/beleid-assistent/issues/new?template=bijdrage-aanbieden.yml) |
+| Idee voor een CISO-chat | cisochat | [Bijdrage aanbieden](https://github.com/security-commons-nl/cisochat/issues/new?template=bijdrage-aanbieden.yml) |
 
 ### Geen GitHub-account?
 
