@@ -40,7 +40,7 @@ Neem contact op via [LinkedIn](https://linkedin.com/in/bas-stevens), open een [d
 
 Nog nooit een issue geopend? Geen probleem. In vier stappen deel je een document, idee of verbetering.
 
-![Bijdrage-flow in vier stappen](bijdrage-flow.svg?v=2)
+![Bijdrage-flow in vier stappen](bijdrage-flow.svg?v=3)
 
 ### Direct aan de slag
 
@@ -54,7 +54,8 @@ Klik op een van de onderstaande knoppen — er wordt een formulier voor je klaar
 | Testdocument of verbeterpunt voor de anonimizer | anonimizer | [Bijdrage aanbieden](https://github.com/security-commons-nl/anonimizer/issues/new?template=bijdrage-aanbieden.md) |
 | Ervaring met security-posture uit een interventie | security-posture-tool | [Bijdrage aanbieden](https://github.com/security-commons-nl/security-posture-tool/issues/new?template=bijdrage-aanbieden.md) |
 | Hosting-scenario of referentiearchitectuur | hosting-bouwblokken | [Bijdrage aanbieden](https://github.com/security-commons-nl/hosting-bouwblokken/issues/new?template=bijdrage-aanbieden.md) |
-| Idee voor beleidsassistent of CISO-chat | beleid-assistent / cisochat | [beleid](https://github.com/security-commons-nl/beleid-assistent/issues/new?template=bijdrage-aanbieden.md) · [chat](https://github.com/security-commons-nl/cisochat/issues/new?template=bijdrage-aanbieden.md) |
+| Idee voor een AI-beleidsassistent | beleid-assistent | [Bijdrage aanbieden](https://github.com/security-commons-nl/beleid-assistent/issues/new?template=bijdrage-aanbieden.md) |
+| Idee voor een CISO-chat | cisochat | [Bijdrage aanbieden](https://github.com/security-commons-nl/cisochat/issues/new?template=bijdrage-aanbieden.md) |
 
 ### Geen GitHub-account?
 

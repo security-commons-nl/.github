@@ -33,13 +33,11 @@
   <text class="small" x="22" y="110">Zie de twee knoppen</text>
   <text class="small" x="22" y="124">direct onder de titel:</text>
 
-  <!-- Bijdragen-badge (shields.io for-the-badge look) -->
+  <!-- Bijdragen-badge (enkele kleur) -->
   <g>
-    <rect class="badge-label" x="22" y="142" width="78" height="26" rx="2"/>
-    <text class="badge-text" x="61" y="159">📝 BIJDRAGEN</text>
-    <rect class="badge-green" x="100" y="142" width="115" height="26" rx="2"/>
-    <text class="badge-text" x="157" y="159">OPEN EEN BERICHT</text>
-    <circle cx="118" cy="155" r="22" class="pulse-ring">
+    <rect class="badge-green" x="22" y="142" width="190" height="26" rx="2"/>
+    <text class="badge-text" x="117" y="159">📝 OPEN EEN BERICHT</text>
+    <circle cx="117" cy="155" r="22" class="pulse-ring">
       <animate attributeName="r" values="22;38;22" dur="2s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="0.9;0;0.9" dur="2s" repeatCount="indefinite"/>
     </circle>
@@ -47,10 +45,8 @@
 
   <!-- Discussions-badge -->
   <g>
-    <rect class="badge-label" x="22" y="182" width="82" height="26" rx="2"/>
-    <text class="badge-text" x="63" y="199">💬 DISCUSSIONS</text>
-    <rect class="badge-blue" x="104" y="182" width="75" height="26" rx="2"/>
-    <text class="badge-text" x="141" y="199">MEEPRATEN</text>
+    <rect class="badge-blue" x="22" y="182" width="220" height="26" rx="2"/>
+    <text class="badge-text" x="132" y="199">💬 MEEPRATEN IN DISCUSSIONS</text>
   </g>
 
   <text class="small" x="22" y="240">Klik op de groene knop.</text>
