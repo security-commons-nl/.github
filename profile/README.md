@@ -21,7 +21,8 @@ Wij geloven dat:
 |---|---|---|---|
 | [grc-platform](https://github.com/security-commons-nl/grc-platform) | Actief | GRC-platform voor ISMS, PIMS en BCMS in één systeem | CISO's, ISO's en privacy officers bij gemeenten |
 | [weerbaarheid-game](https://github.com/security-commons-nl/weerbaarheid-game) | Actief | Interactief bestuursdashboard dat gemeentelijke kwetsbaarheid zichtbaar maakt | College van B&W, directies, bestuurders |
-| [anonimizer](https://github.com/security-commons-nl/anonimizer) | Actief | AI-tool om gevoelige gegevens uit documenten te verwijderen | CISO's en ISO's die intern materiaal willen delen |
+| [anonimizer](https://github.com/security-commons-nl/anonimizer) | Actief | AI-tool om gevoelige gegevens uit documenten te verwijderen — CLI voor batchverwerking en hergebruik van memory | CISO's, ISO's en andere power users die regelmatig documenten anonimiseren |
+| [anonimizer-browser](https://github.com/security-commons-nl/anonimizer-browser) | Actief | Browser-versie van de anonimizer — open de [live tool](https://security-commons-nl.github.io/anonimizer-browser/), geen installatie nodig, alles draait in je eigen browser | Beleidsmedewerkers, juristen en iedereen die ad-hoc één document wil anonimiseren |
 | [security-posture-tool](https://github.com/security-commons-nl/security-posture-tool) | Actief | Evidence-based security posture langs Defense-in-Depth | Blue teams en interventieteams |
 | [kennisbank](https://github.com/security-commons-nl/kennisbank) | Actief | Werkende kennis uit de publieke sector — security, privacy, continuïteit en alles wat er tussen zit | Security-, privacy- en continuïteitsprofessionals |
 | [hosting-bouwblokken](https://github.com/security-commons-nl/hosting-bouwblokken) | In ontwikkeling | Referentiearchitecturen en IaC voor veilige AI/security-hosting | Infra- en platformteams bij gemeenten |
@@ -52,7 +53,8 @@ Klik op een van de onderstaande knoppen — er wordt een formulier voor je klaar
 | Iets delen over informatiebeveiliging, privacy of continuïteit | kennisbank | [Bijdrage aanbieden](https://github.com/security-commons-nl/kennisbank/issues/new?template=bijdrage-aanbieden.yml) |
 | Bestuursdashboard (game) verbeteren of scenario toevoegen | weerbaarheid-game | [Bijdrage aanbieden](https://github.com/security-commons-nl/weerbaarheid-game/issues/new?template=bijdrage-aanbieden.yml) |
 | Feedback op het GRC-platform | grc-platform | [Bijdrage aanbieden](https://github.com/security-commons-nl/grc-platform/issues/new?template=bijdrage-aanbieden.yml) |
-| Testdocument of verbeterpunt voor de anonimizer | anonimizer | [Bijdrage aanbieden](https://github.com/security-commons-nl/anonimizer/issues/new?template=bijdrage-aanbieden.yml) |
+| Testdocument of verbeterpunt voor de anonimizer (CLI) | anonimizer | [Bijdrage aanbieden](https://github.com/security-commons-nl/anonimizer/issues/new?template=bijdrage-aanbieden.yml) |
+| Bug of feature-wens voor de browser-versie van de anonimizer | anonimizer-browser | [Bijdrage aanbieden](https://github.com/security-commons-nl/anonimizer-browser/issues/new/choose) |
 | Ervaring met security-posture uit een interventie | security-posture-tool | [Bijdrage aanbieden](https://github.com/security-commons-nl/security-posture-tool/issues/new?template=bijdrage-aanbieden.yml) |
 | Hosting-scenario of referentiearchitectuur | hosting-bouwblokken | [Bijdrage aanbieden](https://github.com/security-commons-nl/hosting-bouwblokken/issues/new?template=bijdrage-aanbieden.yml) |
 | Idee voor een AI-beleidsassistent | beleid-assistent | [Bijdrage aanbieden](https://github.com/security-commons-nl/beleid-assistent/issues/new?template=bijdrage-aanbieden.yml) |
@@ -70,6 +72,12 @@ Twee opties:
 - **Snelheid**: we reageren doorgaans binnen een week.
 - **Privacy**: bevat je document persoonsgegevens? Meld het in het formulier — wij helpen je anonimiseren met de [anonimizer](https://github.com/security-commons-nl/anonimizer) vóór publicatie.
 - **Erkenning**: bijdragen worden in de versiegeschiedenis zichtbaar vermeld, tenzij je anoniem wilt blijven.
+
+## Onderliggende infrastructuur
+
+Eén repo bevat geen op zichzelf staand product, maar maakt een ander wel mogelijk:
+
+- [anonimizer-proxy](https://github.com/security-commons-nl/anonimizer-proxy) — minimale Cloudflare Worker die de Mistral-API forward't, zodat anonimizer-browser werkt zonder dat eindgebruikers een eigen Mistral-account hoeven aan te maken. Forward-only, geen opslag, geen logging van inhoud. Zie de [DPA-template](DPA-template.md) voor de verwerkersrol.
 
 ## Principes
 
