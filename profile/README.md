@@ -31,6 +31,7 @@ Wij geloven dat:
 | [beleid-assistent](https://github.com/security-commons-nl/beleid-assistent) | Concept | AI-ondersteunde beleidsassistent voor publieke organisaties | Beleidsmedewerkers en juridisch adviseurs |
 | [cisochat](https://github.com/security-commons-nl/cisochat) | Concept | vCISO-dirigent: een AI die redeneert als een CISO (langs NIST CSF), adviseert en open-source security-tooling orkestreert — mens beslist | Security-professionals in de publieke sector |
 | [procescheck](https://github.com/security-commons-nl/procescheck) | Actief | BIA- en procescontinuïteitstool voor informatiebeveiliging bij publieke organisaties | CISO's, ISO's en continuïteitsprofessionals bij gemeenten |
+| [publicatiescan](https://github.com/security-commons-nl/publicatiescan) | Actief | Scant je eigen openbare publicaties (bekendmakingen, raadsinformatie, website) op onbedoeld gepubliceerde persoonsgegevens. Deterministisch via elfproef en mod-97, zonder AI | CISO's, ISO's, privacy officers en griffiemedewerkers bij gemeenten |
 
 ## Meedoen
 
@@ -61,6 +62,7 @@ Klik op een van de onderstaande knoppen — er wordt een formulier voor je klaar
 | Hosting-scenario of referentiearchitectuur | hosting-bouwblokken | [Bijdrage aanbieden](https://github.com/security-commons-nl/hosting-bouwblokken/issues/new?template=bijdrage-aanbieden.yml) |
 | Idee voor een AI-beleidsassistent | beleid-assistent | [Bijdrage aanbieden](https://github.com/security-commons-nl/beleid-assistent/issues/new?template=bijdrage-aanbieden.yml) |
 | Idee voor een CISO-chat | cisochat | [Bijdrage aanbieden](https://github.com/security-commons-nl/cisochat/issues/new?template=bijdrage-aanbieden.yml) |
+| Ervaring, vals-positief of nieuwe bron voor de publicatiescan | publicatiescan | [Bijdrage aanbieden](https://github.com/security-commons-nl/publicatiescan/issues/new?template=bijdrage-aanbieden.yml) |
 
 ### Geen GitHub-account?
 
