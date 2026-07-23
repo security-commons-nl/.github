@@ -31,7 +31,7 @@ Wij geloven dat:
 | [beleid-assistent](https://github.com/security-commons-nl/beleid-assistent) | Concept | AI-ondersteunde beleidsassistent voor publieke organisaties | Beleidsmedewerkers en juridisch adviseurs |
 | [cisochat](https://github.com/security-commons-nl/cisochat) | Concept | vCISO-dirigent: een AI die redeneert als een CISO (langs NIST CSF), adviseert en open-source security-tooling orkestreert — mens beslist | Security-professionals in de publieke sector |
 | [procescheck](https://github.com/security-commons-nl/procescheck) | Actief | BIA- en procescontinuïteitstool voor informatiebeveiliging bij publieke organisaties | CISO's, ISO's en continuïteitsprofessionals bij gemeenten |
-| [publicatiescan](https://github.com/security-commons-nl/publicatiescan) | Actief | Scant je eigen openbare publicaties (bekendmakingen, raadsinformatie, website) op onbedoeld gepubliceerde persoonsgegevens. Deterministisch via elfproef en mod-97, zonder AI | CISO's, ISO's, privacy officers en griffiemedewerkers bij gemeenten |
+| [publicatiescan](https://github.com/security-commons-nl/publicatiescan) | Actief | Scant je eigen openbare publicaties (bekendmakingen inclusief bijlagen, raadsinformatie, terinzageleggingen, website) op onbedoeld gepubliceerde persoonsgegevens. Deterministische detectie via elfproef en mod-97; OCR optioneel en on-prem | CISO's, ISO's, privacy officers en griffiemedewerkers bij gemeenten |
 
 ## Meedoen
 
