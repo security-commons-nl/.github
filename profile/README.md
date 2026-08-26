@@ -32,6 +32,8 @@ Wij geloven dat:
 | [cisochat](https://github.com/security-commons-nl/cisochat) | Concept | vCISO-dirigent: een AI die redeneert als een CISO (langs NIST CSF), adviseert en open-source security-tooling orkestreert — mens beslist | Security-professionals in de publieke sector |
 | [procescheck](https://github.com/security-commons-nl/procescheck) | Actief | BIA- en procescontinuïteitstool voor informatiebeveiliging bij publieke organisaties | CISO's, ISO's en continuïteitsprofessionals bij gemeenten |
 | [publicatiescan](https://github.com/security-commons-nl/publicatiescan) | Actief | Scant je eigen openbare publicaties (bekendmakingen inclusief bijlagen, raadsinformatie, terinzageleggingen, website) op onbedoeld gepubliceerde persoonsgegevens. Deterministische detectie via elfproef en mod-97; OCR optioneel en on-prem | CISO's, ISO's, privacy officers en griffiemedewerkers bij gemeenten |
+| [iamscan](https://github.com/security-commons-nl/iamscan) | Actief | Read-only analyse van je Linux-servers: wie kan waar root worden, uit passwd, sudoers en SSH-sleutels. Deterministisch, elke bevinding met de configregel erbij | CISO's, ISO's, beheer- en auditteams bij gemeenten |
+| [blast-radius](https://github.com/security-commons-nl/blast-radius) | Actief | Wat valt om als een component uitvalt: leest een CI-landschapsexport en rekent de keten door naar applicaties en processen, met interactieve graaf | CISO's, ISO's en continuïteitsprofessionals bij gemeenten |
 
 ## Meedoen
 
