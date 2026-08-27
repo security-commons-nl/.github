@@ -22,7 +22,7 @@ Wij geloven dat:
 | [kennisbank](https://github.com/security-commons-nl/kennisbank) | Actief | Werkende kennis uit de publieke sector — security, privacy, continuïteit en alles wat er tussen zit | Security-, privacy- en continuïteitsprofessionals |
 | [grc-platform](https://github.com/security-commons-nl/grc-platform) | Actief | GRC-platform voor ISMS, PIMS en BCMS in één systeem | CISO's, ISO's en privacy officers bij publieke organisaties |
 | [weerbaarheid-game](https://github.com/security-commons-nl/weerbaarheid-game) | Actief | Interactief bestuursdashboard dat de digitale kwetsbaarheid van een organisatie zichtbaar maakt | College van B&W, directies, bestuurders |
-| [anonimizer](https://github.com/security-commons-nl/anonimizer) | Actief | AI-tool om gevoelige gegevens uit documenten te verwijderen — CLI voor batchverwerking en hergebruik van memory | CISO's, ISO's en andere power users die regelmatig documenten anonimiseren |
+| [anonimizer-local](https://github.com/security-commons-nl/anonimizer-local) | Actief | AI-tool om gevoelige gegevens uit documenten te verwijderen — CLI voor batchverwerking en hergebruik van memory | CISO's, ISO's en andere power users die regelmatig documenten anonimiseren |
 | [anonimizer-browser](https://github.com/security-commons-nl/anonimizer-browser) | Actief | Browser-versie van de anonimizer — open de [live tool](https://security-commons-nl.github.io/anonimizer-browser/), geen installatie nodig, alles draait in je eigen browser | Beleidsmedewerkers, juristen en iedereen die ad-hoc één document wil anonimiseren |
 | [security-shop](https://github.com/security-commons-nl/security-shop) | Actief | Catalogus van security-patronen — open de [live preview](https://security-commons-nl.github.io/security-shop/), per gap een shortlist van realistische oplossingsrichtingen met trade-offs en norm-mapping (BIO 2.0/NIS2/AVG) | CISO's en ISO's bij publieke organisaties |
 | [security-posture-tool](https://github.com/security-commons-nl/security-posture-tool) | Actief | Evidence-based security posture langs Defense-in-Depth | Blue teams en interventieteams |
@@ -59,7 +59,7 @@ Klik op een van de onderstaande knoppen — er wordt een formulier voor je klaar
 | Iets delen over informatiebeveiliging, privacy of continuïteit | kennisbank | [Bijdrage aanbieden](https://github.com/security-commons-nl/kennisbank/issues/new?template=bijdrage-aanbieden.yml) |
 | Bestuursdashboard (game) verbeteren of scenario toevoegen | weerbaarheid-game | [Bijdrage aanbieden](https://github.com/security-commons-nl/weerbaarheid-game/issues/new?template=bijdrage-aanbieden.yml) |
 | Feedback op het GRC-platform | grc-platform | [Bijdrage aanbieden](https://github.com/security-commons-nl/grc-platform/issues/new?template=bijdrage-aanbieden.yml) |
-| Testdocument of verbeterpunt voor de anonimizer (CLI) | anonimizer | [Bijdrage aanbieden](https://github.com/security-commons-nl/anonimizer/issues/new?template=bijdrage-aanbieden.yml) |
+| Testdocument of verbeterpunt voor anonimizer-local (de CLI) | anonimizer-local | [Bijdrage aanbieden](https://github.com/security-commons-nl/anonimizer-local/issues/new?template=bijdrage-aanbieden.yml) |
 | Bug of feature-wens voor de browser-versie van de anonimizer | anonimizer-browser | [Bijdrage aanbieden](https://github.com/security-commons-nl/anonimizer-browser/issues/new/choose) |
 | Ervaring met security-posture uit een interventie | security-posture-tool | [Bijdrage aanbieden](https://github.com/security-commons-nl/security-posture-tool/issues/new?template=bijdrage-aanbieden.yml) |
 | Hosting-scenario of referentiearchitectuur | hosting-bouwblokken | [Bijdrage aanbieden](https://github.com/security-commons-nl/hosting-bouwblokken/issues/new?template=bijdrage-aanbieden.yml) |
@@ -77,7 +77,7 @@ Twee opties:
 ### Wat kan ik verwachten?
 
 - **Snelheid**: we reageren doorgaans binnen een week.
-- **Privacy**: bevat je document persoonsgegevens? Meld het in het formulier — wij helpen je anonimiseren met de [anonimizer](https://github.com/security-commons-nl/anonimizer) vóór publicatie.
+- **Privacy**: bevat je document persoonsgegevens? Meld het in het formulier — wij helpen je anonimiseren met de [anonimizer-local](https://github.com/security-commons-nl/anonimizer-local) vóór publicatie.
 - **Erkenning**: bijdragen worden in de versiegeschiedenis zichtbaar vermeld, tenzij je anoniem wilt blijven.
 
 ## Onderliggende infrastructuur
