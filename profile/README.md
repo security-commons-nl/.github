@@ -4,13 +4,13 @@
 
 ## Waarom dit bestaat
 
-Nederlandse gemeenten en publieke organisaties werken voor hun meest kritieke processen — informatiebeveiliging, privacy en business continuity — intensief samen met externe partners. Die samenwerking is waardevol, maar vraagt tegelijkertijd om een sterke, onafhankelijke positie vanuit de overheid zelf.
+Nederlandse publieke organisaties werken voor hun meest kritieke processen — informatiebeveiliging, privacy en business continuity — intensief samen met externe partners. Die samenwerking is waardevol, maar vraagt tegelijkertijd om een sterke, onafhankelijke positie vanuit de overheid zelf.
 
 Wanneer de inrichting van onze governance te veel afhankelijk wordt van de markt, geven we onbedoeld de regie uit handen. Echte controle eist publiek eigenaarschap.
 
 Wij geloven dat:
 
-- **Samen optrekken sterker is dan afzonderlijk inkopen.** Één enkele gemeente die het wiel opnieuw moet uitvinden, is kwetsbaar. Tien gemeenten die bestaande kennis en tools delen, vormen een robuuste beweging.
+- **Samen optrekken sterker is dan afzonderlijk inkopen.** Één enkele organisatie die het wiel opnieuw moet uitvinden, is kwetsbaar. Tien organisaties die bestaande kennis en tools delen, vormen een robuuste beweging.
 - **Ontwerpvrijheid (soevereiniteit) geen luxe is, maar een plicht.** Publieke data, publieke processen en publieke verantwoordelijkheid vragen om transparante en onafhankelijke tooling.
 - **Open source de standaard moet zijn.** Publiek geld betekent publieke code, zodat iedere publieke organisatie mee kan profiteren en voortbouwen.
 - **AI een middel is, geen doel.** Getraind en ingezet volgens onze eigen normen: bij voorkeur lokaal of EU-gehost, altijd ter ondersteuning en áltijd controleerbaar en transparant.
@@ -19,21 +19,22 @@ Wij geloven dat:
 
 | Project | Status | Wat is het? | Doelgroep |
 |---|---|---|---|
-| [grc-platform](https://github.com/security-commons-nl/grc-platform) | Actief | GRC-platform voor ISMS, PIMS en BCMS in één systeem | CISO's, ISO's en privacy officers bij gemeenten |
-| [weerbaarheid-game](https://github.com/security-commons-nl/weerbaarheid-game) | Actief | Interactief bestuursdashboard dat gemeentelijke kwetsbaarheid zichtbaar maakt | College van B&W, directies, bestuurders |
+| [kennisbank](https://github.com/security-commons-nl/kennisbank) | Actief | Werkende kennis uit de publieke sector — security, privacy, continuïteit en alles wat er tussen zit | Security-, privacy- en continuïteitsprofessionals |
+| [grc-platform](https://github.com/security-commons-nl/grc-platform) | Actief | GRC-platform voor ISMS, PIMS en BCMS in één systeem | CISO's, ISO's en privacy officers bij publieke organisaties |
+| [weerbaarheid-game](https://github.com/security-commons-nl/weerbaarheid-game) | Actief | Interactief bestuursdashboard dat de digitale kwetsbaarheid van een organisatie zichtbaar maakt | College van B&W, directies, bestuurders |
 | [anonimizer](https://github.com/security-commons-nl/anonimizer) | Actief | AI-tool om gevoelige gegevens uit documenten te verwijderen — CLI voor batchverwerking en hergebruik van memory | CISO's, ISO's en andere power users die regelmatig documenten anonimiseren |
 | [anonimizer-browser](https://github.com/security-commons-nl/anonimizer-browser) | Actief | Browser-versie van de anonimizer — open de [live tool](https://security-commons-nl.github.io/anonimizer-browser/), geen installatie nodig, alles draait in je eigen browser | Beleidsmedewerkers, juristen en iedereen die ad-hoc één document wil anonimiseren |
-| [security-shop](https://github.com/security-commons-nl/security-shop) | Actief | Catalogus van security-patronen — open de [live preview](https://security-commons-nl.github.io/security-shop/), per gap een shortlist van realistische oplossingsrichtingen met trade-offs en norm-mapping (BIO 2.0/NIS2/AVG) | CISO's en ISO's bij gemeenten |
+| [security-shop](https://github.com/security-commons-nl/security-shop) | Actief | Catalogus van security-patronen — open de [live preview](https://security-commons-nl.github.io/security-shop/), per gap een shortlist van realistische oplossingsrichtingen met trade-offs en norm-mapping (BIO 2.0/NIS2/AVG) | CISO's en ISO's bij publieke organisaties |
 | [security-posture-tool](https://github.com/security-commons-nl/security-posture-tool) | Actief | Evidence-based security posture langs Defense-in-Depth | Blue teams en interventieteams |
-| [Handelingsperspectief](https://github.com/security-commons-nl/Handelingsperspectief) | Actief | Evidence-based methode om de security posture van gemeenten aantoonbaar te verhogen, met de ClickFix-aanvalsvorm als casus — open de [leesbare versie](https://security-commons-nl.github.io/Handelingsperspectief/), inclusief herbruikbare KQL-query's | CISO's, security- en beheerteams bij gemeenten |
-| [kennisbank](https://github.com/security-commons-nl/kennisbank) | Actief | Werkende kennis uit de publieke sector — security, privacy, continuïteit en alles wat er tussen zit | Security-, privacy- en continuïteitsprofessionals |
-| [hosting-bouwblokken](https://github.com/security-commons-nl/hosting-bouwblokken) | In ontwikkeling | Referentiearchitecturen en IaC voor veilige AI/security-hosting | Infra- en platformteams bij gemeenten |
+| [Handelingsperspectief](https://github.com/security-commons-nl/Handelingsperspectief) | Actief | Evidence-based methode om de security posture van publieke organisaties aantoonbaar te verhogen, met de ClickFix-aanvalsvorm als casus — open de [leesbare versie](https://security-commons-nl.github.io/Handelingsperspectief/), inclusief herbruikbare KQL-query's | CISO's, security- en beheerteams bij publieke organisaties |
+| [hosting-bouwblokken](https://github.com/security-commons-nl/hosting-bouwblokken) | In ontwikkeling | Referentiearchitecturen en IaC voor veilige AI/security-hosting | Infra- en platformteams bij publieke organisaties |
 | [beleid-assistent](https://github.com/security-commons-nl/beleid-assistent) | Concept | AI-ondersteunde beleidsassistent voor publieke organisaties | Beleidsmedewerkers en juridisch adviseurs |
 | [cisochat](https://github.com/security-commons-nl/cisochat) | Concept | vCISO-dirigent: een AI die redeneert als een CISO (langs NIST CSF), adviseert en open-source security-tooling orkestreert — mens beslist | Security-professionals in de publieke sector |
-| [procescheck](https://github.com/security-commons-nl/procescheck) | Actief | BIA- en procescontinuïteitstool voor informatiebeveiliging bij publieke organisaties | CISO's, ISO's en continuïteitsprofessionals bij gemeenten |
-| [publicatiescan](https://github.com/security-commons-nl/publicatiescan) | Actief | Scant je eigen openbare publicaties (bekendmakingen inclusief bijlagen, raadsinformatie, terinzageleggingen, website) op onbedoeld gepubliceerde persoonsgegevens. Deterministische detectie via elfproef en mod-97; OCR optioneel en on-prem | CISO's, ISO's, privacy officers en griffiemedewerkers bij gemeenten |
-| [iamscan](https://github.com/security-commons-nl/iamscan) | Actief | Read-only analyse van je Linux-servers: wie kan waar root worden, uit passwd, sudoers en SSH-sleutels. Deterministisch, elke bevinding met de configregel erbij | CISO's, ISO's, beheer- en auditteams bij gemeenten |
-| [blast-radius](https://github.com/security-commons-nl/blast-radius) | Actief | Wat valt om als een component uitvalt: leest een CI-landschapsexport en rekent de keten door naar applicaties en processen, met interactieve graaf | CISO's, ISO's en continuïteitsprofessionals bij gemeenten |
+| [policy-as-code](https://github.com/security-commons-nl/policy-as-code) | Idee | Beleid en normen (BIO 2.0, ISO 27001, AVG) als uitvoerbare, toetsbare regels in plaats van alleen tekst — automatisch controleren of de praktijk aan de norm voldoet | CISO's, ISO's en platformteams bij publieke organisaties |
+| [procescheck](https://github.com/security-commons-nl/procescheck) | Actief | BIA- en procescontinuïteitstool voor informatiebeveiliging bij publieke organisaties | CISO's, ISO's en continuïteitsprofessionals bij publieke organisaties |
+| [publicatiescan](https://github.com/security-commons-nl/publicatiescan) | Actief | Scant je eigen openbare publicaties (bekendmakingen inclusief bijlagen, raadsinformatie, terinzageleggingen, website) op onbedoeld gepubliceerde persoonsgegevens. Deterministische detectie via elfproef en mod-97; OCR optioneel en on-prem | CISO's, ISO's, privacy officers en griffiemedewerkers bij publieke organisaties |
+| [iamscan](https://github.com/security-commons-nl/iamscan) | Actief | Read-only analyse van je Linux-servers: wie kan waar root worden, uit passwd, sudoers en SSH-sleutels. Deterministisch, elke bevinding met de configregel erbij | CISO's, ISO's, beheer- en auditteams bij publieke organisaties |
+| [blast-radius](https://github.com/security-commons-nl/blast-radius) | Actief | Wat valt om als een component uitvalt: leest een CI-landschapsexport en rekent de keten door naar applicaties en processen, met interactieve graaf | CISO's, ISO's en continuïteitsprofessionals bij publieke organisaties |
 
 ## Meedoen
 
@@ -95,4 +96,4 @@ Deze community staat momenteel op GitHub. Op termijn zullen we overstappen naar 
 
 ---
 
-*Initiatief vanuit Gemeente Leiden — voor de hele publieke sector.*
+*Een initiatief van de publieke sector, voor de publieke sector.*
