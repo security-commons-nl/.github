@@ -29,8 +29,7 @@ Wij geloven dat:
 | [Handelingsperspectief](https://github.com/security-commons-nl/Handelingsperspectief) | in gebruik | Evidence-based methode om de security posture van publieke organisaties aantoonbaar te verhogen, met de ClickFix-aanvalsvorm als casus, inclusief herbruikbare KQL-query's | [Leesbare versie](https://security-commons-nl.github.io/Handelingsperspectief/) | CISO's, security- en beheerteams bij publieke organisaties |
 | [ai-gebruik-in-beeld](https://github.com/security-commons-nl/ai-gebruik-in-beeld) | in gebruik | Draaiboek om AI-gebruik in de organisatie feitelijk te meten (CISO + FG): meetregimes, bronnen met bewijslast, run-log, plus 15 KQL-query's | [Leesbare versie](https://security-commons-nl.github.io/ai-gebruik-in-beeld/) | CISO's, FG's en securityteams bij publieke organisaties |
 | [hosting-bouwblokken](https://github.com/security-commons-nl/hosting-bouwblokken) | prototype | Referentiearchitecturen en IaC voor veilige AI/security-hosting | — | Infra- en platformteams bij publieke organisaties |
-| [beleid-assistent](https://github.com/security-commons-nl/beleid-assistent) | concept | AI-ondersteunde beleidsassistent voor publieke organisaties | — | Beleidsmedewerkers en juridisch adviseurs |
-| [cisochat](https://github.com/security-commons-nl/cisochat) | concept | vCISO-dirigent: een AI die redeneert als een CISO (langs NIST CSF), adviseert en open-source security-tooling orkestreert — mens beslist | — | Security-professionals in de publieke sector |
+| [cisochat](https://github.com/security-commons-nl/cisochat) | concept | vCISO-dirigent: een AI die redeneert als een CISO (langs NIST CSF), adviseert en open-source security-tooling orkestreert, inclusief beleidsondersteuning — mens beslist | — | Security-professionals in de publieke sector |
 | [policy-as-code](https://github.com/security-commons-nl/policy-as-code) | concept | Beleid en normen (BIO 2.0, ISO 27001, AVG) als uitvoerbare, toetsbare regels in plaats van alleen tekst — automatisch controleren of de praktijk aan de norm voldoet | — | CISO's, ISO's en platformteams bij publieke organisaties |
 | [procescheck](https://github.com/security-commons-nl/procescheck) | prototype | BIA- en procescontinuïteitstool voor informatiebeveiliging bij publieke organisaties | — | CISO's, ISO's en continuïteitsprofessionals bij publieke organisaties |
 | [publicatiescan](https://github.com/security-commons-nl/publicatiescan) | in gebruik | Scant je eigen openbare publicaties (bekendmakingen inclusief bijlagen, raadsinformatie, terinzageleggingen, website) op onbedoeld gepubliceerde persoonsgegevens. Deterministische detectie via elfproef en mod-97; OCR optioneel en on-prem | — | CISO's, ISO's, privacy officers en griffiemedewerkers bij publieke organisaties |
@@ -38,7 +37,8 @@ Wij geloven dat:
 | [blast-radius](https://github.com/security-commons-nl/blast-radius) | prototype | Wat valt om als een component uitvalt: leest een CI-landschapsexport en rekent de keten door naar applicaties en processen, met interactieve graaf | — | CISO's, ISO's en continuïteitsprofessionals bij publieke organisaties |
 
 **Gearchiveerd:** [anonimizer-web](https://github.com/security-commons-nl/anonimizer-web) (Flask-UI, vervangen door
-anonimizer-browser). **Onderliggende infrastructuur:** [anonimizer-proxy](https://github.com/security-commons-nl/anonimizer-proxy)
+anonimizer-browser) en [beleid-assistent](https://github.com/security-commons-nl/beleid-assistent) (opgegaan in cisochat als
+capability beleidsondersteuning). **Onderliggende infrastructuur:** [anonimizer-proxy](https://github.com/security-commons-nl/anonimizer-proxy)
 (Cloudflare Worker die de Mistral-API forwardt voor anonimizer-browser, zodat een gebruiker geen eigen API-sleutel nodig heeft).
 
 De statuslabels volgen de criteria in het [redactiestatuut](https://github.com/security-commons-nl/.github/blob/main/REDACTIESTATUUT.md)
@@ -72,8 +72,7 @@ Klik op een van de onderstaande knoppen — er wordt een formulier voor je klaar
 | Bug of feature-wens voor de browser-versie van de anonimizer | anonimizer-browser | [Bijdrage aanbieden](https://github.com/security-commons-nl/anonimizer-browser/issues/new/choose) |
 | Ervaring met security-posture uit een interventie | security-posture-tool | [Bijdrage aanbieden](https://github.com/security-commons-nl/security-posture-tool/issues/new?template=bijdrage-aanbieden.yml) |
 | Hosting-scenario of referentiearchitectuur | hosting-bouwblokken | [Bijdrage aanbieden](https://github.com/security-commons-nl/hosting-bouwblokken/issues/new?template=bijdrage-aanbieden.yml) |
-| Idee voor een AI-beleidsassistent | beleid-assistent | [Bijdrage aanbieden](https://github.com/security-commons-nl/beleid-assistent/issues/new?template=bijdrage-aanbieden.yml) |
-| Idee voor een CISO-chat | cisochat | [Bijdrage aanbieden](https://github.com/security-commons-nl/cisochat/issues/new?template=bijdrage-aanbieden.yml) |
+| Idee voor de CISO-dirigent of beleidsondersteuning | cisochat | [Bijdrage aanbieden](https://github.com/security-commons-nl/cisochat/issues/new?template=bijdrage-aanbieden.yml) |
 | Ervaring, vals-positief of nieuwe bron voor de publicatiescan | publicatiescan | [Bijdrage aanbieden](https://github.com/security-commons-nl/publicatiescan/issues/new?template=bijdrage-aanbieden.yml) |
 
 ### Geen GitHub-account?
