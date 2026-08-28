@@ -14,7 +14,7 @@ Gebruik GitHub's **Private Vulnerability Reporting**:
 2. Klik op *"Report a vulnerability"*
 3. Vul het formulier in — alleen zichtbaar voor maintainers
 
-Als de Security-tab geen reporting-optie toont, stuur een directe bericht via [LinkedIn naar de maintainer](https://linkedin.com/in/bas-stevens).
+Als de Security-tab geen reporting-optie toont, open dan een [discussion](https://github.com/security-commons-nl/.github/discussions) met alleen de melding dat je iets wilt delen; een maintainer neemt dan contact op via een privékanaal. Zet de details van de kwetsbaarheid nooit in een openbare discussion of issue.
 
 ### Wat kun je verwachten?
 
