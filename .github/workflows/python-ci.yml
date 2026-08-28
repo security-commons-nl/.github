@@ -42,13 +42,25 @@ jobs:
       run:
         working-directory: ${{ inputs.working-directory }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
+
+      # setup-python valt om als cache: pip aan staat zonder requirements.txt of
+      # pyproject.toml. Een repo die zijn dependencies in install-extras zet heeft die
+      # bestanden niet, en hoort daar niet rood van te worden.
+      - name: Is er iets om te cachen?
+        id: manifest
+        run: |
+          if ls requirements.txt pyproject.toml >/dev/null 2>&1; then
+            echo "cache=pip" >> "$GITHUB_OUTPUT"
+          else
+            echo "cache=" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Set up Python ${{ inputs.python-version }}
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: ${{ inputs.python-version }}
-          cache: pip
+          cache: ${{ steps.manifest.outputs.cache }}
 
       - name: Install dependencies
         run: |
