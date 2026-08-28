@@ -22,6 +22,6 @@ Vul alleen in wat relevant is — velden die niet van toepassing zijn mag je weg
 ## Checklist
 
 - [ ] Documentatie bijgewerkt als gedrag zichtbaar is voor gebruikers (`docs/gebruik.md`, `docs/architectuur.md`, `docs/configuratie.md`)
-- [ ] Geen persoonsgegevens of organisatie-specifieke informatie in de wijziging (gebruik [anonimizer](https://github.com/security-commons-nl/anonimizer) bij twijfel)
+- [ ] Geen persoonsgegevens of organisatie-specifieke informatie in de wijziging (gebruik [anonimizer](https://github.com/security-commons-nl/anonimizer-local) bij twijfel)
 - [ ] Commit-messages beschrijven het *waarom*, niet alleen het *wat*
 - [ ] Als deze PR de API, het schema of een zichtbare workflow wijzigt: overwogen of het breaking is en eventueel een migratienotitie toegevoegd

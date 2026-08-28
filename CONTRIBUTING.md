@@ -24,7 +24,7 @@ kennisbank/
 
 **Bestandsnaamgeving:** beschrijvend en zonder spaties, bijv. `bia-template-gemeente.docx` of `privacybeleid-voorbeeld.pdf`.
 
-**Anonimiseren:** zorg dat je document geen namen, emailadressen of andere persoonsgegevens bevat. Gebruik de [anonimizer](https://github.com/security-commons-nl/anonimizer) als die beschikbaar is, of vervang handmatig door functieomschrijvingen.
+**Anonimiseren:** zorg dat je document geen namen, emailadressen of andere persoonsgegevens bevat. Gebruik de [anonimizer](https://github.com/security-commons-nl/anonimizer-local) als die beschikbaar is, of vervang handmatig door functieomschrijvingen.
 
 ### 3. Meediscussiëren
 Ga naar [Discussions](../../discussions) voor vragen, ervaringen en ideeën. Geen git-kennis vereist.

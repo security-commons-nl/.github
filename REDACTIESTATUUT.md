@@ -100,6 +100,23 @@ Geen AI-attributie of sessie-verwijzingen in de commitboodschap (A7).
 **B7. Bijdragen.** Een issue of discussion is een volwaardige bijdrage; maintainers zetten het om. "Maak maar
 een PR" is nooit het antwoord.
 
+**B8. Statuslabels.** Elk project draagt precies één van vier labels, met deze criteria. Het label staat op
+het org-profiel; dat profiel is de enige bron (B9).
+
+| Label | Criterium |
+|---|---|
+| **in gebruik** | Draait echt (gehost, of geinstalleerd bij een organisatie) en heeft tests of CI die groen staan. Iemand gebruikt het vandaag. |
+| **prototype** | Werkt en is te draaien, maar zonder belofte over volledigheid, onderhoud of ondersteuning. |
+| **concept** | Ontwerp, plan of documentatie; geen werkende code. Ook een mockup valt hieronder. |
+| **gearchiveerd** | Niet meer onderhouden. Blijft leesbaar, krijgt hooguit kritieke beveiligingsfixes. |
+
+Bij twijfel geldt het lagere label. Een project dat zichzelf hoger labelt dan de criteria toelaten, is een
+belofte aan een lezer die je niet waarmaakt.
+
+**B9. Het org-profiel is de enige projectenlijst.** `.github/profile/README.md` bevat de projectentabel; de
+landingspagina, `llms.txt`, `sitemap.xml` en de root-`CLAUDE.md` worden daaruit gegenereerd of afgeleid. Een
+project bestaat pas als het in die tabel staat, met label en doelgroep.
+
 ## Wijzigen van dit statuut
 
 Voorstel via issue of PR op deze repo (`.github`). Een wijziging krijgt een datum bovenaan en een regel in
