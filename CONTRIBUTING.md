@@ -31,6 +31,8 @@ Ga naar [Discussions](../../discussions) voor vragen, ervaringen en ideeën. Gee
 
 ## Documentatie bij software-repos
 
+Voor alle inhoud (namen, links, datums, structuur, frontmatter, commits) geldt het [redactiestatuut](REDACTIESTATUUT.md).
+
 Elke software-repo heeft een minimale documentatiestructuur. Zie [DOCUMENTATION-STANDARD.md](DOCUMENTATION-STANDARD.md) voor de volledige standaard.
 
 Kort gezegd: een PR die **gedrag wijzigt dat zichtbaar is voor gebruikers**, bevat ook een update van de relevante docs (`docs/gebruik.md`, `docs/architectuur.md` of `docs/configuratie.md`). PRs die dit missen worden teruggestuurd.
