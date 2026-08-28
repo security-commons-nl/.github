@@ -1,0 +1,61 @@
+name: Pages voor documentatierepo's (herbruikbaar)
+
+# Herbruikbare workflow die een documentatierepo als statische site naar GitHub Pages bouwt
+# en publiceert. Bedoeld voor repo's die de gedeelde site-build gebruiken (site/build.mjs met
+# site/config.json, bijvoorbeeld Handelingsperspectief en ai-gebruik-in-beeld).
+#
+# Wat hij doet: de aanroepende repo uitchecken, Node 24 installeren, `npm ci` draaien,
+# `node site/build.mjs` uitvoeren (schrijft dist/), het Pages-artifact uploaden en deployen.
+#
+# Waarom: de stappen zijn in elke documentatierepo gelijk. Door ze hier te bundelen hoeft een
+# wijziging (nieuwe action-versie, andere Node-versie) maar op één plek te gebeuren.
+#
+# Gebruik in caller-repo (.github/workflows/pages.yml). De caller bepaalt zelf de triggers en
+# moet de Pages-permissies en concurrency meegeven; die kunnen niet vanuit deze workflow
+# worden afgedwongen:
+#
+#   on:
+#     push:
+#       branches: [main]
+#     workflow_dispatch:
+#   permissions:
+#     contents: read
+#     pages: write
+#     id-token: write
+#   concurrency:
+#     group: pages
+#     cancel-in-progress: true
+#   jobs:
+#     pages:
+#       uses: security-commons-nl/.github/.github/workflows/pages-docs.yml@main
+#
+# Geen inputs: de twee huidige callers verschillen alleen in hun site/config.json, niet in de
+# bouwstappen. Komt er een repo bij met een andere bouwopdracht, voeg dan pas een input toe.
+
+on:
+  workflow_call:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: node site/build.mjs
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5
