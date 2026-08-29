@@ -128,4 +128,5 @@ het in de eigen opmaak.
 ## Wijzigen van dit statuut
 
 Voorstel via issue of PR op deze repo (`.github`). Een wijziging krijgt een datum bovenaan en een regel in
-het besluitenlog van de organisatie. Scripts die regels controleren, worden in dezelfde wijziging bijgewerkt.
+[het besluitenlog van de organisatie](BESLUITEN.md). Scripts die regels controleren, worden in
+dezelfde wijziging bijgewerkt.
