@@ -34,8 +34,7 @@ een aanvaller bij jou ruimte heeft, en bij de weerbaarheidsgame als je het gespr
 
 **Gearchiveerd:** [anonimizer-web](https://github.com/security-commons-nl/anonimizer-web) (Flask-UI, vervangen door
 anonimizer-browser) en [beleid-assistent](https://github.com/security-commons-nl/beleid-assistent) (opgegaan in cisochat als
-capability beleidsondersteuning) en [dreigingsanalyse](https://github.com/security-commons-nl/dreigingsanalyse)
-(opgegaan in de kennisbank, item Risicoanalyse langs aanvalspaden). **Onderliggende infrastructuur:** [anonimizer-proxy](https://github.com/security-commons-nl/anonimizer-proxy)
+capability beleidsondersteuning). **Onderliggende infrastructuur:** [anonimizer-proxy](https://github.com/security-commons-nl/anonimizer-proxy)
 (Cloudflare Worker die de Mistral-API forwardt voor anonimizer-browser, zodat een gebruiker geen eigen API-sleutel nodig heeft) en
 [security-commons-nl.github.io](https://github.com/security-commons-nl/security-commons-nl.github.io)
 (de site-build en de voorpagina).
