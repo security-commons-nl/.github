@@ -6,8 +6,9 @@
 ## Direct aan de slag
 
 Voor CISO's, ISO's en bestuurders bij gemeenten, provincies, waterschappen en uitvoeringsorganisaties.
-Alles hieronder werkt vandaag, zonder account en zonder factuur. De drie uitgelichte kaarten op de
-voorpagina zijn de eerste drie projecten in de lijst met een live link.
+Alles hieronder werkt vandaag, in je browser, zonder account en zonder factuur. Begin bij de kennisbank
+als je iets zoekt om te lezen of te hergebruiken, bij de zelfcheck aanvalspaden als je wilt weten waar
+een aanvaller bij jou ruimte heeft, en bij de weerbaarheidsgame als je het gesprek met bestuurders voert.
 
 ## Alle projecten
 
