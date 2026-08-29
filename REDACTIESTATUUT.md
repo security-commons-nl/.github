@@ -118,6 +118,13 @@ belofte aan een lezer die je niet waarmaakt.
 landingspagina, `llms.txt`, `sitemap.xml` en de root-`CLAUDE.md` worden daaruit gegenereerd of afgeleid. Een
 project bestaat pas als het in die tabel staat, met label en doelgroep.
 
+**B10. Elke pagina wijst terug.** Elke pagina op Pages begint met een kruimelpad naar de hoofdpagina en
+naar het niveau erboven, bijvoorbeeld: Security Commons NL > Kennisbank > Security > Passkeys invoeren. Een
+losse tool krijgt minimaal Security Commons NL > naam van het project. Reden: veel lezers komen via een
+zoekmachine binnen op een diepe pagina en moeten van daaruit de rest kunnen vinden. In de kennisbank zet
+`tools/build.py` het kruimelpad automatisch en bewaakt `--check` dat het er staat; in een losse tool staat
+het in de eigen opmaak.
+
 ## Wijzigen van dit statuut
 
 Voorstel via issue of PR op deze repo (`.github`). Een wijziging krijgt een datum bovenaan en een regel in
