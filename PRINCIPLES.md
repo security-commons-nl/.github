@@ -47,3 +47,10 @@ Toegang tot data en systemen is minimaal. Componenten — menselijk of AI — kr
 ---
 
 *Deze principes zijn leidend bij architectuurkeuzes, feature-beslissingen en community-governance. Zie [CONTRIBUTING.md](CONTRIBUTING.md) voor hoe je kunt bijdragen aan de projecten die deze principes uitvoeren.*
+
+## 11. Toetsen, niet aanvallen
+
+Tooling die van buitenaf of uit een export kijkt, leest alleen: ze verandert niets, belast niets en
+gaat niet verder dan wat openbaar zichtbaar is of wat de organisatie zelf aanlevert. Een bevinding is
+een startpunt voor onderzoek, geen oordeel en geen bewijs. Wie een scan draait, doet dat op wat van
+hemzelf is of waarvoor hij toestemming heeft.

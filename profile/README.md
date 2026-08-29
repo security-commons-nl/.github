@@ -46,6 +46,8 @@ De statuslabels volgen de criteria in het [redactiestatuut](https://github.com/s
 (B8): *in gebruik* draait echt en heeft groene tests of CI · *prototype* werkt, zonder belofte · *concept* is ontwerp
 of plan zonder werkende code · *gearchiveerd* wordt niet meer onderhouden.
 
+**Tooling van anderen.** Open tools en kennisbanken van buiten de commons die we bruikbaar vinden, met per bron wat het is, wanneer je het inzet en welke wegingen erbij horen: [Externe referenties: security-tooling en kennisbanken](https://security-commons-nl.github.io/kennisbank/security/referenties-tooling/) in de kennisbank.
+
 ## Meedoen
 
 Dit is geen verkooppraatje. Er is niets te kopen.
@@ -53,6 +55,10 @@ Dit is geen verkooppraatje. Er is niets te kopen.
 Dit is een uitnodiging om samen te bouwen aan tooling die van ons allemaal is. Begin met kijken, draai het lokaal, geef feedback, of bouw mee.
 
 Open een [discussion](https://github.com/security-commons-nl/.github/discussions) of een issue in een van de repositories.
+
+In voorbereiding, als richting en niet als toezegging: websitecompliance, digitale soevereiniteit,
+code-repoveiligheid en aanvalsoppervlak (OSINT). Een tool verschijnt hierboven in de tabel zodra hij
+werkt; tot die tijd bestaat hij niet.
 
 ## Voor het eerst hier?
 
