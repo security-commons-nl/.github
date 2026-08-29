@@ -60,7 +60,7 @@ enkele repo, ook niet "even tijdelijk". Eerst anonimiseren tot een sjabloon of c
 | kennisbank | vakgebied: `security`, `privacy`, `bcm`, `governance` |
 | security-shop | ZTMM-pillar of cross-cutting capability |
 | dreigingsanalyse | maandversie (`vJJJJ.MM`) |
-| aanvalspaden | `check/`, `methode/`, `meting/` (volgt); `paden.json` op de root is de bron |
+| aanvalspaden | `check/` (de zelfcheck), `methode/`, `meting/` (volgt); `paden.json` op de root is de bron |
 | overige repo's | volgt `DOCUMENTATION-STANDARD.md` (software) of één regel in de eigen README |
 
 Geen losse bestanden in een categorie-map behalve `README.md` en gegenereerde `index.html`. Geen derde laag.
