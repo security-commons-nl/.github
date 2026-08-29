@@ -6,6 +6,15 @@ krijgt hier een regel: datum, wat er is besloten, en waarom. Nieuwste bovenaan. 
 
 Dit log begint op 29-08-2026, toen bleek dat het statuut er wel naar verwees maar het nergens stond.
 
+## 29-08-2026 · dreigingsanalyse is geen repo van de organisatie
+
+Bij de uitrol van de README-norm bleek dat `dreigingsanalyse` geen remote heeft en niet op GitHub staat:
+het is een lokale map waarvan de inhoud is opgegaan in het kennisbankitem Risicoanalyse langs
+aanvalspaden. Hij is daarom uit het profiel gehaald (de verwijzing gaf een 404 op de voorpagina), telt
+niet mee in de statuutcontrole en hoeft niet gearchiveerd te worden.
+
+**Waarom dit telt:** het profiel is de enige projectenlijst (B9). Wat daar staat, moet bestaan.
+
 ## 29-08-2026 · De voorpagina is voor de gebruiker; de werkplaats krijgt een norm die wordt afgedwongen
 
 De landingspagina opende met een manifest en een repo-overzicht; een CISO die iets zoekt om vandaag te
