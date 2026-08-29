@@ -29,6 +29,41 @@ kennisbank/
 ### 3. Meediscussiëren
 Ga naar [Discussions](../../discussions) voor vragen, ervaringen en ideeën. Geen git-kennis vereist.
 
+## Voor het eerst hier?
+
+Nog nooit een issue geopend? Geen probleem. In vier stappen deel je een document, idee of verbetering.
+
+![Bijdrage-flow in vier stappen](profile/bijdrage-flow-v2.svg)
+
+### Per project: waar begin je
+
+Klik op een van de onderstaande knoppen, er wordt een formulier voor je klaargezet. Je hoeft alleen de vragen in te vullen die voor jou relevant zijn, wij helpen je met de rest.
+
+| Voor | Repository | Start hier |
+|---|---|---|
+| Iets delen over informatiebeveiliging, privacy of continuïteit | kennisbank | [Bijdrage aanbieden](https://github.com/security-commons-nl/kennisbank/issues/new?template=bijdrage-aanbieden.yml) |
+| Bestuursdashboard (game) verbeteren of scenario toevoegen | weerbaarheid-game | [Bijdrage aanbieden](https://github.com/security-commons-nl/weerbaarheid-game/issues/new?template=bijdrage-aanbieden.yml) |
+| Feedback op het GRC-platform | grc-platform | [Bijdrage aanbieden](https://github.com/security-commons-nl/grc-platform/issues/new?template=bijdrage-aanbieden.yml) |
+| Testdocument of verbeterpunt voor anonimizer-local (de CLI) | anonimizer-local | [Bijdrage aanbieden](https://github.com/security-commons-nl/anonimizer-local/issues/new?template=bijdrage-aanbieden.yml) |
+| Bug of feature-wens voor de browser-versie van de anonimizer | anonimizer-browser | [Bijdrage aanbieden](https://github.com/security-commons-nl/anonimizer-browser/issues/new/choose) |
+| Ervaring met security-posture uit een interventie | security-posture-tool | [Bijdrage aanbieden](https://github.com/security-commons-nl/security-posture-tool/issues/new?template=bijdrage-aanbieden.yml) |
+| Hosting-scenario of referentiearchitectuur | hosting-bouwblokken | [Bijdrage aanbieden](https://github.com/security-commons-nl/hosting-bouwblokken/issues/new?template=bijdrage-aanbieden.yml) |
+| Idee voor de CISO-dirigent of beleidsondersteuning | cisochat | [Bijdrage aanbieden](https://github.com/security-commons-nl/cisochat/issues/new?template=bijdrage-aanbieden.yml) |
+| Ervaring, vals-positief of nieuwe bron voor de publicatiescan | publicatiescan | [Bijdrage aanbieden](https://github.com/security-commons-nl/publicatiescan/issues/new?template=bijdrage-aanbieden.yml) |
+
+### Geen GitHub-account?
+
+Twee opties:
+
+1. **Aanmelden duurt 2 minuten**, [github.com/signup](https://github.com/signup). Alleen e-mail en wachtwoord.
+2. **Of vraag iemand in je netwerk** die al een account heeft om namens jou een issue te openen. De inhoud is wat telt, niet wie klikt.
+
+### Wat kan ik verwachten?
+
+- **Snelheid**: we reageren doorgaans binnen een week.
+- **Privacy**: bevat je document persoonsgegevens? Meld het in het formulier, wij helpen je anonimiseren met de [anonimizer-local](https://github.com/security-commons-nl/anonimizer-local) vóór publicatie.
+- **Erkenning**: bijdragen worden in de versiegeschiedenis zichtbaar vermeld, tenzij je anoniem wilt blijven.
+
 ## Documentatie bij software-repos
 
 Voor alle inhoud (namen, links, datums, structuur, frontmatter, commits) geldt het [redactiestatuut](REDACTIESTATUUT.md).
