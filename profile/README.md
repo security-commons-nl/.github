@@ -22,7 +22,6 @@ een aanvaller bij jou ruimte heeft, en bij de weerbaarheidsgame als je het gespr
 | [anonimizer-browser](https://github.com/security-commons-nl/anonimizer-browser) | in gebruik | Browser-versie van de anonimizer: geen installatie nodig, alles draait in je eigen browser | [Live tool](https://security-commons-nl.github.io/anonimizer-browser/) | Beleidsmedewerkers, juristen en iedereen die ad-hoc één document wil anonimiseren |
 | [security-shop](https://github.com/security-commons-nl/security-shop) | concept | Catalogus van security-patronen: per gap een shortlist van realistische oplossingsrichtingen met trade-offs en norm-mapping (BIO 2.0/NIS2/AVG) | [Leesbare versie](https://security-commons-nl.github.io/security-shop/) | CISO's en ISO's bij publieke organisaties |
 | [security-posture-tool](https://github.com/security-commons-nl/security-posture-tool) | prototype | Evidence-based security posture langs Defense-in-Depth, diepte 2 (meting) van de aanvalspaden-keten | | Blue teams en interventieteams |
-| [Handelingsperspectief](https://github.com/security-commons-nl/Handelingsperspectief) | in gebruik | Evidence-based methode om de security posture van publieke organisaties aantoonbaar te verhogen, met de ClickFix-aanvalsvorm als casus, inclusief herbruikbare KQL-query's | [Leesbare versie](https://security-commons-nl.github.io/Handelingsperspectief/) | CISO's, security- en beheerteams bij publieke organisaties |
 | [ai-gebruik-in-beeld](https://github.com/security-commons-nl/ai-gebruik-in-beeld) | in gebruik | Draaiboek om AI-gebruik in de organisatie feitelijk te meten (CISO + FG): meetregimes, bronnen met bewijslast, run-log, plus 15 KQL-query's | [Leesbare versie](https://security-commons-nl.github.io/ai-gebruik-in-beeld/) | CISO's, FG's en securityteams bij publieke organisaties |
 | [hosting-bouwblokken](https://github.com/security-commons-nl/hosting-bouwblokken) | prototype | Referentiearchitecturen en IaC voor veilige AI/security-hosting | | Infra- en platformteams bij publieke organisaties |
 | [cisochat](https://github.com/security-commons-nl/cisochat) | concept | vCISO-dirigent: een AI die redeneert als een CISO (langs NIST CSF), adviseert en open-source security-tooling orkestreert, inclusief beleidsondersteuning, mens beslist | | Security-professionals in de publieke sector |
@@ -34,7 +33,8 @@ een aanvaller bij jou ruimte heeft, en bij de weerbaarheidsgame als je het gespr
 
 **Gearchiveerd:** [anonimizer-web](https://github.com/security-commons-nl/anonimizer-web) (Flask-UI, vervangen door
 anonimizer-browser) en [beleid-assistent](https://github.com/security-commons-nl/beleid-assistent) (opgegaan in cisochat als
-capability beleidsondersteuning). **Onderliggende infrastructuur:** [anonimizer-proxy](https://github.com/security-commons-nl/anonimizer-proxy)
+capability beleidsondersteuning) en [Handelingsperspectief](https://github.com/security-commons-nl/Handelingsperspectief)
+(opgegaan in de kennisbank als [Meten voordat je ingrijpt](https://security-commons-nl.github.io/kennisbank/security/meten-voordat-je-ingrijpt/)). **Onderliggende infrastructuur:** [anonimizer-proxy](https://github.com/security-commons-nl/anonimizer-proxy)
 (Cloudflare Worker die de Mistral-API forwardt voor anonimizer-browser, zodat een gebruiker geen eigen API-sleutel nodig heeft) en
 [security-commons-nl.github.io](https://github.com/security-commons-nl/security-commons-nl.github.io)
 (de site-build en de voorpagina).
