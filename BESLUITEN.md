@@ -6,6 +6,29 @@ krijgt hier een regel: datum, wat er is besloten, en waarom. Nieuwste bovenaan. 
 
 Dit log begint op 29-08-2026, toen bleek dat het statuut er wel naar verwees maar het nergens stond.
 
+## 29-08-2026 · Handelingsperspectief wordt het kennisbankitem "Meten voordat je ingrijpt"
+
+Het was het enige kennisstuk met een eigen repo en een eigen site-generator. Alle andere kennis staat in de
+kennisbank en krijgt daar frontmatter met acht velden, een peildatum, een statuslabel, de statuutcontrole,
+de anonimizer-scan, een kruimelpad en een leesversie; dit stuk had niets daarvan. Omvang was geen argument:
+met 5.400 woorden is het kleiner dan twee bestaande items.
+
+Ook de naam is mee verhuisd. "Handelingsperspectief" is standaardtaal in beleidsstukken en NCSC-adviezen,
+zegt niets over het onderwerp en kwam in de tekst zelf geen enkele keer voor. De andere kennisbankstukken
+heten naar wat je gaat doen (Passkeys invoeren, Een blue team opzetten); "Meten voordat je ingrijpt" is de
+eerste zin van de methode zelf en past in dat rijtje.
+
+De acht hoofdstukken zijn een document geworden met een leeswijzer bovenaan; de zes KQL-query's staan als
+bijlagen in `data/`. De oude repo is een doorverwijzing en daarna gearchiveerd, zodat gedeelde links en de
+Pages-URL blijven werken.
+
+**Wat bewust niet is samengevoegd:** de killchain-tabel bleef staan. Die volgt de volledige keten met alle
+MITRE-fasen en is een andere snit dan AP09 in `paden.json`, dat vier barrieres toetst. In plaats van
+verwijderen staat er nu een expliciete uitleg bij hoe de twee zich verhouden.
+
+**Nog te doen:** de inbrenger van de casus is over de verhuizing en de naam geinformeerd nadat het besluit
+was genomen (statuut A4 gaat over publiceren; het stuk stond al gepubliceerd).
+
 ## 29-08-2026 · dreigingsanalyse is geen repo van de organisatie
 
 Bij de uitrol van de README-norm bleek dat `dreigingsanalyse` geen remote heeft en niet op GitHub staat:
