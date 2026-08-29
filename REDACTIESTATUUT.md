@@ -1,6 +1,6 @@
 # Redactiestatuut security-commons-nl
 
-Vastgesteld 28-08-2026. Geldt voor alle repo's van de organisatie. De inhoudsregels (A) gelden overal
+Vastgesteld 28-08-2026, B3 en B10 aangevuld op 29-08-2026. Geldt voor alle repo's van de organisatie. De inhoudsregels (A) gelden overal
 letterlijk; de structuurregels (B) gelden overal in vorm, met per repo één afspraak over wat de eerste
 laag betekent (zie B1). Waar een repo een script heeft dat deze regels controleert, verwijst elke melding
 naar het regelnummer hieronder.
@@ -86,6 +86,10 @@ samenvatting: twee tot vier zinnen; dit wordt de kaarttekst op de website
 **B3. Bestandsvormen.** Markdown is de bron. Elk tekstitem heeft daarnaast een self-contained HTML-leesversie
 (geen externe fonts of scripts, print op A4, plakbaar in Word). Binaire bestanden (docx, pptx, xlsx, pdf)
 alleen als er geen redelijke markdown-vorm is, en dan met een README die zegt wat erin zit.
+Wat in de map van een item staat, staat als **link** in de README en op de leesversie. Een bijlage die
+alleen als bestandsnaam wordt genoemd, bestaat niet voor een lezer die op de pagina binnenkomt: hij ziet
+de beschrijving en kan er niet bij. Verwijzingen wijzen naar bestanden die bestaan en blijven binnen de
+eigen repo. In de kennisbank blokkeert `tools/build.py` op alle drie.
 
 **B4. Indexpagina's worden gegenereerd.** De overzichtspagina's (`index.html` per categorie en op de root)
 zijn output van een script dat eerst alle regels controleert en dan bouwt. Handmatig bewerken is
@@ -130,7 +134,10 @@ naar het niveau erboven, bijvoorbeeld: Security Commons NL > Kennisbank > Securi
 losse tool krijgt minimaal Security Commons NL > naam van het project. Reden: veel lezers komen via een
 zoekmachine binnen op een diepe pagina en moeten van daaruit de rest kunnen vinden. In de kennisbank zet
 `tools/build.py` het kruimelpad automatisch en bewaakt `--check` dat het er staat; in een losse tool staat
-het in de eigen opmaak.
+het in de eigen opmaak. Elke leesversie **sluit af** met een voetregel naar de bronbestanden van dat item,
+de licentie en de plek om een verbetering voor te stellen. Zonder die regel is een itempagina een
+doodlopend eind: wel de tekst, geen route naar de map met de bijlagen, terwijl de gegenereerde
+overzichtspagina's zo'n voet al hadden.
 
 **B11. Elke repo heeft dezelfde kop.** De README van elke levende repo begint met: de naam als `#`-kop, een
 zin wat het is en voor wie, een regel `Status: <label>.` met daarachter in gewone woorden wat werkt en wat

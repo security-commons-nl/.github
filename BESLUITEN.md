@@ -6,6 +6,30 @@ krijgt hier een regel: datum, wat er is besloten, en waarom. Nieuwste bovenaan. 
 
 Dit log begint op 29-08-2026, toen bleek dat het statuut er wel naar verwees maar het nergens stond.
 
+## 29-08-2026 · Een itempagina wijst naar zijn eigen bestanden (B3 en B10 aangevuld)
+
+Aanleiding: de pagina van de awareness-sessie beschrijft een presentatie van veertig minuten en linkt hem
+nergens. Het bestand staat er wel en is bereikbaar, maar alleen als je de URL zelf typt.
+
+Twee oorzaken. De leesversies zijn gerenderde README's en misten de voetregel die de gegenereerde
+overzichtspagina's wel hebben, dus vanaf een itempagina was er geen enkele route naar de bron: negen van
+de elf pagina's kwamen niet verder dan het kruimelpad. En een bijlage die in de README als opmaakcode
+staat in plaats van als link, verdwijnt op de site uit beeld.
+
+Besloten: B3 eist voortaan dat wat in de map staat als link in de README én op de leesversie staat, en dat
+verwijzingen bestaan en binnen de eigen repo blijven. B10 eist een bronvoet onder elke leesversie.
+`tools/build.py` zet die voet, controleert de rest en blokkeert; `tools/test_build.py` test de controles.
+
+Wat de nieuwe controle meteen vond: de presentatie en twee datasets stonden nergens als link, de
+handleiding voor het blue team wees nog naar een bestandsnaam die na de B3-opruiming index.html heet, het
+AI-beleid verwees een niveau te hoog waardoor licentie en kennisbank-link op de site doodliepen, en de
+markdown-bron van de Annex en van het AI-beleid was vanaf hun eigen pagina niet te vinden.
+
+**Wat hierbij opviel en niet is opgelost:** de leesversies komen uit drie verschillende renders (twee
+sjablonen en een handgemaakte pagina) en er is geen script dat ze opnieuw maakt. Daardoor kan een
+bijgewerkte README stil uit de pas lopen met de pagina, precies zoals bij het blue team gebeurde. Een
+render-stap in `build.py` zou dat sluiten; dat is een eigen klus en een eigen besluit.
+
 ## 29-08-2026 · Handelingsperspectief wordt het kennisbankitem "Meten voordat je ingrijpt"
 
 Het was het enige kennisstuk met een eigen repo en een eigen site-generator. Alle andere kennis staat in de
