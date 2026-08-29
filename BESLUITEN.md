@@ -26,8 +26,9 @@ Pages-URL blijven werken.
 MITRE-fasen en is een andere snit dan AP09 in `paden.json`, dat vier barrieres toetst. In plaats van
 verwijderen staat er nu een expliciete uitleg bij hoe de twee zich verhouden.
 
-**Nog te doen:** de inbrenger van de casus is over de verhuizing en de naam geinformeerd nadat het besluit
-was genomen (statuut A4 gaat over publiceren; het stuk stond al gepubliceerd).
+**Nog te doen:** de inbrenger van de casus moet nog worden bijgepraat over de verhuizing en de naam.
+Statuut A4 gaat over publiceren en het stuk stond al gepubliceerd, dus dit hield de verhuizing niet tegen,
+maar het gesprek hoort er wel bij.
 
 ## 29-08-2026 · dreigingsanalyse is geen repo van de organisatie
 
