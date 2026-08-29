@@ -1,72 +1,37 @@
-# Documentatiestandaard — security-commons-nl
+# Documentatiestandaard: de README-kop
 
-Elke software-repo in deze organisatie heeft minimaal dezelfde documentatiestructuur. Doel: laagdrempelig voor nieuwe contributors en gemeenten, en onderhoudbaar voor de maintainers.
+Elke levende repo begint hetzelfde, zodat een bezoeker die van de voorpagina doorklikt in tien seconden
+ziet wat het is, of het werkt en hoe hij begint. Dit is statuutregel B11; `repo-compliance.yml`
+controleert het in elke repo.
 
-## Minimumeis per software-repo
+## De kop
 
-```
-README.md           ← wat is het, hoe installeer je het, snelstart
-docs/
-├── gebruik.md      ← hoe gebruik je het (voor CISO/TIMS/eindgebruikers)
-├── architectuur.md ← hoe is het gebouwd en waarom (voor contributors)
-└── configuratie.md ← hoe pas je het aan voor je organisatie (als van toepassing)
-```
+    # naam
 
-**Uitzonderingen:**
-- Repos zonder UI of software (kennisbank, anonimizer in concept-fase): geen `docs/gebruik.md` vereist
-- Repos zonder configuratie-opties: geen `docs/configuratie.md` vereist
+    Een zin: wat het is en voor wie.
 
-## README.md — wat er minimaal in staat
+    Status: <in gebruik | prototype | concept | gearchiveerd | infrastructuur>. <Wat werkt, wat niet.>
 
-```markdown
-# Naam van het project
+    ## Voor wie
+    ## Snel starten
+    ## Bijdragen
+    ## Licentie
 
-> Één zin: wat is het en voor wie.
+Het label achter `Status:` is letterlijk het label uit de projectentabel op het org-profiel (B12);
+`infrastructuur` is voor repo's die geen project zijn (B8). Onder `## Bijdragen` volstaat een verwijzing
+naar de CONTRIBUTING van de organisatie; onder `## Licentie` de regel "EUPL-1.2, zie LICENSE".
 
-## Wat is het?
-[Paragraaf met context en doel]
+## Meer mag, minder niet
 
-## Snel starten
-[Installatie-stappen of hoe je het opent]
-
-## Meer documentatie
-- [Gebruik](docs/gebruik.md)
-- [Architectuur](docs/architectuur.md)
-- [Configuratie](docs/configuratie.md)  ← alleen als van toepassing
-```
-
-## docs/gebruik.md — wat er minimaal in staat
-
-- Voor wie is dit? (CISO, ISO, IT-beheerder, bestuurder?)
-- Eerste keer opstarten
-- De belangrijkste workflows stap voor stap
-- Bekende beperkingen
-
-## docs/architectuur.md — wat er minimaal in staat
-
-- Overzicht van de architectuur (diagram of tekstuele beschrijving)
-- De gebruikte technologieën en waarom
-- Hoe de codebase is georganiseerd
-- Designkeuzes die niet vanzelf spreken
-
-## docs/configuratie.md — wat er minimaal in staat
-
-- Alle omgevingsvariabelen met beschrijving en voorbeeldwaarden
-- Installatiestappen voor productie (inclusief HTTPS, backups)
-- Hoe je de tool aanpast aan je eigen organisatie
-
-## Screenshots
-
-Bewust **geen** standaardeis. Screenshots verouderen snel en zijn moeilijk bij te houden. Gebruik de [demo-generator](https://github.com/security-commons-nl/grc-platform) als je automatisch schermopnames wilt maken voor externe communicatie.
+Alles wat een repo verder wil vertellen (architectuur, configuratie, voorbeelden) komt na deze koppen, of
+in een `docs/`-map als de README anders langer dan ongeveer 1500 woorden wordt. Een `docs/`-map is geen
+eis; een README die klopt wel.
 
 ## Taal
 
-Documentatie is Nederlandstalig. Code, variabelenamen en commentaar zijn Engels (standaardpraktijk voor open source).
+Documentatie in het Nederlands. Code, variabelen en commentaar in het Engels.
 
-## Wanneer bijwerken?
+## Wanneer bijwerken
 
-Een PR die **gedrag wijzigt** dat zichtbaar is voor gebruikers, bevat ook een update van de relevante docs. Maintainers blokkeren PRs die dit missen.
-
----
-
-*Verwezen vanuit [CONTRIBUTING.md](CONTRIBUTING.md).*
+Een wijziging die zichtbaar is voor gebruikers, wijzigt ook de README. Een statuswijziging begint in de
+projectentabel; de README volgt, en de controle wordt rood zolang ze verschillen.

@@ -66,13 +66,8 @@ Twee opties:
 
 ## Documentatie bij software-repos
 
-Voor alle inhoud (namen, links, datums, structuur, frontmatter, commits) geldt het [redactiestatuut](REDACTIESTATUUT.md).
-
-Elke software-repo heeft een minimale documentatiestructuur. Zie [DOCUMENTATION-STANDARD.md](DOCUMENTATION-STANDARD.md) voor de volledige standaard.
-
-Kort gezegd: een PR die **gedrag wijzigt dat zichtbaar is voor gebruikers**, bevat ook een update van de relevante docs (`docs/gebruik.md`, `docs/architectuur.md` of `docs/configuratie.md`). PRs die dit missen worden teruggestuurd.
-
-Bij het aanmaken van een nieuwe software-repo: volg de structuur in [DOCUMENTATION-STANDARD.md](DOCUMENTATION-STANDARD.md) vanaf het eerste commit.
+Elke repo begint met dezelfde kop; zie de [documentatiestandaard](DOCUMENTATION-STANDARD.md). De
+controle `repo-compliance.yml` draait in elke repo en zegt precies wat er ontbreekt.
 
 ## Review
 
