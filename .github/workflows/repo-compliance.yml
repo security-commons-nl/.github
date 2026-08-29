@@ -1,0 +1,36 @@
+name: Repo-compliance (herbruikbaar)
+
+# Controleert een repo tegen het redactiestatuut: README-kop (B11), licentie (B5), plaats in het
+# profiel (B9), status gelijk aan de projectentabel (B12), geen sociale-medialinks (A5).
+# Gebruik in de caller-repo (.github/workflows/statuut.yml):
+#
+#   jobs:
+#     statuut:
+#       uses: security-commons-nl/.github/.github/workflows/repo-compliance.yml@main
+
+on:
+  workflow_call:
+
+permissions:
+  contents: read
+
+jobs:
+  statuut:
+    runs-on: ubuntu-latest
+    env:
+      REPO: ${{ github.event.repository.name }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          path: repo
+      - uses: actions/checkout@v6
+        with:
+          repository: security-commons-nl/.github
+          path: org
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Controleer tegen het statuut
+        run: |
+          mv repo "$REPO"
+          python org/tools/repo_compliance.py "$REPO" --profiel org/profile/README.md

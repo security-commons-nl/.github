@@ -1,0 +1,16 @@
+name: Tests van de controlescripts
+
+on:
+  push:
+    branches: [main]
+    paths: ["tools/**", ".github/workflows/tools-ci.yml"]
+  pull_request:
+    paths: ["tools/**"]
+
+jobs:
+  tests:
+    uses: security-commons-nl/.github/.github/workflows/python-ci.yml@main
+    with:
+      python-version: "3.12"
+      test-command: "python -m pytest tools/ -v"
+      install-extras: "pytest"

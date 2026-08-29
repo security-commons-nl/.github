@@ -114,9 +114,16 @@ het org-profiel; dat profiel is de enige bron (B9).
 Bij twijfel geldt het lagere label. Een project dat zichzelf hoger labelt dan de criteria toelaten, is een
 belofte aan een lezer die je niet waarmaakt.
 
+Een repo die geen project is maar infrastructuur (een proxy, de site-build) draagt in zijn README het
+label `infrastructuur`, staat niet in de projectentabel maar in de alinea "Onderliggende infrastructuur"
+eronder, en wordt wel gecontroleerd op de README-kop en de licentie (B11, B5).
+
 **B9. Het org-profiel is de enige projectenlijst.** `.github/profile/README.md` bevat de projectentabel; de
-landingspagina, `llms.txt`, `sitemap.xml` en de root-`CLAUDE.md` worden daaruit gegenereerd of afgeleid. Een
-project bestaat pas als het in die tabel staat, met label en doelgroep.
+voorpagina, `llms.txt`, `sitemap.xml` en de root-`CLAUDE.md` worden daaruit gegenereerd of afgeleid. Een
+project bestaat pas als het in die tabel staat, met label en doelgroep. De volgorde van de tabel is
+redactioneel: de eerste drie rijen met een live link zijn de uitgelichte kaarten op de voorpagina. Repo's
+die geen project zijn (infrastructuur, gearchiveerd, opgegaan in een ander project) staan in de alinea's
+onder de tabel, met de reden erbij; `repo-compliance.yml` eist dat elke repo op een van die plekken staat.
 
 **B10. Elke pagina wijst terug.** Elke pagina op Pages begint met een kruimelpad naar de hoofdpagina en
 naar het niveau erboven, bijvoorbeeld: Security Commons NL > Kennisbank > Security > Passkeys invoeren. Een
@@ -124,6 +131,17 @@ losse tool krijgt minimaal Security Commons NL > naam van het project. Reden: ve
 zoekmachine binnen op een diepe pagina en moeten van daaruit de rest kunnen vinden. In de kennisbank zet
 `tools/build.py` het kruimelpad automatisch en bewaakt `--check` dat het er staat; in een losse tool staat
 het in de eigen opmaak.
+
+**B11. Elke repo heeft dezelfde kop.** De README van elke levende repo begint met: de naam als `#`-kop, een
+zin wat het is en voor wie, een regel `Status: <label>.` met daarachter in gewone woorden wat werkt en wat
+niet, en daarna de koppen `## Voor wie`, `## Snel starten`, `## Bijdragen` en `## Licentie`, in die
+volgorde. Meer mag, minder niet. Een aparte `docs/`-map is alleen nodig als de README anders langer dan
+ongeveer 1500 woorden wordt. Reden: een bezoeker die van de voorpagina doorklikt naar GitHub moet in tien
+seconden zien wat het is, of het werkt en hoe hij begint. `repo-compliance.yml` controleert dit.
+
+**B12. Status staat op een plek.** Het label in de projectentabel is de bron. De regel `Status:` in de
+README van de repo herhaalt dat label letterlijk; `repo-compliance.yml` vergelijkt beide en wordt rood
+als ze verschillen. Wie een status wijzigt, wijzigt eerst de tabel.
 
 ## Wijzigen van dit statuut
 

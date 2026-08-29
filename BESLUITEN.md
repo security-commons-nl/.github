@@ -6,6 +6,16 @@ krijgt hier een regel: datum, wat er is besloten, en waarom. Nieuwste bovenaan. 
 
 Dit log begint op 29-08-2026, toen bleek dat het statuut er wel naar verwees maar het nergens stond.
 
+## 29-08-2026 · De voorpagina is voor de gebruiker; de werkplaats krijgt een norm die wordt afgedwongen
+
+De landingspagina opende met een manifest en een repo-overzicht; een CISO die iets zoekt om vandaag te
+gebruiken moest daar doorheen. Besloten: de voorpagina opent met wat je kunt doen, in de volgorde van de
+gebruiker; het verhaal blijft hetzelfde en de bron blijft een bestand (B9, gepreciseerd). Tegelijk bleek
+de documentatiestandaard zwaarder dan de praktijk (2 van 22 repo's voldeden) en werd hij daarom omzeild.
+Vervangen door een README-kop die haalbaar is (B11), een status die op een plek woont (B12), een label
+voor infrastructuur (B8), en een herbruikbare controle die dit afdwingt.
+Bouwplan: `2026-08-29-bouwplan-voorpagina-en-werkplaats.md`.
+
 ## 29-08-2026 · De toolpagina is opgeheven
 
 `/tools/` beschreef drie eigen tools (publicatiescan, iamscan, blast-radius) plus vier tools die er nog
