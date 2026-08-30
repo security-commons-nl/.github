@@ -89,7 +89,7 @@
   <rect class="card" x="980" y="286" width="200" height="86" rx="6"/>
   <text class="t repo" x="996" y="308">handelingsperspectief</text>
   <text class="t klein" x="996" y="326">Hoe pak ik het aan</text>
-  <text class="t klein" x="996" y="344">6 van 44, bron: kennisbank</text>
+  <text class="t klein" x="996" y="344">35 van 44, bron: kennisbank</text>
   <text class="t klein" x="996" y="362" fill="#2e7d68">live sinds 30-08</text>
 
   <path class="lijn" d="M 280 329 L 316 329" marker-end="url(#p)"/>
@@ -126,9 +126,7 @@
   <text class="t klein" x="454" y="586">ISMS, PIMS en BCMS in een systeem</text>
   <text class="t repo" x="454" y="608">procescheck</text>
   <text class="t klein" x="454" y="624">BIA en BIV-classificatie</text>
-  <text class="t repo" x="454" y="646">security-shop</text>
-  <text class="t klein" x="454" y="662">per gap een shortlist met trade-offs</text>
-  <text class="t repo" x="454" y="684">cisochat &#183; policy-as-code &#183; weerbaarheid-game</text>
+  <text class="t repo" x="454" y="646">cisochat &#183; policy-as-code &#183; weerbaarheid-game</text>
 
   <!-- ===== SCANNERS ===== -->
   <rect class="strook" x="830" y="520" width="370" height="180" rx="8"/>
@@ -163,6 +161,8 @@
   <text class="t klein" x="644" y="826">naar cisochat, als capability</text>
   <text class="t lbl" x="950" y="770">anonimizer-web</text>
   <text class="t klein" x="950" y="786">vervangen door anonimizer-browser</text>
+  <text class="t lbl" x="950" y="810">security-shop</text>
+  <text class="t klein" x="950" y="826">naar kennisbank, als handleidingen</text>
 
   <!-- ===== DE DRIE KOPPELINGEN ===== -->
   <rect class="card" x="40" y="862" width="1160" height="128" rx="8"/>

@@ -6,6 +6,38 @@ krijgt hier een regel: datum, wat er is besloten, en waarom. Nieuwste bovenaan. 
 
 Dit log begint op 29-08-2026, toen bleek dat het statuut er wel naar verwees maar het nergens stond.
 
+## 30-08-2026 · De security-shop gaat op in de kennisbank
+
+De catalogus deelde zijn patronen in naar ZTMM-pijler, terwijl de rest van de keten aan de barrieres uit
+`paden.json` hangt. Twee taxonomieen over hetzelfde onderwerp betekent dat de lezer zelf moet vertalen,
+en dat een verbetering op twee plekken bijgehouden moet worden. De shop had bovendien geen tests en geen
+bijdragen buiten de mockup.
+
+Tegelijk was de inhoud precies wat er ontbrak: 24 van de 30 barrieres zonder handelingsperspectief
+hadden er al een patroon. Daarom is de catalogus niet weggegooid maar verhuisd: dertig patronen zijn
+herschreven tot handleidingen in de kennisbank, gekoppeld aan hun barriere, met een kop Bewijs erbij.
+Wat geen barriere raakte, staat als idee in de issues van de kennisbank. De repo is gearchiveerd en zijn
+README verwijst door.
+
+Gevolg voor het statuut: de regel `security-shop | ZTMM-pillar of cross-cutting capability` is uit de
+B1-tabel gehaald, en het veld `barrieres:` mag voortaan ook bij een item van type `aanpak` of `sjabloon`
+staan. De passkeys-aanpak en de Security Annex richten net zo goed een maatregel in; alleen de vorm
+verschilt, en het `type` blijft zeggen wat de lezer krijgt.
+
+## 30-08-2026 · De kennisbank is de bron van het handelingsperspectief
+
+De koppeling barriere naar handleiding werd in `aanvalspaden/mappingen/` met de hand bijgehouden. Die
+lijst liep per definitie achter zodra de kennisbank een artikel toevoegde, precies het probleem dat de
+normverankering voor de normenkaders al had opgelost.
+
+De koppeling staat nu in de frontmatter van het kennisbank-item zelf (`barrieres:` en `rol:`).
+`kennisbank/tools/build.py` exporteert hem, `aanvalspaden/tools/haal_handelingsperspectief.py` kopieert
+hem met een sha256 eronder, en CI vergelijkt. Een verlopen kopie valt om in plaats van stilletjes een
+verkeerde handleiding te beloven.
+
+`gevraagd.json` blijft handwerk en blijft in aanvalspaden: wat een nog ongeschreven handleiding zou
+moeten dekken, weet de kennisbank niet.
+
 ## 30-08-2026 · De volgorde van kennisbankitems is redactioneel (B4 aangevuld)
 
 De overzichtspagina's sorteerden op mapnaam. Daardoor stond de awareness-sessie bovenaan omdat die met

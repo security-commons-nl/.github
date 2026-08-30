@@ -58,7 +58,6 @@ enkele repo, ook niet "even tijdelijk". Eerst anonimiseren tot een sjabloon of c
 | Repo | Eerste laag |
 |---|---|
 | kennisbank | vakgebied: `security`, `privacy`, `bcm`, `governance`; items van type `handleiding` dragen `barrieres:` uit `paden.json` en zijn de bron van het handelingsperspectief |
-| security-shop | ZTMM-pillar of cross-cutting capability |
 | dreigingsanalyse | maandversie (`vJJJJ.MM`) |
 | aanvalspaden | `check/` (de zelfcheck), `methode/`, `meting/` (volgt); `paden.json` op de root is de bron |
 | overige repo's | volgt `DOCUMENTATION-STANDARD.md` (software) of één regel in de eigen README |

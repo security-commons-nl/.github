@@ -10,8 +10,9 @@ schrijven in [REDACTIESTATUUT.md](REDACTIESTATUUT.md), en hoe je bijdraagt in
 heeft het profiel gelijk.
 
 **Peildatum: 30 augustus 2026.** De rationalisatie uit
-[het plan](plannen/2026-08-30-rationalisatie.md) is begonnen: taak 0 tot en met 2 zijn af, en de
-eerste cluster handleidingen staat.
+[het plan](plannen/2026-08-30-rationalisatie.md) is uitgevoerd: de security-shop is opgegaan in de
+kennisbank, de kennisbank is de bron van het handelingsperspectief, en 35 van de 44 barrieres hebben
+een handleiding.
 
 ---
 
@@ -19,7 +20,7 @@ eerste cluster handleidingen staat.
 
 ![Architectuur van Security Commons NL](architectuur-landschap.svg)
 
-Tweeëntwintig repositories, waarvan drie gearchiveerd. Ze vallen uiteen in zes groepen, met daaronder
+Tweeëntwintig repositories, waarvan vier gearchiveerd. Ze vallen uiteen in zes groepen, met daaronder
 drie harde datakoppelingen die het geheel bij elkaar houden.
 
 ### De ruggengraat: de aanvalspaden-keten
@@ -44,13 +45,15 @@ projectenlijst (statuut B9).
 **Kennis.** `kennisbank`, zestien items over vier vakgebieden, waarvan zeven van het type
 `handleiding`. Een handleiding draagt het veld `barrieres:` en is daarmee de bron van het
 handelingsperspectief: `tools/build.py` exporteert `handelingsperspectief.json`, en `aanvalspaden`
-kopieert dat. Zo staat een handleiding op een plek in plaats van twee. Stand: zes van de 44 barrieres
-gedekt, 38 open.
+kopieert dat met `tools/haal_handelingsperspectief.py`, met een sha256 eronder zodat een verlopen kopie
+opvalt. Zo staat een handleiding op een plek in plaats van twee. Een barriere mag meer dan een
+handleiding hebben; de rol (`fundering`, `alternatief`, `verdieping`) zegt waar je begint en wat
+ernaast kan. Stand: 35 van de 44 barrieres gedekt, 9 open, en die negen staan met een schrijfopdracht
+in `aanvalspaden/mappingen/gevraagd.json`.
 
 **Keten.** `aanvalspaden` en `security-posture-tool`, hierboven beschreven.
 
-**Instrumenten.** `grc-platform` (ISMS/PIMS/BCMS), `procescheck` (BIA en BIV), `security-shop` (patronen
-per gap), `weerbaarheid-game` (het bestuurlijke gesprek), `cisochat` (vCISO-dirigent, en tevens houder
+**Instrumenten.** `grc-platform` (ISMS/PIMS/BCMS), `procescheck` (BIA en BIV), `weerbaarheid-game` (het bestuurlijke gesprek), `cisochat` (vCISO-dirigent, en tevens houder
 van de gedeelde BIO2-dataset), `policy-as-code` (beleid als uitvoerbare regels).
 
 **Scanners.** Kleine CLI's die een concrete vraag beantwoorden uit data die je al hebt: `iamscan` (wie
@@ -91,7 +94,7 @@ diezelfde sleutel hangen vier vragen:
 | Hoe sta ik ervoor? | `aanvalspaden/check/` | live |
 | Wat zegt mijn eigen data? | `security-posture-tool` | prototype |
 | Wat toon ik hiermee aan? | `aanvalspaden/mappingen/` | live, 333 regels over vier kaders |
-| Hoe pak ik het aan? | `kennisbank`, items van type `handleiding` | live, 6 van de 44 barrieres |
+| Hoe pak ik het aan? | `kennisbank` (bron), gekopieerd naar `aanvalspaden/mappingen/` | live, 35 van de 44 barrieres |
 
 Omdat elke laag dezelfde sleutel gebruikt, kost een nieuwe laag geen nieuw datamodel. De zelfcheck
 geeft per aanbevolen actie een `vraag_id`; dat is exact de sleutel waar de normverankering en het
