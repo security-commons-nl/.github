@@ -80,6 +80,16 @@ def test_sociale_link_is_a5(tmp_path):
     assert code == 1 and "A5" in uit
 
 
+def test_sociale_link_in_een_codeblok_mag(tmp_path):
+    """Anders is A5 zelf niet te testen: een test die het vuren bewijst, heeft een voorbeeld-URL nodig.
+
+    In een codeblok staat een commando of een fixture, geen link die een lezer aanklikt.
+    """
+    blok = "\n```python\nzie = 'https://www.linkedin.com/in/iemand'\n```\n"
+    code, uit = draai(tmp_path, GOED + blok)
+    assert code == 0, uit
+
+
 def test_repo_buiten_profiel_is_b9(tmp_path):
     code, uit = draai(tmp_path, GOED.replace("# voorbeeld", "# zwerver"), naam="zwerver")
     assert code == 1 and "B9" in uit

@@ -10,9 +10,6 @@ Dat is de voorkant: alle kennis en tools op één pagina, direct te openen in je
 staat de broncode eronder, voor wie wil meelezen of meebouwen.
 <!-- /kant -->
 
-Hoe het geheel in elkaar zit, welke repositories er zijn en hoe ze samenhangen, staat in
-[ARCHITECTUUR.md](https://github.com/security-commons-nl/.github/blob/main/ARCHITECTUUR.md).
-
 ## Direct aan de slag
 
 Voor CISO's, ISO's en bestuurders bij gemeenten, provincies, waterschappen en uitvoeringsorganisaties.
@@ -92,6 +89,9 @@ Eén repo bevat geen op zichzelf staand product, maar maakt een ander wel mogeli
 - [anonimizer-proxy](https://github.com/security-commons-nl/anonimizer-proxy), minimale Cloudflare Worker die de Mistral-API forward't, zodat anonimizer-browser werkt zonder dat eindgebruikers een eigen Mistral-account hoeven aan te maken. Forward-only, geen opslag, geen logging van inhoud. Zie de [DPA-template](DPA-template.md) voor de verwerkersrol.
 
 ## Over dit platform
+
+Hoe het geheel in elkaar zit, welke repositories er zijn en hoe ze samenhangen, staat in
+[ARCHITECTUUR.md](https://github.com/security-commons-nl/.github/blob/main/ARCHITECTUUR.md).
 
 Deze community staat momenteel op GitHub. Op termijn zullen we overstappen naar een EU-gebaseerd alternatief (zoals [Codeberg](https://codeberg.org)), in lijn met onze principes van digitale soevereiniteit.
 

@@ -86,7 +86,16 @@ def controleer(repo: Path, profiel: str) -> list[str]:
     for bestand in markdown_bestanden(repo):
         if not bestand.exists():
             continue
+        # In een codeblok staan commando's en testfixtures, geen links die een lezer aanklikt. Een
+        # test die controleert DAT A5 vuurt, heeft daar een voorbeeld-URL voor nodig; die als
+        # overtreding melden maakt het statuut onmogelijk om te testen.
+        in_codeblok = False
         for i, regel in enumerate(bestand.read_text(encoding="utf-8", errors="replace").splitlines(), 1):
+            if regel.lstrip().startswith("```"):
+                in_codeblok = not in_codeblok
+                continue
+            if in_codeblok:
+                continue
             if SOCIAAL.search(regel):
                 fouten.append(f"[A5] {bestand.relative_to(repo)}:{i}: link naar sociale media")
     return fouten
