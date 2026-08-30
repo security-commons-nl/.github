@@ -22,6 +22,9 @@ WERKMAP = pathlib.Path(sys.argv[1] if len(sys.argv) > 1 else ".").resolve()
 SITE = "https://security-commons-nl.github.io/"
 REPO = "https://github.com/security-commons-nl/"
 LINK = re.compile(r'(?:href="|\]\()(https://(?:security-commons-nl\.github\.io|github\.com/security-commons-nl)/[^)"#\s]*)')
+# Codeblokken in markdown bevatten commando's en testfixtures, geen links die een lezer aanklikt. Een
+# voorbeeldrepo in een plan hoort niet te bestaan; die als dode link melden verbergt de echte.
+CODEBLOK = re.compile(r"^```.*?^```", re.M | re.S)
 BESTANDEN = ("*.md", "*.html", "*.txt", "*.xml", "*.json", "*.js")
 # Gebouwde en geleende mappen: die bevatten kopieen, en een fout daarin hoort in de bron thuis.
 OVERSLAAN = ("node_modules", ".git", "_dump", "dist", "_kennisbank", "_aanvalspaden", "__pycache__",
@@ -72,7 +75,10 @@ def main() -> int:
         for pad in WERKMAP.rglob(patroon):
             if any(o in pad.parts for o in OVERSLAAN):
                 continue
-            for url in sorted(set(LINK.findall(pad.read_text(encoding="utf-8", errors="replace")))):
+            tekst = pad.read_text(encoding="utf-8", errors="replace")
+            if pad.suffix == ".md":
+                tekst = CODEBLOK.sub("", tekst)
+            for url in sorted(set(LINK.findall(tekst))):
                 if "<" in url:
                     continue  # placeholder in een sjabloon, geen link
                 if url not in gezien:
