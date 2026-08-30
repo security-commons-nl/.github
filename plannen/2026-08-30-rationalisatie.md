@@ -560,8 +560,9 @@ gearchiveerde repo.
 1. Lees `kennisbank/security/meten-voordat-je-ingrijpt/README.md` volledig.
 2. Maak `kennisbank/security/werkplekanalyse-e5/README.md`. Frontmatter volgens §3.3 met:
    `titel: Werkplekanalyse op het Microsoft-platform`, `herkomst: gegeneraliseerd uit een casus bij een
-   gemeentelijke organisatie`, `status: in gebruik`, `barrieres: [execution, browser, localadmin]`,
-   `rol: fundering`, `pijler: meten-voordat-je-ingrijpt`. Body volgens §3.4, waarbij *Zo richt je het in*
+   gemeentelijke organisatie`, `status: in gebruik`, `barrieres: [execution]`, `rol: fundering`,
+   `pijler: meten-voordat-je-ingrijpt`. (Alleen `execution`: de sectie gaat niet over browserbeleid of
+   lokale beheerrechten, dus claim die niet.) Body volgens §3.4, waarbij *Zo richt je het in*
    de volledige sectie `## Werkplekanalyse op het Microsoft-platform (E5)` uit de pijler is, ongewijzigd.
    *Bewijs*: de queryresultaten (welke uitvoering feitelijk voorkomt) plus de afgedwongen ASR- en
    application-control-configuratie met dekking. *Zo leg je het uit*: schrijf drie regels op basis van
@@ -578,7 +579,9 @@ gearchiveerde repo.
    op B3.
 4. Maak `kennisbank/security/identiteit-en-mail-meten/README.md` op dezelfde manier uit de sectie
    `## Identiteit en e-mail`, met `titel: Identiteit en e-mail meten voordat je afdwingt`,
-   `barrieres: [mail, pr, fallback]`, `rol: verdieping`, `pijler: meten-voordat-je-ingrijpt`.
+   `barrieres: [mail, legacy, session, consent]`, `rol: verdieping`, `pijler: meten-voordat-je-ingrijpt`.
+   (De sectie toetst MDO, legacy authentication, token binding en app-consent; `pr` en `fallback` komen
+   uit *Passkeys invoeren*.)
 5. Krimp de pijler. In `meten-voordat-je-ingrijpt/README.md`: vervang de sectie
    `## Werkplekanalyse op het Microsoft-platform (E5)` door een alinea van drie regels die zegt wat erin
    zat en linkt naar `[Werkplekanalyse op het Microsoft-platform](../werkplekanalyse-e5/)`. Idem voor
@@ -616,9 +619,16 @@ cd X:/SECURITY-COMMONS-NL/kennisbank && python tools/test_build.py && python too
 grep -rl "Handelingsperspectief" security/ governance/ ; echo "exit $?"
 ```
 Verwacht: tests ok, geen overtredingen (11 items), en `grep` geeft geen bestanden (exit 1).
-`handelingsperspectief.json` heeft nu 6 regels onder `handleidingen` en 38 namen onder
-`zonder_handleiding`. (Zes: execution, browser, localadmin, mail, pr, fallback. `pr` en `fallback`
-staan hier als verdieping; *Passkeys invoeren* wordt in Taak 3 de fundering.)
+`handelingsperspectief.json` heeft nu **5 regels** onder `handleidingen` en **39 namen** onder
+`zonder_handleiding`.
+
+> **Bijgesteld tijdens de uitvoering.** Het plan ging uit van zes regels (execution, browser, localadmin,
+> mail, pr, fallback). Bij het lezen van de secties bleek dat `browser`, `localadmin`, `pr` en `fallback`
+> er inhoudelijk niet in voorkomen: de werkplekanalyse gaat over PowerShell, Win+R, mshta en ASR, niet
+> over browserbeleid of lokale beheerrechten. Die vier vallen dus terug naar open. In plaats daarvan
+> dekt *Identiteit en e-mail* wel `legacy`, `session` en `consent`, die het plan niet had voorzien.
+> Uitkomst: execution (fundering), en mail, legacy, session, consent (verdieping). `pr` en `fallback`
+> worden in Taak 3 stap 8 gedekt door *Passkeys invoeren*.
 
 **Commit.**
 ```bash
