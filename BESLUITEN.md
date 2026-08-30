@@ -6,6 +6,24 @@ krijgt hier een regel: datum, wat er is besloten, en waarom. Nieuwste bovenaan. 
 
 Dit log begint op 29-08-2026, toen bleek dat het statuut er wel naar verwees maar het nergens stond.
 
+## 30-08-2026 · procescheck gaat naar EUPL-1.2; geen uitzondering in B5
+
+Eén repo stond rood op de statuutcontrole: GPL v3, terwijl B5 EUPL-1.2 eist. Het auteursrecht ligt bij de
+oorspronkelijke auteur, dus herlicentiëren was nooit een keuze van deze organisatie. Een eerdere poging om
+het stil recht te zetten is daarom teruggedraaid.
+
+De vraag is voorgelegd met de overweging erbij. EUPL-werk mag opgaan in een GPL-geheel, andersom niet.
+Voegen we procescheck en `grc-platform` samen, dan wordt dat geheel dus GPL v3. De licentievraag en de
+fusievraag zijn daarmee één vraag, en dat maakte het een keuze en geen formaliteit.
+
+De auteur heeft de licentie zelf omgezet naar EUPL-1.2 en tegelijk een nieuwe versie gepubliceerd. De
+statuutcontrole is groen. De overwogen uitzondering bij B5 komt er dus niet, en dat is winst: B5 blijft
+absoluut (EUPL-1.2 voor alles), en een afwijkende licentie blijft een gesprek met de rechthebbende in
+plaats van een uitzonderingsregel die de controle stiller maakt.
+
+**Wat dit opent:** een samenvoeging met `grc-platform` kan nu zonder dat het geheel naar GPL kantelt. Die
+afweging zelf staat nog open.
+
 ## 29-08-2026 · Een itempagina wijst naar zijn eigen bestanden (B3 en B10 aangevuld)
 
 Aanleiding: de pagina van de awareness-sessie beschrijft een presentatie van veertig minuten en linkt hem
