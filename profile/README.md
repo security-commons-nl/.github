@@ -10,6 +10,9 @@ Dat is de voorkant: alle kennis en tools op één pagina, direct te openen in je
 staat de broncode eronder, voor wie wil meelezen of meebouwen.
 <!-- /kant -->
 
+Hoe het geheel in elkaar zit, welke repositories er zijn en hoe ze samenhangen, staat in
+[ARCHITECTUUR.md](https://github.com/security-commons-nl/.github/blob/main/ARCHITECTUUR.md).
+
 ## Direct aan de slag
 
 Voor CISO's, ISO's en bestuurders bij gemeenten, provincies, waterschappen en uitvoeringsorganisaties.

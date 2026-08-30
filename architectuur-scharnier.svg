@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 640" width="1240" height="640" role="img" aria-labelledby="titel beschrijving">
+  <title id="titel">De barriere als scharnier van de commons</title>
+  <desc id="beschrijving">De 44 barrieres uit paden.json zijn de spil. Er hangen vier vragen aan: hoe sta ik ervoor (zelfcheck), wat zegt mijn data (meting), wat toon ik hiermee aan (normverankering, gebouwd) en hoe doe ik het (handelingsperspectief; 14 van de 44 hebben een handleiding, de rest staat als schrijfopdracht).</desc>
+
+  <defs>
+    <style>
+      .t      { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; fill: #1a1d21; }
+      .h1     { font-size: 26px; font-weight: 700; fill: #1f4e79; letter-spacing: -0.3px; }
+      .sub    { font-size: 14px; fill: #5c6570; }
+      .kop    { font-size: 17px; font-weight: 700; fill: #1f4e79; }
+      .vraag  { font-size: 13px; font-style: italic; fill: #5c6570; }
+      .lbl    { font-size: 13px; fill: #3c434b; }
+      .klein  { font-size: 11.5px; fill: #5c6570; }
+      .mono   { font-family: Consolas, "SF Mono", Menlo, monospace; font-size: 12px; fill: #1f4e79; }
+      .spil   { font-size: 15px; font-weight: 700; fill: #ffffff; }
+      .spilk  { font-size: 12px; fill: #cfe0ef; }
+      .status { font-size: 11.5px; font-weight: 700; }
+      .ok     { fill: #2e7d68; }
+      .gat    { fill: #b45309; }
+      .card   { fill: #ffffff; stroke: #dfe3e8; stroke-width: 1.5; }
+      .nieuw  { fill: #fffbe9; stroke: #e0a800; stroke-width: 2; }
+      .gedaan { fill: #f2f9f6; stroke: #2e7d68; stroke-width: 2; }
+      .lijn   { stroke: #9aa6b4; stroke-width: 2; fill: none; }
+      .lijnb  { stroke: #1f4e79; stroke-width: 2.5; fill: none; }
+      .lijng  { stroke: #e0a800; stroke-width: 2.5; fill: none; stroke-dasharray: 6 4; }
+    </style>
+    <marker id="pijl" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1f4e79"/>
+    </marker>
+    <marker id="pijlg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#e0a800"/>
+    </marker>
+  </defs>
+
+  <rect width="1240" height="640" fill="#ffffff"/>
+
+  <text class="t h1" x="40" y="48">De barriere is het scharnier</text>
+  <text class="t sub" x="40" y="72">Vier vragen, een sleutel. Wie de spil vasthoudt, kan er onbeperkt lagen aan hangen zonder dat ze uit elkaar lopen.</text>
+  <line x1="40" y1="88" x2="1200" y2="88" stroke="#1f4e79" stroke-width="2.5"/>
+
+  <!-- De spil -->
+  <rect x="470" y="270" width="300" height="104" rx="10" fill="#1f4e79"/>
+  <text class="t spil" x="620" y="304" text-anchor="middle">44 barrieres</text>
+  <text class="t spilk" x="620" y="326" text-anchor="middle">het vraag_id uit paden.json</text>
+  <text class="t spilk" x="620" y="346" text-anchor="middle">18 aanvalspaden, 76 chokepoints,</text>
+  <text class="t spilk" x="620" y="362" text-anchor="middle">44 unieke barrieres eronder</text>
+
+  <!-- Linksboven: zelfcheck -->
+  <rect class="card" x="60" y="130" width="340" height="120" rx="8"/>
+  <text class="t kop" x="84" y="160">Zelfcheck</text>
+  <text class="t vraag" x="84" y="182">"Hoe sta ik ervoor?"</text>
+  <text class="t lbl" x="84" y="206">44 vragen, een uur, alleen te doen.</text>
+  <text class="t lbl" x="84" y="226">Uitkomst: 18 statussen en drie acties.</text>
+  <text class="t status ok" x="84" y="244">LIVE</text>
+  <path class="lijnb" d="M 400 214 C 440 214 440 292 466 300" marker-end="url(#pijl)"/>
+
+  <!-- Linksonder: meting -->
+  <rect class="card" x="60" y="394" width="340" height="120" rx="8"/>
+  <text class="t kop" x="84" y="424">Meting</text>
+  <text class="t vraag" x="84" y="446">"Wat zegt mijn eigen data?"</text>
+  <text class="t lbl" x="84" y="470">security-posture-tool: bewijs per cel</text>
+  <text class="t lbl" x="84" y="490">uit exports en connectors.</text>
+  <text class="t status ok" x="84" y="508">PROTOTYPE</text>
+  <path class="lijnb" d="M 400 440 C 440 440 440 356 466 346" marker-end="url(#pijl)"/>
+
+  <!-- Rechtsboven: normverankering (gebouwd) -->
+  <rect class="gedaan" x="840" y="130" width="340" height="150" rx="8"/>
+  <text class="t kop" x="864" y="160">Normverankering</text>
+  <text class="t vraag" x="864" y="182">"Wat toon ik hiermee aan?"</text>
+  <text class="t lbl" x="864" y="206">333 regels over vier kaders:</text>
+  <text class="t lbl" x="864" y="226">BIO 2.0 / ISO 27001, NIST CSF 2.0,</text>
+  <text class="t lbl" x="864" y="246">Wpg-toetsingskader, AVG.</text>
+  <text class="t status ok" x="864" y="268">LIVE SINDS 30-08-2026 &#183; 44 van 44 barrieres</text>
+  <path class="lijnb" d="M 774 300 C 806 292 806 214 836 214" marker-end="url(#pijl)"/>
+
+  <!-- Rechtsonder: handelingsperspectief (het gat) -->
+  <rect class="gedaan" x="840" y="394" width="340" height="150" rx="8"/>
+  <text class="t kop" x="864" y="424">Handelingsperspectief</text>
+  <text class="t vraag" x="864" y="446">"Hoe doe ik het dan?"</text>
+  <text class="t lbl" x="864" y="470">Verwijzing naar de handleiding in de</text>
+  <text class="t lbl" x="864" y="490">kennisbank, per barriere en paragraaf.</text>
+  <text class="t status ok" x="864" y="512">LIVE SINDS 30-08-2026 &#183; 14 van 44 barrieres</text>
+  <text class="t klein" x="864" y="532">De 30 gaten staan als schrijfopdracht met een oproep.</text>
+  <path class="lijnb" d="M 774 346 C 806 356 806 440 836 440" marker-end="url(#pijl)"/>
+
+  <!-- Voetnoot -->
+  <line x1="40" y1="576" x2="1200" y2="576" stroke="#eef1f5" stroke-width="1"/>
+  <text class="t klein" x="40" y="600">Elke laag gebruikt dezelfde sleutel, dus een nieuwe laag kost geen nieuw datamodel. De zelfcheck geeft per actie een vraag_id;</text>
+  <text class="t klein" x="40" y="618">dat is exact de sleutel waar de normverankering en het handelingsperspectief aan hangen. Koppelen is daarmee optellen, niet bouwen.</text>
+</svg>
