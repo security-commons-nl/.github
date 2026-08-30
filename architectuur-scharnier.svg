@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 640" width="1240" height="640" role="img" aria-labelledby="titel beschrijving">
   <title id="titel">De barriere als scharnier van de commons</title>
-  <desc id="beschrijving">De 44 barrieres uit paden.json zijn de spil. Er hangen vier vragen aan: hoe sta ik ervoor (zelfcheck), wat zegt mijn data (meting), wat toon ik hiermee aan (normverankering, gebouwd) en hoe doe ik het (handelingsperspectief; 14 van de 44 hebben een handleiding, de rest staat als schrijfopdracht).</desc>
+  <desc id="beschrijving">De 44 barrieres uit paden.json zijn de spil. Er hangen vier vragen aan: hoe sta ik ervoor (zelfcheck), wat zegt mijn data (meting), wat toon ik hiermee aan (normverankering, gebouwd) en hoe doe ik het (handelingsperspectief, met de kennisbank als bron; 6 van de 44 hebben een handleiding, de rest staat als schrijfopdracht).</desc>
 
   <defs>
     <style>
@@ -77,10 +77,10 @@
   <rect class="gedaan" x="840" y="394" width="340" height="150" rx="8"/>
   <text class="t kop" x="864" y="424">Handelingsperspectief</text>
   <text class="t vraag" x="864" y="446">"Hoe doe ik het dan?"</text>
-  <text class="t lbl" x="864" y="470">Verwijzing naar de handleiding in de</text>
-  <text class="t lbl" x="864" y="490">kennisbank, per barriere en paragraaf.</text>
-  <text class="t status ok" x="864" y="512">LIVE SINDS 30-08-2026 &#183; 14 van 44 barrieres</text>
-  <text class="t klein" x="864" y="532">De 30 gaten staan als schrijfopdracht met een oproep.</text>
+  <text class="t lbl" x="864" y="470">De kennisbank is de bron: handleidingen</text>
+  <text class="t lbl" x="864" y="490">dragen barrieres, aanvalspaden kopieert.</text>
+  <text class="t status ok" x="864" y="512">LIVE &#183; 6 van 44 barrieres &#183; meer per barriere mag</text>
+  <text class="t klein" x="864" y="532">De 38 gaten staan als schrijfopdracht met een oproep.</text>
   <path class="lijnb" d="M 774 346 C 806 356 806 440 836 440" marker-end="url(#pijl)"/>
 
   <!-- Voetnoot -->

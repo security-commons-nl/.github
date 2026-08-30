@@ -89,7 +89,7 @@
   <rect class="card" x="980" y="286" width="200" height="86" rx="6"/>
   <text class="t repo" x="996" y="308">handelingsperspectief</text>
   <text class="t klein" x="996" y="326">Hoe pak ik het aan</text>
-  <text class="t klein" x="996" y="344">14 van 44, 11 opdrachten</text>
+  <text class="t klein" x="996" y="344">6 van 44, bron: kennisbank</text>
   <text class="t klein" x="996" y="362" fill="#2e7d68">live sinds 30-08</text>
 
   <path class="lijn" d="M 280 329 L 316 329" marker-end="url(#p)"/>
@@ -112,12 +112,12 @@
   <rect class="strook" x="40" y="520" width="370" height="180" rx="8"/>
   <text class="t groep" x="64" y="544">KENNIS</text>
   <text class="t repo" x="64" y="568">kennisbank</text>
-  <text class="t lbl" x="64" y="588">9 items, 4 vakgebieden.</text>
+  <text class="t lbl" x="64" y="588">16 items, waarvan 7 handleidingen.</text>
   <text class="t lbl" x="64" y="608">Bibliothecaris-loop: raw naar wiki naar product.</text>
-  <text class="t klein" x="64" y="632">Handleidingen die nu een barriere dekken:</text>
-  <text class="t klein" x="64" y="650">passkeys-invoeren &#183; meten-voordat-je-ingrijpt</text>
-  <text class="t klein" x="64" y="666">security-annex-leveranciers &#183; blue-team-opzetten</text>
-  <text class="t nieuw" x="64" y="686">30 barrieres gevraagd, als 11 schrijfopdrachten</text>
+  <text class="t klein" x="64" y="632">Bron van het handelingsperspectief: een item</text>
+  <text class="t klein" x="64" y="650">van type handleiding draagt barrieres, en</text>
+  <text class="t klein" x="64" y="666">build.py exporteert dat naar aanvalspaden.</text>
+  <text class="t nieuw" x="64" y="686">38 barrieres nog zonder handleiding</text>
 
   <!-- ===== INSTRUMENTEN ===== -->
   <rect class="strook" x="430" y="520" width="380" height="180" rx="8"/>

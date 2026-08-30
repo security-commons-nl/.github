@@ -9,7 +9,9 @@ schrijven in [REDACTIESTATUUT.md](REDACTIESTATUUT.md), en hoe je bijdraagt in
 [organisatieprofiel](profile/README.md) is de enige projectenlijst; wijkt dit stuk daarvan af, dan
 heeft het profiel gelijk.
 
-**Peildatum: 30 augustus 2026.**
+**Peildatum: 30 augustus 2026.** De rationalisatie uit
+[het plan](plannen/2026-08-30-rationalisatie.md) is begonnen: taak 0 tot en met 2 zijn af, en de
+eerste cluster handleidingen staat.
 
 ---
 
@@ -31,7 +33,7 @@ daaronder liggen. Alles wat de keten doet, hangt aan die 44.
 | Risicoanalyse | Wat betekent dat voor mijn kroonjuwelen? | `kennisbank/security/risicoanalyse-aanvalspaden/` |
 | Meting | Wat zegt mijn eigen data? | `security-posture-tool` |
 | Normverankering | Wat toon ik hiermee aan? | `aanvalspaden/mappingen/` (30-08-2026) |
-| Handelingsperspectief | Hoe doe ik het? | `aanvalspaden/mappingen/handelingsperspectief.json` (30-08-2026) |
+| Handelingsperspectief | Hoe doe ik het? | de **kennisbank** is de bron; `aanvalspaden` kopieert (30-08-2026) |
 
 ### De zes groepen
 
@@ -39,8 +41,11 @@ daaronder liggen. Alles wat de keten doet, hangt aan die 44.
 worden gegenereerd uit de projectentabel in `.github/profile/README.md`; die tabel is de enige
 projectenlijst (statuut B9).
 
-**Kennis.** `kennisbank`, negen items over vier vakgebieden. Hier wonen de handleidingen; vier ervan
-dekken samen veertien barrieres, voor de andere dertig staat een schrijfopdracht open.
+**Kennis.** `kennisbank`, zestien items over vier vakgebieden, waarvan zeven van het type
+`handleiding`. Een handleiding draagt het veld `barrieres:` en is daarmee de bron van het
+handelingsperspectief: `tools/build.py` exporteert `handelingsperspectief.json`, en `aanvalspaden`
+kopieert dat. Zo staat een handleiding op een plek in plaats van twee. Stand: zes van de 44 barrieres
+gedekt, 38 open.
 
 **Keten.** `aanvalspaden` en `security-posture-tool`, hierboven beschreven.
 
@@ -86,11 +91,16 @@ diezelfde sleutel hangen vier vragen:
 | Hoe sta ik ervoor? | `aanvalspaden/check/` | live |
 | Wat zegt mijn eigen data? | `security-posture-tool` | prototype |
 | Wat toon ik hiermee aan? | `aanvalspaden/mappingen/` | live, 333 regels over vier kaders |
-| Hoe pak ik het aan? | `aanvalspaden/mappingen/handelingsperspectief.json` | live, 14 van de 44 barrieres |
+| Hoe pak ik het aan? | `kennisbank`, items van type `handleiding` | live, 6 van de 44 barrieres |
 
 Omdat elke laag dezelfde sleutel gebruikt, kost een nieuwe laag geen nieuw datamodel. De zelfcheck
 geeft per aanbevolen actie een `vraag_id`; dat is exact de sleutel waar de normverankering en het
 handelingsperspectief aan hangen. Koppelen is daarmee optellen, niet bouwen.
+
+Een barriere kan **meerdere** handleidingen hebben, elk met een rol: een `fundering` en daarnaast
+`alternatief` of `verdieping`. Voor 24/7 opvolging zijn dat er vijf: centrale logverzameling als
+fundering, en vier manieren om de opvolging te organiseren. Zo krijgt de lezer een keuze in plaats van
+een voorschrift.
 
 Wat er per laag **niet** is, telt even zwaar als wat er wel is. De normverankering laat zien welke
 maatregelen een dreigingsgerichte zelfcheck niet raakt; het handelingsperspectief laat zien voor welke
