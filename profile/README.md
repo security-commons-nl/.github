@@ -16,16 +16,24 @@ Hoe het geheel in elkaar zit, welke repositories er zijn en hoe ze samenhangen, 
 ## Direct aan de slag
 
 Voor CISO's, ISO's en bestuurders bij gemeenten, provincies, waterschappen en uitvoeringsorganisaties.
-Alles hieronder werkt vandaag, in je browser, zonder account en zonder factuur. Begin bij de kennisbank
-als je iets zoekt om te lezen of te hergebruiken, bij de zelfcheck aanvalspaden als je wilt weten waar
-een aanvaller bij jou ruimte heeft, en bij de weerbaarheidsgame als je het gesprek met bestuurders voert.
+Alles hieronder werkt vandaag, in je browser, zonder account en zonder factuur. De kern is een keten
+van vier vragen rond de achttien aanvalspaden van de publieke sector:
+
+1. **Hoe sta ik ervoor?** De [zelfcheck](https://security-commons-nl.github.io/aanvalspaden/): een uur, alleen te doen, achttien paden en drie acties voor morgen.
+2. **Hoe pak ik het aan?** Per barriere een [handleiding in de kennisbank](https://security-commons-nl.github.io/aanvalspaden/normen/), met de alternatieven ernaast, en een uitnodiging waar er nog geen is.
+3. **Wat toon ik hiermee aan?** De [normverankering](https://security-commons-nl.github.io/aanvalspaden/normen/): BIO 2.0, ISO 27001, NIST CSF 2.0, het Wpg-kader en de AVG, en waar de zelfcheck ophoudt.
+4. **Wat zegt mijn eigen data?** De meting, in ontwikkeling in `security-posture-tool`.
+
+Begin bij de [kennisbank](https://security-commons-nl.github.io/kennisbank/) als je iets zoekt om te lezen
+of te hergebruiken, en bij de [weerbaarheidsgame](https://security-commons-nl.github.io/weerbaarheid-game/)
+als je het gesprek met bestuurders voert.
 
 ## Alle projecten
 
 | Project | Status | Wat is het? | Direct openen | Doelgroep |
 |---|---|---|---|---|
 | [kennisbank](https://github.com/security-commons-nl/kennisbank) | in gebruik | Werkende kennis uit de publieke sector, security, privacy, continuïteit en alles wat er tussen zit | [Leesbare versie](https://security-commons-nl.github.io/kennisbank/) | Security-, privacy- en continuïteitsprofessionals |
-| [aanvalspaden](https://github.com/security-commons-nl/aanvalspaden) | prototype | Eén instrument in drie diepten: zelfcheck (een uur, welke aanvalspaden staan open), risicoanalyse (met de lijn, kroonjuwelen en bewijs, risicolijst met eigenaar) en meting; één bron voor de aanvalspaden van de publieke sector. Met de normverankering erbij: welke maatregel uit BIO 2.0, ISO 27001 en het Wpg-toetsingskader wordt aantoonbaar met dat bewijs, en waar de zelfcheck ophoudt | [Live tool](https://security-commons-nl.github.io/aanvalspaden/) | CISO's en ISO's bij publieke organisaties |
+| [aanvalspaden](https://github.com/security-commons-nl/aanvalspaden) | prototype | Eén instrument rond vier vragen: zelfcheck (een uur, welke aanvalspaden staan open), risicoanalyse (met de lijn, kroonjuwelen en bewijs, risicolijst met eigenaar) en meting; één bron voor de aanvalspaden van de publieke sector. Met de normverankering en de handleidingen per barriere erbij: welke maatregel uit BIO 2.0, ISO 27001 en het Wpg-toetsingskader wordt aantoonbaar met dat bewijs, en waar de zelfcheck ophoudt | [Live tool](https://security-commons-nl.github.io/aanvalspaden/) | CISO's en ISO's bij publieke organisaties |
 | [weerbaarheid-game](https://github.com/security-commons-nl/weerbaarheid-game) | in gebruik | Interactief bestuursdashboard dat de digitale kwetsbaarheid van een organisatie zichtbaar maakt | [Live tool](https://security-commons-nl.github.io/weerbaarheid-game/) | College van B&W, directies, bestuurders |
 | [grc-platform](https://github.com/security-commons-nl/grc-platform) | in gebruik | GRC-platform voor ISMS, PIMS en BCMS in één systeem | | CISO's, ISO's en privacy officers bij publieke organisaties |
 | [anonimizer-local](https://github.com/security-commons-nl/anonimizer-local) | in gebruik | AI-tool om gevoelige gegevens uit documenten te verwijderen, CLI voor batchverwerking en hergebruik van memory | | CISO's, ISO's en andere power users die regelmatig documenten anonimiseren |
