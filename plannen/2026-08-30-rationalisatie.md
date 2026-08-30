@@ -1,5 +1,15 @@
 # Bouwplan: een ruggengraat, de handleidingen erlangs
 
+**Uitgevoerd op: 30-08-2026. Alle tests en de linkcontrole groen** (175 unieke links, 0 dood). Taak 0
+tot en met 5, 7 en 8 zijn af. Taak 6 staat open en kan alleen door de eigenaar: het verwijderen van de
+repo `Handelingsperspectief` vraagt de scope `delete_repo`, die het token niet heeft. De repo is
+gearchiveerd, niets binnen de commons verwijst er nog naar, en het staat als enige punt op het profiel
+als gearchiveerd vermeld.
+
+Afwijkingen van het plan staan bij de taken zelf in een kader. De grootste: het veld `barrieres:` mag
+voortaan ook bij een item van type `aanpak` of `sjabloon` staan, zodat de passkeys-aanpak en de Security
+Annex aan hun barrieres konden hangen zonder hun soort te verliezen.
+
 > **Voor de uitvoerder.** Dit plan is geschreven om taak voor taak uit te voeren zonder eigen
 > interpretatie. Elke taak heeft: een doel, genummerde stappen met exacte paden en commando's, een test
 > met de verwachte uitkomst, en een commit. **Een taak is pas klaar als de test groen is en de commit is
@@ -288,7 +298,7 @@ Wat je hiermee aantoont in BIO 2.0, NIST CSF, het Wpg-kader en de AVG staat op
 
 ## 4. Taken
 
-### Taak 0: Wat al klaarstaat naar GitHub
+### Taak 0 [x]: Wat al klaarstaat naar GitHub
 
 **Doel.** De architectuur en de bouwplannen staan in een repo in plaats van op een schijf.
 
@@ -348,7 +358,7 @@ toont drie keer `success` binnen twee minuten.
 
 ---
 
-### Taak 1: De kennisbank kan handleidingen dragen
+### Taak 1 [x]: De kennisbank kan handleidingen dragen
 
 **Doel.** Type `handleiding` bestaat, `barrieres:` wordt gevalideerd tegen `paden.json`, de sectiepagina
 groepeert op type, en `tools/build.py` exporteert `handelingsperspectief.json`. Plus een script dat een
@@ -550,7 +560,7 @@ cd X:/SECURITY-COMMONS-NL/.github && git add REDACTIESTATUUT.md && git commit -m
 
 ---
 
-### Taak 2: Meten voordat je ingrijpt wordt een pijler met twee handleidingen
+### Taak 2 [x]: Meten voordat je ingrijpt wordt een pijler met twee handleidingen
 
 **Doel.** Twee zelfstandige handleidingen, een gekrompen pijler, en geen enkele link meer naar de
 gearchiveerde repo.
@@ -639,7 +649,7 @@ git push
 
 ---
 
-### Taak 3: De shop-patronen worden handleidingen
+### Taak 3 [x]: De shop-patronen worden handleidingen
 
 **Doel.** 35 handleidingen uit 36 patronen (§3.2), in de volgorde van de tabel. Twee bestaande items
 krijgen de communicatieregels erbij. Zeventien patronen worden issues.
@@ -758,7 +768,7 @@ Verwacht: `... 35 barrieres gedekt; 9 open`.
 
 ---
 
-### Taak 4: Aanvalspaden leest het handelingsperspectief in plaats van het te schrijven
+### Taak 4 [x]: Aanvalspaden leest het handelingsperspectief in plaats van het te schrijven
 
 **Doel.** `aanvalspaden/mappingen/handelingsperspectief.json` is een bewaakte kopie van de export uit de
 kennisbank; het datamodel kent meerdere handleidingen per barriere met een rol; de pagina toont ze.
@@ -835,7 +845,7 @@ onderhouden moet worden.
 
 ---
 
-### Taak 5: Security-shop sluiten, statuut en profiel bijwerken
+### Taak 5 [x]: Security-shop sluiten, statuut en profiel bijwerken
 
 **Doel.** De shop verwijst door en is gearchiveerd; het statuut kent geen ZTMM meer; de projectentabel
 heeft geen rij `security-shop`.
@@ -908,7 +918,7 @@ de gearchiveerd-alinea).
 
 ---
 
-### Taak 6: Handelingsperspectief verwijderen
+### Taak 6 [ ]: Handelingsperspectief verwijderen (wacht op de eigenaar)
 
 **Doel.** De gearchiveerde repo bestaat niet meer, en niets verwijst er nog naar.
 
@@ -940,7 +950,7 @@ Verwacht: `404`. En de grep uit stap 1b geeft geen uitvoer.
 
 ---
 
-### Taak 7: De site vertelt de keten
+### Taak 7 [x]: De site vertelt de keten
 
 **Doel.** Wie op de voorpagina komt, ziet de vier vragen en waar het antwoord staat.
 
@@ -983,7 +993,7 @@ Verwacht: test groen en `2` (twee keer de link, bij vraag 2 en 3).
 
 ---
 
-### Taak 8: Eindcontrole van alle links, over alle repo's heen
+### Taak 8 [x]: Eindcontrole van alle links, over alle repo's heen
 
 **Doel.** Bewijs dat elke interne link (naar een pagina op `security-commons-nl.github.io` of een repo op
 `github.com/security-commons-nl`) ergens op uitkomt. Dit is de laatste poort; zonder groen is het plan

@@ -14,4 +14,4 @@ is in [ARCHITECTUUR.md](../ARCHITECTUUR.md) en op het
 | [2026-08-29-voorpagina-en-werkplaats.md](2026-08-29-voorpagina-en-werkplaats.md) | De voorpagina gegenereerd uit de projectentabel, en de werkplaats eromheen | uitgevoerd |
 | [2026-08-30-architectuur-en-backlog.md](2026-08-30-architectuur-en-backlog.md) | De architectuurplaat en een backlog die uit de data volgt in plaats van uit een bord | uitgevoerd |
 | [2026-08-30-crosswalk.md](2026-08-30-crosswalk.md) | De normverankering: van barriere naar BIO 2.0, NIST CSF, Wpg en AVG | uitgevoerd |
-| [2026-08-30-rationalisatie.md](2026-08-30-rationalisatie.md) | De security-shop opgegaan in de kennisbank, en de kennisbank als bron van het handelingsperspectief | uitgevoerd |
+| [2026-08-30-rationalisatie.md](2026-08-30-rationalisatie.md) | De security-shop opgegaan in de kennisbank, en de kennisbank als bron van het handelingsperspectief | uitgevoerd, op het verwijderen van Handelingsperspectief na |
