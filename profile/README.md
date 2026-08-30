@@ -3,6 +3,11 @@
 > Open kennis en tooling voor digitale weerbaarheid, gemaakt door en voor publieke organisaties. Gratis,
 > open source, van ons allemaal.
 
+### ➜ [security-commons-nl.github.io](https://security-commons-nl.github.io/)
+
+Dat is de voorkant: alle kennis en tools op één pagina, direct te openen in je browser. Hier op GitHub
+staat de broncode eronder, voor wie wil meelezen of meebouwen.
+
 ## Direct aan de slag
 
 Voor CISO's, ISO's en bestuurders bij gemeenten, provincies, waterschappen en uitvoeringsorganisaties.
