@@ -57,7 +57,7 @@ enkele repo, ook niet "even tijdelijk". Eerst anonimiseren tot een sjabloon of c
 
 | Repo | Eerste laag |
 |---|---|
-| kennisbank | vakgebied: `security`, `privacy`, `bcm`, `governance` |
+| kennisbank | vakgebied: `security`, `privacy`, `bcm`, `governance`; items van type `handleiding` dragen `barrieres:` uit `paden.json` en zijn de bron van het handelingsperspectief |
 | security-shop | ZTMM-pillar of cross-cutting capability |
 | dreigingsanalyse | maandversie (`vJJJJ.MM`) |
 | aanvalspaden | `check/` (de zelfcheck), `methode/`, `meting/` (volgt); `paden.json` op de root is de bron |
@@ -72,7 +72,7 @@ Mapnamen: kleine letters, cijfers en koppeltekens; geen spaties, geen versies of
 ---
 titel: Leesbare naam van het item
 vakgebied: security | privacy | bcm | governance      # per repo: de eerste-laag-waarde
-type: beleid | sjabloon | lesmateriaal | dataset | referentie | aanpak | rapportage
+type: beleid | sjabloon | lesmateriaal | dataset | referentie | aanpak | rapportage | handleiding
 normen: [BIO2, ISO 27001, AVG, NIS2, CRA, AI Act, GIBIT 2025, ISO 22301]   # mag leeg: []
 peildatum: JJJJ-MM-DD          # óf versie: "1.3 (herzien BIO2), 2026-08"; één van beide
 herkomst: rol of organisatietype, geen naam
@@ -81,7 +81,10 @@ samenvatting: twee tot vier zinnen; dit wordt de kaarttekst op de website
 ---
 ```
 
-`auteur` bestaat niet (A1). `licentie` alleen als het item afwijkt van EUPL-1.2 (B5). Andere velden niet.
+`auteur` bestaat niet (A1). `licentie` alleen als het item afwijkt van EUPL-1.2 (B5). Bij type
+`handleiding` komen daar drie velden bij: `barrieres` (verplicht, `vraag_id`'s uit `paden.json`),
+`rol` (`fundering`, `alternatief` of `verdieping`) en `pijler` (het item waar de handleiding uit
+voortkomt). Andere velden niet.
 
 **B3. Bestandsvormen.** Markdown is de bron. Elk tekstitem heeft daarnaast een self-contained HTML-leesversie
 (geen externe fonts of scripts, print op A4, plakbaar in Word). Binaire bestanden (docx, pptx, xlsx, pdf)
