@@ -75,8 +75,10 @@ zonder bewaking wordt binnen een half jaar een tweede waarheid.
    hij niet achterloopt.
 2. `cisochat/data/bio2.json` → `aanvalspaden/mappingen/bronnen/bio2.json`, gegenereerd, met de
    commit-hash van de bron erin.
-3. `.github/profile/README.md` → de voorpagina, `llms.txt`, `sitemap.xml` en de root-`CLAUDE.md`,
-   gegenereerd bij elke build.
+3. `.github/profile/README.md` → de voorpagina, `llms.txt` en `sitemap.xml`, gegenereerd bij elke build
+   van `security-commons-nl.github.io`. Die repo checkt `.github` uit als `org-profile`, dus een wijziging
+   in het profiel komt vanzelf mee; een push naar `.github` triggert die build niet, daarom draait hij ook
+   elk uur.
 
 ---
 
