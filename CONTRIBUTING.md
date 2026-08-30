@@ -77,6 +77,20 @@ Pull requests worden beoordeeld door de maintainers. We kijken naar:
 - Plaatsing in de juiste map
 - Documentatie bijgewerkt (bij software-repos)
 
+## Links controleren
+
+Een dode link naar buiten is vervelend; een dode link naar je eigen site is een gebroken belofte. Zet de
+repo's naast elkaar in een werkmap en draai vanuit `.github`:
+
+```bash
+python tools/linkcheck.py ..
+```
+
+Het script controleert elke link naar `security-commons-nl.github.io` en naar een repo van de
+organisatie. Wat lokaal te vinden is, wordt op schijf gecontroleerd; de rest met een HTTP-verzoek.
+Externe sites blijven buiten beschouwing: die gaan stuk zonder dat wij er iets aan kunnen doen.
+Verwacht: `0 dood`. Elke regel `DOOD:` is werk in de genoemde bron.
+
 ## Vragen?
 
 Open een issue of start een discussie. We reageren zo snel mogelijk.

@@ -54,7 +54,8 @@ capability beleidsondersteuning) en [Handelingsperspectief](https://github.com/s
 (opgegaan in de kennisbank als [Meten voordat je ingrijpt](https://security-commons-nl.github.io/kennisbank/security/meten-voordat-je-ingrijpt/)) en [security-shop](https://github.com/security-commons-nl/security-shop) (catalogus van patronen, opgegaan in de kennisbank als handleidingen per barriere). **Onderliggende infrastructuur:** [anonimizer-proxy](https://github.com/security-commons-nl/anonimizer-proxy)
 (Cloudflare Worker die de Mistral-API forwardt voor anonimizer-browser, zodat een gebruiker geen eigen API-sleutel nodig heeft) en
 [security-commons-nl.github.io](https://github.com/security-commons-nl/security-commons-nl.github.io)
-(de site-build en de voorpagina).
+(de site-build en de voorpagina) en [.github](https://github.com/security-commons-nl/.github)
+(het redactiestatuut, de principes, de architectuur en deze projectentabel).
 
 De statuslabels volgen de criteria in het [redactiestatuut](https://github.com/security-commons-nl/.github/blob/main/REDACTIESTATUUT.md)
 (B8): *in gebruik* draait echt en heeft groene tests of CI · *prototype* werkt, zonder belofte · *concept* is ontwerp
