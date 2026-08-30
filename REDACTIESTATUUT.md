@@ -1,6 +1,6 @@
 # Redactiestatuut security-commons-nl
 
-Vastgesteld 28-08-2026, B3 en B10 aangevuld op 29-08-2026. Geldt voor alle repo's van de organisatie. De inhoudsregels (A) gelden overal
+Vastgesteld 28-08-2026, B3 en B10 aangevuld op 29-08-2026, B4 op 30-08-2026. Geldt voor alle repo's van de organisatie. De inhoudsregels (A) gelden overal
 letterlijk; de structuurregels (B) gelden overal in vorm, met per repo één afspraak over wat de eerste
 laag betekent (zie B1). Waar een repo een script heeft dat deze regels controleert, verwijst elke melding
 naar het regelnummer hieronder.
@@ -95,6 +95,11 @@ eigen repo. In de kennisbank blokkeert `tools/build.py` op alle drie.
 zijn output van een script dat eerst alle regels controleert en dan bouwt. Handmatig bewerken is
 zinloos: de volgende run overschrijft. Het script blokkeert bij elke overtreding en noemt bestand, regel
 en regelnummer. Het draait lokaal vóór een commit en als GitHub Action bij elke push naar `main`.
+De **volgorde van de items** op die pagina's is redactioneel en staat als genummerde lijst onder
+`## Volgorde` in de README van de sectie. Alfabetisch sorteren zet toevallige mapnamen bovenaan; deze
+lijst zet er een oordeel in: wat je morgen kunt toepassen bovenaan, naslag in het midden, verwijzingen
+naar het werk van anderen onderaan. Zelfde principe als B9 voor de projectentabel. Ontbreekt een item in
+de lijst, of staat er een naam die niet bestaat, dan blokkeert de build.
 
 **B5. Licentie.** EUPL-1.2 voor alles. Wijkt een bron af (CC-BY, MIT, "alleen met toestemming"), dan is
 `licentie:` in de frontmatter verplicht en staat er een zin in de README.

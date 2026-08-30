@@ -6,6 +6,20 @@ krijgt hier een regel: datum, wat er is besloten, en waarom. Nieuwste bovenaan. 
 
 Dit log begint op 29-08-2026, toen bleek dat het statuut er wel naar verwees maar het nergens stond.
 
+## 30-08-2026 · De volgorde van kennisbankitems is redactioneel (B4 aangevuld)
+
+De overzichtspagina's sorteerden op mapnaam. Daardoor stond de awareness-sessie bovenaan omdat die met
+een a begint, boven de Annex en de risicoanalyse. Het alfabet is geen oordeel.
+
+Besloten: de volgorde staat als genummerde lijst onder `## Volgorde` in de README van de sectie, en
+`tools/build.py` volgt die. Zelfde mechanisme als de projectentabel op de org-pagina (B9): één zichtbare
+bron, te bespreken in een pull request. Een item dat in de lijst ontbreekt of een naam die niet bestaat
+blokkeert de build, zodat een nieuw stuk niet stil onderaan belandt.
+
+Twee alternatieven afgevallen. Een rangnummer in de frontmatter kan niet zonder B2 te wijzigen (gesloten
+set van acht velden) en nodigt uit tot drift. Sorteren op statuslabel meet rijpheid, niet waarde, en kan
+niet uitdrukken welk stuk het vlaggenschip is.
+
 ## 30-08-2026 · procescheck gaat naar EUPL-1.2; geen uitzondering in B5
 
 Eén repo stond rood op de statuutcontrole: GPL v3, terwijl B5 EUPL-1.2 eist. Het auteursrecht ligt bij de
