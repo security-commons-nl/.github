@@ -13,7 +13,8 @@ frontmatter en is op de site nergens zichtbaar.
 
 ## 1. Wat er nu mis is
 
-Vijf dingen, in volgorde van hoe hard ze de lezer raken.
+Zes dingen, in volgorde van hoe hard ze de lezer raken. Het zesde speelt niet in dit item maar in de
+SOC-cluster ernaast; het heeft dezelfde wortel en dezelfde oplossing, dus het lift mee.
 
 **1.1 Vier soorten stuk in een map.** De hoofdstukken zijn niet van dezelfde orde:
 
@@ -48,6 +49,15 @@ tussen lockdown en veilig faciliteren, over regie beleggen en over een resultaat
 leveranciers. Dat is het gesprek met de directie, geen maatregel die je inricht. Het staat nu tussen de
 technische hoofdstukken alsof het van dezelfde orde is.
 
+**1.6 De SOC-cluster heeft een keuze zonder keuzehulp.** Barriere `soc` heeft vijf handleidingen:
+`centrale-logverzameling` (fundering) en vier alternatieven (`co-managed-siem`, `uitbestede-soc`,
+`mdr-dienst`, `regionaal-soc`), elk 4.500 tot 5.100 tekens. Dat er vier routes naast elkaar staan is
+juist de waarde van het advies, maar de lezer die moet kiezen krijgt alleen een lijstje onderaan de
+fundering; hij moet vier pagina's naast elkaar openen en zelf de vergelijking maken. Wat verschilt
+(regie, wat je zelf in huis moet hebben, kostenprofiel, afhankelijkheid van een leverancier) staat
+nergens naast elkaar. En het verband tussen de vijf bestaat, net als bij 1.3, nergens zichtbaar: er is
+geen `pijler` gezet, dus ook na taak 1 tonen ze elkaar niet.
+
 **Bijvangst.** Het hoofdstuk Netwerk en firewall is nooit geredigeerd: `he datacenter`, `Verkeerdat`,
 `onvetrouwde`, en een zin die halverwege van constructie wisselt ("directe aandacht of in het datacenter
 deze als een onvertrouwde securityzone is ingericht"). Dat repareer je in taak 3 terwijl je het toch
@@ -61,17 +71,18 @@ Vier stukken in plaats van een, elk met een etiket dat klopt:
 
 | Nieuw | Type | Barrieres | Uit welke hoofdstukken |
 |---|---|---|---|
-| `meten-voordat-je-ingrijpt/` (blijft) | `aanpak` | geen | Uitgangspunten, Volgorde, De methode, Wat je hier vindt (herschreven als wegwijzer), Werken met een LLM, Herkomst |
+| `meten-voordat-je-ingrijpt/` (blijft) | `aanpak` | geen | Uitgangspunten, Volgorde, De methode, Wat je hier vindt (herschreven als wegwijzer), Herbruikbare query's, Werken met een LLM, Hoe dit samenhangt, Herkomst |
 | `netwerkanalyse-uit-data/` (nieuw) | `handleiding` | `segment` (verdieping) | Netwerk, firewall en core-routers |
-| `killchain-naast-je-controls/` (nieuw) | `handleiding` | `edr` (verdieping) | Killchain en chokepoints (ClickFix) |
+| `killchain-naast-je-controls/` (nieuw) | `handleiding` | `edr`, `execution` (verdieping) | Killchain en chokepoints (ClickFix) |
 | `sturen-op-weerbaarheid/` (nieuw) | `aanpak` | geen | Managementsamenvatting, Regie en accountability, Veilig faciliteren |
 
 En `pijler` wordt zichtbaar: het item dat de pijler is, toont zijn kinderen; de kinderen tonen hun pijler.
 
 Waarom `meten-voordat-je-ingrijpt` blijft bestaan en niet opgaat in de rest: de methode is het idee waar
 alles onder hangt, en het is de enige plek waar staat waarom je eerst meet. Zonder dat stuk zijn de vier
-handleidingen losse trucs. Het krimpt van 33.000 naar ongeveer 7.000 tekens en wordt daarmee leesbaar in
-een kwartier, wat het nu niet is.
+handleidingen losse trucs. Het krimpt van 33.000 naar ongeveer 10.000 tekens en wordt daarmee leesbaar in
+een kwartier, wat het nu niet is. De methode van 3.800 tekens is veruit het grootste blijvende deel;
+wil je verder omlaag, dan moet ook de methode korter, en die redactiekeuze maakt dit plan bewust niet.
 
 Waarom `sturen-op-weerbaarheid` een `aanpak` blijft en geen handleiding wordt: er is geen barriere waar
 "kies tussen lockdown en veilig faciliteren" bewijs voor levert. Het is een bestuurlijk gesprek, geen
@@ -89,15 +100,19 @@ verzameling losse stukken.
 
 **Stappen.**
 
-1. In `kennisbank/tools/build.py`, functie `kaart` (rond regel 465, waar `barrieres` en `rol` aan `delen`
-   worden toegevoegd): voeg toe dat een item met `pijler` het label `pijler: <titel van de pijler>`
-   krijgt. Haal die titel uit de frontmatter van `<vak>/<pijler>/README.md`, niet uit de mapnaam.
-2. Voeg aan `build.py` een functie `kinderen_van(vak, mapnaam) -> list[dict]` toe die alle items
-   teruggeeft met `pijler == mapnaam`, gesorteerd op de redactionele volgorde uit `<vak>/README.md`.
-3. In de leesversie van een pijler-item: zet onder de titel een blok met de kinderen. Doe dit in
-   `bouw_item` (of waar de leesversie wordt samengesteld) tussen het kruimelpad en de inhoud, met
-   markering `<!-- pijler-kinderen -->` en `<!-- /pijler-kinderen -->` zodat herbouwen niets stapelt,
-   net als bij het kruimelpad.
+1. In `kennisbank/tools/build.py`, functie `meta_regel` (die de metaregel onder een kaart samenstelt;
+   daar staan ook `barrieres` en `rol`): voeg toe dat een item met `pijler` het deel
+   `hoort bij: <titel van de pijler>` krijgt. Haal die titel uit de frontmatter van
+   `<vak>/<pijler>/README.md`, niet uit de mapnaam.
+2. Voeg aan `build.py` een functie `kinderen_van(mapnaam, items) -> list[dict]` toe die uit een al
+   gesorteerde itemlijst alles teruggeeft met `pijler == mapnaam`. Roep haar aan met de lijst die
+   `main` na `zet_op_volgorde` heeft; dan is de volgorde vanzelf de redactionele.
+3. In de leesversie van een pijler-item: zet onder de titel een blok met de kinderen. Er is geen functie
+   die een leesversie opbouwt; leesversies zijn bestaande `index.html`-bestanden waarin `main` blokken
+   bijwerkt tussen markeringen. Volg exact het patroon van `zet_kruimelpad` en `zet_bronvoet`: een
+   functie `zet_pijlerblok(pad, kinderen, alleen_check)` met de markeringen `<!-- pijler-kinderen -->`
+   en `<!-- /pijler-kinderen -->`, elk op een eigen regel, aangeroepen in `main` in dezelfde lus waar
+   `zet_kruimelpad` wordt aangeroepen. Zo stapelt herbouwen niets.
 4. Tests in `kennisbank/tools/test_handleidingen.py`, klasse `Export` of een nieuwe klasse `Pijler`:
    a. een item met `pijler` krijgt het pijlerlabel op zijn kaart;
    b. `kinderen_van` geeft de kinderen in de volgorde van `README.md`, niet alfabetisch;
@@ -109,7 +124,8 @@ verzameling losse stukken.
 cd X:/SECURITY-COMMONS-NL/kennisbank && python -m pytest tools/ -q && python tools/build.py
 grep -c "pijler-kinderen" security/meten-voordat-je-ingrijpt/index.html
 ```
-Verwacht: tests groen, en de laatste `grep` geeft `2` (open- en sluitmarkering, dus precies een blok).
+Verwacht: tests groen, en de laatste `grep` geeft `2` (open- en sluitmarkering elk op een eigen regel,
+dus precies een blok). Draai de build daarna nog een keer en controleer dat het `2` blijft.
 
 **Commit.** `tools: een pijler toont zijn handleidingen, een handleiding zijn pijler`
 
@@ -131,10 +147,12 @@ en het hoofdstuk is uit het pijler-item verdwenen.
    versie: 2026-09
    herkomst: gegeneraliseerd uit een casus bij een gemeentelijke organisatie
    status: in gebruik
+   samenvatting: (schrijf twee of drie zinnen op basis van de eerste alinea's van het hoofdstuk; verzin niets bij)
    barrieres: [segment]
    rol: verdieping
    pijler: meten-voordat-je-ingrijpt
    ```
+   `samenvatting` is een verplicht veld (statuut B2); zonder die regel blokkeert de build meteen.
    **STOP als `netwerksegmentatie` niet meer de fundering van `segment` is.** Controleer met
    `grep -A1 "^barrieres: \[segment\]" security/netwerksegmentatie/README.md`. Staat daar geen
    `rol: fundering`, meld het en ga niet verder: dan klopt `verdieping` hier mogelijk niet.
@@ -174,19 +192,26 @@ netwerkanalyse-uit-data).
 1. Zelfde werkwijze als taak 2, met:
    ```
    titel: De killchain naast je controls leggen
-   barrieres: [edr]
+   samenvatting: (twee of drie zinnen op basis van het hoofdstuk)
+   barrieres: [edr, execution]
    rol: verdieping
    pijler: meten-voordat-je-ingrijpt
    ```
+   `execution` hoort erbij: de ketentabel dekt de Execution-fase expliciet (CLM, Win+R, AMSI). Bij beide
+   barrieres bestaat al een fundering (`edr-inrichten`, `werkplekanalyse-e5`), dus `verdieping` botst
+   nergens.
 2. Neem `## Killchain en chokepoints (ClickFix)` over, inclusief de MITRE-tabel, `### Preventie versus
    detectie`, `### Restrisico's die je bewust accepteert`, `### Impact-anker` en `### Bronnen (publiek)`.
 3. `## Bewijs`: de ingevulde ketentabel met per fase het chokepoint en of het preventie of detectie is,
    plus de lijst bewust geaccepteerde restrisico's met wie ze heeft geaccepteerd en wanneer.
-4. **Let op de bestaande koppeling.** `aanvalspaden/tests/test_kennisbank_koppeling.py` bewaakt of AP09
-   in `paden.json` niet uit elkaar loopt met de killchain-tabel in dit item. Die test wijst nu naar
-   `meten-voordat-je-ingrijpt`. Werk het pad in die test bij naar het nieuwe item en draai hem.
-   **STOP als die test na het bijwerken rood blijft:** dan is de tabel bij het verhuizen veranderd, en dat
-   mag niet.
+4. **Let op de bestaande koppeling.** `aanvalspaden/tests/test_kennisbank_koppeling.py` pint vast hoe
+   AP09 in `paden.json` eruitziet en noemt dit kennisbank-item alleen in zijn docstring en in de
+   constante `KENNISBANKITEM` (regel 27), zodat de foutmelding de lezer naar de juiste plek stuurt. De
+   test leest het item zelf NIET; hij kan dus niet rood worden door deze verhuizing. Werk de docstring
+   en `KENNISBANKITEM` bij naar het nieuwe pad.
+   De tabel zelf borg je met een diff: bewaar voor het knippen de tabelregels van het hoofdstuk
+   (alle regels die met een sluisteken beginnen), doe hetzelfde na het plakken in het nieuwe item, en
+   **STOP als de diff een verschil toont in de killchain-rijen:** de tabel moet ongewijzigd verhuizen.
 5. Doorverwijzing achterlaten, leesversie, `## Volgorde` (achter `edr-inrichten`), build.
 
 **Test.**
@@ -216,6 +241,7 @@ Verwacht: allebei groen, inclusief `test_kennisbank_koppeling`.
    versie: 2026-09
    herkomst: gegeneraliseerd uit een casus bij een gemeentelijke organisatie
    status: in gebruik
+   samenvatting: (twee of drie zinnen: voor wie het is en welke drie vragen het beantwoordt)
    pijler: meten-voordat-je-ingrijpt
    ```
    Geen `barrieres` en geen `rol`: er is geen barriere waar dit bewijs voor levert, en dat is geen
@@ -233,7 +259,9 @@ Verwacht: allebei groen, inclusief `test_kennisbank_koppeling`.
 ```bash
 cd X:/SECURITY-COMMONS-NL/kennisbank && python tools/build.py --check && wc -c security/meten-voordat-je-ingrijpt/README.md
 ```
-Verwacht: statuut groen, en het pijler-item is onder de 12.000 tekens.
+Verwacht: statuut groen, en het pijler-item is onder de 13.500 tekens. (Rekensom: 33.000 min de drie
+verhuisde hoofdstukken plus twee korte doorverwijzingen is ongeveer 12.800; verder krimpen gebeurt pas
+in taak 5.)
 
 **Commit.** `Sturen op weerbaarheid wordt een eigen stuk voor bestuur en directie`
 
@@ -241,7 +269,7 @@ Verwacht: statuut groen, en het pijler-item is onder de 12.000 tekens.
 
 ### Taak 5: De pijler wordt een wegwijzer
 
-**Doel.** `meten-voordat-je-ingrijpt` is nog ongeveer 7.000 tekens en doet nog een ding: de methode
+**Doel.** `meten-voordat-je-ingrijpt` is nog ongeveer 10.000 tekens en doet nog een ding: de methode
 uitleggen en de weg wijzen.
 
 **Stappen.**
@@ -264,8 +292,10 @@ cd X:/SECURITY-COMMONS-NL/kennisbank && python tools/build.py --check && wc -c s
 cd X:/SECURITY-COMMONS-NL/.github && python tools/linkcheck.py ..
 grep -c "](#" ../kennisbank/security/meten-voordat-je-ingrijpt/README.md
 ```
-Verwacht: statuut groen, het item onder de 8.000 tekens, linkcheck `0 dood`, en geen enkele ankerlink
-meer die naar een verdwenen hoofdstuk wijst (controleer de gevonden ankers met de hand tegen de koppen).
+Verwacht: statuut groen, het item onder de 11.000 tekens, linkcheck `0 dood`, en elke overgebleven
+ankerlink wijst naar een kop die nog bestaat. Dat laatste toets je door alle `](#...)`-ankers uit het
+bestand te halen en te vergelijken met de koppen (kleine letters, spaties en leestekens worden
+koppelstreepjes); de lijst ankers zonder bijpassende kop moet leeg zijn.
 
 **Commit.** `De pijler wijst de weg in plaats van alles zelf te vertellen`
 
@@ -277,8 +307,9 @@ meer die naar een verdwenen hoofdstuk wijst (controleer de gevonden ankers met d
 
 1. `aanvalspaden`: `python tools/haal_handelingsperspectief.py`, dan `python mappingen/bouw.py`, dan
    `python -m pytest tests/ mappingen/tests/ -q`. Commit de bijgewerkte kopie.
-2. `.github/ARCHITECTUUR.md`: de stand van het handelingsperspectief bijwerken (het worden er twee meer
-   dan de 35 van 30-08) en de peildatum op de datum van uitvoering.
+2. `.github/ARCHITECTUUR.md`: de peildatum op de datum van uitvoering. De dekking blijft 35 van de 44:
+   `segment`, `edr` en `execution` hadden al een fundering, dus er komen koppelingen bij (van 50 naar
+   53), geen gedekte barrieres. Pas alleen aantallen koppelingen aan waar die genoemd worden.
 3. `.github/BESLUITEN.md`: een regel bovenaan over het opsplitsen, met als onderbouwing dat een stuk dat
    vier soorten materiaal bevat, de lezer laat zoeken naar zijn eigen deel, en dat `pijler` een verband
    was dat alleen in de frontmatter bestond.
@@ -289,7 +320,50 @@ meer die naar een verdwenen hoofdstuk wijst (controleer de gevonden ankers met d
    en vraag of de inbrenger dit moet weten.** Verwerk zelf niets zonder antwoord.
 
 **Klaar als:** alle tests groen, linkcheck `0 dood`, CI groen op kennisbank en aanvalspaden, en het
-pijler-item onder de 8.000 tekens.
+pijler-item onder de 11.000 tekens.
+
+---
+
+### Taak 7: De SOC-cluster krijgt een fundering die helpt kiezen
+
+**Doel.** Wie voor barriere `soc` moet kiezen tussen zelf doen, co-managed, uitbesteden, MDR of
+regionaal, vindt de vergelijking op een plek; de vijf items tonen dat ze bij elkaar horen. Deze taak kan
+pas na taak 1 (het pijler-mechanisme) en staat verder los van taak 2 tot en met 6.
+
+**Waarom geen zesde item.** Een aparte keuzewijzer zou het probleem herhalen dat dit plan oplost: nog
+een stuk dat de lezer eerst moet vinden. De fundering is al de plek waar iedereen begint (zonder
+logverzameling valt er niets te monitoren), dus daar hoort de keuze thuis.
+
+**Stappen.**
+
+1. Zet in de vier alternatieven `pijler: centrale-logverzameling` in de frontmatter. Door taak 1 tonen
+   ze dan hun pijler, en toont de fundering zijn vier routes.
+2. Voeg aan `security/centrale-logverzameling/README.md` een kop `## Kiezen tussen de routes` toe, op de
+   plek van het huidige lijstje met de vier verwijzingen (dat lijstje vervalt; het pijlerblok en de
+   tabel nemen het over). Een vergelijkingstabel met per route een rij en vier kolommen:
+   wie draait de dienst, wat je zelf in huis moet hebben, waar de regie ligt, en wanneer deze route de
+   logische is. **Vul de tabel uitsluitend met wat al in de vier items staat** (elk heeft de koppen
+   Wanneer wel, wanneer niet en Wat het kost en wat het oplevert); verzin geen cijfers of oordelen bij.
+   Sluit af met een zin die zegt dat de routes elkaar uitsluiten en de fundering niet: logverzameling
+   heb je in elke route nodig.
+3. Controleer de vier alternatieven op onderlinge consistentie terwijl je ze toch leest: zeggen twee
+   items iets tegenstrijdigs over dezelfde route (bijvoorbeeld over wie de wacht draait of wat je zelf
+   moet kunnen), meld dat dan en kies niet zelf een kant. **STOP bij een inhoudelijke tegenstrijdigheid.**
+4. Werk de `samenvatting` van `centrale-logverzameling` bij: die belooft nu alleen de fundering, niet de
+   keuzehulp.
+5. Leesversie van de vijf items opnieuw genereren waar de README wijzigde, `python tools/build.py`, en
+   de export controleren: de rollen veranderen niet (een fundering, vier alternatieven).
+
+**Test.**
+```bash
+cd X:/SECURITY-COMMONS-NL/kennisbank && python tools/build.py --check && python -m pytest tools/ -q
+grep -c "pijler-kinderen" security/centrale-logverzameling/index.html
+python -c "import json;d=json.load(open('handelingsperspectief.json',encoding='utf-8'));print(sorted((h['item'],h['rol']) for h in d['handleidingen'] if h['barriere']=='soc'))"
+```
+Verwacht: statuut en tests groen, `grep` geeft `2`, en de export toont ongewijzigd een fundering en vier
+alternatieven.
+
+**Commit.** `De SOC-fundering helpt kiezen tussen de vier routes`
 
 ---
 
