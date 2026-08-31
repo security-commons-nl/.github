@@ -22,7 +22,7 @@ veld `pijler` is zichtbaar geworden op de site.
 
 ![Architectuur van Security Commons NL](architectuur-landschap.svg)
 
-Tweeëntwintig repositories, waarvan vier gearchiveerd. Ze vallen uiteen in zes groepen, met daaronder
+Eenentwintig repositories, waarvan drie gearchiveerd. Ze vallen uiteen in zes groepen, met daaronder
 drie harde datakoppelingen die het geheel bij elkaar houden.
 
 ### De ruggengraat: de aanvalspaden-keten
@@ -44,8 +44,9 @@ daaronder liggen. Alles wat de keten doet, hangt aan die 44.
 worden gegenereerd uit de projectentabel in `.github/profile/README.md`; die tabel is de enige
 projectenlijst (statuut B9).
 
-**Kennis.** `kennisbank`, zestien items over vier vakgebieden, waarvan zeven van het type
-`handleiding`. Een handleiding draagt het veld `barrieres:` en is daarmee de bron van het
+**Kennis.** `kennisbank`, negenenveertig items, waarvan negenendertig van het type
+`handleiding`. Verdeeld over de vier vakgebieden is dat scheef: achtenveertig staan onder
+`security`, één onder `governance`, en `privacy` en `bcm` zijn nog leeg. Een handleiding draagt het veld `barrieres:` en is daarmee de bron van het
 handelingsperspectief: `tools/build.py` exporteert `handelingsperspectief.json`, en `aanvalspaden`
 kopieert dat met `tools/haal_handelingsperspectief.py`, met een sha256 eronder zodat een verlopen kopie
 opvalt. Zo staat een handleiding op een plek in plaats van twee. Een barriere mag meer dan een
