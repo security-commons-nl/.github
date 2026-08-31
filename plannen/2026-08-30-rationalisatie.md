@@ -1,10 +1,9 @@
 # Bouwplan: een ruggengraat, de handleidingen erlangs
 
-**Uitgevoerd op: 30-08-2026. Alle tests en de linkcontrole groen** (175 unieke links, 0 dood). Taak 0
-tot en met 5, 7 en 8 zijn af. Taak 6 staat open en kan alleen door de eigenaar: het verwijderen van de
-repo `Handelingsperspectief` vraagt de scope `delete_repo`, die het token niet heeft. De repo is
-gearchiveerd, niets binnen de commons verwijst er nog naar, en het staat als enige punt op het profiel
-als gearchiveerd vermeld.
+**Uitgevoerd op: 30-08-2026, afgerond 31-08-2026. Alle tests en de linkcontrole groen.** Alle taken zijn
+af. Taak 6 kon niet met het token (het verwijderen van een repo vraagt de scope `delete_repo`); de
+eigenaar heeft de repo `Handelingsperspectief` op 31-08 zelf verwijderd, en de laatste verwijzingen
+ernaar zijn diezelfde dag opgeruimd.
 
 Afwijkingen van het plan staan bij de taken zelf in een kader. De grootste: het veld `barrieres:` mag
 voortaan ook bij een item van type `aanpak` of `sjabloon` staan, zodat de passkeys-aanpak en de Security
@@ -918,7 +917,7 @@ de gearchiveerd-alinea).
 
 ---
 
-### Taak 6 [ ]: Handelingsperspectief verwijderen (wacht op de eigenaar)
+### Taak 6 [x]: Handelingsperspectief verwijderen (gedaan door de eigenaar, 31-08)
 
 **Doel.** De gearchiveerde repo bestaat niet meer, en niets verwijst er nog naar.
 
@@ -935,8 +934,7 @@ de gearchiveerd-alinea).
    c. Het open punt uit het besluit van 29-08-2026 ("de inbrenger van de casus bijpraten") is gedaan.
       Dat kun jij niet controleren: **vraag het aan de eigenaar en wacht op ja.**
 2. Meld aan de eigenaar: "Handelingsperspectief kan weg. Intern verwijst niets er meer naar. Verwijderen
-   doe je op https://github.com/security-commons-nl/Handelingsperspectief/settings onderaan, Delete this
-   repository. Dat is onomkeerbaar." **Verwijder zelf niets.**
+   doe je in de repo-instellingen onderaan, Delete this repository. Dat is onomkeerbaar." **Verwijder zelf niets.**
 3. Na bevestiging dat de repo weg is: `rm -rf X:/SECURITY-COMMONS-NL/Handelingsperspectief` en in
    `.github/profile/README.md` de vermelding van Handelingsperspectief uit de gearchiveerd-alinea halen
    (het item bestaat niet meer, dus ook niet als archief). Commit `profiel: Handelingsperspectief

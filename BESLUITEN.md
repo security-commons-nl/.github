@@ -6,6 +6,30 @@ krijgt hier een regel: datum, wat er is besloten, en waarom. Nieuwste bovenaan. 
 
 Dit log begint op 29-08-2026, toen bleek dat het statuut er wel naar verwees maar het nergens stond.
 
+## 31-08-2026 · Casus *Meten voordat je ingrijpt*: toestemming rond, en de game is generiek gemaakt
+
+**A4 afgerond.** Het materiaal dat op 29-08 als casus is ingebracht, stond sindsdien met een open
+toestemmingspunt in de kennisbank. De eigenaar heeft dat op 31-08 afgerond. Een sweep over de zeven items
+die de casus als herkomst dragen, laat niets herleidbaars zien: geen organisatienamen, geen personen,
+geen e-mailadressen, geen interne documenten, en de herkomstregel noemt alleen "een gemeentelijke
+organisatie" (statuut A3). Het punt is daarmee dicht.
+
+**De weerbaarheidsgame is generiek gemaakt.** Daar zat wel herleidbaar materiaal, en dat was tot nu toe
+niemand opgevallen omdat de game buiten de kennisbank valt en dus niet door `build.py` wordt gecontroleerd:
+op vijf plekken de naam van een intern programma met de naam van een medewerker erbij (A1 en A2), een
+verstreken presentatiedatum (A6), en in de begeleidende beschrijving vier interne documenten met hun
+bestandsnaam (A9). Alles is vervangen door generieke formuleringen zonder datum: "een
+weerbaarheidsprogramma", "de eigen continuiteitsrapportage", "de CISO presenteert".
+
+Daaruit volgt een les over de reikwijdte van het statuut: het geldt voor alles wat de commons publiceert,
+maar het wordt alleen machinaal gecontroleerd in de kennisbank. Repo's met een eigen HTML-product vallen
+buiten die controle, en daar is dit blijven staan. Wie zo'n product inbrengt, doet de sweep met de hand.
+
+**Handelingsperspectief is verwijderd** (31-08, door de eigenaar), waarmee het besluit van 30-08 is
+uitgevoerd. De laatste verwijzingen ernaar zijn opgeruimd: de vermelding in de gearchiveerd-alinea van het
+profiel en een dode link in de changelog van `ai-gebruik-in-beeld`. De lokale kloon blijft voorlopig staan;
+die is nu de enige kopie van de git-historie.
+
 ## 31-08-2026 · Een stuk bevat een soort materiaal, en een pijler toont wat eronder hangt
 
 *Meten voordat je ingrijpt* was 33.000 tekens en zestien hoofdstukken, en bevatte vier soorten materiaal

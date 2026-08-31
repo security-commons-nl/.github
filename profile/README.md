@@ -47,8 +47,7 @@ als je het gesprek met bestuurders voert.
 
 **Gearchiveerd:** [anonimizer-web](https://github.com/security-commons-nl/anonimizer-web) (Flask-UI, vervangen door
 anonimizer-browser) en [beleid-assistent](https://github.com/security-commons-nl/beleid-assistent) (opgegaan in cisochat als
-capability beleidsondersteuning) en [Handelingsperspectief](https://github.com/security-commons-nl/Handelingsperspectief)
-(opgegaan in de kennisbank als [Meten voordat je ingrijpt](https://security-commons-nl.github.io/kennisbank/security/meten-voordat-je-ingrijpt/)) en [security-shop](https://github.com/security-commons-nl/security-shop) (catalogus van patronen, opgegaan in de kennisbank als handleidingen per barriere). **Onderliggende infrastructuur:** [anonimizer-proxy](https://github.com/security-commons-nl/anonimizer-proxy)
+capability beleidsondersteuning) en [security-shop](https://github.com/security-commons-nl/security-shop) (catalogus van patronen, opgegaan in de kennisbank als handleidingen per barriere). **Onderliggende infrastructuur:** [anonimizer-proxy](https://github.com/security-commons-nl/anonimizer-proxy)
 (Cloudflare Worker die de Mistral-API forwardt voor anonimizer-browser, zodat een gebruiker geen eigen API-sleutel nodig heeft) en
 [security-commons-nl.github.io](https://github.com/security-commons-nl/security-commons-nl.github.io)
 (de site-build en de voorpagina) en [.github](https://github.com/security-commons-nl/.github)
