@@ -17,7 +17,7 @@ Alles hieronder werkt vandaag, in je browser, zonder account en zonder factuur. 
 van vier vragen rond de achttien aanvalspaden van de publieke sector:
 
 1. **Hoe sta ik ervoor?** De [zelfcheck](https://security-commons-nl.github.io/aanvalspaden/): een uur, alleen te doen, achttien paden en drie acties voor morgen.
-2. **Hoe pak ik het aan?** Per barriere een [handleiding in de kennisbank](https://security-commons-nl.github.io/aanvalspaden/normen/), met de alternatieven ernaast, en een uitnodiging waar er nog geen is.
+2. **Hoe pak ik het aan?** Per barriere een [handleiding in de kennisbank](https://security-commons-nl.github.io/kennisbank/security/#handleidingen), met de alternatieven ernaast, en een uitnodiging waar er nog geen is.
 3. **Wat toon ik hiermee aan?** De [normverankering](https://security-commons-nl.github.io/aanvalspaden/normen/): BIO 2.0, ISO 27001, NIST CSF 2.0, het Wpg-kader en de AVG, en waar de zelfcheck ophoudt.
 4. **Wat zegt mijn eigen data?** De meting, in ontwikkeling in `security-posture-tool`.
 
