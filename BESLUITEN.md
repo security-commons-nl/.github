@@ -6,6 +6,25 @@ krijgt hier een regel: datum, wat er is besloten, en waarom. Nieuwste bovenaan. 
 
 Dit log begint op 29-08-2026, toen bleek dat het statuut er wel naar verwees maar het nergens stond.
 
+## 31-08-2026 · A11 aangescherpt: een vraag beschrijft het vraagstuk, nooit de eigen zwakte
+
+Toevoeging aan A11: een vraag staat op sectorniveau en beschrijft nooit de situatie van een organisatie,
+ook niet die van de vragensteller zelf. Formuleringen als "wij hebben dit nog niet opgelost" of "daar
+hebben we weinig van" horen er niet in, en een lezer wordt ook niet uitgenodigd om zijn eigen gaten te
+benoemen.
+
+**Aanleiding.** Bij het openen van de discussielijst met acht startvragen stond dit in vier ervan wel zo.
+Een vraag over telefonie-uitval meldde dat het nog niet opgelost was, een vraag over publicatiecontrole
+dat er aan de voorkant weinig lag, en de aankondiging nodigde lezers uit om te antwoorden met "wij hebben
+het ook niet geregeld". Dat is precies het tegenovergestelde van wat een commons hoort te doen: het maakt
+van een uitnodiging tot delen een inventarisatie van zwakke plekken, doorzoekbaar en permanent.
+
+**Onderbouwing.** De drempel om te vragen is in dit vakgebied de kern van het probleem, en A11 haalde die
+al weg door een schuilnaam toe te staan. Maar anonimiteit van de vrager helpt niet als de vraag zelf de
+zwakte beschrijft; bij een klein aantal organisaties met hetzelfde profiel is dat alsnog herleidbaar. De
+regel moet dus over de inhoud gaan, niet alleen over de naam eronder. Alle negen bestaande posts zijn
+herschreven voordat deze regel is vastgelegd.
+
 ## 31-08-2026 · Halen en brengen: vragen stellen wordt een eigen soort werk, onder eigen naam of schuilnaam
 
 De commons publiceerde tot nu toe alleen wat we weten. Daar komt bij wat we zoeken. Dat is vastgelegd als
