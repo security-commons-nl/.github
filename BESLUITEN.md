@@ -6,6 +6,39 @@ krijgt hier een regel: datum, wat er is besloten, en waarom. Nieuwste bovenaan. 
 
 Dit log begint op 29-08-2026, toen bleek dat het statuut er wel naar verwees maar het nergens stond.
 
+## 31-08-2026 · Halen en brengen: vragen stellen wordt een eigen soort werk, onder eigen naam of schuilnaam
+
+De commons publiceerde tot nu toe alleen wat we weten. Daar komt bij wat we zoeken. Dat is vastgelegd als
+**A11** in het redactiestatuut, als derde soort werk in [ARCHITECTUUR.md](ARCHITECTUUR.md) naast Sprong en
+Gat, en op het organisatieprofiel is de sectie *Meedoen* verbreed tot **Halen en brengen**. Vragen leven in
+Discussions op deze repo, in vier categorieen: hulpvraag uit de praktijk, gevraagd wie deelt dit, werkt dit
+bij jou, en aankondigingen.
+
+**Onderbouwing.** Een kenniscommons die alleen zendt, groeit alleen zo hard als zijn oprichters. De
+schaarste zit niet in plekken om te praten: in de publieke sector zijn er gremia genoeg. De schaarste zit
+in plekken waar de neerslag blijft staan, en dat is precies wat de kennisbank is. Door de vraag en het
+antwoord aan elkaar te knopen wordt een gesprek een stuk, in plaats van een verslag dat niemand terugleest.
+
+**De kern is de drempel, niet de plek.** In dit vakgebied is een hulpvraag ook een zwakteverklaring: wie
+vraagt hoe je een sleutelbesluitprocedure opzet, zegt daarmee dat hij die niet heeft. Dat is de reden dat
+vakfora hier leeglopen, en het is met een categorie niet op te lossen. Daarom staat in A11 expliciet dat
+een schuilnaam mag en dat de organisatie van de vrager nooit wordt genoemd. Dat is dezelfde redenering als
+A1 voor gedeelde stukken ("wie deelt, hoeft daar zijn naam niet aan te verbinden"), nu doorgetrokken naar
+wie vraagt.
+
+**Bewust niet gekozen: een tussenpersoon.** Overwogen is dat een maintainer vragen namens anderen zou
+plaatsen, zodat ook de vrager onzichtbaar blijft voor iedereen behalve die maintainer. Dat is afgewezen:
+het maakt de maintainer een flessenhals, het vertraagt, en het verplaatst het vertrouwensprobleem in plaats
+van het op te lossen. Er zijn nu drie routes en de vrager kiest zelf: eigen naam, schuilnaam, of later een
+formulier op de site dat zonder account post. Dat formulier is nog niet gebouwd; het vraagt een eigen
+botidentiteit (een token van een persoonlijk account zou elke anonieme vraag op diens naam zetten),
+snelheidsbegrenzing tegen misbruik, en een afspraak over opruimen achteraf.
+
+**Wat hierbij hoort.** Een vraag draagt een status en een peildatum. Een beantwoorde vraag blijft staan en
+wijst naar het stuk dat eruit voortkwam; een vraag die een jaar open staat wordt herschreven of gaat weg.
+Liever vier scherpe vragen dan twintig vage: een pagina met onbeantwoorde vragen leest als een dood project
+en straalt af op de rest.
+
 ## 31-08-2026 · Casus *Meten voordat je ingrijpt*: toestemming rond, en de game is generiek gemaakt
 
 **A4 afgerond.** Het materiaal dat op 29-08 als casus is ingebracht, stond sindsdien met een open
