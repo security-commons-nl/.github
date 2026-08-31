@@ -68,14 +68,27 @@ die kennis en tooling delen vormen een beweging. Publiek geld betekent publieke 
 nooit een doel, en altijd controleerbaar. De volledige principes staan in
 [PRINCIPLES.md](https://github.com/security-commons-nl/.github/blob/main/PRINCIPLES.md).
 
-## Meedoen
+## Halen en brengen
 
-Dit is geen verkooppraatje; er is niets te kopen. Begin met kijken, draai het lokaal, geef feedback of bouw
-mee. Open een [discussion](https://github.com/security-commons-nl/.github/discussions) of een issue in een
-van de repositories. Nog nooit een issue geopend? In
-[CONTRIBUTING.md](https://github.com/security-commons-nl/.github/blob/main/CONTRIBUTING.md) staat per
-project een formulier dat je alleen hoeft in te vullen, ook zonder GitHub-account of Git-ervaring, en wat
-je daarna van ons mag verwachten.
+Niet alles staat hier omdat wij het weten. Sommige dingen zoeken we nog, en die staan er ook.
+
+**Loop je ergens tegenaan?** Leg je vraag neer in
+[Discussions](https://github.com/security-commons-nl/.github/discussions), categorie *Hulpvraag uit de
+praktijk*. Geen theoretische vraag maar een echte: wat heb je geprobeerd, waar loop je vast, en wat zoek
+je precies. Een voorbeeld dat werkt is meer waard dan tien pagina's beleid.
+
+**Je hoeft daar je naam niet bij te zetten.** Een schuilnaam is prima en je hoeft niet te zeggen voor
+welke organisatie je werkt. Dat is geen uitzondering maar de regel: een hulpvraag in dit vak is ook een
+uitspraak over wat je zelf nog niet op orde hebt, en die drempel hoort niet bij jou te liggen (statuut
+A11).
+
+**Heb je iets dat werkt?** Deel het, ook als het half af is of alleen een werkafspraak op een A4.
+Anonimiseren doen we samen, daar hebben we gereedschap voor. Zie
+[CONTRIBUTING.md](https://github.com/security-commons-nl/.github/blob/main/CONTRIBUTING.md) voor hoe dat
+gaat, ook zonder GitHub-account of Git-ervaring.
+
+En verder: dit is geen verkooppraatje, er is niets te kopen. Begin met kijken, draai het lokaal, geef
+feedback of bouw mee.
 
 In voorbereiding, als richting en niet als toezegging: websitecompliance, digitale soevereiniteit,
 code-repoveiligheid en aanvalsoppervlak (OSINT). Een tool verschijnt hierboven in de lijst zodra hij
