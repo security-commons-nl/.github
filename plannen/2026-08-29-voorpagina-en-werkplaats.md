@@ -506,8 +506,9 @@ voorpagina zijn de eerste drie projecten in de lijst met een live link.
   de zin. Controle: `python -c "import pathlib;assert chr(8212) not in pathlib.Path('profile/README.md').read_text(encoding='utf-8')"`.
 
 - [x] **Stap 4: De alinea's onder de tabel compleet maken.** De alinea `**Gearchiveerd:**` noemt al
-  `anonimizer-web` en `beleid-assistent`; voeg toe: `[dreigingsanalyse](https://github.com/security-commons-nl/dreigingsanalyse)
-  (opgegaan in de kennisbank, item Risicoanalyse langs aanvalspaden)`. De alinea
+  `anonimizer-web` en `beleid-assistent`; voeg toe: `dreigingsanalyse (opgegaan in de kennisbank, item
+  Risicoanalyse langs aanvalspaden)`. **Niet zo uitgevoerd:** `dreigingsanalyse` is nooit op GitHub
+  gepubliceerd en staat daarom niet in het profiel; een link ernaartoe zou dood zijn. De alinea
   `**Onderliggende infrastructuur:**` noemt `anonimizer-proxy`; voeg toe:
   `[security-commons-nl.github.io](https://github.com/security-commons-nl/security-commons-nl.github.io)
   (de site-build en de voorpagina)`. Laat de alinea "**Tooling van anderen.**" staan.

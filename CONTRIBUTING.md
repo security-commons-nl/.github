@@ -87,7 +87,9 @@ python tools/linkcheck.py ..
 ```
 
 Het script controleert elke link naar `security-commons-nl.github.io` en naar een repo van de
-organisatie. Wat lokaal te vinden is, wordt op schijf gecontroleerd; de rest met een HTTP-verzoek.
+organisatie. Een bestand binnen een repo wordt op schijf gecontroleerd; een link naar een repo of een
+pagina wordt met een HTTP-verzoek getoetst. Dat laatste is met opzet: een lokale map bewijst niets over
+wat de lezer ziet, want een verwijderde repo laat zijn kloon gewoon staan.
 Externe sites blijven buiten beschouwing: die gaan stuk zonder dat wij er iets aan kunnen doen.
 Verwacht: `0 dood`. Elke regel `DOOD:` is werk in de genoemde bron.
 

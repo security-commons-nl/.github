@@ -54,8 +54,13 @@ def lokaal(url: str) -> pathlib.Path | None:
         if pad.startswith(("issues", "discussions", "pulls", "settings", "compare", "releases")):
             return WERKMAP / repo if (WERKMAP / repo).is_dir() else None
         pad = re.sub(r"^(blob|tree|edit|raw)/main/", "", pad)
-        doel = WERKMAP / repo / pad if pad else WERKMAP / repo
-        return doel if (WERKMAP / repo).is_dir() else None
+        # Een link naar de repo zelf gaat altijd over HTTP. Een lokale map bewijst niets over wat de
+        # lezer ziet: een verwijderde of hernoemde repo laat zijn kloon gewoon staan, en dan meldt de
+        # controle groen terwijl de link 404 geeft. Dat is precies hoe een dode link hier ooit is
+        # blijven staan. Voor bestanden binnen een repo blijft de schijfcontrole: sneller en preciezer.
+        if not pad:
+            return None
+        return WERKMAP / repo / pad if (WERKMAP / repo).is_dir() else None
     return None
 
 
