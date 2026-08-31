@@ -1,6 +1,6 @@
 # Redactiestatuut security-commons-nl
 
-Vastgesteld 28-08-2026, B3 en B10 aangevuld op 29-08-2026, B4 op 30-08-2026. Geldt voor alle repo's van de organisatie. De inhoudsregels (A) gelden overal
+Vastgesteld 28-08-2026, B3 en B10 aangevuld op 29-08-2026, B4 op 30-08-2026, A11 toegevoegd op 31-08-2026. Geldt voor alle repo's van de organisatie. De inhoudsregels (A) gelden overal
 letterlijk; de structuurregels (B) gelden overal in vorm, met per repo één afspraak over wat de eerste
 laag betekent (zie B1). Waar een repo een script heeft dat deze regels controleert, verwijst elke melding
 naar het regelnummer hieronder.
@@ -49,6 +49,16 @@ history-rewrite, rotatie van het geheim, en een regel in het besluitenlog van de
 enkele repo, ook niet "even tijdelijk". Eerst anonimiseren tot een sjabloon of casus, dan pas plaatsen.
 
 **A10. Taal.** Nederlands. Engelse vaktermen blijven Engels (SSDLC, passkeys, red teaming, blue team).
+
+**A11. Vragen.** De commons publiceert niet alleen wat we weten, ook wat we zoeken. Een vraag valt
+onder dezelfde inhoudsregels als een gedeeld stuk: geen naam nodig (A1), personen worden functies (A2),
+en de organisatie van de vrager wordt nooit genoemd (A3). Vragen onder een schuilnaam mag expliciet en
+hoeft niet te worden toegelicht; in dit vakgebied is een hulpvraag ook een uitspraak over wat je zelf
+nog niet geregeld hebt, en die drempel hoort niet bij ons te liggen. Wat een vraag wel moet bevatten:
+waar je zelf al staat, wat je zoekt, en wat er met het antwoord gebeurt. Zonder dat laatste weet
+niemand waarom hij zou antwoorden. Een beantwoorde vraag verdwijnt niet maar wijst naar het stuk dat
+eruit voortkwam; dat is het bewijs dat het werkt. Een vraag die een jaar open staat wordt herschreven
+of weggehaald, want een lijst met onbeantwoorde vragen leest binnen een half jaar als een kerkhof.
 
 ## B. Structuur
 
