@@ -9,7 +9,7 @@ schrijven in [REDACTIESTATUUT.md](REDACTIESTATUUT.md), en hoe je bijdraagt in
 [organisatieprofiel](profile/README.md) is de enige projectenlijst; wijkt dit stuk daarvan af, dan
 heeft het profiel gelijk.
 
-**Peildatum: 31 augustus 2026.** De rationalisatie uit
+**Peildatum: 31 augustus 2026** (bijgewerkt met *Halen en brengen*)**.** De rationalisatie uit
 [het plan](plannen/2026-08-30-rationalisatie.md) is uitgevoerd: de security-shop is opgegaan in de
 kennisbank, de kennisbank is de bron van het handelingsperspectief, en 35 van de 44 barrieres hebben
 een handleiding. Daarna is *Meten voordat je ingrijpt* opgesplitst
@@ -120,19 +120,26 @@ barrieres nog geen handleiding bestaat. Beide lijsten zijn afgeleid, dus ze lope
 
 ## Waar werk staat
 
-Twee plekken, en het onderscheid is niet willekeurig.
+Drie soorten, en het onderscheid is niet willekeurig.
 
 | | Wat het is | Waar | Wie onderhoudt |
 |---|---|---|---|
 | **Sprong** | Iets dat er nog helemaal niet is: een nieuwe tool, een spelvorm, een aanpak | Issue met label `idee` | een mens bedenkt het |
 | **Gat** | Iets dat ontbreekt in een structuur die er al staat | gegenereerd, op de site | een script rekent het uit |
+| **Vraag** | Iets waarvan het antwoord bij een ander ligt | Discussions, categorie *Hulpvraag uit de praktijk* | wie de vraag stelt |
 
 Een sprong is niet af te leiden: geen script stelt ooit voor om een spelvorm te bouwen die deelnemers
 hun eigen kroonjuwelen laat benoemen. Een gat wel: "er is geen handleiding voor barriere `segment`"
 volgt rechtstreeks uit `paden.json` en de kennisbank.
 
+Een vraag is geen van beide. Hij is niet af te leiden en niet te bedenken, want het antwoord zit in de
+praktijk van een andere organisatie. `gevraagd.json` lijkt erop maar is iets anders: daar staat wat er
+geschreven moet worden en weten we al wat erin hoort. Bij een vraag weten we dat juist niet. Zie A11 van
+het [redactiestatuut](REDACTIESTATUUT.md).
+
 Daarom is er geen projectbord meer. Een gat dat je met de hand op een bord zet, loopt achter zodra
-iemand het dicht, en dan houd je twee waarheden bij. Wat een script kan zien, houdt een script bij.
+iemand het dicht, en dan houd je twee waarheden bij. Wat een script kan zien, houdt een script bij. En
+wat alleen een ander kan weten, vraag je.
 
 ---
 
