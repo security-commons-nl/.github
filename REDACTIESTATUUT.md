@@ -54,7 +54,11 @@ enkele repo, ook niet "even tijdelijk". Eerst anonimiseren tot een sjabloon of c
 onder dezelfde inhoudsregels als een gedeeld stuk: geen naam nodig (A1), personen worden functies (A2),
 en de organisatie van de vrager wordt nooit genoemd (A3). Vragen onder een schuilnaam mag expliciet en
 hoeft niet te worden toegelicht; in dit vakgebied is een hulpvraag ook een uitspraak over wat je zelf
-nog niet geregeld hebt, en die drempel hoort niet bij ons te liggen. Wat een vraag wel moet bevatten:
+nog niet geregeld hebt, en die drempel hoort niet bij ons te liggen. **Om dezelfde reden beschrijft een
+vraag het vraagstuk op sectorniveau en nooit de situatie van een organisatie, ook niet die van onszelf.**
+Geen "wij hebben dit niet opgelost" en geen "daar hebben we weinig van": dat is voor wie kwaad wil een
+kant-en-klare inventarisatie. Schrijf wat er in het veld ontbreekt, en beschrijf de eigen positie alleen
+in wat er al gedeeld is. Nodig een lezer ook niet uit om zijn eigen gaten te benoemen. Wat een vraag wel moet bevatten:
 waar je zelf al staat, wat je zoekt, en wat er met het antwoord gebeurt. Zonder dat laatste weet
 niemand waarom hij zou antwoorden. Een beantwoorde vraag verdwijnt niet maar wijst naar het stuk dat
 eruit voortkwam; dat is het bewijs dat het werkt. Een vraag die een jaar open staat wordt herschreven
