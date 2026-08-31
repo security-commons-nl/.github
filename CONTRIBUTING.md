@@ -11,7 +11,9 @@ Heb je een document, aanpak of idee, maar weet je niet precies hoe je het moet i
 → Gebruik **"Fout of verbetering"** als iets niet klopt of beter kan.
 
 ### 2. Pull Request
-Heb je een bestand klaarstaan? Fork de repo, voeg je bestand toe op de juiste plek, en stuur een pull request.
+Heb je een stuk klaarstaan? Fork de repo, zet het op de juiste plek, en stuur een pull request.
+Wat "de juiste plek" is, legt het [redactiestatuut](REDACTIESTATUUT.md) vast; de build controleert
+het en noemt bij een afwijking het regelnummer.
 
 **Mapstructuur kennisbank:**
 ```
@@ -19,10 +21,24 @@ kennisbank/
 ├── security/    ← informatiebeveiliging (BIO, ISO 27001, etc.)
 ├── privacy/     ← privacy en gegevensbescherming (AVG, ISO 27701)
 ├── bcm/         ← bedrijfscontinuïteit (ISO 22301, BIA, etc.)
-└── overig/      ← aanbestedingen, governance, overige kennis
+└── governance/  ← beleid, governance, aanbestedingen, overige kennis
 ```
 
-**Bestandsnaamgeving:** beschrijvend en zonder spaties, bijv. `bia-template-gemeente.docx` of `privacybeleid-voorbeeld.pdf`.
+**Eén stuk is één map** (statuut B1). Binnen een vakgebied maak je een map met een korte naam in
+kleine letters en koppeltekens (`bia-sjabloon`, `passkeys-invoeren`), en daarin een `README.md`.
+Losse bestanden direct in `security/` of `privacy/` worden geweigerd, en dieper dan twee lagen
+mag niet.
+
+**Frontmatter bovenaan die README** (statuut B2): acht vaste velden, `titel`, `vakgebied`, `type`,
+`normen`, `peildatum` of `versie`, `herkomst`, `status` en `samenvatting`. Een veld `auteur`
+bestaat niet; herkomst is een rol of een organisatietype, nooit een naam (statuut A1 en A3).
+
+**Markdown is de bron** (statuut B3). Een docx, xlsx of pdf mag alleen als er geen redelijke
+markdown-vorm is, en dan met een README die zegt wat erin zit. Wat in de map ligt, staat als link
+in de README, anders kan een lezer er vanaf de pagina niet bij.
+
+De indexpagina's genereert `tools/build.py`; die hoef je niet te maken en met de hand bewerken
+heeft geen zin, want de volgende build overschrijft ze (statuut B4).
 
 **Anonimiseren:** zorg dat je document geen namen, emailadressen of andere persoonsgegevens bevat. Gebruik de [anonimizer](https://github.com/security-commons-nl/anonimizer-local) als die beschikbaar is, of vervang handmatig door functieomschrijvingen.
 
