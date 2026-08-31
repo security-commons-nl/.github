@@ -6,6 +6,29 @@ krijgt hier een regel: datum, wat er is besloten, en waarom. Nieuwste bovenaan. 
 
 Dit log begint op 29-08-2026, toen bleek dat het statuut er wel naar verwees maar het nergens stond.
 
+## 31-08-2026 · Een stuk bevat een soort materiaal, en een pijler toont wat eronder hangt
+
+*Meten voordat je ingrijpt* was 33.000 tekens en zestien hoofdstukken, en bevatte vier soorten materiaal
+tegelijk: een methode, een bestuursverhaal, twee technische handleidingen en naslag. Wie het opende moest
+zelf uitzoeken welk deel voor hem was. Dat er een tabel *Wat je hier vindt* nodig was om dat op te lossen,
+was het bewijs van het probleem en niet de oplossing ervan.
+
+Het is opgesplitst naar wat het is: de methode blijft onder de oude naam (10.500 tekens), het
+bestuursverhaal wordt *Sturen op weerbaarheid* voor bestuur en directie, en de twee technische
+hoofdstukken worden handleidingen bij hun barriere (`segment` en `edr`/`execution`). De regel die daaruit
+volgt: een stuk bevat een soort materiaal en zegt in zijn `type` welk soort dat is. Bevat het er meer,
+dan splits je.
+
+Tegelijk is het veld `pijler` zichtbaar geworden. Het bestond al en werd door `build.py` gecontroleerd,
+maar werd nergens getoond: twee handleidingen droegen het en geen enkele lezer kwam het verband ooit
+tegen. Een veld dat alleen gecontroleerd wordt en nooit getoond, is administratie. Nu toont een pijler
+welke stukken eronder hangen, en toont een stuk bij welke pijler het hoort.
+
+Dat mechanisme is meteen toegepast op de SOC-cluster: `centrale-logverzameling` is de pijler van de vier
+routes eronder, en heeft een vergelijkingstabel gekregen. Wie moest kiezen kreeg daarvoor alleen een
+lijstje met vier links en moest vier pagina's naast elkaar leggen. Bewust geen apart keuzewijzer-item: dat
+zou het probleem herhalen dat hierboven is opgelost.
+
 ## 30-08-2026 · De security-shop gaat op in de kennisbank
 
 De catalogus deelde zijn patronen in naar ZTMM-pijler, terwijl de rest van de keten aan de barrieres uit

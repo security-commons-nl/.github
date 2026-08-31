@@ -9,10 +9,12 @@ schrijven in [REDACTIESTATUUT.md](REDACTIESTATUUT.md), en hoe je bijdraagt in
 [organisatieprofiel](profile/README.md) is de enige projectenlijst; wijkt dit stuk daarvan af, dan
 heeft het profiel gelijk.
 
-**Peildatum: 30 augustus 2026.** De rationalisatie uit
+**Peildatum: 31 augustus 2026.** De rationalisatie uit
 [het plan](plannen/2026-08-30-rationalisatie.md) is uitgevoerd: de security-shop is opgegaan in de
 kennisbank, de kennisbank is de bron van het handelingsperspectief, en 35 van de 44 barrieres hebben
-een handleiding.
+een handleiding. Daarna is *Meten voordat je ingrijpt* opgesplitst
+([plan](plannen/2026-08-31-meten-voordat-je-ingrijpt-opsplitsen.md)): 49 items, 53 koppelingen, en het
+veld `pijler` is zichtbaar geworden op de site.
 
 ---
 
@@ -48,8 +50,9 @@ handelingsperspectief: `tools/build.py` exporteert `handelingsperspectief.json`,
 kopieert dat met `tools/haal_handelingsperspectief.py`, met een sha256 eronder zodat een verlopen kopie
 opvalt. Zo staat een handleiding op een plek in plaats van twee. Een barriere mag meer dan een
 handleiding hebben; de rol (`fundering`, `alternatief`, `verdieping`) zegt waar je begint en wat
-ernaast kan. Stand: 35 van de 44 barrieres gedekt, 9 open, en die negen staan met een schrijfopdracht
-in `aanvalspaden/mappingen/gevraagd.json`.
+ernaast kan. Een stuk kan daarnaast een `pijler` dragen: dan hangt het onder een groter geheel, en tonen
+de pijler en het stuk elkaar. Stand: 35 van de 44 barrieres gedekt met 53 koppelingen, 9 open, en die
+negen staan met een schrijfopdracht in `aanvalspaden/mappingen/gevraagd.json`.
 
 **Keten.** `aanvalspaden` en `security-posture-tool`, hierboven beschreven.
 

@@ -1,5 +1,12 @@
 # Bouwplan: *Meten voordat je ingrijpt* opsplitsen naar wat het echt is
 
+**Uitgevoerd op: 31-08-2026. Alle zeven taken af, alle tests en de linkcontrole groen.** Uitkomst: 49
+kennisbank-items, 53 koppelingen, het pijler-item van 33.000 naar 10.498 tekens, en `pijler` zichtbaar op
+de site. Afwijking van het plan: het pijlerblok zit in `zet_kruimelpad` en niet in een eigen
+schrijffunctie, want twee functies die na elkaar hetzelfde bestand bijwerken melden in `--check` dezelfde
+pagina twee keer als fout. Verder bleken er in het netwerkhoofdstuk meer taalfouten te staan dan de
+bijvangst in par. 1 noemde; allemaal hersteld.
+
 > **Voor de uitvoerder.** Taak voor taak uitvoeren, zonder eigen interpretatie. Elke taak heeft een doel,
 > genummerde stappen met exacte paden, een test met de verwachte uitkomst, en een commit. **Een taak is
 > pas klaar als de test groen is en de commit is gedaan.** Staat er "STOP", stop dan en meld wat je zag.
