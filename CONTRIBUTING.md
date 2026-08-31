@@ -42,8 +42,17 @@ heeft geen zin, want de volgende build overschrijft ze (statuut B4).
 
 **Anonimiseren:** zorg dat je document geen namen, emailadressen of andere persoonsgegevens bevat. Gebruik de [anonimizer](https://github.com/security-commons-nl/anonimizer-local) als die beschikbaar is, of vervang handmatig door functieomschrijvingen.
 
-### 3. Meediscussiëren
-Ga naar [Discussions](../../discussions) voor vragen, ervaringen en ideeën. Geen git-kennis vereist.
+### 3. Een vraag stellen
+Loop je ergens tegenaan en zoek je een voorbeeld dat werkt? Ga naar [Discussions](../../discussions),
+categorie *Hulpvraag uit de praktijk*. Geen git-kennis vereist, en je hoeft je naam en je organisatie er
+niet bij te zetten; een schuilnaam is prima (statuut A11).
+
+Zet er wel bij waar je zelf al staat, wat je zoekt en wat je met het antwoord gaat doen. Een vraag zonder
+dat laatste blijft meestal onbeantwoord, want dan weet niemand waar zijn tijd landt.
+
+### 4. Meediscussiëren
+Ervaringen met wat er al staat zijn net zo waardevol als een nieuw stuk. Wat werkte niet, wat moest je
+aanpassen voor je eigen organisatie, wat ontbrak.
 
 ## Voor het eerst hier?
 
