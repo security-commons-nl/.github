@@ -16,3 +16,4 @@ is in [ARCHITECTUUR.md](../ARCHITECTUUR.md) en op het
 | [2026-08-30-crosswalk.md](2026-08-30-crosswalk.md) | De normverankering: van barriere naar BIO 2.0, NIST CSF, Wpg en AVG | uitgevoerd |
 | [2026-08-30-rationalisatie.md](2026-08-30-rationalisatie.md) | De security-shop opgegaan in de kennisbank, en de kennisbank als bron van het handelingsperspectief | uitgevoerd, op het verwijderen van Handelingsperspectief na |
 | [2026-08-31-meten-voordat-je-ingrijpt-opsplitsen.md](2026-08-31-meten-voordat-je-ingrijpt-opsplitsen.md) | Het pijler-item van 33.000 tekens uit elkaar halen naar vier stukken met een kloppend etiket, `pijler` zichtbaar maken, en de SOC-cluster een keuzehulp geven | uitgevoerd |
+| [2026-09-01-csir-keten.md](2026-09-01-csir-keten.md) | De CSIR-keten in de browser: objectclassificatie en control-register uit twee Excel-bestanden samengebracht tot één offline instrument met dossier, uitdraai en handreiking uit de kennisbank | wacht op uitvoering |
