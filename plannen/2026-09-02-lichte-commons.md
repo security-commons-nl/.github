@@ -132,7 +132,8 @@ blijven staan: dat is historie.
 **Fase 2. Repo `normen` en cisochat.** Besluit 02-09 (tweede regel in `BESLUITEN.md`): de normbronnen
 krijgen een eigen dataset-repo `normen`. `bio2.json` verhuist daarheen (zonder het veld `iso_maatregel`),
 samen met `nist-csf.json`, `wpg.json` en `avg.json` uit `aanvalspaden/mappingen/bronnen/`; de generatoren
-en de vingerafdruk-bewaking draaien om, van `normen` naar elke afnemer. Eigen bouwplan. Onderzoeksdocumenten
+en de vingerafdruk-bewaking draaien om, van `normen` naar elke afnemer. Eigen bouwplan:
+`2026-09-02-normen.md`, uitgevoerd op 02-09 (applicatiecheck via `applicatiecheck#2`; cisochat archiveren volgt). Onderzoeksdocumenten
 naar `referenties-tooling`. vCISO-idee als issue `idee` in `.github`. Archiveren. Routingregels in
 `CLAUDE.md` die naar `cisochat\docs\vciso\research\` wijzen, naar het kennisbankitem.
 
