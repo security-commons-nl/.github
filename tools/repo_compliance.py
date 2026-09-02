@@ -104,9 +104,10 @@ def controleer(repo: Path, profiel: str) -> list[str]:
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("repo")
-    ap.add_argument("--profiel", required=True)
+    ap.add_argument("--profiel", "--projecten", dest="projecten", required=True,
+                    help="Pad naar PROJECTEN.md (of profile/README.md)")
     a = ap.parse_args()
-    fouten = controleer(Path(a.repo), Path(a.profiel).read_text(encoding="utf-8"))
+    fouten = controleer(Path(a.repo), Path(a.projecten).read_text(encoding="utf-8"))
     for f in fouten:
         print(f)
     if fouten:

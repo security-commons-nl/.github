@@ -33,4 +33,4 @@ jobs:
       - name: Controleer tegen het statuut
         run: |
           mv repo "$REPO"
-          python org/tools/repo_compliance.py "$REPO" --profiel org/profile/README.md
+          python org/tools/repo_compliance.py "$REPO" --projecten org/PROJECTEN.md

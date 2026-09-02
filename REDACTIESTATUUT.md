@@ -1,6 +1,6 @@
 # Redactiestatuut security-commons-nl
 
-Vastgesteld 28-08-2026, B3 en B10 aangevuld op 29-08-2026, B4 op 30-08-2026, A11 toegevoegd op 31-08-2026, B13 en B14 op 02-09-2026, Cbw in B2 op 02-09-2026, B14 verduidelijkt op 03-09-2026. Geldt voor alle repo's van de organisatie. De inhoudsregels (A) gelden overal
+Vastgesteld 28-08-2026, B3 en B10 aangevuld op 29-08-2026, B4 op 30-08-2026, A11 toegevoegd op 31-08-2026, B13 en B14 op 02-09-2026, Cbw in B2 op 02-09-2026, B9 herzien op 03-09-2026 (PROJECTEN.md), B14 verduidelijkt op 03-09-2026. Geldt voor alle repo's van de organisatie. De inhoudsregels (A) gelden overal
 letterlijk; de structuurregels (B) gelden overal in vorm, met per repo één afspraak over wat de eerste
 laag betekent (zie B1). Waar een repo een script heeft dat deze regels controleert, verwijst elke melding
 naar het regelnummer hieronder.
@@ -146,12 +146,13 @@ Een repo die geen project is maar infrastructuur (een proxy, de site-build) draa
 label `infrastructuur`, staat niet in de projectentabel maar in de alinea "Onderliggende infrastructuur"
 eronder, en wordt wel gecontroleerd op de README-kop en de licentie (B11, B5).
 
-**B9. Het org-profiel is de enige projectenlijst.** `.github/profile/README.md` bevat de projectentabel; de
+**B9. PROJECTEN.md is de enige projectenlijst.** `.github/PROJECTEN.md` bevat de projectentabel; de
 voorpagina, `llms.txt`, `sitemap.xml` en de root-`CLAUDE.md` worden daaruit gegenereerd of afgeleid. Een
 project bestaat pas als het in die tabel staat, met label en doelgroep. De volgorde van de tabel is
 redactioneel: de eerste drie rijen met een live link zijn de uitgelichte kaarten op de voorpagina. Repo's
 die geen project zijn (infrastructuur, gearchiveerd, opgegaan in een ander project) staan in de alinea's
 onder de tabel, met de reden erbij; `repo-compliance.yml` eist dat elke repo op een van die plekken staat.
+Het organisatieprofiel (`profile/README.md`) verwijst naar deze lijst en naar de voorkant op Pages.
 
 **B10. Elke pagina wijst terug.** Elke pagina op Pages begint met een kruimelpad naar de hoofdpagina en
 naar het niveau erboven, bijvoorbeeld: Security Commons NL > Kennisbank > Security > Passkeys invoeren. Een
