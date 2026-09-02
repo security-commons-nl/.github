@@ -26,10 +26,10 @@ query-tab en tabbalk verschijnen alleen als er iets in staat.
 | weerbaarheid-game | in gebruik | ja | Pages vanuit branch, één HTML |
 | applicatiecheck | concept | ja | gedeelde site-build, kopie met afwijking |
 | grc-platform | in gebruik | **nee** | |
-| procescheck | prototype | **nee** | |
+| procescheck | prototype | ja, live tool (03-09) | |
 | security-posture-tool | prototype | **nee** | |
 | iamscan | prototype | **nee** | |
-| blast-radius | prototype | **nee** | |
+| blast-radius | gearchiveerd 03-09 | n.v.t. | |
 | publicatiescan | in gebruik | **nee** | |
 | anonimizer-local | in gebruik | **nee** | |
 | hosting-bouwblokken | prototype | **nee** | |

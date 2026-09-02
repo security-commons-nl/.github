@@ -93,9 +93,9 @@ staat, niet wat de README belooft.
 
 | Repo | Nu | Wordt | Waarom dit de moeite is |
 |---|---|---|---|
-| `procescheck` | React + FastAPI + PostgreSQL + Azure AD | BIA en BIV per proces als één pagina, dossier als JSON | Het is een formulier met regels, precies het CSIR-patroon. En het ontsluit de koppeling object-onder-proces (`aanvalspaden#4`): twee JSON-dossiers die naar elkaar verwijzen op een sleutel. **Mede-auteur: Vasilis; afstemmen vóór het bouwplan** |
+| `procescheck` | React + FastAPI + PostgreSQL + Azure AD | BIA en BIV per proces als één pagina, dossier als JSON | **Gedaan 03-09-2026**, live op `/procescheck/`. Het is een formulier met regels, precies het CSIR-patroon, en het ontsluit de koppeling object-onder-proces (`aanvalspaden#4`, gesloten): twee JSON-dossiers die naar elkaar verwijzen. Uitgevoerd zonder afstemming vooraf (besluit Bas 02-09); de tag `v0-applicatie` markeert het werk van de mede-auteur |
 | `security-posture-tool` | FastAPI + SQLite, haalt zelf uit Entra, CSV-upload | **gaat op in** `aanvalspaden/meting/` (diepte 2): exports inlezen in de browser, bevindingen op `paden.json`, in de bewijs-vorm van applicatiecheck | Besluit 28-08 zei al: verhuist naar `aanvalspaden/meting/`. Aangescherpt 02-09: geen eigen repo meer; de eigen `architecture.md` (rule engine, connectors, zeven lagen) is oogst voor het meting-plan, niet het ontwerp ervan. De Entra-koppeling vervalt; de gebruiker exporteert zelf |
-| `blast-radius` | Python CLI, graaf uit een CI-export | **gaat op in** `procescheck`: de landschapsexport als import, de keten proces → applicatie → component als tab en uitdraai | Aangescherpt 02-09. De vraag "wat valt er om" is cascade, en cascade woont bij de processen; de risicoanalyse-methode wijst blast-radius al toe aan stap 1 (kroonjuwelen, systemen eronder). Repo archiveren zodra procescheck live is |
+| `blast-radius` | Python CLI, graaf uit een CI-export | **gaat op in** `procescheck`: de landschapsexport als import, de keten proces → applicatie → component als tab en uitdraai | **Gedaan 03-09-2026**: tab *Blast radius* in procescheck, repo gearchiveerd, kloon in `X:/ARCHIEF`. De vraag "wat valt er om" is cascade, en cascade woont bij de processen |
 | `iamscan` | Python CLI, leest een Linux-dump | **gaat op in** `aanvalspaden/meting/`: de Linux-dump als bron, de regels op AP05 en AP11 (tier-0, service-accounts, lokale beheerrechten) | Aangescherpt 02-09. Eén vraag op één export is geen project maar een bron plus regelset. Repo archiveren zodra meting live is |
 
 ### Afscheid
@@ -140,7 +140,7 @@ naar `referenties-tooling`. vCISO-idee als issue `idee` in `.github`. Archiveren
 **Fase 3. hosting-bouwblokken.** Keuze Bas 02-09: archief, zonder oogst. **Gedaan 02-09:** kloon plus bundle en
 LEESMIJ in `X:\ARCHIEF\hosting-bouwblokken*`, op GitHub gearchiveerd, profiel en architectuur bij.
 
-**Fase 4. procescheck → instrument.** Eigen bouwplan, met Vasilis. Bron: de BIA-vragen (B1-B8, I1-I7,
+**Fase 4. procescheck → instrument. Gedaan 03-09-2026** (plan `2026-09-02-procescheck-instrument.md`, 78 tests, live). Oorspronkelijk: Bron: de BIA-vragen (B1-B8, I1-I7,
 V1-V7 met onderbouwing), de MTPD/RTO/WRT/RPO-klassen uit `Docs/`, de businesscontext. Dossier: één proces
 per bestand, of één organisatie met meerdere processen; dat is een ontwerpkeuze voor dat plan. Daarna
 `aanvalspaden#4` uitvoeren: het object uit de CSIR-tool verwijst naar een proces uit dit dossier.
@@ -153,7 +153,7 @@ AP11. Invoer: exports (CSV/JSON) uit Entra, Intune, nmap, Nessus, en de Linux-du
 eigen ophalen. Uitkomst: bevindingen per chokepoint met bewijs, in de vorm van diepte 1. Daarna beide repo's
 archiveren.
 
-**Fase 6. blast-radius gaat op in procescheck.** Onderdeel van het procescheck-plan (fase 4): de
+**Fase 6. blast-radius gaat op in procescheck. Gedaan 03-09-2026.** Onderdeel van het procescheck-plan (fase 4): de
 landschapsexport als import in het dossier, de keten proces → applicatie → component als tab en als
 uitdraai. Geen eigen bouwplan; repo archiveren zodra procescheck live is.
 

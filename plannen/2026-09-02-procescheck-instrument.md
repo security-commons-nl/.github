@@ -21,7 +21,9 @@ hier afwijkt of specifiek is, staat hier volledig uitgeschreven.
 dependencies in de pagina. Geen `dagre`, geen `d3`: de graaf wordt een SVG met een eigen laagindeling
 (hoofdstuk 7).
 
-**Status:** geschreven 02-09-2026 op de feiten in de repo (`procescheck` frontend 5.886 regels, backend
+**Status: uitgevoerd op 03-09-2026**, alle dertien stappen; live op `/procescheck/`, 78 tests groen,
+`aanvalspaden#4` gesloten. Drie afwijkingen bij de uitvoering staan in hoofdstuk 0 onder *Bij de bouw*.
+Oorspronkelijk: geschreven 02-09-2026 op de feiten in de repo (`procescheck` frontend 5.886 regels, backend
 3.316 regels; `blast-radius` 1.252 regels). Later die dag gereviewd door een tweede sessie; de vijf
 P0-punten (afronding, node-ids, edge-resolutie, intra-kolom-edges, stapnummering), vier P1-punten en twee
 P2-punten uit die review zijn verwerkt. Uitvoerbaar zonder verdere afstemming. Geschreven om door een
@@ -64,6 +66,13 @@ minder sterk model gebouwd te kunnen worden: waar iets niet in dit plan staat, v
     verzameling zitten (de graaf, de ranglijst, de DOM-attributen, de uitkomst van `bereik`), heten ze
     `proces:<code>`, `app:<code>` en `ci:<id>`. In het dossier zelf staan de kale codes en ids; de
     voorvoegsels ontstaan in `reken.landschap()` en verdwijnen nergens meer daarna.
+**Bij de bouw (03-09) bleek:** (a) de applicatie kende geen `low`; beide laatste regels heetten `medium`
+met als enig verschil de redentekst `velden ontbreken` tegenover `veld(en) ontbreken`. Die teksten zijn
+letterlijk overgenomen en de tweede heet hier `low`; zie `verantwoording.md`. (b) De commit van
+blast-radius staat als constante in `haal_bron.py`, niet afgeleid uit de buurmap: anders viel de bron in
+CI anders uit dan lokaal. (c) Het voorbeeldlandschap heeft geen single point of failure; de test toetst
+dat tegen de referentie in plaats van het te veronderstellen.
+
 11. **Geen dubbele records.** Een import of formulier voegt een koppeling of edge nooit twee keer toe;
     `(from, to)` is uniek in `component_edges`, een applicatiecode komt hoogstens één keer voor in
     `processen[].applicaties`.
@@ -233,7 +242,7 @@ Weg van `main` na livegang (stap 11 van de volgorde): `backend/`, `frontend/`, `
   {"id": "high", "regel": "hoog_risico_zonder_rto_rpo", "reden": "Hoog risico: geen RTO/RPO gedefinieerd"},
   {"id": "high", "regel": "kritiek_onvolledig", "reden": "Kritisch proces, onvolledig gedocumenteerd"},
   {"id": "medium", "regel": "vier_of_meer_ontbrekend", "reden": "{n} velden ontbreken"},
-  {"id": "low", "regel": "anders", "reden": "{n} velden ontbreken"}
+  {"id": "low", "regel": "anders", "reden": "{n} veld(en) ontbreken"}
  ],
  "keuzes": {
   "soort_applicatie": ["applicatie", "object met industriële automatisering"],
