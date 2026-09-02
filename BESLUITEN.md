@@ -6,6 +6,25 @@ krijgt hier een regel: datum, wat er is besloten, en waarom. Nieuwste bovenaan. 
 
 Dit log begint op 29-08-2026, toen bleek dat het statuut er wel naar verwees maar het nergens stond.
 
+## 02-09-2026 · B13: elk project heeft een pagina op het domein
+
+Elke repo in de projectentabel krijgt een pagina op `security-commons-nl.github.io/<naam>/`, ongeacht
+status; minimaal de leesversie van de README via de gedeelde site-build. De kolom *Direct openen* krijgt
+er een derde label bij, *Ontwerp*, naast *Live tool* en *Leesbare versie*. Vastgelegd als **B13** in het
+redactiestatuut; de uitrol staat in [het plan](plannen/2026-09-02-elk-project-een-pagina.md).
+
+**Aanleiding.** Bij het aanmaken van `applicatiecheck` (concept) bleek dat tien van de zestien projecten
+in de tabel niet op het domein staan. Wie via de voorpagina binnenkomt, komt bij die tien op GitHub
+terecht of nergens; een concept bestond voor de meeste lezers niet.
+
+**Onderbouwing.** De site is de etalage, GitHub de werkplaats. De infra ligt er al: de herbruikbare
+workflow `pages-docs.yml` en een `site/config.json` per repo, dus de kosten per repo zijn een workflow van
+drie regels en een config. Voorwaarde is dat de site-build op één plek gaat wonen; hij wordt nu per repo
+gekopieerd en `applicatiecheck` is de derde kopie met een eigen afwijking. Een kopie zonder bewaking wordt
+binnen een half jaar een tweede waarheid, dus het centraliseren is onderdeel van dezelfde uitrol. De
+statuutcontrole op B13 gaat pas aan als de tien repo's om zijn, zodat de regel niet begint met tien rode
+runs.
+
 ## 31-08-2026 · A11 aangescherpt: een vraag beschrijft het vraagstuk, nooit de eigen zwakte
 
 Toevoeging aan A11: een vraag staat op sectorniveau en beschrijft nooit de situatie van een organisatie,

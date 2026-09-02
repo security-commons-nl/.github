@@ -1,6 +1,6 @@
 # Redactiestatuut security-commons-nl
 
-Vastgesteld 28-08-2026, B3 en B10 aangevuld op 29-08-2026, B4 op 30-08-2026, A11 toegevoegd op 31-08-2026. Geldt voor alle repo's van de organisatie. De inhoudsregels (A) gelden overal
+Vastgesteld 28-08-2026, B3 en B10 aangevuld op 29-08-2026, B4 op 30-08-2026, A11 toegevoegd op 31-08-2026, B13 op 02-09-2026. Geldt voor alle repo's van de organisatie. De inhoudsregels (A) gelden overal
 letterlijk; de structuurregels (B) gelden overal in vorm, met per repo één afspraak over wat de eerste
 laag betekent (zie B1). Waar een repo een script heeft dat deze regels controleert, verwijst elke melding
 naar het regelnummer hieronder.
@@ -170,6 +170,16 @@ seconden zien wat het is, of het werkt en hoe hij begint. `repo-compliance.yml` 
 **B12. Status staat op een plek.** Het label in de projectentabel is de bron. De regel `Status:` in de
 README van de repo herhaalt dat label letterlijk; `repo-compliance.yml` vergelijkt beide en wordt rood
 als ze verschillen. Wie een status wijzigt, wijzigt eerst de tabel.
+
+**B13. Elk project heeft een pagina.** Elke repo in de projectentabel publiceert een pagina op
+`security-commons-nl.github.io/<naam>/`, ongeacht status. Minimaal is dat de leesversie van de README,
+gebouwd met de gedeelde site-build; een tool of kennisbank publiceert zijn eigen pagina. De kolom *Direct
+openen* in de projectentabel zegt wat een lezer aantreft: *Live tool*, *Leesbare versie* of *Ontwerp*; een
+rij met alleen een ontwerp staat niet in de eerste drie rijen, want dat zijn de uitgelichte kaarten. Reden:
+de site is de etalage, GitHub de werkplaats. Een project dat alleen op GitHub bestaat is onvindbaar voor
+wie via de voorpagina of een zoekmachine binnenkomt, en een concept op de site nodigt uit tot meedenken.
+Infrastructuurrepo's (B8) vallen buiten deze regel. De uitrol naar bestaande repo's staat in
+[het plan van 02-09-2026](plannen/2026-09-02-elk-project-een-pagina.md).
 
 ## Wijzigen van dit statuut
 
