@@ -1,6 +1,6 @@
 # Redactiestatuut security-commons-nl
 
-Vastgesteld 28-08-2026, B3 en B10 aangevuld op 29-08-2026, B4 op 30-08-2026, A11 toegevoegd op 31-08-2026, B13 op 02-09-2026. Geldt voor alle repo's van de organisatie. De inhoudsregels (A) gelden overal
+Vastgesteld 28-08-2026, B3 en B10 aangevuld op 29-08-2026, B4 op 30-08-2026, A11 toegevoegd op 31-08-2026, B13 en B14 op 02-09-2026, Cbw in B2 op 02-09-2026. Geldt voor alle repo's van de organisatie. De inhoudsregels (A) gelden overal
 letterlijk; de structuurregels (B) gelden overal in vorm, met per repo één afspraak over wat de eerste
 laag betekent (zie B1). Waar een repo een script heeft dat deze regels controleert, verwijst elke melding
 naar het regelnummer hieronder.
@@ -86,13 +86,16 @@ Mapnamen: kleine letters, cijfers en koppeltekens; geen spaties, geen versies of
 titel: Leesbare naam van het item
 vakgebied: security | privacy | bcm | governance      # per repo: de eerste-laag-waarde
 type: beleid | sjabloon | lesmateriaal | dataset | referentie | aanpak | rapportage | handleiding
-normen: [BIO2, ISO 27001, AVG, NIS2, CRA, AI Act, GIBIT 2025, ISO 22301]   # mag leeg: []
+normen: [BIO2, ISO 27001, AVG, NIS2, Cbw, CRA, AI Act, GIBIT 2025, ISO 22301]   # mag leeg: []
 peildatum: JJJJ-MM-DD          # óf versie: "1.3 (herzien BIO2), 2026-08"; één van beide
 herkomst: rol of organisatietype, geen naam
 status: concept | in gebruik | sjabloon | gearchiveerd
 samenvatting: twee tot vier zinnen; dit wordt de kaarttekst op de website
 ---
 ```
+
+`Cbw` en `NIS2` mogen naast elkaar staan als een item beide raakt: de richtlijn voor de Europese
+context, de wet voor de Nederlandse verplichting (aangevuld 02-09-2026, issue #16).
 
 `auteur` bestaat niet (A1). `licentie` alleen als het item afwijkt van EUPL-1.2 (B5). Bij type
 `handleiding` komen daar drie velden bij: `barrieres` (verplicht, `vraag_id`'s uit `paden.json`),
@@ -180,6 +183,17 @@ de site is de etalage, GitHub de werkplaats. Een project dat alleen op GitHub be
 wie via de voorpagina of een zoekmachine binnenkomt, en een concept op de site nodigt uit tot meedenken.
 Infrastructuurrepo's (B8) vallen buiten deze regel. De uitrol naar bestaande repo's staat in
 [het plan van 02-09-2026](plannen/2026-09-02-elk-project-een-pagina.md).
+
+**B14. Een project is een instrument of een script, nooit een applicatie.** Een instrument rekent
+volledig in de browser, zonder server, account of telemetrie, en is het enige dat in de projectentabel
+*Live tool* heet. Een script draait lokaal op data die de gebruiker al heeft, zonder server en zonder
+eigen opslag, en staat in de tabel als *Leesbare versie* met een download; de README zegt waarom het
+geen instrument is. Een applicatie met backend, database, authenticatie of gedeelde staat hoort niet in
+de commons. Infrastructuur die een instrument opt-in ondersteunt (B8) is de uitzondering en wordt met
+naam in `BESLUITEN.md` vastgelegd. Reden: een tool die een DPIA, inkoop en een beheerder vraagt voordat
+iemand hem kan proberen, haalt de drempel niet weg waarvoor de commons bestaat; wat je opent, gebruik je
+vandaag. Vastgesteld 02-09-2026 (issue #17); `repo-compliance.yml` controleert dit niet, de projectentabel
+en het plan *lichte commons* zijn de controle.
 
 ## Wijzigen van dit statuut
 
