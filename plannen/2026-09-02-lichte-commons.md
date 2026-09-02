@@ -102,7 +102,7 @@ staat, niet wat de README belooft.
 
 | Repo | Wat het is | Waarom | Wat eerst |
 |---|---|---|---|
-| `grc-platform` | ISMS/PIMS/BCMS met tenants, RLS, AI-agents, 17 migraties | Wordt nooit één pagina; dit is de definitie van een applicatie. 0 sterren, 0 forks, 1 watcher: niemand buiten ons draait het | **Oogst:** de ISMS-stappen met `waarom_nu` en `uitleg` uit de seed-migraties (`003`, `005`, `008`) zijn kennis, geen code; beoordelen wat naar de kennisbank kan. **Informeren:** Vasilis heeft er 59 commits in. **Lokale kopie** blijft op `X:\SECURITY-COMMONS-NL\grc-platform` met de volledige git-historie |
+| `grc-platform` | ISMS/PIMS/BCMS met tenants, RLS, AI-agents, 17 migraties | Wordt nooit één pagina; dit is de definitie van een applicatie. 0 sterren, 0 forks, 1 watcher: niemand buiten ons draait het | **Oogst:** de ISMS-stappen met `waarom_nu` en `uitleg` uit de seed-migraties (`003`, `005`, `008`) zijn kennis, geen code; beoordelen wat naar de kennisbank kan. **Gedaan 02-09:** kloon met volledige historie (555 commits, 19 branches) plus git-bundle en LEESMIJ in `X:\ARCHIEF\grc-platform*`; op GitHub gearchiveerd; tien levende verwijzingen bijgewerkt. Vasilis (59 commits) is op aanwijzing van Bas niet apart geïnformeerd. De oogst van de seed-inhoud is nog niet gedaan en kan altijd nog uit het archief |
 | `cisochat` | Documentatie en ontwerp voor een vCISO-agent; geen code | Een agent is per definitie een gehoste applicatie met AI | **Verhuizen:** `data/bio2.json` is de bron van de normverankering (harde koppeling 2 in `ARCHITECTUUR.md`); die bron gaat naar `aanvalspaden/mappingen/bronnen/` en de koppeling draait om. `docs/vciso/research/` (tooling-onderzoek per CSF-functie) gaat naar het kennisbankitem `referenties-tooling`. Het vCISO-idee zelf blijft als issue `idee` |
 | `hosting-bouwblokken` | Referentiearchitecturen en IaC om applicaties te hosten | Als de commons geen applicaties meer levert, is er niets meer te hosten | **Oogst:** de referentiearchitecturen zijn kennis; beoordelen of ze als item onder `security` in de kennisbank verder leven. Daarna archiveren. **Keuze aan Bas** (hoofdstuk 6) |
 
@@ -116,8 +116,8 @@ gaat op volgorde van wat het ontsluit.
 **Fase 0. Vastleggen.** Deze regel in `BESLUITEN.md` (gebeurt met dit plan). Statuut B14 als voorstel via
 issue op `.github` (de wijzigingsprocedure van het statuut), tekst in hoofdstuk 5. `ARCHITECTUUR.md`:
 het criterium en de vorm erin, de groep Instrumenten herschreven, en de zin dat grc-platform het
-risicoregister is eruit (die stond er sinds vanochtend en is met dit besluit onjuist). Vasilis
-informeren over grc-platform en procescheck, vóór fase 1.
+risicoregister is eruit (die stond er sinds vanochtend en is met dit besluit onjuist). Vasilis wordt
+niet apart geïnformeerd over grc-platform (aanwijzing Bas 02-09); voor procescheck wel, bij fase 4.
 
 **Fase 1. grc-platform.** Oogst beoordelen → archiveren op GitHub → verwijzingen uit levende documenten
 halen. Dat zijn er tien: `.github/ARCHITECTUUR.md`, `.github/CONTRIBUTING.md` (de rij "Feedback op het
