@@ -82,6 +82,10 @@ acht staan met een schrijfopdracht in `aanvalspaden/mappingen/gevraagd.json`.
 
 **Keten.** `aanvalspaden` en `security-posture-tool`, hierboven beschreven.
 
+**Normbronnen.** `normen`: BIO 2.0, NIST CSF 2.0, het Wpg-toetsingskader en de AVG als dataset, elk in
+één schema met herkomst en vingerafdruk, zonder ISO-tekst. De mappingen (welke barrière levert bewijs
+voor welke maatregel) blijven bij de aanvalspaden; `normen` levert alleen de bronnen.
+
 **Instrumenten.** `csir-assessment-tool` (de CSIR voor een object met industriële automatisering:
 classificeren, bepalen, uitwerken), `weerbaarheid-game` (het bestuurlijke gesprek), `applicatiecheck`
 (concept: BIO2-bewijs uit de applicatie zelf, in de browser), `policy-as-code` (concept: beleid als
@@ -113,9 +117,10 @@ zonder bewaking wordt binnen een half jaar een tweede waarheid.
 
 1. `aanvalspaden/paden.json` → `security-posture-tool`, als kopie met een `paden.sha256` die bewaakt dat
    hij niet achterloopt.
-2. `cisochat/data/bio2.json` → `aanvalspaden/mappingen/bronnen/bio2.json`, gegenereerd, met de
-   commit-hash van de bron erin. **In beweging:** de bron verhuist uit `cisochat` (plan *lichte commons*,
-   fase 2); de bewaking blijft, alleen de richting van de pijl verandert.
+2. `normen/*.json` → elke afnemer (`aanvalspaden/mappingen/bronnen/`, `applicatiecheck/bronnen/`), als
+   kopie met de vingerafdruk van `normen` erin en een `tools/haal_normen.py --check` in de CI van de
+   afnemer. Sinds 02-09-2026; daarvoor was `cisochat/data/bio2.json` de bron en had elke afnemer een
+   eigen kopieerscript.
 3. `.github/profile/README.md` → de voorpagina, `llms.txt` en `sitemap.xml`, gegenereerd bij elke build
    van `security-commons-nl.github.io`. Die repo checkt `.github` uit als `org-profile`, dus een wijziging
    in het profiel komt vanzelf mee; een push naar `.github` triggert die build niet, daarom draait hij ook
