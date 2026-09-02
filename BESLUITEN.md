@@ -6,6 +6,27 @@ krijgt hier een regel: datum, wat er is besloten, en waarom. Nieuwste bovenaan. 
 
 Dit log begint op 29-08-2026, toen bleek dat het statuut er wel naar verwees maar het nergens stond.
 
+## 02-09-2026 · De commons levert instrumenten en scripts, geen applicaties meer
+
+**Besloten.** Een project in de projectentabel is een instrument (rekent volledig in de browser, zonder
+server, account of telemetrie) of een script (draait lokaal op data die je al hebt, zonder server en zonder
+eigen opslag). Applicaties met een backend, database, authenticatie of gedeelde staat horen niet meer in de
+commons. `grc-platform` neemt afscheid en wordt gearchiveerd; de lokale kopie met volledige historie blijft
+bewaard. `procescheck`, `security-posture-tool`, `blast-radius` en `iamscan` worden omgebouwd naar de vorm
+van de zelfcheck en de CSIR Assessment Tool. `cisochat` en `hosting-bouwblokken` volgen na een oogst van
+wat er aan kennis in zit. `anonimizer-proxy` is de enige uitzondering, opt-in en met naam. Het plan staat
+in [plannen/2026-09-02-lichte-commons.md](plannen/2026-09-02-lichte-commons.md); statuut B14 volgt via de
+wijzigingsprocedure.
+
+**Waarom.** Alles wat de afgelopen week live ging is client-side; alles met een backend staat op prototype of
+concept en loopt vast op hosting (de IMS-pilot geparkeerd op de hostingdrempel, het codeplatform zonder
+CI/CD). Een tool die een DPIA, inkoop en een beheerder vraagt voordat iemand hem kan proberen, haalt precies
+de drempel niet weg waarvoor de commons bestaat. Het register hoort daarmee bij de gebruiker: elk instrument
+levert een dossier als JSON dat hij meeneemt naar zijn eigen managementsysteem.
+
+**Afgewezen.** "Client-side als norm met gemotiveerde uitzonderingen": dat had grc-platform een uitzondering
+gemaakt en de norm meteen zacht. De keuze is hard, met één benoemde uitzondering voor infrastructuur.
+
 ## 02-09-2026 · B13: elk project heeft een pagina op het domein
 
 Elke repo in de projectentabel krijgt een pagina op `security-commons-nl.github.io/<naam>/`, ongeacht
