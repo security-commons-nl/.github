@@ -1,6 +1,6 @@
 # Redactiestatuut security-commons-nl
 
-Vastgesteld 28-08-2026, B3 en B10 aangevuld op 29-08-2026, B4 op 30-08-2026, A11 toegevoegd op 31-08-2026, B13 en B14 op 02-09-2026, Cbw in B2 op 02-09-2026. Geldt voor alle repo's van de organisatie. De inhoudsregels (A) gelden overal
+Vastgesteld 28-08-2026, B3 en B10 aangevuld op 29-08-2026, B4 op 30-08-2026, A11 toegevoegd op 31-08-2026, B13 en B14 op 02-09-2026, Cbw in B2 op 02-09-2026, B14 verduidelijkt op 03-09-2026. Geldt voor alle repo's van de organisatie. De inhoudsregels (A) gelden overal
 letterlijk; de structuurregels (B) gelden overal in vorm, met per repo één afspraak over wat de eerste
 laag betekent (zie B1). Waar een repo een script heeft dat deze regels controleert, verwijst elke melding
 naar het regelnummer hieronder.
@@ -193,7 +193,12 @@ de commons. Infrastructuur die een instrument opt-in ondersteunt (B8) is de uitz
 naam in `BESLUITEN.md` vastgelegd. Reden: een tool die een DPIA, inkoop en een beheerder vraagt voordat
 iemand hem kan proberen, haalt de drempel niet weg waarvoor de commons bestaat; wat je opent, gebruik je
 vandaag. Vastgesteld 02-09-2026 (issue #17); `repo-compliance.yml` controleert dit niet, de projectentabel
-en het plan *lichte commons* zijn de controle.
+en het plan *lichte commons* zijn de controle. Een opt-in AI-hulp met de sleutel van de gebruiker maakt van een
+instrument geen applicatie, mits: een aparte pagina met eigen Content-Security-Policy zodat de tool zelf
+`default-src 'none'` houdt; de sleutel alleen in `sessionStorage`, nooit in dossier, voorstel of URL; de
+uitkomst een voorstel dat de gebruiker per regel overneemt, nooit een schrijfactie in het dossier; en
+toestemming per sessie met de melding wat waarheen gaat (verduidelijkt 03-09-2026, issue #18; het
+patroon staat in het plan *AI-hulp*).
 
 ## Wijzigen van dit statuut
 
