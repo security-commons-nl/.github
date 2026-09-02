@@ -6,6 +6,20 @@ krijgt hier een regel: datum, wat er is besloten, en waarom. Nieuwste bovenaan. 
 
 Dit log begint op 29-08-2026, toen bleek dat het statuut er wel naar verwees maar het nergens stond.
 
+## 02-09-2026 · De normbronnen krijgen een eigen dataset-repo `normen`
+
+**Besloten.** BIO 2.0, NIST CSF 2.0, het Wpg-toetsingskader en de AVG (nu in `aanvalspaden/mappingen/bronnen/`,
+met `cisochat/data/bio2.json` als bron) verhuizen naar een eigen repo `normen`, type dataset, in de
+projectentabel met een leesbare versie. De mappingen (welke barriere levert bewijs voor welke maatregel)
+blijven bij de aanvalspaden. Afnemers (aanvalspaden, applicatiecheck, policy-as-code, later de CSIR-tool)
+kopieren met een vingerafdruk, zoals de bestaande harde koppelingen. Het veld `iso_maatregel` met de
+woordelijke ISO 27002-tekst gaat er bij de verhuizing uit; de crosswalk gebruikt alleen de BIO-nummering en
+de overheidsmaatregel.
+
+**Waarom.** Eén dataset met vier afnemers hoort niet onder een van die vier. Het crosswalk-plan van 30-08
+noemde een gedeelde kaders-repo al als vervolgbesluit. En als centrale dataset is herdistributie van
+ISO-tekst een ander verhaal dan als data bij een concept; BIO 2.0 is open, ISO niet.
+
 ## 02-09-2026 · De commons levert instrumenten en scripts, geen applicaties meer
 
 **Besloten.** Een project in de projectentabel is een instrument (rekent volledig in de browser, zonder

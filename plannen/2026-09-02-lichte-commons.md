@@ -129,8 +129,10 @@ GRC-platform"), `.github/profile/README.md` (naar de alinea Gearchiveerd), `CLAU
 `security-posture-tool/README.md` (regel 61; vervalt bij de ombouw). De plannen en het besluitenlog
 blijven staan: dat is historie.
 
-**Fase 2. cisochat.** `bio2.json` verhuizen naar `aanvalspaden/mappingen/bronnen/` als bron, met
-`genereer_bio2.py` erop aangepast en de commit-hash-koppeling in de andere richting. Onderzoeksdocumenten
+**Fase 2. Repo `normen` en cisochat.** Besluit 02-09 (tweede regel in `BESLUITEN.md`): de normbronnen
+krijgen een eigen dataset-repo `normen`. `bio2.json` verhuist daarheen (zonder het veld `iso_maatregel`),
+samen met `nist-csf.json`, `wpg.json` en `avg.json` uit `aanvalspaden/mappingen/bronnen/`; de generatoren
+en de vingerafdruk-bewaking draaien om, van `normen` naar elke afnemer. Eigen bouwplan. Onderzoeksdocumenten
 naar `referenties-tooling`. vCISO-idee als issue `idee` in `.github`. Archiveren. Routingregels in
 `CLAUDE.md` die naar `cisochat\docs\vciso\research\` wijzen, naar het kennisbankitem.
 
