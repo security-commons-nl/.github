@@ -9,12 +9,15 @@ schrijven in [REDACTIESTATUUT.md](REDACTIESTATUUT.md), en hoe je bijdraagt in
 [organisatieprofiel](profile/README.md) is de enige projectenlijst; wijkt dit stuk daarvan af, dan
 heeft het profiel gelijk.
 
-**Peildatum: 31 augustus 2026** (bijgewerkt met *Halen en brengen*)**.** De rationalisatie uit
+**Peildatum: 2 september 2026.** De rationalisatie uit
 [het plan](plannen/2026-08-30-rationalisatie.md) is uitgevoerd: de security-shop is opgegaan in de
 kennisbank, de kennisbank is de bron van het handelingsperspectief, en 35 van de 44 barrieres hebben
 een handleiding. Daarna is *Meten voordat je ingrijpt* opgesplitst
 ([plan](plannen/2026-08-31-meten-voordat-je-ingrijpt-opsplitsen.md)): 49 items, 53 koppelingen, en het
-veld `pijler` is zichtbaar geworden op de site.
+veld `pijler` is zichtbaar geworden op de site. Op 1 en 2 september kwamen er twee repo's bij:
+`csir-assessment-tool` (de CSIR in de browser, [plan](plannen/2026-09-01-csir-keten.md)) en
+`applicatiecheck` (concept), en werd statuut B13 vastgesteld
+([plan](plannen/2026-09-02-elk-project-een-pagina.md)).
 
 ---
 
@@ -22,7 +25,7 @@ veld `pijler` is zichtbaar geworden op de site.
 
 ![Architectuur van Security Commons NL](architectuur-landschap.svg)
 
-Eenentwintig repositories, waarvan drie gearchiveerd. Ze vallen uiteen in zes groepen, met daaronder
+Drieëntwintig repositories, waarvan drie gearchiveerd. Ze vallen uiteen in zes groepen, met daaronder
 drie harde datakoppelingen die het geheel bij elkaar houden.
 
 ### De ruggengraat: de aanvalspaden-keten
@@ -44,20 +47,23 @@ daaronder liggen. Alles wat de keten doet, hangt aan die 44.
 worden gegenereerd uit de projectentabel in `.github/profile/README.md`; die tabel is de enige
 projectenlijst (statuut B9).
 
-**Kennis.** `kennisbank`, negenenveertig items, waarvan negenendertig van het type
+**Kennis.** `kennisbank`, tweeënvijftig items, waarvan eenenveertig van het type
 `handleiding`. Verdeeld over de vier vakgebieden is dat scheef: achtenveertig staan onder
-`security`, één onder `governance`, en `privacy` en `bcm` zijn nog leeg. Een handleiding draagt het veld `barrieres:` en is daarmee de bron van het
+`security`, twee onder `governance`, twee onder `bcm`, en `privacy` is nog leeg. Een handleiding draagt het veld `barrieres:` en is daarmee de bron van het
 handelingsperspectief: `tools/build.py` exporteert `handelingsperspectief.json`, en `aanvalspaden`
 kopieert dat met `tools/haal_handelingsperspectief.py`, met een sha256 eronder zodat een verlopen kopie
 opvalt. Zo staat een handleiding op een plek in plaats van twee. Een barriere mag meer dan een
 handleiding hebben; de rol (`fundering`, `alternatief`, `verdieping`) zegt waar je begint en wat
 ernaast kan. Een stuk kan daarnaast een `pijler` dragen: dan hangt het onder een groter geheel, en tonen
-de pijler en het stuk elkaar. Stand: 35 van de 44 barrieres gedekt met 53 koppelingen, 9 open, en die
-negen staan met een schrijfopdracht in `aanvalspaden/mappingen/gevraagd.json`.
+de pijler en het stuk elkaar. Stand: 36 van de 44 barrieres gedekt met 55 koppelingen, 8 open, en die
+acht staan met een schrijfopdracht in `aanvalspaden/mappingen/gevraagd.json`.
 
 **Keten.** `aanvalspaden` en `security-posture-tool`, hierboven beschreven.
 
-**Instrumenten.** `grc-platform` (ISMS/PIMS/BCMS), `procescheck` (BIA en BIV), `weerbaarheid-game` (het bestuurlijke gesprek), `cisochat` (vCISO-dirigent, en tevens houder
+**Instrumenten.** `grc-platform` (ISMS/PIMS/BCMS, en daarmee het risicoregister), `procescheck` (BIA en BIV),
+`csir-assessment-tool` (de CSIR voor een object met industriële automatisering: classificeren, bepalen,
+uitwerken), `applicatiecheck` (concept: BIO2-bewijs uit de applicatie zelf), `weerbaarheid-game` (het
+bestuurlijke gesprek), `cisochat` (vCISO-dirigent, en tevens houder
 van de gedeelde BIO2-dataset), `policy-as-code` (beleid als uitvoerbare regels).
 
 **Scanners.** Kleine CLI's die een concrete vraag beantwoorden uit data die je al hebt: `iamscan` (wie
@@ -100,7 +106,7 @@ diezelfde sleutel hangen vier vragen:
 | Hoe sta ik ervoor? | `aanvalspaden/check/` | live |
 | Wat zegt mijn eigen data? | `security-posture-tool` | prototype |
 | Wat toon ik hiermee aan? | `aanvalspaden/mappingen/` | live, 333 regels over vier kaders |
-| Hoe pak ik het aan? | `kennisbank` (bron), gekopieerd naar `aanvalspaden/mappingen/` | live, 35 van de 44 barrieres |
+| Hoe pak ik het aan? | `kennisbank` (bron), gekopieerd naar `aanvalspaden/mappingen/` | live, 36 van de 44 barrieres |
 
 Omdat elke laag dezelfde sleutel gebruikt, kost een nieuwe laag geen nieuw datamodel. De zelfcheck
 geeft per aanbevolen actie een `vraag_id`; dat is exact de sleutel waar de normverankering en het
