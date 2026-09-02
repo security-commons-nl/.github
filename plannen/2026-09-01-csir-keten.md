@@ -1,5 +1,7 @@
 # Bouwplan: de CSIR-keten in de browser (classificeren, bepalen, uitwerken)
 
+> **Naamswijziging 02-09-2026:** wat hier "de CSIR-keten" heet, is bij oplevering `CSIR Assessment Tool` gaan heten, in de repo `csir-assessment-tool` (was `csir-control-register`). "Keten" is als productnaam losgelaten omdat de CSIR zelf een ketenregel kent (§0.3). Dit plan blijft staan zoals het is geschreven; de naam in de tekst is die van 01-09.
+
 **Doel:** de twee Excel-bestanden rond de Cybersecurity Implementatierichtlijn Objecten (CSIR) samenbrengen
 tot één instrument dat in de browser draait, zoals de zelfcheck van `aanvalspaden`: het
 objectclassificatie-formulier (stap 0) en het control-register van Vasilis (stap 1 en 2) worden één keten
