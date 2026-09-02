@@ -137,8 +137,8 @@ en de vingerafdruk-bewaking draaien om, van `normen` naar elke afnemer. Eigen bo
 naar `referenties-tooling`. vCISO-idee als issue `idee` in `.github`. Archiveren. Routingregels in
 `CLAUDE.md` die naar `cisochat\docs\vciso\research\` wijzen, naar het kennisbankitem.
 
-**Fase 3. hosting-bouwblokken.** Keuze van Bas: oogsten naar de kennisbank en archiveren, of laten staan
-als naslag met de status `gearchiveerd` en een regel waarom.
+**Fase 3. hosting-bouwblokken.** Keuze Bas 02-09: archief, zonder oogst. **Gedaan 02-09:** kloon plus bundle en
+LEESMIJ in `X:\ARCHIEF\hosting-bouwblokken*`, op GitHub gearchiveerd, profiel en architectuur bij.
 
 **Fase 4. procescheck → instrument.** Eigen bouwplan, met Vasilis. Bron: de BIA-vragen (B1-B8, I1-I7,
 V1-V7 met onderbouwing), de MTPD/RTO/WRT/RPO-klassen uit `Docs/`, de businesscontext. Dossier: één proces

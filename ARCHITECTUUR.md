@@ -106,8 +106,7 @@ bron, vier bewijssoorten (configuratie, log, document, niet uit de bron te halen
 **Neemt afscheid.** `grc-platform` (ISMS/PIMS/BCMS met tenants, RLS en AI-agents) is op 2 september 2026
 gearchiveerd: het is de definitie van een applicatie en wordt nooit één pagina. De volledige historie
 staat lokaal bewaard. `cisochat` (ontwerp voor een vCISO-agent, geen code) volgt zodra zijn
-`data/bio2.json`, de bron van de normverankering, is verhuisd; `hosting-bouwblokken` zodra is beoordeeld
-wat ervan als kennis verder leeft. Zie het plan voor de volgorde.
+`data/bio2.json`, de bron van de normverankering, is verhuisd; `hosting-bouwblokken` is gearchiveerd (02-09, keuze Bas: geen oogst). Zie het plan voor de volgorde.
 
 **Scripts en draaiboeken.** `publicatiescan` (persoonsgegevens in eigen publicaties; blijft een script
 omdat een browser geen URL's kan ophalen) en `ai-gebruik-in-beeld` (draaiboek om AI-gebruik te meten).
@@ -118,8 +117,8 @@ staan tot hun opvolger live is en worden dan gearchiveerd.
 (de Worker eronder). Dit is de sluis waarlangs materiaal de kennisbank in komt.
 
 **Governance en infra.** `.github` draagt het redactiestatuut, de principes en de projectentabel.
-`hosting-bouwblokken` (referentiearchitecturen voor hosten) wacht op het oordeel uit het plan *lichte
-commons*: als de commons niets meer host, is er niets meer om te hosten.
+`hosting-bouwblokken` (referentiearchitecturen en Terraform om applicaties te hosten) is op 02-09-2026
+gearchiveerd: de commons host niets meer, dus er is niets meer om te hosten. De kloon staat lokaal bewaard.
 
 ### De drie harde koppelingen
 
