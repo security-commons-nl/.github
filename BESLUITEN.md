@@ -13,7 +13,7 @@ continuiteitsparameters, de businesscontext en de blast radius in een pagina van
 als JSON-bestand op het apparaat van de gebruiker. De applicatievorm (React, FastAPI, PostgreSQL, Azure AD)
 is van `main` af en staat op tag `v0-applicatie`, waar het instrument zijn vragen en rekenregels ook
 vandaan haalt. `blast-radius` is opgegaan in de tab *Blast radius* en op GitHub gearchiveerd; kloon plus
-bundle staan in `X:\ARCHIEFlast-radius*`.
+bundle staan in `X:\ARCHIEF\blast-radius*`.
 
 **Waarom.** Uitvoering van fase 4 en 6 van het plan *lichte commons* en van B14: wat procescheck een
 applicatie maakte was hosting, geen inhoud. Een database, een account en een beheerder stonden tussen de
