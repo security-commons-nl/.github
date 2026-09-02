@@ -6,6 +6,29 @@ krijgt hier een regel: datum, wat er is besloten, en waarom. Nieuwste bovenaan. 
 
 Dit log begint op 29-08-2026, toen bleek dat het statuut er wel naar verwees maar het nergens stond.
 
+## 03-09-2026 · procescheck is een instrument; blast-radius is erin opgegaan en gearchiveerd
+
+**Besloten.** `procescheck` rekent sinds vandaag in de browser: de BIA en BIV-classificatie, de
+continuiteitsparameters, de businesscontext en de blast radius in een pagina van 116 kB, met het dossier
+als JSON-bestand op het apparaat van de gebruiker. De applicatievorm (React, FastAPI, PostgreSQL, Azure AD)
+is van `main` af en staat op tag `v0-applicatie`, waar het instrument zijn vragen en rekenregels ook
+vandaan haalt. `blast-radius` is opgegaan in de tab *Blast radius* en op GitHub gearchiveerd; kloon plus
+bundle staan in `X:\ARCHIEFlast-radius*`.
+
+**Waarom.** Uitvoering van fase 4 en 6 van het plan *lichte commons* en van B14: wat procescheck een
+applicatie maakte was hosting, geen inhoud. Een database, een account en een beheerder stonden tussen de
+gebruiker en een formulier met zes vragen. De inhoud zelf is niet aangeraakt: de zes vragen, de dertig
+antwoordteksten, de vijf klassen en de tien volledigheidscontroles zijn woordelijk uit de code op de tag
+gehaald door `instrument/haal_bron.py`, en een test legt ze daar telkens weer naast.
+
+**Twee bewuste afwijkingen**, allebei in `verantwoording.md`: het gedachtestreepje in een redentekst werd
+een komma, en de lichtste prioriteit heet `low` in plaats van `medium`, zodat de prioriteit gelijkloopt met
+de volledigheidsbanden die de applicatie zelf al hanteerde.
+
+**Wat vervalt.** Inloggen, de auditlog, de exportserver voor xlsx/docx/pptx en de Docker-omgeving. De
+auditlog bestond omdat meerdere mensen in dezelfde database werkten; een dossier op je eigen schijf heeft
+git of een gedateerde kopie als audit trail.
+
 ## 02-09-2026 · Scanners zijn geen projecten: posture-tool en iamscan gaan op in meting, blast-radius in procescheck
 
 **Besloten.** `security-posture-tool` en `iamscan` gaan op in `aanvalspaden/meting/` (diepte 2 van de keten);

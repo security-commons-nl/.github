@@ -89,15 +89,14 @@ voor welke maatregel) blijven bij de aanvalspaden; `normen` levert alleen de bro
 **Instrumenten.** `csir-assessment-tool` (de CSIR voor een object met industriële automatisering:
 classificeren, bepalen, uitwerken), `weerbaarheid-game` (het bestuurlijke gesprek), `applicatiecheck`
 (concept: BIO2-bewijs uit de applicatie zelf, in de browser), `policy-as-code` (concept: beleid als
-uitvoerbare regels). **Wordt omgebouwd** naar de vorm hierboven: `procescheck` (BIA en BIV; nu React,
-FastAPI en PostgreSQL), en `blast-radius` gaat daarin op als de vraag "wat valt er om" bij de applicaties
-onder een proces. `security-posture-tool` gaat op in `aanvalspaden/meting/` (diepte 2), en `iamscan` daar
+uitvoerbare regels). `procescheck` is op 03-09-2026 omgebouwd naar de vorm hierboven en `blast-radius`
+ging daarin op: de vraag "wat valt er om" hoort bij de processen, en de data stond daar al. `security-posture-tool` gaat op in `aanvalspaden/meting/` (diepte 2), en `iamscan` daar
 weer in als de Linux-dump als bron. Besluit 02-09-2026: een scanner die één vraag op één export beantwoordt
 is geen project maar een bron plus regelset in het instrument dat over die eenheid gaat.
 
 **De bewijs-vorm.** Drie instrumenten lezen een export en toetsen die deterministisch: `applicatiecheck`
 (één applicatie tegen BIO 2.0), `aanvalspaden/meting/` (het landschap tegen de chokepoints, met de Linux-dump
-van iamscan als een van de bronnen) en straks `procescheck` (de landschapsexport voor de blast radius).
+van iamscan als een van de bronnen) en `procescheck` (de landschapsexport voor de blast radius).
 Dezelfde vorm, geen gedeelde bibliotheek: regels als JSON, een parser per bron, een bevinding met bewijs en
 bron, vier bewijssoorten (configuratie, log, document, niet uit de bron te halen), dossier als JSON.
 `applicatiecheck` is de referentie-implementatie van die vorm; meting volgt hem, niet zijn eigen
@@ -110,8 +109,8 @@ staat lokaal bewaard. `cisochat` (ontwerp voor een vCISO-agent, geen code) volgt
 
 **Scripts en draaiboeken.** `publicatiescan` (persoonsgegevens in eigen publicaties; blijft een script
 omdat een browser geen URL's kan ophalen) en `ai-gebruik-in-beeld` (draaiboek om AI-gebruik te meten).
-`iamscan` en `blast-radius` stonden hier tot 02-09-2026 en gaan op in meting en procescheck; ze blijven
-staan tot hun opvolger live is en worden dan gearchiveerd.
+`iamscan` en `blast-radius` stonden hier tot 02-09-2026. `blast-radius` is opgegaan in `procescheck` en
+op 03-09 gearchiveerd; `iamscan` gaat op in meting en blijft staan tot die er is.
 
 **Anonimiseren.** `anonimizer-local` (CLI), `anonimizer-browser` (in de browser) en `anonimizer-proxy`
 (de Worker eronder). Dit is de sluis waarlangs materiaal de kennisbank in komt.
