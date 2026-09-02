@@ -6,6 +6,17 @@ krijgt hier een regel: datum, wat er is besloten, en waarom. Nieuwste bovenaan. 
 
 Dit log begint op 29-08-2026, toen bleek dat het statuut er wel naar verwees maar het nergens stond.
 
+## 02-09-2026 · BIO 2.0 in `normen`: alleen nummers, titels en thema's; geen tekst van het CIP
+
+**Besloten.** De tekst van de overheidsmaatregelen en het risico uit de BIO 2.0-publicatie gaan niet mee in
+`normen/bio2.json`. Wat blijft: nummer, titel en thema. Dit corrigeert het besluit van eerder vandaag, dat de
+tekst van de overheidsmaatregel en het risico als "open" liet staan.
+
+**Waarom.** Het CIP publiceert onder CC BY-NC-SA 4.0. Niet-commercieel en share-alike zijn niet te verenigen
+met herdistributie onder EUPL-1.2, en de commons publiceert voor iedereen, ook voor wie er een dienst omheen
+bouwt. Dezelfde regel als voor de ISO-tekst, om dezelfde reden: het nummer is van iedereen, de tekst niet. De
+aanvalspaden werkten al zo; `normen` volgt nu, en `applicatiecheck` moet volgen (issue `applicatiecheck#2`).
+
 ## 02-09-2026 · De normbronnen krijgen een eigen dataset-repo `normen`
 
 **Besloten.** BIO 2.0, NIST CSF 2.0, het Wpg-toetsingskader en de AVG (nu in `aanvalspaden/mappingen/bronnen/`,
