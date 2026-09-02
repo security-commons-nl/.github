@@ -48,7 +48,12 @@ Wacht op afstemming met de mede-auteur en daarna op uitvoering.
    kroonjuwelen met eigenaar en de systemen eronder; het dossier levert die tabel op basis van
    `is_critical` en de klasse, in de vorm van `sjabloon-matrix.md`. Zo wordt procescheck de bron voor
    diepte 1 zonder dat er iets aan elkaar geknoopt hoeft te worden.
-6. **Mede-auteur eerst.** Vasilis Theocharis is mede-auteur van procescheck. Het plan gaat naar hem vóór
+6. **blast-radius gaat hierin op** (besluit 02-09, plan *lichte commons* fase 6): een landschapsexport (CSV of
+   JSON, het formaat van `blast-radius/testdata/landschap.json`) is te importeren in het dossier als de laag
+   componenten onder de applicaties; een tab *Blast radius* toont per component wat er omvalt, als lijst en
+   als SVG, en de uitdraai neemt de keten proces → applicatie → component mee. De parser en de rekenregel
+   komen uit `blastradius/`; de CLI-repo wordt gearchiveerd zodra dit live is.
+7. **Mede-auteur eerst.** Vasilis Theocharis is mede-auteur van procescheck. Het plan gaat naar hem vóór
    er gebouwd wordt; zijn opmerkingen komen in hoofdstuk 7.
 
 ## 1. Wat er nu is (uit de code, 02-09-2026)

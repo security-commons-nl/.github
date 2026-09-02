@@ -94,9 +94,9 @@ staat, niet wat de README belooft.
 | Repo | Nu | Wordt | Waarom dit de moeite is |
 |---|---|---|---|
 | `procescheck` | React + FastAPI + PostgreSQL + Azure AD | BIA en BIV per proces als één pagina, dossier als JSON | Het is een formulier met regels, precies het CSIR-patroon. En het ontsluit de koppeling object-onder-proces (`aanvalspaden#4`): twee JSON-dossiers die naar elkaar verwijzen op een sleutel. **Mede-auteur: Vasilis; afstemmen vóór het bouwplan** |
-| `security-posture-tool` | FastAPI + SQLite, haalt zelf uit Entra, CSV-upload | diepte 2 van de keten: exports inlezen in de browser, bevindingen op `paden.json` | Besluit 28-08 zei al: verhuist naar `aanvalspaden/meting/` zodra hij op `paden.json` landt. De Entra-koppeling (Graph API met auth) vervalt; de gebruiker exporteert zelf uit het portaal |
-| `blast-radius` | Python CLI, graaf uit een CI-export | browserversie: export plakken of kiezen, graaf als SVG | Leest alleen een bestand; de anonimizer laat zien dat dat in de browser kan. CLI mag blijven als script |
-| `iamscan` | Python CLI, leest een Linux-dump | browserversie: dump kiezen, bevindingen met de configregel erbij | Idem |
+| `security-posture-tool` | FastAPI + SQLite, haalt zelf uit Entra, CSV-upload | **gaat op in** `aanvalspaden/meting/` (diepte 2): exports inlezen in de browser, bevindingen op `paden.json`, in de bewijs-vorm van applicatiecheck | Besluit 28-08 zei al: verhuist naar `aanvalspaden/meting/`. Aangescherpt 02-09: geen eigen repo meer; de eigen `architecture.md` (rule engine, connectors, zeven lagen) is oogst voor het meting-plan, niet het ontwerp ervan. De Entra-koppeling vervalt; de gebruiker exporteert zelf |
+| `blast-radius` | Python CLI, graaf uit een CI-export | **gaat op in** `procescheck`: de landschapsexport als import, de keten proces → applicatie → component als tab en uitdraai | Aangescherpt 02-09. De vraag "wat valt er om" is cascade, en cascade woont bij de processen; de risicoanalyse-methode wijst blast-radius al toe aan stap 1 (kroonjuwelen, systemen eronder). Repo archiveren zodra procescheck live is |
+| `iamscan` | Python CLI, leest een Linux-dump | **gaat op in** `aanvalspaden/meting/`: de Linux-dump als bron, de regels op AP05 en AP11 (tier-0, service-accounts, lokale beheerrechten) | Aangescherpt 02-09. Eén vraag op één export is geen project maar een bron plus regelset. Repo archiveren zodra meting live is |
 
 ### Afscheid
 
@@ -145,12 +145,17 @@ V1-V7 met onderbouwing), de MTPD/RTO/WRT/RPO-klassen uit `Docs/`, de businesscon
 per bestand, of één organisatie met meerdere processen; dat is een ontwerpkeuze voor dat plan. Daarna
 `aanvalspaden#4` uitvoeren: het object uit de CSIR-tool verwijst naar een proces uit dit dossier.
 
-**Fase 5. security-posture-tool → `aanvalspaden/meting/`.** Eigen bouwplan. Bron: de 37 checklistitems
-met hun `pad` en `chokepoint` (staat al in `paden_map.py`). Invoer: exports (CSV/JSON) uit Entra, Intune,
-nmap, Nessus; geen eigen ophalen. Uitkomst: bevindingen per chokepoint met bewijs, in de vorm van diepte 1.
+**Fase 5. Meting: security-posture-tool en iamscan gaan op in `aanvalspaden/meting/`.** Eigen bouwplan,
+pas nadat applicatiecheck F1 heeft laten zien hoe de bewijs-vorm eruitziet (regels als data, parser per
+bron, bewijssoorten, dossier); meting volgt die vorm en niet de eigen `architecture.md` van de posture-tool.
+Bron: de 37 checklistitems met hun `pad` en `chokepoint` (`paden_map.py`), plus de iamscan-regels op AP05 en
+AP11. Invoer: exports (CSV/JSON) uit Entra, Intune, nmap, Nessus, en de Linux-dump van `collect.sh`; geen
+eigen ophalen. Uitkomst: bevindingen per chokepoint met bewijs, in de vorm van diepte 1. Daarna beide repo's
+archiveren.
 
-**Fase 6. blast-radius en iamscan → browserversies.** Eén bouwplan samen; het zijn dezelfde beweging
-(bestand kiezen, parsen, tonen). De CLI's blijven als script naast de pagina.
+**Fase 6. blast-radius gaat op in procescheck.** Onderdeel van het procescheck-plan (fase 4): de
+landschapsexport als import in het dossier, de keten proces → applicatie → component als tab en als
+uitdraai. Geen eigen bouwplan; repo archiveren zodra procescheck live is.
 
 **Fase 7. Diepte 1.** De matrix kroonjuwelen × clusters als instrument in `aanvalspaden`, met het dossier
 van fase 4 als bron voor de rijen. Was al gepland (besluit 28-08); door dit plan is het per definitie

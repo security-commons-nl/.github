@@ -6,6 +6,26 @@ krijgt hier een regel: datum, wat er is besloten, en waarom. Nieuwste bovenaan. 
 
 Dit log begint op 29-08-2026, toen bleek dat het statuut er wel naar verwees maar het nergens stond.
 
+## 02-09-2026 · Scanners zijn geen projecten: posture-tool en iamscan gaan op in meting, blast-radius in procescheck
+
+**Besloten.** `security-posture-tool` en `iamscan` gaan op in `aanvalspaden/meting/` (diepte 2 van de keten);
+`blast-radius` gaat op in `procescheck`. Geen browserversies naast de CLI's, zoals het plan *lichte commons*
+eerst zei, en geen samenvoeging onder `applicatiecheck`. De repo's blijven staan tot hun opvolger live is en
+worden dan gearchiveerd. `applicatiecheck` blijft een eigen instrument (eenheid: één applicatie) en is de
+referentie-implementatie van de bewijs-vorm die meting overneemt.
+
+**Waarom.** Vier repo's lazen ieder een export, toetsten die deterministisch en schreven een rapport; de
+posture-tool had daar een eigen motor voor ontworpen (observation, finding, rule engine, zeven lagen) die
+applicatiecheck nu voor een tweede keer aan het bouwen was. Eén vorm, gedocumenteerd in `ARCHITECTUUR.md`,
+en per eenheid één instrument: landschap (meting), applicatie (applicatiecheck), proces (procescheck), object
+(CSIR). Een scanner die één vraag op één export beantwoordt is in die indeling een bron plus regelset, geen
+project. De scope overlapt niet (nagekeken: applicatiecheck zegt zelf "eenheid is één applicatie, niet het
+landschap"), de machinerie wel; daar zat het duplicaat.
+
+**Afgewezen.** Alles onder applicatiecheck hangen: dat maakt van een applicatie-instrument een
+landschapsinstrument en breekt zijn eigen afbakening. Losse browserversies per scanner: dan is de motor
+alsnog vier keer gebouwd, alleen client-side.
+
 ## 02-09-2026 · BIO 2.0 in `normen`: alleen nummers, titels en thema's; geen tekst van het CIP
 
 **Besloten.** De tekst van de overheidsmaatregelen en het risico uit de BIO 2.0-publicatie gaan niet mee in
