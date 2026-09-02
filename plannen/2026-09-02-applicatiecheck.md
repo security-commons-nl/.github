@@ -14,11 +14,17 @@ HTML-bestand, bron in JSON, niets verlaat het apparaat. Repo en pagina bestaan s
 concept; dit plan beschrijft wat er gebouwd wordt om het label naar *prototype* te tillen.
 
 **Grenzen, en wat het niet is.** Eenheid is één applicatie, niet het landschap (dat is
-`security-posture-tool`); het instrument levert bewijs, het beheert het niet (dat is `grc-platform`);
+`aanvalspaden/meting/`, waarin `security-posture-tool` en `iamscan` opgaan; besluit 02-09-2026); het instrument levert bewijs, het beheert het niet (dat is `grc-platform`);
 het is de eerste concrete uitwerking van `policy-as-code` voor één kader en één eenheid, geen regeltaal
 voor de hele norm; het stelt vast, de kennisbank legt uit hoe. Kader voor de indeling is de gekochte
 applicatie (CIP BIO Thema-uitwerking Softwarepakketten); zelfbouw (Applicatieontwikkeling) komt later,
 anders verdubbelt de indeling. Eerste toepassing: een zaaksysteem, JOIN Zaak & Document.
+
+**Rol in de commons.** Sinds het besluit van 02-09-2026 over de scanners is dit de
+**referentie-implementatie van de bewijs-vorm** (`ARCHITECTUUR.md`): regels als JSON, een parser per bron,
+een bevinding met bewijs en bron, vier bewijssoorten, dossier als JSON. `aanvalspaden/meting/` en
+`procescheck` nemen die vorm over, zonder gedeelde bibliotheek. Wat hier expliciet en saai is opgeschreven,
+wordt daar gekopieerd; liever iets te expliciet dan iets te slim.
 
 **Tech stack:** Python 3.12 (bouwscript, referentie-implementatie, tests), pytest, Playwright
 (browsertests), vanilla JS en CSS in de pagina, geen bundler. De leesversie van het ontwerp loopt via de
@@ -35,12 +41,20 @@ ISO-tekst wordt niet gekopieerd (auteursrecht). `tools/haal_bio2.py` maakt de ko
 van de bron erin; `--check` faalt in CI als de kopie achterloopt. Zelfde patroon als
 `aanvalspaden/mappingen/bronnen/`.
 
-**Bron verhuist naar `normen` (besluit 02-09-2026, [plan](2026-09-02-normen.md)).** Zodra die repo er is,
-vervangt `tools/haal_normen.py` (alleen `bio2`) het huidige `tools/haal_bio2.py`, wordt `bronnen/bio2.json`
-byte-gelijk aan de kopie in `normen`, en verwijst `bewijs.json` in `bron_bio2` naar de vingerafdruk in plaats
-van naar een cisochat-commit. De inhoud van de kopie verandert daar niet door: er staat nu al geen
-ISO-tekst in. De datasetafwijkingen die hieronder onder *Gesignaleerd in de bron* staan, horen bij de
-verhuizing thuis, niet bij cisochat.
+**Bron is `normen` (uitgevoerd 02-09-2026, issue `applicatiecheck#2`).** `tools/haal_normen.py` haalt
+`bio2.json` uit `normen` en `--check` blokkeert in CI als de kopie achterloopt; `bewijs.json` noemt de
+vingerafdruk `143d785a8931`. Daarbij is de **tekst van de overheidsmaatregel uit de repo verwijderd**
+(41.824 tekens): het CIP publiceert onder CC BY-NC-SA 4.0 en dat is niet te verenigen met herdistributie
+onder EUPL-1.2 (besluit van dezelfde dag). Wat blijft is nummer, titel en thema; een test blokkeert de
+terugval. Gevolg voor het ontwerp: het dossier toont het **nummer en de titel** van een maatregel en
+verwijst voor de tekst naar de CIP-publicatie. Dat is een verschil met de CSIR Assessment Tool, die de
+eisteksten wel woordelijk mag tonen (andere rechthebbende, ander regime), en het betekent dat de uitdraai
+van applicatiecheck geen eisenbron voor een aanbesteding is.
+
+**Gesignaleerd in `normen` bij de omzetting:** zestig van de 148 titels dragen nog de afbreekregels van de
+oorspronkelijke CIP-tabel (`"Rollen en verantwoordelijkheden bij \ninformatiebeveiliging"`) en twee een losse
+afsluitende apostrof (`"User endpoint devices'"`). De titelvergelijking hier normaliseert daarop; opschonen
+hoort in `normen` te gebeuren, niet in een kopie.
 
 **`bewijs.json`** is het eerste product: per overheidsmaatregel de bewijssoort(en), de bron (eigen of
 leverancier), wat het bewijs moet bevatten, een ASVS-verwijzing waar die helpt, en een motivering. Het is
@@ -210,6 +224,7 @@ haalt hem door de anonimizer en dan is het een fixture met een herkomstregel, ge
 | F0: bron, bewijs.json, indeling, tests, CI | gedaan, 02-09-2026 |
 | F0: laag 5 (bevestigen per familie) | gedaan, 02-09-2026 |
 | F0: laag 2 (CIP Softwarepakketten v2.0 ernaast) | gedaan, 02-09-2026 |
+| F0: bron naar `normen`, CIP-tekst eruit (issue #2) | gedaan, 02-09-2026 |
 | F1 t/m F4 | te doen; uitvoeringsplan stap voor stap staat in deel 2 hieronder (02-09-2026) |
 
 ---
@@ -411,6 +426,10 @@ met soort A of B → `handmatig` (nog geen regel uitdrukbaar).
 
 `status` is de menselijke keuze per maatregel en start gelijk aan `uitkomst`; de gebruiker mag hem
 zetten op `niet van toepassing` of `explain` met een `onderbouwing`. `uitkomst` blijft wat de regel zei.
+
+De **tekst** van een maatregel staat niet in het dossier en niet in de pagina: alleen nummer, titel en
+thema uit `bronnen/bio2.json`. Reden staat in deel 1 (CC BY-NC-SA). De pagina zet achter elke maatregel
+een verwijzing naar de CIP-publicatie, geen citaat.
 
 ---
 
@@ -1873,9 +1892,15 @@ def test_alle_maatregelen_en_regels_zitten_erin(html):
     bio2 = json.loads((ROOT / "bronnen" / "bio2.json").read_text(encoding="utf-8"))
     regels = json.loads((ROOT / "regels.json").read_text(encoding="utf-8"))
     for m in bio2["maatregelen"]:
-        assert in_pagina(m["overheidsmaatregel"], html), m["id"]
+        assert in_pagina(m["id"], html) and in_pagina(m["titel"], html), m["id"]
     for r in regels["regels"]:
         assert in_pagina(r["eis"], html), r["id"]
+
+
+def test_geen_tekst_van_het_cip_in_de_pagina(html):
+    """Nummers en titels wel, de tekst van de overheidsmaatregel niet; zie deel 1 (CC BY-NC-SA)."""
+    for veld in ("overheidsmaatregel", "iso_maatregel"):
+        assert f'"{veld}"' not in html, veld
 
 
 def test_geen_externe_verwijzing(html):
