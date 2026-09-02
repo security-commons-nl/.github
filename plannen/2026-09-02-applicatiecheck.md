@@ -38,7 +38,7 @@ van de bron erin; `--check` faalt in CI als de kopie achterloopt. Zelfde patroon
 **`bewijs.json`** is het eerste product: per overheidsmaatregel de bewijssoort(en), de bron (eigen of
 leverancier), wat het bewijs moet bevatten, een ASVS-verwijzing waar die helpt, en een motivering. Het is
 met de hand bijgehouden en `tools/bouw_indeling.py` genereert er `indeling.md` uit, de tweede tab op de
-pagina. Stand bij schrijven: 148 rijen, status *voorlopig*: 28 met A of B (24 met A als eerste soort, 4 met B), 20 met C, 100 D.
+pagina. Stand na de bevestigingsronde van 02-09-2026: 148 rijen, status *bevestigd*: 32 met A of B (28 met A als eerste soort, 4 met B), 21 met C, 95 D.
 
 Hoe de eerste indeling is gemaakt, in vijf lagen:
 
@@ -50,11 +50,32 @@ Hoe de eerste indeling is gemaakt, in vijf lagen:
 | 4 | IBD RASCI-tabel BIO-controls | D waar de R buiten beheer en leverancier ligt |
 | 5 | menselijke pas, per maatregel, met een zaaksysteem in het hoofd | status *bevestigd* |
 
-Laag 1, 3 en 4 zijn op 02-09 toegepast uit kennis van de kaders; laag 2 is nog niet tegen de CIP-tekst
-gelegd (de site van CIP laat geen geautomatiseerd ophalen toe) en laag 5 is de eerstvolgende stap: een
-sessie met de tabel ernaast, rij voor rij, en daarna wisselt de status van *voorlopig* naar
-*bevestigd*. Een test bewaakt dat elke maatregel precies één keer voorkomt, dat A/B/C zeggen wat het
+Laag 1, 3 en 4 zijn op 02-09 toegepast uit kennis van de kaders; laag 5 is dezelfde dag gedaan, per
+familie in plaats van per rij, en heeft de status op *bevestigd* gezet. Laag 2 is nog niet tegen de
+CIP-tekst gelegd (de site van CIP laat geen geautomatiseerd ophalen toe) en kan rijen terugzetten naar
+*voorlopig*. Een test bewaakt dat elke maatregel precies één keer voorkomt, dat A/B/C zeggen wat het
 bewijs is en dat `indeling.md` gelijk loopt.
+
+Wat laag 5 heeft vastgelegd, en wat de regels van F1 dus moeten volgen:
+
+- **Uitgangspunt: SaaS bij de leverancier, SSO via de centrale identity provider.** Eigen hosting en
+  lokale authenticatie staan als variant in de motivering, niet als aparte rijen.
+- **MFA (5.17) telt via SSO:** de applicatie bewijst dat alle inlog via de identity provider loopt en dat
+  er geen lokale wachtwoordaccounts zijn (A); het MFA-beleid zelf is een schermafbeelding van de identity
+  provider (C).
+- **De log is de audit-export uit de applicatie zelf,** niet de kopie in de SIEM; de aansluiting op de
+  SIEM is 8.16.03 (C).
+- **Rollen en rechten komen uit een export van de beheeromgeving** (A); bestaat die niet, dan valt de
+  rij terug op C.
+- **8.05.01 krijgt twee regels:** leverancierstoegang (de BIO2-tekst) en inloginstellingen (de
+  ISO-lezing).
+- **De pagina doet geen netwerkverkeer:** transportversleuteling komt uit de configuratie (A) en een
+  extern scanrapport komt binnen als document (C).
+- **8.08.01 rekent achterstand uit:** versie uit de export, laatste release met datum en bron-URL door de
+  gebruiker ingevoerd.
+- **Van D naar A:** 8.32.01 (verschil tussen twee exports), 8.12.01 (export- en downloadbeperkingen),
+  5.12.01 (classificatieniveaus), 5.28.01 (logretentie drie jaar), 5.14.01 (koppelingenlijst).
+- **Naar leverancier:** 8.31.01 (testomgeving is bij SaaS een dienst).
 
 **Gesignaleerd in de bron** (cisochat, niet hier te repareren): 5.18.01 en 5.18.02 herhalen de MFA-tekst
 van 5.17; 5.16.01 en 5.16.02 dragen een tekst over AdES en internetfacing-registratie die niet bij
@@ -86,7 +107,7 @@ Uitkomsten per maatregel: *aangetoond*, *gedeeltelijk*, *niet aangetoond*, *niet
 
 **Referentie-implementatie** `toets.py` in Python en dezelfde regels in `app.js`; een test draait beide
 op dezelfde fixture en eist hetzelfde antwoord (het patroon `reken.py` ⟷ `app.js` van de CSIR-tool).
-Eerste regels: 8.15.01, 8.15.02, 8.17.01 (B), 5.17.01, 5.18.01, 8.05.01, 8.09.01 (A).
+Eerste regels: 8.15.01, 8.15.02, 8.17.01 (B), 5.17.01, 5.18.01, 8.05.01, 8.09.01, 8.32.01 (A).
 
 ## 3. Parsers (F1 generiek, F2 product)
 
@@ -149,7 +170,7 @@ haalt hem door de anonimizer en dan is het een fixture met een herkomstregel, ge
 
 | Fase | Wat | Label |
 |---|---|---|
-| F0 | `bronnen/bio2.json`, `bewijs.json`, `indeling.md`, tests, CI (**gedaan 02-09-2026**); daarna laag 2 en laag 5 van de indeling | concept |
+| F0 | `bronnen/bio2.json`, `bewijs.json`, `indeling.md`, tests, CI, bevestigingsronde (**gedaan 02-09-2026**); daarna laag 2 van de indeling | concept |
 | F1 | `regels.json` met de eerste zeven regels, `toets.py`, generieke CSV/JSON-parser, fixtures | concept |
 | F2 | JOIN-parser (audit-export en rollen) op synthetische fixture, PII-scrub op het logsample | concept |
 | F3 | de pagina met aanleveren, toetsen, dossier; Playwright-tests; rij in de projectentabel naar *Live tool* | **prototype** |
@@ -157,7 +178,7 @@ haalt hem door de anonimizer en dan is het een fixture met een herkomstregel, ge
 
 ## 8. Open vragen
 
-- Hoeveel van de 28 A/B-maatregelen zijn na laag 5 nog A/B, en welke worden *handmatig* omdat de
+- Hoeveel van de 32 A/B-maatregelen zijn na laag 5 nog A/B, en welke worden *handmatig* omdat de
   toetsset ze niet uitdrukt? Dat getal bepaalt of de generieke parser genoeg is voor een eerste
   gebruiker.
 - Regels in JSON met een gesloten toetsset, of later een bestaande regeltaal (OPA/Rego)? We beginnen met
@@ -172,5 +193,6 @@ haalt hem door de anonimizer en dan is het een fixture met een herkomstregel, ge
 |---|---|
 | Repo, pagina, projectentabel, B13 | gedaan, 02-09-2026 |
 | F0: bron, bewijs.json, indeling, tests, CI | gedaan, 02-09-2026 |
-| F0: laag 2 (CIP Softwarepakketten) en laag 5 (bevestigen per maatregel) | te doen |
+| F0: laag 5 (bevestigen per familie) | gedaan, 02-09-2026 |
+| F0: laag 2 (CIP Softwarepakketten ernaast) | te doen, wacht op de pdf |
 | F1 t/m F4 | te doen |
