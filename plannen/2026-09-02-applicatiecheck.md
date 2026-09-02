@@ -51,9 +51,15 @@ Hoe de eerste indeling is gemaakt, in vijf lagen:
 | 5 | menselijke pas, per maatregel, met een zaaksysteem in het hoofd | status *bevestigd* |
 
 Laag 1, 3 en 4 zijn op 02-09 toegepast uit kennis van de kaders; laag 5 is dezelfde dag gedaan, per
-familie in plaats van per rij, en heeft de status op *bevestigd* gezet. Laag 2 is nog niet tegen de
-CIP-tekst gelegd (de site van CIP laat geen geautomatiseerd ophalen toe) en kan rijen terugzetten naar
-*voorlopig*. Een test bewaakt dat elke maatregel precies één keer voorkomt, dat A/B/C zeggen wat het
+familie in plaats van per rij, en heeft de status op *bevestigd* gezet. Laag 2 is dezelfde dag gedaan
+met de Thema-uitwerking Softwarepakketten **v2.0 (mei 2026, BIO2 1.3 verwerkt)**: 57 rijen dragen nu een
+CIP-objectnummer (veld `cip`, kolom op de pagina), er is geen rij teruggezet naar *voorlopig*, en drie
+dingen zijn scherper geworden: CIP U.08 zegt letterlijk dat authenticatie in het pakket alleen relevant
+is als de infrastructuur (de identity provider) er niet in voorziet, wat de SSO-lezing van 5.17 bevestigt;
+CIP U.11.4 zegt dat de bewaartermijn van logging tot uitdrukking komt in de configuratie-instellingen van
+het pakket (8.15.04 als A); CIP U.10.2 maakt functiescheiding (5.03.01) toetsbaar op de rollenexport zodra
+de lijst van onverenigbare autorisaties er is (kandidaat voor A, nog niet omgezet). De CIP-tekst is
+CC BY-NC-SA: alleen objectnummers en parafrase, geen overgenomen tekst. Een test bewaakt dat elke maatregel precies één keer voorkomt, dat A/B/C zeggen wat het
 bewijs is en dat `indeling.md` gelijk loopt.
 
 Wat laag 5 heeft vastgelegd, en wat de regels van F1 dus moeten volgen:
@@ -80,8 +86,9 @@ Wat laag 5 heeft vastgelegd, en wat de regels van F1 dus moeten volgen:
 **Gesignaleerd in de bron** (cisochat, niet hier te repareren): 5.18.01 en 5.18.02 herhalen de MFA-tekst
 van 5.17; 5.16.01 en 5.16.02 dragen een tekst over AdES en internetfacing-registratie die niet bij
 identiteitsbeheer lijkt te horen; 5.24.01 draagt een ketentekst; 5.24.08 (CVD) heeft geen thema en geen
-tekst; 8.21.02 is verminkt. De indeling is op de ISO-titel gedaan waar de tekst afwijkt, met de afwijking
-in de motivering. Voorstel: issue op cisochat.
+tekst; 8.21.02 is verminkt. Daarnaast verwijst de CIP-uitwerking naar BIO2 8.24.04 en 8.24.05, terwijl de
+dataset voor 8.24 alleen .01 kent: nagaan of de dataset daar overheidsmaatregelen mist. De indeling is op
+de ISO-titel gedaan waar de tekst afwijkt, met de afwijking in de motivering. Voorstel: issue op cisochat.
 
 ## 2. Regels als data (F1)
 
@@ -170,7 +177,7 @@ haalt hem door de anonimizer en dan is het een fixture met een herkomstregel, ge
 
 | Fase | Wat | Label |
 |---|---|---|
-| F0 | `bronnen/bio2.json`, `bewijs.json`, `indeling.md`, tests, CI, bevestigingsronde (**gedaan 02-09-2026**); daarna laag 2 van de indeling | concept |
+| F0 | `bronnen/bio2.json`, `bewijs.json`, `indeling.md`, tests, CI, bevestigingsronde, CIP ernaast (**gedaan 02-09-2026**) | concept |
 | F1 | `regels.json` met de eerste zeven regels, `toets.py`, generieke CSV/JSON-parser, fixtures | concept |
 | F2 | JOIN-parser (audit-export en rollen) op synthetische fixture, PII-scrub op het logsample | concept |
 | F3 | de pagina met aanleveren, toetsen, dossier; Playwright-tests; rij in de projectentabel naar *Live tool* | **prototype** |
@@ -194,5 +201,5 @@ haalt hem door de anonimizer en dan is het een fixture met een herkomstregel, ge
 | Repo, pagina, projectentabel, B13 | gedaan, 02-09-2026 |
 | F0: bron, bewijs.json, indeling, tests, CI | gedaan, 02-09-2026 |
 | F0: laag 5 (bevestigen per familie) | gedaan, 02-09-2026 |
-| F0: laag 2 (CIP Softwarepakketten ernaast) | te doen, wacht op de pdf |
+| F0: laag 2 (CIP Softwarepakketten v2.0 ernaast) | gedaan, 02-09-2026 |
 | F1 t/m F4 | te doen |
