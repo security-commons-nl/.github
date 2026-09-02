@@ -9,7 +9,7 @@ schrijven in [REDACTIESTATUUT.md](REDACTIESTATUUT.md), en hoe je bijdraagt in
 [organisatieprofiel](profile/README.md) is de enige projectenlijst; wijkt dit stuk daarvan af, dan
 heeft het profiel gelijk.
 
-**Peildatum: 2 september 2026.** De rationalisatie uit
+**Peildatum: 2 september 2026** (bijgewerkt met het besluit *lichte commons*)**.** De rationalisatie uit
 [het plan](plannen/2026-08-30-rationalisatie.md) is uitgevoerd: de security-shop is opgegaan in de
 kennisbank, de kennisbank is de bron van het handelingsperspectief, en 35 van de 44 barrieres hebben
 een handleiding. Daarna is *Meten voordat je ingrijpt* opgesplitst
@@ -41,6 +41,28 @@ daaronder liggen. Alles wat de keten doet, hangt aan die 44.
 | Normverankering | Wat toon ik hiermee aan? | `aanvalspaden/mappingen/` (30-08-2026) |
 | Handelingsperspectief | Hoe doe ik het? | de **kennisbank** is de bron; `aanvalspaden` kopieert (30-08-2026) |
 
+### Het criterium: instrument of script, nooit een applicatie
+
+Sinds 2 september 2026 ([besluit](BESLUITEN.md), [plan](plannen/2026-09-02-lichte-commons.md)) is een
+project in de projectentabel een van twee dingen. Een **instrument** rekent volledig in de browser: geen
+server, geen account, geen telemetrie, geen staat buiten het apparaat van de gebruiker; dat is de norm en
+het enige dat in de tabel *Live tool* heet. Een **script** draait lokaal op data die je al hebt, zonder
+server en zonder eigen opslag; het staat in de tabel als *Leesbare versie* met een download en zegt in zijn
+README waarom het geen instrument is. Een applicatie met backend, database, authenticatie of gedeelde staat
+hoort niet in de commons. De ene uitzondering is `anonimizer-proxy`: infrastructuur, opt-in, met naam in
+het besluitenlog.
+
+De commons houdt daarmee geen register bij. Elk instrument levert een dossier als JSON dat de gebruiker
+zelf bewaart en meeneemt naar zijn eigen managementsysteem.
+
+De vaste vorm van een instrument, drie keer gebouwd en drie keer hetzelfde gebleken: één bron-JSON in
+git met herkomst en vingerafdruk; één HTML-bestand met bron en app in één scripttag, één stylesheet en een
+Content-Security-Policy op de sha256 van beide; een Python-referentie naast de JavaScript met dezelfde
+functienamen; een dossier als JSON met de vingerafdruk van de bron erin; tests die de bron tegen het
+origineel leggen, de bouw controleren en de app in Chromium doorlopen; uitleg via de gedeelde site-build
+op `/<naam>/uitleg/`. De bouwplannen van de zelfcheck en de CSIR Assessment Tool zijn de uitgewerkte
+voorbeelden.
+
 ### De zes groepen
 
 **Voorkant.** `security-commons-nl.github.io` is de etalage. De voorpagina, `llms.txt` en `sitemap.xml`
@@ -60,11 +82,18 @@ acht staan met een schrijfopdracht in `aanvalspaden/mappingen/gevraagd.json`.
 
 **Keten.** `aanvalspaden` en `security-posture-tool`, hierboven beschreven.
 
-**Instrumenten.** `grc-platform` (ISMS/PIMS/BCMS, en daarmee het risicoregister), `procescheck` (BIA en BIV),
-`csir-assessment-tool` (de CSIR voor een object met industriële automatisering: classificeren, bepalen,
-uitwerken), `applicatiecheck` (concept: BIO2-bewijs uit de applicatie zelf), `weerbaarheid-game` (het
-bestuurlijke gesprek), `cisochat` (vCISO-dirigent, en tevens houder
-van de gedeelde BIO2-dataset), `policy-as-code` (beleid als uitvoerbare regels).
+**Instrumenten.** `csir-assessment-tool` (de CSIR voor een object met industriële automatisering:
+classificeren, bepalen, uitwerken), `weerbaarheid-game` (het bestuurlijke gesprek), `applicatiecheck`
+(concept: BIO2-bewijs uit de applicatie zelf, in de browser), `policy-as-code` (concept: beleid als
+uitvoerbare regels). **Wordt omgebouwd** naar de vorm hierboven: `procescheck` (BIA en BIV; nu React,
+FastAPI en PostgreSQL) en `security-posture-tool` (diepte 2; nu FastAPI en SQLite), en de scanners
+`blast-radius` en `iamscan` krijgen een browserversie naast de CLI.
+
+**Neemt afscheid.** `grc-platform` (ISMS/PIMS/BCMS met tenants, RLS en AI-agents) is op 2 september 2026
+gearchiveerd: het is de definitie van een applicatie en wordt nooit één pagina. De volledige historie
+staat lokaal bewaard. `cisochat` (ontwerp voor een vCISO-agent, geen code) volgt zodra zijn
+`data/bio2.json`, de bron van de normverankering, is verhuisd; `hosting-bouwblokken` zodra is beoordeeld
+wat ervan als kennis verder leeft. Zie het plan voor de volgorde.
 
 **Scanners.** Kleine CLI's die een concrete vraag beantwoorden uit data die je al hebt: `iamscan` (wie
 kan root worden), `blast-radius` (wat valt om), `publicatiescan` (persoonsgegevens in eigen
@@ -74,7 +103,8 @@ publicaties), `ai-gebruik-in-beeld` (draaiboek om AI-gebruik te meten).
 (de Worker eronder). Dit is de sluis waarlangs materiaal de kennisbank in komt.
 
 **Governance en infra.** `.github` draagt het redactiestatuut, de principes en de projectentabel.
-`hosting-bouwblokken` levert referentiearchitecturen voor wie dit spul zelf wil draaien.
+`hosting-bouwblokken` (referentiearchitecturen voor hosten) wacht op het oordeel uit het plan *lichte
+commons*: als de commons niets meer host, is er niets meer om te hosten.
 
 ### De drie harde koppelingen
 
@@ -84,7 +114,8 @@ zonder bewaking wordt binnen een half jaar een tweede waarheid.
 1. `aanvalspaden/paden.json` → `security-posture-tool`, als kopie met een `paden.sha256` die bewaakt dat
    hij niet achterloopt.
 2. `cisochat/data/bio2.json` → `aanvalspaden/mappingen/bronnen/bio2.json`, gegenereerd, met de
-   commit-hash van de bron erin.
+   commit-hash van de bron erin. **In beweging:** de bron verhuist uit `cisochat` (plan *lichte commons*,
+   fase 2); de bewaking blijft, alleen de richting van de pijl verandert.
 3. `.github/profile/README.md` → de voorpagina, `llms.txt` en `sitemap.xml`, gegenereerd bij elke build
    van `security-commons-nl.github.io`. Die repo checkt `.github` uit als `org-profile`, dus een wijziging
    in het profiel komt vanzelf mee; een push naar `.github` triggert die build niet, daarom draait hij ook
