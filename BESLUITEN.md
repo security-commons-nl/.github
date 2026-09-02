@@ -6,6 +6,38 @@ krijgt hier een regel: datum, wat er is besloten, en waarom. Nieuwste bovenaan. 
 
 Dit log begint op 29-08-2026, toen bleek dat het statuut er wel naar verwees maar het nergens stond.
 
+## 03-09-2026 · AI-hulp met eigen sleutel: een patroon voor alle instrumenten, eerst in procescheck
+
+**Besloten.** Elk instrument mag een opt-in AI-hulp krijgen die met de API-sleutel van de gebruiker
+ongestructureerd materiaal (een procesdocument, een CMDB-export, een situatiebeschrijving) omzet naar een
+voorstel in het datamodel van de tool. Vaste vorm, vastgelegd in
+[het plan](plannen/2026-09-03-ai-hulp.md): een aparte pagina per tool (`/<naam>/ai/`) met eigen
+Content-Security-Policy; de tool zelf blijft `default-src 'none'` en doet geen netwerkaanroep. De sleutel
+staat alleen in `sessionStorage`, nooit in dossier of voorstel. Mistral is de standaardleverancier, een
+lokale Ollama en elke OpenAI-compatibele endpoint zijn de alternatieven; de keuze is aan de gebruiker.
+De AI schrijft nooit in het dossier: de uitkomst is een voorstel dat de gebruiker per regel overneemt of
+afwijst, met een letterlijk citaat uit de bron per item. Prompts en schema's zijn data in git; de tests
+spelen de leverancier na en hebben geen sleutel. Eerste uitwerking in procescheck (processen uit een
+document, applicaties en landschap uit een CMDB-export), daarna CSIR, aanvalspaden en meting.
+
+**Waarom.** De invoer is bij elk instrument het duurste deel, en het materiaal bestaat al. Wat ontbreekt
+is de vertaling naar het datamodel, en dat is precies wat een taalmodel goed kan zolang de uitkomst een
+voorstel blijft. De noorderster van de commons (AI bereidt voor, de mens beslist) wordt zo code: de
+rekenregels blijven deterministisch, de scores komen uit de mens, en de tool zelf houdt zijn belofte dat
+niets het apparaat verlaat. Het patroon bestaat al in `anonimizer-browser`; dit is dezelfde keuze, nu als
+regel. Mistral als standaard omdat het een Europese partij is met hosting in de EU; wie soevereiner wil,
+draait Ollama op eigen hardware.
+
+**Wat dit vervangt.** Het besluit van 01-09 om de CSIR Assessment Tool zonder AI-laag te bouwen vervalt;
+de CSIR-tool krijgt dezelfde hulp op hetzelfde patroon. Statuut B14 krijgt een verduidelijking via een
+issue: een opt-in AI-hulp maakt van een instrument geen applicatie, mits aparte pagina, geen
+sleutelopslag, voorstel in plaats van schrijven, en toestemming per sessie.
+
+**Afgewezen.** De AI-hulp in de tool zelf inbouwen: dan verliest de tool zijn `default-src 'none'` en is
+de offlinebelofte niet meer controleerbaar. Een proxy met gedeelde sleutel als eerste stap: dat is
+infrastructuur en een aparte beslissing. Het model laten scoren of classificeren: dan rekent de tool niet
+meer, maar gokt hij.
+
 ## 03-09-2026 · procescheck is een instrument; blast-radius is erin opgegaan en gearchiveerd
 
 **Besloten.** `procescheck` rekent sinds vandaag in de browser: de BIA en BIV-classificatie, de
