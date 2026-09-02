@@ -9,7 +9,7 @@ schrijven in [REDACTIESTATUUT.md](REDACTIESTATUUT.md), en hoe je bijdraagt in
 [organisatieprofiel](profile/README.md) is de enige projectenlijst; wijkt dit stuk daarvan af, dan
 heeft het profiel gelijk.
 
-**Peildatum: 2 september 2026** (bijgewerkt met het besluit *lichte commons*)**.** De rationalisatie uit
+**Peildatum: 3 september 2026.** De rationalisatie uit
 [het plan](plannen/2026-08-30-rationalisatie.md) is uitgevoerd: de security-shop is opgegaan in de
 kennisbank, de kennisbank is de bron van het handelingsperspectief, en 35 van de 44 barrieres hebben
 een handleiding. Daarna is *Meten voordat je ingrijpt* opgesplitst
@@ -17,7 +17,10 @@ een handleiding. Daarna is *Meten voordat je ingrijpt* opgesplitst
 veld `pijler` is zichtbaar geworden op de site. Op 1 en 2 september kwamen er twee repo's bij:
 `csir-assessment-tool` (de CSIR in de browser, [plan](plannen/2026-09-01-csir-keten.md)) en
 `applicatiecheck` (concept), en werd statuut B13 vastgesteld
-([plan](plannen/2026-09-02-elk-project-een-pagina.md)).
+([plan](plannen/2026-09-02-elk-project-een-pagina.md)). Op 2 september viel het besluit *lichte commons*
+(B14: instrument of script, nooit een applicatie) en kwam `normen` als dataset; op 3 september werd
+`procescheck` een instrument ([plan](plannen/2026-09-02-procescheck-instrument.md)), ging `blast-radius`
+daarin op en werd `aanvalspaden#4` gesloten.
 
 ---
 
@@ -25,8 +28,8 @@ veld `pijler` is zichtbaar geworden op de site. Op 1 en 2 september kwamen er tw
 
 ![Architectuur van Security Commons NL](architectuur-landschap.svg)
 
-Drieëntwintig repositories, waarvan drie gearchiveerd. Ze vallen uiteen in zes groepen, met daaronder
-drie harde datakoppelingen die het geheel bij elkaar houden.
+Vierentwintig repositories, waarvan zes gearchiveerd. De achttien levende vallen uiteen in acht groepen,
+met daaronder drie harde datakoppelingen die het geheel bij elkaar houden.
 
 ### De ruggengraat: de aanvalspaden-keten
 
@@ -60,10 +63,11 @@ git met herkomst en vingerafdruk; één HTML-bestand met bron en app in één sc
 Content-Security-Policy op de sha256 van beide; een Python-referentie naast de JavaScript met dezelfde
 functienamen; een dossier als JSON met de vingerafdruk van de bron erin; tests die de bron tegen het
 origineel leggen, de bouw controleren en de app in Chromium doorlopen; uitleg via de gedeelde site-build
-op `/<naam>/uitleg/`. De bouwplannen van de zelfcheck en de CSIR Assessment Tool zijn de uitgewerkte
-voorbeelden.
+op `/<naam>/uitleg/`. De bouwplannen van de zelfcheck, de CSIR Assessment Tool en procescheck zijn de
+uitgewerkte voorbeelden; het laatste is geschreven om door een minder sterk model gebouwd te worden, en
+dat is ook zo gegaan.
 
-### De zes groepen
+### De acht groepen
 
 **Voorkant.** `security-commons-nl.github.io` is de etalage. De voorpagina, `llms.txt` en `sitemap.xml`
 worden gegenereerd uit de projectentabel in `.github/profile/README.md`; die tabel is de enige
@@ -77,8 +81,8 @@ kopieert dat met `tools/haal_handelingsperspectief.py`, met een sha256 eronder z
 opvalt. Zo staat een handleiding op een plek in plaats van twee. Een barriere mag meer dan een
 handleiding hebben; de rol (`fundering`, `alternatief`, `verdieping`) zegt waar je begint en wat
 ernaast kan. Een stuk kan daarnaast een `pijler` dragen: dan hangt het onder een groter geheel, en tonen
-de pijler en het stuk elkaar. Stand: 36 van de 44 barrieres gedekt met 55 koppelingen, 8 open, en die
-acht staan met een schrijfopdracht in `aanvalspaden/mappingen/gevraagd.json`.
+de pijler en het stuk elkaar. Stand: 38 van de 44 barrieres gedekt met 57 koppelingen, 6 open, en die
+zes staan met een schrijfopdracht in `aanvalspaden/mappingen/gevraagd.json`.
 
 **Keten.** `aanvalspaden` en, tot meting daar is ondergebracht, `security-posture-tool`; hierboven beschreven.
 
@@ -89,9 +93,10 @@ voor welke maatregel) blijven bij de aanvalspaden; `normen` levert alleen de bro
 **Instrumenten.** `csir-assessment-tool` (de CSIR voor een object met industriële automatisering:
 classificeren, bepalen, uitwerken), `weerbaarheid-game` (het bestuurlijke gesprek), `applicatiecheck`
 (concept: BIO2-bewijs uit de applicatie zelf, in de browser), `policy-as-code` (concept: beleid als
-uitvoerbare regels). `procescheck` is op 03-09-2026 omgebouwd naar de vorm hierboven en `blast-radius`
-ging daarin op: de vraag "wat valt er om" hoort bij de processen, en de data stond daar al. `security-posture-tool` gaat op in `aanvalspaden/meting/` (diepte 2), en `iamscan` daar
-weer in als de Linux-dump als bron. Besluit 02-09-2026: een scanner die één vraag op één export beantwoordt
+uitvoerbare regels), en sinds 03-09-2026 `procescheck` (BIA en BIV per proces, RTO en RPO, de
+businesscontext en de blast radius); `blast-radius` ging daarin op, want de vraag "wat valt er om" hoort
+bij de processen en de data stond daar al. `security-posture-tool` gaat op in `aanvalspaden/meting/`
+(diepte 2), en `iamscan` daar weer in als de Linux-dump als bron. Besluit 02-09-2026: een scanner die één vraag op één export beantwoordt
 is geen project maar een bron plus regelset in het instrument dat over die eenheid gaat.
 
 **De bewijs-vorm.** Drie instrumenten lezen een export en toetsen die deterministisch: `applicatiecheck`
@@ -104,8 +109,10 @@ bron, vier bewijssoorten (configuratie, log, document, niet uit de bron te halen
 
 **Neemt afscheid.** `grc-platform` (ISMS/PIMS/BCMS met tenants, RLS en AI-agents) is op 2 september 2026
 gearchiveerd: het is de definitie van een applicatie en wordt nooit één pagina. De volledige historie
-staat lokaal bewaard. `cisochat` (ontwerp voor een vCISO-agent, geen code) volgt zodra zijn
-`data/bio2.json`, de bron van de normverankering, is verhuisd; `hosting-bouwblokken` is gearchiveerd (02-09, keuze Bas: geen oogst). Zie het plan voor de volgorde.
+staat lokaal bewaard, net als die van `hosting-bouwblokken` (zie Governance en infra) en `blast-radius`
+(zie Scripts en draaiboeken). `cisochat` (ontwerp voor een vCISO-agent, geen code) is de volgende: zijn
+`data/bio2.json` is naar `normen` verhuisd en geen afnemer leest er nog uit, dus archiveren kan. Zie het
+plan voor de volgorde.
 
 **Scripts en draaiboeken.** `publicatiescan` (persoonsgegevens in eigen publicaties; blijft een script
 omdat een browser geen URL's kan ophalen) en `ai-gebruik-in-beeld` (draaiboek om AI-gebruik te meten).
@@ -124,8 +131,8 @@ gearchiveerd: de commons host niets meer, dus er is niets meer om te hosten. De 
 Dit zijn de plekken waar twee repo's echt op elkaar leunen. Alle drie zijn ze bewaakt, want een kopie
 zonder bewaking wordt binnen een half jaar een tweede waarheid.
 
-1. `aanvalspaden/paden.json` → `security-posture-tool`, als kopie met een `paden.sha256` die bewaakt dat
-   hij niet achterloopt.
+1. `aanvalspaden/paden.json` → de meting (nu `security-posture-tool`), als kopie met een `paden.sha256`
+   die bewaakt dat hij niet achterloopt.
 2. `normen/*.json` → elke afnemer (`aanvalspaden/mappingen/bronnen/`, `applicatiecheck/bronnen/`), als
    kopie met de vingerafdruk van `normen` erin en een `tools/haal_normen.py --check` in de CI van de
    afnemer. Sinds 02-09-2026; daarvoor was `cisochat/data/bio2.json` de bron en had elke afnemer een
@@ -134,8 +141,6 @@ zonder bewaking wordt binnen een half jaar een tweede waarheid.
    van `security-commons-nl.github.io`. Die repo checkt `.github` uit als `org-profile`, dus een wijziging
    in het profiel komt vanzelf mee; een push naar `.github` triggert die build niet, daarom draait hij ook
    elk uur.
-
----
 
 ---
 
@@ -149,9 +154,9 @@ diezelfde sleutel hangen vier vragen:
 | Vraag | Waar het antwoord staat | Stand |
 |---|---|---|
 | Hoe sta ik ervoor? | `aanvalspaden/check/` | live |
-| Wat zegt mijn eigen data? | `aanvalspaden/meting/`, nu nog `security-posture-tool` | prototype, gaat op in meting |
+| Wat zegt mijn eigen data? | `aanvalspaden/meting/`, nu nog `security-posture-tool` en `iamscan` | in aanbouw, na applicatiecheck F1 |
 | Wat toon ik hiermee aan? | `aanvalspaden/mappingen/` | live, 333 regels over vier kaders |
-| Hoe pak ik het aan? | `kennisbank` (bron), gekopieerd naar `aanvalspaden/mappingen/` | live, 36 van de 44 barrieres |
+| Hoe pak ik het aan? | `kennisbank` (bron), gekopieerd naar `aanvalspaden/mappingen/` | live, 38 van de 44 barrieres |
 
 Omdat elke laag dezelfde sleutel gebruikt, kost een nieuwe laag geen nieuw datamodel. De zelfcheck
 geeft per aanbevolen actie een `vraag_id`; dat is exact de sleutel waar de normverankering en het

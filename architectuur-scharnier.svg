@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 640" width="1240" height="640" role="img" aria-labelledby="titel beschrijving">
   <title id="titel">De barriere als scharnier van de commons</title>
-  <desc id="beschrijving">De 44 barrieres uit paden.json zijn de spil. Er hangen vier vragen aan: hoe sta ik ervoor (zelfcheck), wat zegt mijn data (meting), wat toon ik hiermee aan (normverankering, gebouwd) en hoe doe ik het (handelingsperspectief, met de kennisbank als bron; 6 van de 44 hebben een handleiding, de rest staat als schrijfopdracht).</desc>
+  <desc id="beschrijving">De 44 barrieres uit paden.json zijn de spil. Er hangen vier vragen aan: hoe sta ik ervoor (zelfcheck), wat zegt mijn data (meting), wat toon ik hiermee aan (normverankering, gebouwd) en hoe doe ik het (handelingsperspectief, met de kennisbank als bron; 38 van de 44 hebben een handleiding, de zes andere staan als schrijfopdracht).</desc>
 
   <defs>
     <style>
@@ -58,9 +58,9 @@
   <rect class="card" x="60" y="394" width="340" height="120" rx="8"/>
   <text class="t kop" x="84" y="424">Meting</text>
   <text class="t vraag" x="84" y="446">"Wat zegt mijn eigen data?"</text>
-  <text class="t lbl" x="84" y="470">security-posture-tool: bewijs per cel</text>
-  <text class="t lbl" x="84" y="490">uit exports en connectors.</text>
-  <text class="t status ok" x="84" y="508">PROTOTYPE</text>
+  <text class="t lbl" x="84" y="470">aanvalspaden/meting/: bewijs per cel uit exports;</text>
+  <text class="t lbl" x="84" y="490">nu nog security-posture-tool en iamscan.</text>
+  <text class="t status ok" x="84" y="508">IN AANBOUW, NA APPLICATIECHECK F1</text>
   <path class="lijnb" d="M 400 440 C 440 440 440 356 466 346" marker-end="url(#pijl)"/>
 
   <!-- Rechtsboven: normverankering (gebouwd) -->
@@ -79,8 +79,8 @@
   <text class="t vraag" x="864" y="446">"Hoe doe ik het dan?"</text>
   <text class="t lbl" x="864" y="470">De kennisbank is de bron: handleidingen</text>
   <text class="t lbl" x="864" y="490">dragen barrieres, aanvalspaden kopieert.</text>
-  <text class="t status ok" x="864" y="512">LIVE &#183; 35 van 44 barrieres &#183; bron: kennisbank</text>
-  <text class="t klein" x="864" y="532">De 38 gaten staan als schrijfopdracht met een oproep.</text>
+  <text class="t status ok" x="864" y="512">LIVE &#183; 38 van 44 barrieres &#183; bron: kennisbank</text>
+  <text class="t klein" x="864" y="532">De 6 gaten staan als schrijfopdracht in gevraagd.json.</text>
   <path class="lijnb" d="M 774 346 C 806 356 806 440 836 440" marker-end="url(#pijl)"/>
 
   <!-- Voetnoot -->

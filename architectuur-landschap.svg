@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 1080" width="1240" height="1080" role="img" aria-labelledby="titel beschrijving">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 1120" width="1240" height="1120" role="img" aria-labelledby="titel beschrijving">
   <title id="titel">Architectuur van Security Commons NL</title>
-  <desc id="beschrijving">Tweeentwintig repositories in zes groepen. Peildatum 30 augustus 2026. De aanvalspaden-keten is de ruggengraat, met paden.json als enige bron. Drie harde datakoppelingen houden het geheel bij elkaar: paden.json naar de posture-tool, de BIO2-dataset van cisochat naar de normverankering, en de projectentabel van het org-profiel naar de voorpagina.</desc>
+  <desc id="beschrijving">Vierentwintig repositories, zes gearchiveerd, in acht groepen. Peildatum 3 september 2026. De aanvalspaden-keten is de ruggengraat, met paden.json als enige bron. Drie harde datakoppelingen houden het geheel bij elkaar: paden.json naar de meting, de normbronnen uit normen naar elke afnemer, en de projectentabel van het org-profiel naar de voorpagina. Sinds 2 september is een project een instrument of een script, nooit een applicatie.</desc>
 
   <defs>
     <style>
@@ -15,6 +15,7 @@
       .mono   { font-family: Consolas, "SF Mono", Menlo, monospace; font-size: 11.5px; fill: #1f4e79; }
       .stroom { font-size: 11px; font-weight: 600; fill: #b45309; }
       .nieuw  { font-size: 11.5px; font-weight: 700; fill: #b45309; }
+      .live   { font-size: 11px; font-weight: 700; fill: #2e7d68; }
       .card   { fill: #ffffff; stroke: #dfe3e8; stroke-width: 1.5; }
       .strook { fill: #f6f7f9; stroke: #dfe3e8; stroke-width: 1; }
       .keten  { fill: #f3f6fa; stroke: #1f4e79; stroke-width: 2; }
@@ -32,28 +33,24 @@
     </marker>
   </defs>
 
-  <rect width="1240" height="1080" fill="#ffffff"/>
+  <rect width="1240" height="1120" fill="#ffffff"/>
 
   <text class="t h1" x="40" y="48">Security Commons NL: het landschap</text>
-  <text class="t sub" x="40" y="72">22 repositories, 3 gearchiveerd. Zes groepen, een ruggengraat, drie harde koppelingen. Peildatum 30-08-2026.</text>
+  <text class="t sub" x="40" y="72">24 repositories, 6 gearchiveerd. Acht groepen, een ruggengraat, drie harde koppelingen. Instrument of script, nooit een applicatie. Peildatum 03-09-2026.</text>
   <line x1="40" y1="88" x2="1200" y2="88" stroke="#1f4e79" stroke-width="2.5"/>
 
-  <!-- ===== VOORKANT ===== -->
+  <!-- ===== VOORKANT EN GOVERNANCE ===== -->
   <rect class="strook" x="40" y="112" width="1160" height="82" rx="8"/>
-  <text class="t groep" x="64" y="136">VOORKANT</text>
+  <text class="t groep" x="64" y="136">VOORKANT EN GOVERNANCE</text>
   <text class="t repo" x="64" y="160">security-commons-nl.github.io</text>
-  <text class="t lbl" x="64" y="180">De etalage: alle kennis en tools op een pagina.</text>
+  <text class="t lbl" x="64" y="180">De etalage: alle kennis en tools op een pagina; elk project heeft er een (statuut B13).</text>
 
-  <rect class="card" x="700" y="126" width="230" height="56" rx="6"/>
-  <text class="t repo" x="716" y="148">.github</text>
-  <text class="t klein" x="716" y="166">statuut, principes, projectentabel</text>
+  <rect class="card" x="800" y="126" width="380" height="56" rx="6"/>
+  <text class="t repo" x="816" y="148">.github</text>
+  <text class="t klein" x="816" y="166">statuut, principes, besluiten, plannen, projectentabel (de enige lijst, B9)</text>
 
-  <rect class="card" x="950" y="126" width="230" height="56" rx="6"/>
-  <text class="t repo" x="966" y="148">hosting-bouwblokken</text>
-  <text class="t klein" x="966" y="166">zelf draaien: IaC en architectuur</text>
-
-  <path class="lijno" d="M 700 154 L 600 154" marker-end="url(#po)"/>
-  <text class="t stroom" x="606" y="146">genereert voorpagina, llms.txt, sitemap</text>
+  <path class="lijno" d="M 800 154 L 640 154" marker-end="url(#po)"/>
+  <text class="t stroom" x="590" y="174">genereert voorpagina, llms.txt en sitemap.xml</text>
 
   <!-- ===== DE KETEN ===== -->
   <rect class="keten" x="40" y="214" width="1160" height="286" rx="10"/>
@@ -72,25 +69,25 @@
   <text class="t repo" x="336" y="308">check/</text>
   <text class="t klein" x="336" y="326">Zelfcheck, een uur</text>
   <text class="t klein" x="336" y="344">18 statussen, 3 acties</text>
-  <text class="t klein" x="336" y="362" fill="#2e7d68">live</text>
+  <text class="t live" x="336" y="362">live</text>
 
   <rect class="card" x="540" y="286" width="200" height="86" rx="6"/>
   <text class="t repo" x="556" y="308">mappingen/</text>
   <text class="t klein" x="556" y="326">Normverankering</text>
-  <text class="t klein" x="556" y="344">333 regels, 4 kaders</text>
-  <text class="t klein" x="556" y="362" fill="#2e7d68">live sinds 30-08</text>
+  <text class="t klein" x="556" y="344">333 regels, 4 kaders uit normen</text>
+  <text class="t live" x="556" y="362">live sinds 30-08</text>
 
-  <rect class="card" x="760" y="286" width="200" height="86" rx="6"/>
-  <text class="t repo" x="776" y="308">security-posture-tool</text>
-  <text class="t klein" x="776" y="326">Meting uit eigen data</text>
-  <text class="t klein" x="776" y="344">bewijs per cel</text>
-  <text class="t klein" x="776" y="362">prototype</text>
+  <rect class="gat" x="760" y="286" width="200" height="86" rx="6"/>
+  <text class="t repo" x="776" y="308">meting/</text>
+  <text class="t klein" x="776" y="326">Wat zegt mijn eigen data</text>
+  <text class="t klein" x="776" y="344">nu nog security-posture-tool;</text>
+  <text class="t nieuw" x="776" y="362">in aanbouw (fase 5)</text>
 
   <rect class="card" x="980" y="286" width="200" height="86" rx="6"/>
   <text class="t repo" x="996" y="308">handelingsperspectief</text>
   <text class="t klein" x="996" y="326">Hoe pak ik het aan</text>
-  <text class="t klein" x="996" y="344">35 van 44, bron: kennisbank</text>
-  <text class="t klein" x="996" y="362" fill="#2e7d68">live sinds 30-08</text>
+  <text class="t klein" x="996" y="344">38 van 44, bron: kennisbank</text>
+  <text class="t live" x="996" y="362">live sinds 30-08</text>
 
   <path class="lijn" d="M 280 329 L 316 329" marker-end="url(#p)"/>
   <path class="lijn" d="M 520 329 L 536 329" marker-end="url(#p)"/>
@@ -100,82 +97,97 @@
   <!-- methode -->
   <rect class="card" x="64" y="396" width="456" height="70" rx="6"/>
   <text class="t repo" x="80" y="418">kennisbank/security/risicoanalyse-aanvalspaden</text>
-  <text class="t klein" x="80" y="436">De leesbare methode: kroonjuwelen tegen open paden, bewijs per cel,</text>
-  <text class="t klein" x="80" y="452">rode cellen zijn de risicolijst. Verwijst sinds 30-08 door naar de normverankering.</text>
+  <text class="t klein" x="80" y="436">De leesbare methode: kroonjuwelen tegen open paden, bewijs per cel, rode cellen</text>
+  <text class="t klein" x="80" y="452">zijn de risicolijst. Stap 1 (kroonjuwelen) komt uit de uitdraai van procescheck.</text>
   <path class="lijn" d="M 292 396 L 292 376" marker-end="url(#p)"/>
 
   <text class="t klein" x="556" y="418">Elke schakel leest dezelfde 44 barrieres.</text>
-  <text class="t klein" x="556" y="436">Een nieuwe laag kost daarom geen nieuw datamodel:</text>
-  <text class="t klein" x="556" y="454">de sleutel ligt al vast.</text>
+  <text class="t klein" x="556" y="436">Een nieuwe laag kost daarom geen nieuw datamodel: de sleutel ligt al vast.</text>
+  <text class="t klein" x="556" y="454">Diepte 1 (de risicoanalyse als instrument) is de volgende laag: fase 7 van lichte commons.</text>
 
   <!-- ===== KENNIS ===== -->
-  <rect class="strook" x="40" y="520" width="370" height="180" rx="8"/>
+  <rect class="strook" x="40" y="520" width="370" height="190" rx="8"/>
   <text class="t groep" x="64" y="544">KENNIS</text>
   <text class="t repo" x="64" y="568">kennisbank</text>
-  <text class="t lbl" x="64" y="588">16 items, waarvan 7 handleidingen.</text>
+  <text class="t lbl" x="64" y="588">52 items, waarvan 41 handleidingen.</text>
   <text class="t lbl" x="64" y="608">Bibliothecaris-loop: raw naar wiki naar product.</text>
-  <text class="t klein" x="64" y="632">Bron van het handelingsperspectief: een item</text>
-  <text class="t klein" x="64" y="650">van type handleiding draagt barrieres, en</text>
-  <text class="t klein" x="64" y="666">build.py exporteert dat naar aanvalspaden.</text>
-  <text class="t nieuw" x="64" y="686">38 barrieres nog zonder handleiding</text>
+  <text class="t klein" x="64" y="632">Bron van het handelingsperspectief: een handleiding</text>
+  <text class="t klein" x="64" y="650">draagt barrieres, build.py exporteert dat, en</text>
+  <text class="t klein" x="64" y="666">aanvalspaden kopieert het met een sha256 eronder.</text>
+  <text class="t nieuw" x="64" y="690">6 barrieres nog zonder handleiding (gevraagd.json)</text>
+
+  <!-- ===== NORMBRONNEN ===== -->
+  <rect class="strook" x="430" y="520" width="370" height="190" rx="8"/>
+  <text class="t groep" x="454" y="544">NORMBRONNEN</text>
+  <text class="t repo" x="454" y="568">normen</text>
+  <text class="t lbl" x="454" y="588">BIO 2.0, NIST CSF 2.0, Wpg, AVG als dataset.</text>
+  <text class="t klein" x="454" y="612">Een schema, herkomst en vingerafdruk per kader;</text>
+  <text class="t klein" x="454" y="630">alleen nummers, titels en thema's: geen ISO-tekst,</text>
+  <text class="t klein" x="454" y="648">geen CIP-tekst (CC BY-NC-SA).</text>
+  <text class="t klein" x="454" y="672">Afnemers kopieren met haal_normen.py --check in CI:</text>
+  <text class="t klein" x="454" y="690">aanvalspaden/mappingen, applicatiecheck.</text>
 
   <!-- ===== INSTRUMENTEN ===== -->
-  <rect class="strook" x="430" y="520" width="380" height="180" rx="8"/>
-  <text class="t groep" x="454" y="544">INSTRUMENTEN</text>
-  <text class="t repo" x="454" y="570">grc-platform</text>
-  <text class="t klein" x="454" y="586">ISMS, PIMS en BCMS in een systeem</text>
-  <text class="t repo" x="454" y="608">procescheck</text>
-  <text class="t klein" x="454" y="624">BIA en BIV-classificatie</text>
-  <text class="t repo" x="454" y="646">cisochat &#183; policy-as-code &#183; weerbaarheid-game</text>
+  <rect class="strook" x="820" y="520" width="380" height="190" rx="8"/>
+  <text class="t groep" x="844" y="544">INSTRUMENTEN &#183; REKENEN IN DE BROWSER</text>
+  <text class="t repo" x="844" y="568">csir-assessment-tool</text>
+  <text class="t klein" x="844" y="584">objecten met industriele automatisering, in drie stappen</text>
+  <text class="t repo" x="844" y="606">procescheck</text>
+  <text class="t klein" x="844" y="622">BIA en BIV per proces, RTO/RPO en blast radius; sinds 03-09</text>
+  <text class="t repo" x="844" y="644">weerbaarheid-game</text>
+  <text class="t klein" x="844" y="660">het bestuurlijke gesprek</text>
+  <text class="t repo" x="844" y="682">applicatiecheck &#183; policy-as-code</text>
+  <text class="t klein" x="844" y="698">concept: BIO2-bewijs uit de app zelf; beleid als regels</text>
 
-  <!-- ===== SCANNERS ===== -->
-  <rect class="strook" x="830" y="520" width="370" height="180" rx="8"/>
-  <text class="t groep" x="854" y="544">SCANNERS &#183; EEN VRAAG, EEN ANTWOORD</text>
-  <text class="t repo" x="854" y="570">iamscan</text>
-  <text class="t klein" x="854" y="586">wie kan root worden, en langs welke route</text>
-  <text class="t repo" x="854" y="608">blast-radius</text>
-  <text class="t klein" x="854" y="624">wat valt om als dit uitvalt</text>
-  <text class="t repo" x="854" y="646">publicatiescan</text>
-  <text class="t klein" x="854" y="662">persoonsgegevens in je eigen publicaties</text>
-  <text class="t repo" x="854" y="684">ai-gebruik-in-beeld</text>
+  <!-- ===== SCRIPTS ===== -->
+  <rect class="strook" x="40" y="730" width="370" height="120" rx="8"/>
+  <text class="t groep" x="64" y="754">SCRIPTS EN DRAAIBOEKEN &#183; LOKAAL OP EIGEN DATA</text>
+  <text class="t repo" x="64" y="780">publicatiescan</text>
+  <text class="t klein" x="64" y="796">persoonsgegevens in eigen publicaties</text>
+  <text class="t repo" x="64" y="818">ai-gebruik-in-beeld</text>
+  <text class="t klein" x="64" y="834">draaiboek om AI-gebruik te meten</text>
+  <text class="t repo" x="280" y="780">iamscan</text>
+  <text class="t klein" x="280" y="796">wie kan root worden;</text>
+  <text class="t klein" x="280" y="812">gaat op in meting/</text>
 
   <!-- ===== ANONIMISEREN ===== -->
-  <rect class="strook" x="40" y="720" width="560" height="120" rx="8"/>
-  <text class="t groep" x="64" y="744">ANONIMISEREN &#183; DE SLUIS NAAR DE KENNISBANK</text>
-  <text class="t repo" x="64" y="770">anonimizer-local</text>
-  <text class="t klein" x="64" y="786">CLI, batch en hergebruik</text>
-  <text class="t repo" x="264" y="770">anonimizer-browser</text>
-  <text class="t klein" x="264" y="786">in je eigen browser</text>
-  <text class="t repo" x="464" y="770">anonimizer-proxy</text>
-  <text class="t klein" x="464" y="786">Worker eronder</text>
-  <path class="lijn" d="M 440 780 L 460 780" marker-end="url(#p)"/>
-  <path class="lijn" d="M 150 764 C 150 730 200 706 220 700" marker-end="url(#p)"/>
-  <text class="t klein" x="80" y="820">Materiaal wordt geanonimiseerd voordat het de kennisbank in gaat (statuut A9).</text>
+  <rect class="strook" x="430" y="730" width="370" height="120" rx="8"/>
+  <text class="t groep" x="454" y="754">ANONIMISEREN &#183; DE SLUIS NAAR DE KENNISBANK</text>
+  <text class="t repo" x="454" y="780">anonimizer-local</text>
+  <text class="t klein" x="454" y="796">CLI, batch en hergebruik</text>
+  <text class="t repo" x="454" y="818">anonimizer-browser</text>
+  <text class="t klein" x="454" y="834">in je eigen browser</text>
+  <text class="t repo" x="640" y="780">anonimizer-proxy</text>
+  <text class="t klein" x="640" y="796">de Worker eronder: de ene</text>
+  <text class="t klein" x="640" y="812">opt-in uitzondering op de regel</text>
 
   <!-- ===== GEARCHIVEERD ===== -->
-  <rect class="arch" x="620" y="720" width="580" height="120" rx="8"/>
-  <text class="t groep" x="644" y="744">GEARCHIVEERD &#183; OPGEGAAN IN IETS ANDERS</text>
-  <text class="t lbl" x="644" y="770">Handelingsperspectief</text>
-  <text class="t klein" x="644" y="786">naar kennisbank: meten-voordat-je-ingrijpt</text>
-  <text class="t lbl" x="644" y="810">beleid-assistent</text>
-  <text class="t klein" x="644" y="826">naar cisochat, als capability</text>
-  <text class="t lbl" x="950" y="770">anonimizer-web</text>
-  <text class="t klein" x="950" y="786">vervangen door anonimizer-browser</text>
-  <text class="t lbl" x="950" y="810">security-shop</text>
-  <text class="t klein" x="950" y="826">naar kennisbank, als handleidingen</text>
+  <rect class="arch" x="820" y="730" width="380" height="120" rx="8"/>
+  <text class="t groep" x="844" y="754">GEARCHIVEERD &#183; OPGEGAAN OF AFSCHEID</text>
+  <text class="t klein" x="844" y="776"><tspan font-weight="600" fill="#1f4e79">blast-radius</tspan>: opgegaan in procescheck (03-09)</text>
+  <text class="t klein" x="844" y="790"><tspan font-weight="600" fill="#1f4e79">grc-platform, hosting-bouwblokken</tspan>: applicaties, afscheid (02-09)</text>
+  <text class="t klein" x="844" y="804"><tspan font-weight="600" fill="#1f4e79">security-shop</tspan>: opgegaan in de kennisbank als handleidingen</text>
+  <text class="t klein" x="844" y="818"><tspan font-weight="600" fill="#1f4e79">beleid-assistent</tspan>: opgegaan in cisochat</text>
+  <text class="t klein" x="844" y="832"><tspan font-weight="600" fill="#1f4e79">anonimizer-web</tspan>: vervangen door anonimizer-browser</text>
+  <text class="t klein" x="844" y="846"><tspan font-weight="600" fill="#b45309">Volgt:</tspan> cisochat, ontwerp zonder code; zijn bio2.json zit nu in normen.</text>
 
   <!-- ===== DE DRIE KOPPELINGEN ===== -->
-  <rect class="card" x="40" y="862" width="1160" height="128" rx="8"/>
-  <text class="t groep" x="64" y="886">DE DRIE HARDE KOPPELINGEN &#183; ALLE DRIE BEWAAKT</text>
-  <text class="t mono" x="64" y="912">aanvalspaden/paden.json</text>
-  <text class="t lbl" x="64" y="930">naar security-posture-tool, als kopie met paden.sha256 die bewaakt dat hij niet achterloopt</text>
-  <text class="t mono" x="64" y="952">cisochat/data/bio2.json</text>
-  <text class="t lbl" x="64" y="970">naar aanvalspaden/mappingen/bronnen/, gegenereerd, met de commit-hash van de bron erin</text>
-  <text class="t mono" x="700" y="912">.github/profile/README.md</text>
-  <text class="t lbl" x="700" y="930">de enige projectenlijst (statuut B9); voorpagina,</text>
-  <text class="t lbl" x="700" y="948">llms.txt en sitemap.xml worden eruit gegenereerd</text>
-  <text class="t klein" x="700" y="972">Een kopie zonder bewaking wordt binnen een half jaar een tweede waarheid.</text>
+  <rect class="card" x="40" y="872" width="1160" height="150" rx="8"/>
+  <text class="t groep" x="64" y="896">DE DRIE HARDE KOPPELINGEN &#183; ALLE DRIE BEWAAKT</text>
+  <text class="t mono" x="64" y="922">aanvalspaden/paden.json</text>
+  <text class="t lbl" x="64" y="940">naar de meting (nu security-posture-tool), als kopie met paden.sha256 die bewaakt dat hij niet achterloopt</text>
+  <text class="t mono" x="64" y="962">normen/*.json</text>
+  <text class="t lbl" x="64" y="980">naar elke afnemer, als kopie met de vingerafdruk van normen erin en haal_normen.py --check in de CI</text>
+  <text class="t mono" x="64" y="1002">.github/profile/README.md</text>
+  <text class="t lbl" x="64" y="1020">naar voorpagina, llms.txt en sitemap.xml, gegenereerd bij elke build van de site en elk uur opnieuw</text>
+  <text class="t klein" x="720" y="922">Een kopie zonder bewaking wordt binnen</text>
+  <text class="t klein" x="720" y="938">een half jaar een tweede waarheid.</text>
+  <text class="t klein" x="720" y="962">De vaste vorm van een instrument, vier keer</text>
+  <text class="t klein" x="720" y="978">gebouwd: een bron-JSON met vingerafdruk, een</text>
+  <text class="t klein" x="720" y="994">HTML-bestand met CSP op de hashes, een Python-</text>
+  <text class="t klein" x="720" y="1010">referentie naast de JavaScript, en een JSON-dossier.</text>
 
-  <line x1="40" y1="1020" x2="1200" y2="1020" stroke="#eef1f5" stroke-width="1"/>
-  <text class="t klein" x="40" y="1044">Statuslabels volgen het redactiestatuut B8. De projectentabel op het org-profiel is de enige bron; wijkt een lijst daarvan af, dan heeft het profiel gelijk.</text>
+  <line x1="40" y1="1052" x2="1200" y2="1052" stroke="#eef1f5" stroke-width="1"/>
+  <text class="t klein" x="40" y="1076">Statuslabels volgen het redactiestatuut B8. De projectentabel op het org-profiel is de enige bron; wijkt een lijst daarvan af, dan heeft het profiel gelijk.</text>
+  <text class="t klein" x="40" y="1094">Instrument of script, nooit een applicatie: statuut B14, besluit lichte commons 02-09-2026.</text>
 </svg>
