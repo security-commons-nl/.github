@@ -35,6 +35,13 @@ ISO-tekst wordt niet gekopieerd (auteursrecht). `tools/haal_bio2.py` maakt de ko
 van de bron erin; `--check` faalt in CI als de kopie achterloopt. Zelfde patroon als
 `aanvalspaden/mappingen/bronnen/`.
 
+**Bron verhuist naar `normen` (besluit 02-09-2026, [plan](2026-09-02-normen.md)).** Zodra die repo er is,
+vervangt `tools/haal_normen.py` (alleen `bio2`) het huidige `tools/haal_bio2.py`, wordt `bronnen/bio2.json`
+byte-gelijk aan de kopie in `normen`, en verwijst `bewijs.json` in `bron_bio2` naar de vingerafdruk in plaats
+van naar een cisochat-commit. De inhoud van de kopie verandert daar niet door: er staat nu al geen
+ISO-tekst in. De datasetafwijkingen die hieronder onder *Gesignaleerd in de bron* staan, horen bij de
+verhuizing thuis, niet bij cisochat.
+
 **`bewijs.json`** is het eerste product: per overheidsmaatregel de bewijssoort(en), de bron (eigen of
 leverancier), wat het bewijs moet bevatten, een ASVS-verwijzing waar die helpt, en een motivering. Het is
 met de hand bijgehouden en `tools/bouw_indeling.py` genereert er `indeling.md` uit, de tweede tab op de
@@ -193,6 +200,8 @@ haalt hem door de anonimizer en dan is het een fixture met een herkomstregel, ge
 - Hergebruik van de anonimizer-entiteitdetectie: als module (TypeScript, dus een bundler) of als port
   (vanilla JS, dubbel onderhoud)? Beslissen bij F2, met de anonimizer-onderhouder.
 - De proxy als gedeelde AI-route: apart besluit.
+- 5.03.01 Functiescheiding naar A: kan zodra de lijst van onverenigbare autorisaties als invoer bestaat
+  (CIP U.10.2); de toets op de rollenexport is dan deterministisch.
 
 ## Stand
 
