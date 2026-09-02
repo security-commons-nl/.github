@@ -45,7 +45,7 @@ verhuizing thuis, niet bij cisochat.
 **`bewijs.json`** is het eerste product: per overheidsmaatregel de bewijssoort(en), de bron (eigen of
 leverancier), wat het bewijs moet bevatten, een ASVS-verwijzing waar die helpt, en een motivering. Het is
 met de hand bijgehouden en `tools/bouw_indeling.py` genereert er `indeling.md` uit, de tweede tab op de
-pagina. Stand na de bevestigingsronde van 02-09-2026: 148 rijen, status *bevestigd*: 32 met A of B (28 met A als eerste soort, 4 met B), 21 met C, 95 D.
+pagina. Stand na de bevestigingsronde van 02-09-2026: 148 rijen, status *bevestigd*: 33 met A of B (29 met A als eerste soort, 4 met B), 21 met C, 94 D; 5.03.01 (functiescheiding) is na laag 2 naar A gegaan, met de lijst van onverenigbare rollen als invoer.
 
 Hoe de eerste indeling is gemaakt, in vijf lagen:
 
@@ -192,7 +192,7 @@ haalt hem door de anonimizer en dan is het een fixture met een herkomstregel, ge
 
 ## 8. Open vragen
 
-- Hoeveel van de 32 A/B-maatregelen zijn na laag 5 nog A/B, en welke worden *handmatig* omdat de
+- Hoeveel van de 33 A/B-maatregelen zijn na laag 5 nog A/B, en welke worden *handmatig* omdat de
   toetsset ze niet uitdrukt? Dat getal bepaalt of de generieke parser genoeg is voor een eerste
   gebruiker.
 - Regels in JSON met een gesloten toetsset, of later een bestaande regeltaal (OPA/Rego)? We beginnen met
@@ -200,8 +200,7 @@ haalt hem door de anonimizer en dan is het een fixture met een herkomstregel, ge
 - Hergebruik van de anonimizer-entiteitdetectie: als module (TypeScript, dus een bundler) of als port
   (vanilla JS, dubbel onderhoud)? Beslissen bij F2, met de anonimizer-onderhouder.
 - De proxy als gedeelde AI-route: apart besluit.
-- 5.03.01 Functiescheiding naar A: kan zodra de lijst van onverenigbare autorisaties als invoer bestaat
-  (CIP U.10.2); de toets op de rollenexport is dan deterministisch.
+
 
 ## Stand
 
