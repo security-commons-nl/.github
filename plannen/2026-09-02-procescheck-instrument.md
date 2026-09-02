@@ -429,7 +429,7 @@ opties 1 tot en met 5. Uitlezen gebeurt altijd als `waarde === "" ? null : parse
 `Number(waarde)`: `Number("")` is 0, en 0 wint van elke klasse in een `min`.
 
 **Processen.** Tabel `#tabel-processen` met per rij `tr[data-proces="P01"]`: code, naam, eigenaar, afdeling,
-kritiek (Ja/Nee), B, I, V, klasse (label uit de schaal of "—"), ontbrekend (aantal), prioriteit
+kritiek (Ja/Nee), B, I, V, klasse (label uit de schaal of "-"), ontbrekend (aantal), prioriteit
 (`td.prioriteit`, tekst `critical|high|medium|low` of leeg), knoppen `.bewerk` en `.verwijder`. Formulier
 `#proces-form` met `#p-code`, `#p-naam`, `#p-beschrijving`, `#p-doelstelling`, `#p-eigenaar`,
 `#p-afdeling`, `#p-kritiek` (checkbox), `#p-reden-kritiek`, `#p-laatste-beoordeling` (date),
@@ -602,7 +602,7 @@ bevat geen `Number(`; noscript; herhaalbaar; kruimelpad; voetregel; vingerafdruk
 | `test_proces_aanmaken_wijzigen_verwijderen` | nieuw P01 → rij verschijnt; bewerken naam → rij bijgewerkt; dubbele code → melding, geen tweede rij; verwijderen (dialoog) → rij weg |
 | `test_applicatie_koppelen` | A01 aanmaken, aan P01 koppelen via `#p-applicaties` → rij P01 toont 1 applicatie; applicatie verwijderen → koppeling weg |
 | `test_bia_rekent` | P01 kiezen in `#bia-proces`; b1..b4 = 3, 2, 5, 4; i1 = 4; v1 = 1 → `#bia-b` "2", `#bia-i` "4", `#bia-v` "1", `#bia-klasse` bevat "Catastrofaal", `#bia-rto` "Maximaal 2 werkdagen", `#bia-rpo` "4 tot 8 uur", `#bia-wrt` "Meer dan een week", `#bia-mtpd` "1 week"; `[data-info="v1"]` bevat "Geheim" |
-| `test_bia_incompleet` | alleen i1 → `#bia-b` "—", `#bia-klasse` gelijk aan I |
+| `test_bia_incompleet` | alleen i1 → `#bia-b` "-", `#bia-klasse` gelijk aan I |
 | `test_bia_leeg_is_null` | een score kiezen en weer op leeg zetten → in `localStorage` staat `null`, niet 0 |
 | `test_dashboard_gelijk_aan_referentie` | fixture laden → alle `[data-teller]` gelijk aan `reken.dashboard()` (percentages als tekst); prioriteitenlijst gelijk in volgorde, niveau en reden (met `{n}` ingevuld) |
 | `test_prioriteit_op_scherm` | kritiek proces zonder BIA → `td.prioriteit` "critical" en rij in `#prioriteiten` met reden "Informatie ontbreekt" |
