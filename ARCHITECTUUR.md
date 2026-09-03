@@ -5,9 +5,8 @@ dat nog gedaan moet worden. Bedoeld voor wie wil meebouwen en eerst wil begrijpe
 
 Dit stuk beschrijft de structuur. Waarom we dit doen staat in [PRINCIPLES.md](PRINCIPLES.md), hoe we
 schrijven in [REDACTIESTATUUT.md](REDACTIESTATUUT.md), en hoe je bijdraagt in
-[CONTRIBUTING.md](CONTRIBUTING.md). De projectentabel op het
-[organisatieprofiel](profile/README.md) is de enige projectenlijst; wijkt dit stuk daarvan af, dan
-heeft het profiel gelijk.
+[CONTRIBUTING.md](CONTRIBUTING.md). [PROJECTEN.md](PROJECTEN.md) is de enige projectenlijst (statuut B9,
+herzien 03-09-2026); wijkt dit stuk daarvan af, dan heeft die lijst gelijk.
 
 **Peildatum: 3 september 2026.** De rationalisatie uit
 [het plan](plannen/2026-08-30-rationalisatie.md) is uitgevoerd: de security-shop is opgegaan in de
@@ -20,7 +19,9 @@ veld `pijler` is zichtbaar geworden op de site. Op 1 en 2 september kwamen er tw
 ([plan](plannen/2026-09-02-elk-project-een-pagina.md)). Op 2 september viel het besluit *lichte commons*
 (B14: instrument of script, nooit een applicatie) en kwam `normen` als dataset; op 3 september werd
 `procescheck` een instrument ([plan](plannen/2026-09-02-procescheck-instrument.md)), ging `blast-radius`
-daarin op en werd `aanvalspaden#4` gesloten.
+daarin op en werd `aanvalspaden#4` gesloten. Ook op 3 september kwam de derde diepte van de
+aanvalspaden-keten er ([plan](plannen/2026-09-03-meting.md)): `aanvalspaden/meting/` toetst 41 items aan
+echte exports, en `security-posture-tool` en `iamscan` zijn daarin opgegaan.
 
 ---
 
@@ -28,8 +29,8 @@ daarin op en werd `aanvalspaden#4` gesloten.
 
 ![Architectuur van Security Commons NL](architectuur-landschap.svg)
 
-Vierentwintig repositories, waarvan zes gearchiveerd. De achttien levende vallen uiteen in acht groepen,
-met daaronder drie harde datakoppelingen die het geheel bij elkaar houden.
+Vierentwintig repositories, waarvan acht gearchiveerd. De zestien levende vallen uiteen in acht groepen,
+met daaronder twee harde datakoppelingen die het geheel bij elkaar houden.
 
 ### De ruggengraat: de aanvalspaden-keten
 
@@ -40,7 +41,7 @@ daaronder liggen. Alles wat de keten doet, hangt aan die 44.
 |---|---|---|
 | Zelfcheck | Hoe sta ik ervoor? | `aanvalspaden/check/` |
 | Risicoanalyse | Wat betekent dat voor mijn kroonjuwelen? | `kennisbank/security/risicoanalyse-aanvalspaden/` |
-| Meting | Wat zegt mijn eigen data? | `aanvalspaden/meting/` (in aanbouw; nu nog `security-posture-tool`, waar ook `iamscan` in opgaat) |
+| Meting | Wat zegt mijn eigen data? | `aanvalspaden/meting/` (03-09-2026; `security-posture-tool` en `iamscan` zijn erin opgegaan) |
 | Normverankering | Wat toon ik hiermee aan? | `aanvalspaden/mappingen/` (30-08-2026) |
 | Handelingsperspectief | Hoe doe ik het? | de **kennisbank** is de bron; `aanvalspaden` kopieert (30-08-2026) |
 
@@ -58,20 +59,20 @@ het besluitenlog.
 De commons houdt daarmee geen register bij. Elk instrument levert een dossier als JSON dat de gebruiker
 zelf bewaart en meeneemt naar zijn eigen managementsysteem.
 
-De vaste vorm van een instrument, drie keer gebouwd en drie keer hetzelfde gebleken: één bron-JSON in
+De vaste vorm van een instrument, vier keer gebouwd en vier keer hetzelfde gebleken: één bron-JSON in
 git met herkomst en vingerafdruk; één HTML-bestand met bron en app in één scripttag, één stylesheet en een
 Content-Security-Policy op de sha256 van beide; een Python-referentie naast de JavaScript met dezelfde
 functienamen; een dossier als JSON met de vingerafdruk van de bron erin; tests die de bron tegen het
 origineel leggen, de bouw controleren en de app in Chromium doorlopen; uitleg via de gedeelde site-build
 op `/<naam>/uitleg/`. De bouwplannen van de zelfcheck, de CSIR Assessment Tool en procescheck zijn de
-uitgewerkte voorbeelden; het laatste is geschreven om door een minder sterk model gebouwd te worden, en
-dat is ook zo gegaan.
+uitgewerkte voorbeelden, en het bouwplan van de meting is de vierde; die twee laatste zijn geschreven om
+door een minder sterk model gebouwd te worden, en dat is ook zo gegaan.
 
 ### De acht groepen
 
 **Voorkant.** `security-commons-nl.github.io` is de etalage. De voorpagina, `llms.txt` en `sitemap.xml`
-worden gegenereerd uit de projectentabel in `.github/profile/README.md`; die tabel is de enige
-projectenlijst (statuut B9).
+worden gegenereerd uit de projectentabel in `.github/PROJECTEN.md`; die tabel is de enige projectenlijst
+(statuut B9).
 
 **Kennis.** `kennisbank`, tweeënvijftig items, waarvan eenenveertig van het type
 `handleiding`. Verdeeld over de vier vakgebieden is dat scheef: achtenveertig staan onder
@@ -84,7 +85,7 @@ ernaast kan. Een stuk kan daarnaast een `pijler` dragen: dan hangt het onder een
 de pijler en het stuk elkaar. Stand: 38 van de 44 barrieres gedekt met 57 koppelingen, 6 open, en die
 zes staan met een schrijfopdracht in `aanvalspaden/mappingen/gevraagd.json`.
 
-**Keten.** `aanvalspaden` en, tot meting daar is ondergebracht, `security-posture-tool`; hierboven beschreven.
+**Keten.** `aanvalspaden`, met alle drie de diepten in één repo; hierboven beschreven.
 
 **Normbronnen.** `normen`: BIO 2.0, NIST CSF 2.0, het Wpg-toetsingskader en de AVG als dataset, elk in
 één schema met herkomst en vingerafdruk, zonder ISO-tekst. De mappingen (welke barrière levert bewijs
@@ -95,17 +96,19 @@ classificeren, bepalen, uitwerken), `weerbaarheid-game` (het bestuurlijke gespre
 (concept: BIO2-bewijs uit de applicatie zelf, in de browser), `policy-as-code` (concept: beleid als
 uitvoerbare regels), en sinds 03-09-2026 `procescheck` (BIA en BIV per proces, RTO en RPO, de
 businesscontext en de blast radius); `blast-radius` ging daarin op, want de vraag "wat valt er om" hoort
-bij de processen en de data stond daar al. `security-posture-tool` gaat op in `aanvalspaden/meting/`
-(diepte 2), en `iamscan` daar weer in als de Linux-dump als bron. Besluit 02-09-2026: een scanner die één vraag op één export beantwoordt
-is geen project maar een bron plus regelset in het instrument dat over die eenheid gaat.
+bij de processen en de data stond daar al. `security-posture-tool` ging op 03-09-2026 op in
+`aanvalspaden/meting/` (diepte 2), en `iamscan` daar weer in als de Linux-dump als bron. Besluit
+02-09-2026: een scanner die één vraag op één export beantwoordt is geen project maar een bron plus
+regelset in het instrument dat over die eenheid gaat.
 
 **De bewijs-vorm.** Drie instrumenten lezen een export en toetsen die deterministisch: `applicatiecheck`
 (één applicatie tegen BIO 2.0), `aanvalspaden/meting/` (het landschap tegen de chokepoints, met de Linux-dump
 van iamscan als een van de bronnen) en `procescheck` (de landschapsexport voor de blast radius).
 Dezelfde vorm, geen gedeelde bibliotheek: regels als JSON, een parser per bron, een bevinding met bewijs en
 bron, vier bewijssoorten (configuratie, log, document, niet uit de bron te halen), dossier als JSON.
-Meting wordt als eerste gebouwd (besluit 03-09-2026) en is daarmee de referentie van die vorm;
-`applicatiecheck` F1 volgt hem daarna. Geen van beide volgt de eigen `architecture.md` van de posture-tool.
+Meting is als eerste gebouwd (03-09-2026) en is daarmee de referentie van die vorm; `applicatiecheck`
+F1 volgt hem daarna. Geen van beide volgt de eigen `architecture.md` van de posture-tool. Wat meting
+bewust anders doet dan de applicatie waar hij uit komt, staat in `aanvalspaden/meting/VERANTWOORDING.md`.
 
 **Neemt afscheid.** `grc-platform` (ISMS/PIMS/BCMS met tenants, RLS en AI-agents) is op 2 september 2026
 gearchiveerd: het is de definitie van een applicatie en wordt nooit één pagina. De volledige historie
@@ -117,8 +120,9 @@ in `referenties-tooling` is geoogst. Daarmee is de groep *Neemt afscheid* leeg.
 
 **Scripts en draaiboeken.** `publicatiescan` (persoonsgegevens in eigen publicaties; blijft een script
 omdat een browser geen URL's kan ophalen) en `ai-gebruik-in-beeld` (draaiboek om AI-gebruik te meten).
-`iamscan` en `blast-radius` stonden hier tot 02-09-2026. `blast-radius` is opgegaan in `procescheck` en
-op 03-09 gearchiveerd; `iamscan` gaat op in meting en blijft staan tot die er is.
+`iamscan` en `blast-radius` stonden hier tot 02-09-2026. Beide zijn op 03-09 opgegaan in een instrument
+en gearchiveerd: `blast-radius` in `procescheck`, `iamscan` in `aanvalspaden/meting/`. Zijn
+`collect.sh` ging mee, want de dump moet nog steeds op de host gemaakt worden.
 
 **Anonimiseren.** `anonimizer-local` (CLI), `anonimizer-browser` (in de browser) en `anonimizer-proxy`
 (de Worker eronder). Dit is de sluis waarlangs materiaal de kennisbank in komt.
@@ -127,18 +131,20 @@ op 03-09 gearchiveerd; `iamscan` gaat op in meting en blijft staan tot die er is
 `hosting-bouwblokken` (referentiearchitecturen en Terraform om applicaties te hosten) is op 02-09-2026
 gearchiveerd: de commons host niets meer, dus er is niets meer om te hosten. De kloon staat lokaal bewaard.
 
-### De drie harde koppelingen
+### De twee harde koppelingen
 
-Dit zijn de plekken waar twee repo's echt op elkaar leunen. Alle drie zijn ze bewaakt, want een kopie
+Dit zijn de plekken waar twee repo's echt op elkaar leunen. Allebei zijn ze bewaakt, want een kopie
 zonder bewaking wordt binnen een half jaar een tweede waarheid.
 
-1. `aanvalspaden/paden.json` → de meting (nu `security-posture-tool`), als kopie met een `paden.sha256`
-   die bewaakt dat hij niet achterloopt.
-2. `normen/*.json` → elke afnemer (`aanvalspaden/mappingen/bronnen/`, `applicatiecheck/bronnen/`), als
+Er waren er drie. De derde was `aanvalspaden/paden.json` naar de meting in `security-posture-tool`, als
+kopie met een `paden.sha256` ertegen. Die koppeling is op 03-09-2026 vervallen: de meting woont nu in
+dezelfde repo en leest `paden.json` rechtstreeks. Een koppeling opheffen is beter dan hem bewaken.
+
+1. `normen/*.json` → elke afnemer (`aanvalspaden/mappingen/bronnen/`, `applicatiecheck/bronnen/`), als
    kopie met de vingerafdruk van `normen` erin en een `tools/haal_normen.py --check` in de CI van de
    afnemer. Sinds 02-09-2026; daarvoor was `cisochat/data/bio2.json` de bron en had elke afnemer een
    eigen kopieerscript.
-3. `.github/profile/README.md` → de voorpagina, `llms.txt` en `sitemap.xml`, gegenereerd bij elke build
+2. `.github/profile/README.md` → de voorpagina, `llms.txt` en `sitemap.xml`, gegenereerd bij elke build
    van `security-commons-nl.github.io`. Die repo checkt `.github` uit als `org-profile`, dus een wijziging
    in het profiel komt vanzelf mee; een push naar `.github` triggert die build niet, daarom draait hij ook
    elk uur.
@@ -155,7 +161,7 @@ diezelfde sleutel hangen vier vragen:
 | Vraag | Waar het antwoord staat | Stand |
 |---|---|---|
 | Hoe sta ik ervoor? | `aanvalspaden/check/` | live |
-| Wat zegt mijn eigen data? | `aanvalspaden/meting/`, nu nog `security-posture-tool` en `iamscan` | volgende bouwstap (besluit 03-09: vóór applicatiecheck F1) |
+| Wat zegt mijn eigen data? | `aanvalspaden/meting/` | live sinds 03-09-2026 |
 | Wat toon ik hiermee aan? | `aanvalspaden/mappingen/` | live, 333 regels over vier kaders |
 | Hoe pak ik het aan? | `kennisbank` (bron), gekopieerd naar `aanvalspaden/mappingen/` | live, 38 van de 44 barrieres |
 

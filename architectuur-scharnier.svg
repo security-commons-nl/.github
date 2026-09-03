@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 640" width="1240" height="640" role="img" aria-labelledby="titel beschrijving">
   <title id="titel">De barriere als scharnier van de commons</title>
-  <desc id="beschrijving">De 44 barrieres uit paden.json zijn de spil. Er hangen vier vragen aan: hoe sta ik ervoor (zelfcheck), wat zegt mijn data (meting), wat toon ik hiermee aan (normverankering, gebouwd) en hoe doe ik het (handelingsperspectief, met de kennisbank als bron; 38 van de 44 hebben een handleiding, de zes andere staan als schrijfopdracht).</desc>
+  <desc id="beschrijving">De 44 barrieres uit paden.json zijn de spil. Er hangen vier vragen aan: hoe sta ik ervoor (zelfcheck), wat zegt mijn data (meting, live sinds 3 september 2026), wat toon ik hiermee aan (normverankering, gebouwd) en hoe doe ik het (handelingsperspectief, met de kennisbank als bron; 38 van de 44 hebben een handleiding, de zes andere staan als schrijfopdracht).</desc>
 
   <defs>
     <style>
@@ -55,12 +55,12 @@
   <path class="lijnb" d="M 400 214 C 440 214 440 292 466 300" marker-end="url(#pijl)"/>
 
   <!-- Linksonder: meting -->
-  <rect class="card" x="60" y="394" width="340" height="120" rx="8"/>
+  <rect class="gedaan" x="60" y="394" width="340" height="120" rx="8"/>
   <text class="t kop" x="84" y="424">Meting</text>
   <text class="t vraag" x="84" y="446">"Wat zegt mijn eigen data?"</text>
-  <text class="t lbl" x="84" y="470">aanvalspaden/meting/: bewijs per cel uit exports;</text>
-  <text class="t lbl" x="84" y="490">nu nog security-posture-tool en iamscan.</text>
-  <text class="t status ok" x="84" y="508">VOLGENDE BOUWSTAP (BESLUIT 03-09)</text>
+  <text class="t lbl" x="84" y="470">aanvalspaden/meting/: 41 items uit exports en</text>
+  <text class="t lbl" x="84" y="490">hostdumps; posture-tool en iamscan gingen erin op.</text>
+  <text class="t status ok" x="84" y="508">LIVE SINDS 03-09-2026 &#183; 22 van 76 chokepoints</text>
   <path class="lijnb" d="M 400 440 C 440 440 440 356 466 346" marker-end="url(#pijl)"/>
 
   <!-- Rechtsboven: normverankering (gebouwd) -->

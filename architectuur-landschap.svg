@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 1120" width="1240" height="1120" role="img" aria-labelledby="titel beschrijving">
   <title id="titel">Architectuur van Security Commons NL</title>
-  <desc id="beschrijving">Vierentwintig repositories, zes gearchiveerd, in acht groepen. Peildatum 3 september 2026. De aanvalspaden-keten is de ruggengraat, met paden.json als enige bron. Drie harde datakoppelingen houden het geheel bij elkaar: paden.json naar de meting, de normbronnen uit normen naar elke afnemer, en de projectentabel van het org-profiel naar de voorpagina. Sinds 2 september is een project een instrument of een script, nooit een applicatie.</desc>
+  <desc id="beschrijving">Vierentwintig repositories, acht gearchiveerd, in acht groepen. Peildatum 3 september 2026. De aanvalspaden-keten is de ruggengraat, met paden.json als enige bron; sinds 3 september wonen alle drie de diepten in die ene repo. Twee harde datakoppelingen houden het geheel bij elkaar: de normbronnen uit normen naar elke afnemer, en de projectentabel van het org-profiel naar de voorpagina. Sinds 2 september is een project een instrument of een script, nooit een applicatie.</desc>
 
   <defs>
     <style>
@@ -77,11 +77,11 @@
   <text class="t klein" x="556" y="344">333 regels, 4 kaders uit normen</text>
   <text class="t live" x="556" y="362">live sinds 30-08</text>
 
-  <rect class="gat" x="760" y="286" width="200" height="86" rx="6"/>
+  <rect class="card" x="760" y="286" width="200" height="86" rx="6"/>
   <text class="t repo" x="776" y="308">meting/</text>
   <text class="t klein" x="776" y="326">Wat zegt mijn eigen data</text>
-  <text class="t klein" x="776" y="344">nu nog security-posture-tool;</text>
-  <text class="t nieuw" x="776" y="362">in aanbouw (fase 5)</text>
+  <text class="t klein" x="776" y="344">41 items uit exports en dumps</text>
+  <text class="t live" x="776" y="362">live sinds 03-09</text>
 
   <rect class="card" x="980" y="286" width="200" height="86" rx="6"/>
   <text class="t repo" x="996" y="308">handelingsperspectief</text>
@@ -146,9 +146,6 @@
   <text class="t klein" x="64" y="796">persoonsgegevens in eigen publicaties</text>
   <text class="t repo" x="64" y="818">ai-gebruik-in-beeld</text>
   <text class="t klein" x="64" y="834">draaiboek om AI-gebruik te meten</text>
-  <text class="t repo" x="280" y="780">iamscan</text>
-  <text class="t klein" x="280" y="796">wie kan root worden;</text>
-  <text class="t klein" x="280" y="812">gaat op in meting/</text>
 
   <!-- ===== ANONIMISEREN ===== -->
   <rect class="strook" x="430" y="730" width="370" height="120" rx="8"/>
@@ -164,22 +161,22 @@
   <!-- ===== GEARCHIVEERD ===== -->
   <rect class="arch" x="820" y="730" width="380" height="120" rx="8"/>
   <text class="t groep" x="844" y="754">GEARCHIVEERD &#183; OPGEGAAN OF AFSCHEID</text>
-  <text class="t klein" x="844" y="776"><tspan font-weight="600" fill="#1f4e79">blast-radius</tspan>: opgegaan in procescheck (03-09)</text>
-  <text class="t klein" x="844" y="790"><tspan font-weight="600" fill="#1f4e79">grc-platform, hosting-bouwblokken</tspan>: applicaties, afscheid (02-09)</text>
-  <text class="t klein" x="844" y="804"><tspan font-weight="600" fill="#1f4e79">security-shop</tspan>: opgegaan in de kennisbank als handleidingen</text>
-  <text class="t klein" x="844" y="818"><tspan font-weight="600" fill="#1f4e79">beleid-assistent</tspan>: opgegaan in cisochat</text>
-  <text class="t klein" x="844" y="832"><tspan font-weight="600" fill="#1f4e79">anonimizer-web</tspan>: vervangen door anonimizer-browser</text>
-  <text class="t klein" x="844" y="846"><tspan font-weight="600" fill="#b45309">Volgt:</tspan> cisochat, ontwerp zonder code; zijn bio2.json zit nu in normen.</text>
+  <text class="t klein" x="844" y="776"><tspan font-weight="600" fill="#1f4e79">security-posture-tool, iamscan</tspan>: opgegaan in meting/ (03-09)</text>
+  <text class="t klein" x="844" y="790"><tspan font-weight="600" fill="#1f4e79">blast-radius</tspan>: opgegaan in procescheck (03-09)</text>
+  <text class="t klein" x="844" y="804"><tspan font-weight="600" fill="#1f4e79">cisochat</tspan>: ontwerp zonder code, afscheid (03-09)</text>
+  <text class="t klein" x="844" y="818"><tspan font-weight="600" fill="#1f4e79">grc-platform, hosting-bouwblokken</tspan>: applicaties, afscheid (02-09)</text>
+  <text class="t klein" x="844" y="832"><tspan font-weight="600" fill="#1f4e79">security-shop, beleid-assistent</tspan>: op in kennisbank resp. cisochat</text>
+  <text class="t klein" x="844" y="846"><tspan font-weight="600" fill="#1f4e79">anonimizer-web</tspan>: vervangen door anonimizer-browser</text>
 
-  <!-- ===== DE DRIE KOPPELINGEN ===== -->
+  <!-- ===== DE TWEE KOPPELINGEN ===== -->
   <rect class="card" x="40" y="872" width="1160" height="150" rx="8"/>
-  <text class="t groep" x="64" y="896">DE DRIE HARDE KOPPELINGEN &#183; ALLE DRIE BEWAAKT</text>
-  <text class="t mono" x="64" y="922">aanvalspaden/paden.json</text>
-  <text class="t lbl" x="64" y="940">naar de meting (nu security-posture-tool), als kopie met paden.sha256 die bewaakt dat hij niet achterloopt</text>
-  <text class="t mono" x="64" y="962">normen/*.json</text>
-  <text class="t lbl" x="64" y="980">naar elke afnemer, als kopie met de vingerafdruk van normen erin en haal_normen.py --check in de CI</text>
-  <text class="t mono" x="64" y="1002">.github/profile/README.md</text>
-  <text class="t lbl" x="64" y="1020">naar voorpagina, llms.txt en sitemap.xml, gegenereerd bij elke build van de site en elk uur opnieuw</text>
+  <text class="t groep" x="64" y="896">DE TWEE HARDE KOPPELINGEN &#183; ALLEBEI BEWAAKT</text>
+  <text class="t mono" x="64" y="922">normen/*.json</text>
+  <text class="t lbl" x="64" y="940">naar elke afnemer, als kopie met de vingerafdruk van normen erin en haal_normen.py --check in de CI</text>
+  <text class="t mono" x="64" y="962">.github/profile/README.md</text>
+  <text class="t lbl" x="64" y="980">naar voorpagina, llms.txt en sitemap.xml, gegenereerd bij elke build van de site en elk uur opnieuw</text>
+  <text class="t mono" x="64" y="1002">vervallen 03-09-2026</text>
+  <text class="t lbl" x="64" y="1020">aanvalspaden/paden.json naar de meting: die woont nu in dezelfde repo en leest de bron rechtstreeks</text>
   <text class="t klein" x="720" y="922">Een kopie zonder bewaking wordt binnen</text>
   <text class="t klein" x="720" y="938">een half jaar een tweede waarheid.</text>
   <text class="t klein" x="720" y="962">De vaste vorm van een instrument, vier keer</text>
