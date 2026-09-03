@@ -104,8 +104,8 @@ is geen project maar een bron plus regelset in het instrument dat over die eenhe
 van iamscan als een van de bronnen) en `procescheck` (de landschapsexport voor de blast radius).
 Dezelfde vorm, geen gedeelde bibliotheek: regels als JSON, een parser per bron, een bevinding met bewijs en
 bron, vier bewijssoorten (configuratie, log, document, niet uit de bron te halen), dossier als JSON.
-`applicatiecheck` is de referentie-implementatie van die vorm; meting volgt hem, niet zijn eigen
-`architecture.md`.
+Meting wordt als eerste gebouwd (besluit 03-09-2026) en is daarmee de referentie van die vorm;
+`applicatiecheck` F1 volgt hem daarna. Geen van beide volgt de eigen `architecture.md` van de posture-tool.
 
 **Neemt afscheid.** `grc-platform` (ISMS/PIMS/BCMS met tenants, RLS en AI-agents) is op 2 september 2026
 gearchiveerd: het is de definitie van een applicatie en wordt nooit één pagina. De volledige historie
@@ -154,7 +154,7 @@ diezelfde sleutel hangen vier vragen:
 | Vraag | Waar het antwoord staat | Stand |
 |---|---|---|
 | Hoe sta ik ervoor? | `aanvalspaden/check/` | live |
-| Wat zegt mijn eigen data? | `aanvalspaden/meting/`, nu nog `security-posture-tool` en `iamscan` | in aanbouw, na applicatiecheck F1 |
+| Wat zegt mijn eigen data? | `aanvalspaden/meting/`, nu nog `security-posture-tool` en `iamscan` | volgende bouwstap (besluit 03-09: vóór applicatiecheck F1) |
 | Wat toon ik hiermee aan? | `aanvalspaden/mappingen/` | live, 333 regels over vier kaders |
 | Hoe pak ik het aan? | `kennisbank` (bron), gekopieerd naar `aanvalspaden/mappingen/` | live, 38 van de 44 barrieres |
 

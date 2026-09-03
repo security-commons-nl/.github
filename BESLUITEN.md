@@ -6,6 +6,19 @@ krijgt hier een regel: datum, wat er is besloten, en waarom. Nieuwste bovenaan. 
 
 Dit log begint op 29-08-2026, toen bleek dat het statuut er wel naar verwees maar het nergens stond.
 
+## 03-09-2026 · Meting gaat vóór applicatiecheck F1
+
+**Besloten.** De ombouw van `security-posture-tool` en `iamscan` naar `aanvalspaden/meting/` (fase 5 van
+*lichte commons*) gaat vóór de bouw van applicatiecheck F1, en niet erna zoals het plan zei. Meting wordt
+daarmee het eerste bewijs-instrument en de referentie van die vorm; F1 kopieert het daarna. Nog niet
+gestart; schatting twee sessies.
+
+**Waarom.** F1 bestaat niet, dus wachten erop is wachten op iets dat nog gebouwd moet worden. De
+posture-tool heeft de rijkere testdata (vijf parsers, tien tests, de 37 checklistitems al op pad en
+chokepoint), en de vaste vorm van een instrument is deze week twee keer gebouwd. Met meting is de
+ruggengraat (zelfcheck, risicoanalyse, meting, normverankering, handelingsperspectief) af, en kunnen twee
+repo's naar het archief. Applicatiecheck blijft zolang een concept met ontwerp-pagina, en dat is het nu ook.
+
 ## 03-09-2026 · AI-hulp met eigen sleutel: een patroon voor alle instrumenten, eerst in procescheck
 
 **Besloten.** Elk instrument mag een opt-in AI-hulp krijgen die met de API-sleutel van de gebruiker

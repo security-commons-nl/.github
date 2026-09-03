@@ -60,7 +60,7 @@
   <text class="t vraag" x="84" y="446">"Wat zegt mijn eigen data?"</text>
   <text class="t lbl" x="84" y="470">aanvalspaden/meting/: bewijs per cel uit exports;</text>
   <text class="t lbl" x="84" y="490">nu nog security-posture-tool en iamscan.</text>
-  <text class="t status ok" x="84" y="508">IN AANBOUW, NA APPLICATIECHECK F1</text>
+  <text class="t status ok" x="84" y="508">VOLGENDE BOUWSTAP (BESLUIT 03-09)</text>
   <path class="lijnb" d="M 400 440 C 440 440 440 356 466 346" marker-end="url(#pijl)"/>
 
   <!-- Rechtsboven: normverankering (gebouwd) -->

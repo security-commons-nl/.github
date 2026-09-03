@@ -146,8 +146,11 @@ per bestand, of één organisatie met meerdere processen; dat is een ontwerpkeuz
 `aanvalspaden#4` uitvoeren: het object uit de CSIR-tool verwijst naar een proces uit dit dossier.
 
 **Fase 5. Meting: security-posture-tool en iamscan gaan op in `aanvalspaden/meting/`.** Eigen bouwplan,
-pas nadat applicatiecheck F1 heeft laten zien hoe de bewijs-vorm eruitziet (regels als data, parser per
-bron, bewijssoorten, dossier); meting volgt die vorm en niet de eigen `architecture.md` van de posture-tool.
+schatting twee sessies (plan en bouw). **Volgorde omgedraaid op 03-09-2026 (besluit Bas):** meting gaat
+vóór applicatiecheck F1, niet erna. F1 bestaat nog niet, de posture-tool heeft de rijkere testdata (vijf
+parsers, tien tests, de 37 items al op `pad` en `chokepoint`), en het stramien is deze week twee keer
+gebouwd (procescheck, AI-hulp). Meting wordt daarmee het eerste bewijs-instrument en F1 kopieert dat
+daarna. Meting volgt die vorm en niet de eigen `architecture.md` van de posture-tool. Nog niet gestart.
 Bron: de 37 checklistitems met hun `pad` en `chokepoint` (`paden_map.py`), plus de iamscan-regels op AP05 en
 AP11. Invoer: exports (CSV/JSON) uit Entra, Intune, nmap, Nessus, en de Linux-dump van `collect.sh`; geen
 eigen ophalen. Uitkomst: bevindingen per chokepoint met bewijs, in de vorm van diepte 1. Daarna beide repo's
