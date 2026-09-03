@@ -133,7 +133,9 @@ blijven staan: dat is historie.
 krijgen een eigen dataset-repo `normen`. `bio2.json` verhuist daarheen (zonder het veld `iso_maatregel`),
 samen met `nist-csf.json`, `wpg.json` en `avg.json` uit `aanvalspaden/mappingen/bronnen/`; de generatoren
 en de vingerafdruk-bewaking draaien om, van `normen` naar elke afnemer. Eigen bouwplan:
-`2026-09-02-normen.md`, uitgevoerd op 02-09 (applicatiecheck via `applicatiecheck#2`; cisochat archiveren volgt). Onderzoeksdocumenten
+`2026-09-02-normen.md`, uitgevoerd op 02-09 (applicatiecheck via `applicatiecheck#2`). **cisochat gearchiveerd op
+03-09** (idee: `.github#19`; kloon en bundle in `X:/ARCHIEF`; de oogst van het onderzoek naar `referenties-tooling`
+staat nog open). Onderzoeksdocumenten
 naar `referenties-tooling`. vCISO-idee als issue `idee` in `.github`. Archiveren. Routingregels in
 `CLAUDE.md` die naar `cisochat\docs\vciso\research\` wijzen, naar het kennisbankitem.
 

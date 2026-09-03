@@ -110,9 +110,10 @@ Meting wordt als eerste gebouwd (besluit 03-09-2026) en is daarmee de referentie
 **Neemt afscheid.** `grc-platform` (ISMS/PIMS/BCMS met tenants, RLS en AI-agents) is op 2 september 2026
 gearchiveerd: het is de definitie van een applicatie en wordt nooit één pagina. De volledige historie
 staat lokaal bewaard, net als die van `hosting-bouwblokken` (zie Governance en infra) en `blast-radius`
-(zie Scripts en draaiboeken). `cisochat` (ontwerp voor een vCISO-agent, geen code) is de volgende: zijn
-`data/bio2.json` is naar `normen` verhuisd en geen afnemer leest er nog uit, dus archiveren kan. Zie het
-plan voor de volgorde.
+(zie Scripts en draaiboeken). `cisochat` (ontwerp voor een vCISO-agent, geen code) is op 03-09-2026
+gearchiveerd: zijn `data/bio2.json` was al naar `normen` verhuisd, het vCISO-idee leeft als issue
+`.github#19`, en het tooling-onderzoek per CSF-functie blijft leesbaar in de gearchiveerde repo tot het
+in `referenties-tooling` is geoogst. Daarmee is de groep *Neemt afscheid* leeg.
 
 **Scripts en draaiboeken.** `publicatiescan` (persoonsgegevens in eigen publicaties; blijft een script
 omdat een browser geen URL's kan ophalen) en `ai-gebruik-in-beeld` (draaiboek om AI-gebruik te meten).
