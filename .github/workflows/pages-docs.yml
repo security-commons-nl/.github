@@ -1,14 +1,20 @@
 name: Pages voor documentatierepo's (herbruikbaar)
 
 # Herbruikbare workflow die een documentatierepo als statische site naar GitHub Pages bouwt
-# en publiceert. Bedoeld voor repo's die de gedeelde site-build gebruiken (site/build.mjs met
-# site/config.json, bijvoorbeeld Handelingsperspectief en ai-gebruik-in-beeld).
+# en publiceert.
 #
-# Wat hij doet: de aanroepende repo uitchecken, Node 24 installeren, `npm ci` draaien,
-# `node site/build.mjs` uitvoeren (schrijft dist/), het Pages-artifact uploaden en deployen.
+# Twee smaken, en de workflow kiest zelf:
 #
-# Waarom: de stappen zijn in elke documentatierepo gelijk. Door ze hier te bundelen hoeft een
-# wijziging (nieuwe action-versie, andere Node-versie) maar op één plek te gebeuren.
+#   1. De repo heeft `site/build.mjs`. Dan draait die, zoals altijd (`npm ci` + `node site/build.mjs`).
+#      Zo blijven normen, csir-assessment-tool, applicatiecheck, ai-gebruik-in-beeld en
+#      Handelingsperspectief werken zolang ze hun eigen kopie hebben.
+#   2. De repo heeft alleen `site/config.json`. Dan checkt deze workflow security-commons-nl/.github
+#      uit en draait de gedeelde build daaruit met SITE_ROOT op de aanroepende repo. De repo hoeft
+#      dan geen build, geen package.json en geen node_modules te onderhouden.
+#
+# Waarom: de bouwstappen zijn in elke documentatierepo gelijk, en vijf kopieen van hetzelfde script
+# liepen aantoonbaar uit elkaar (de een kreeg downloads, de ander verborg de tabbalk bij een enkele
+# tab). Smaak 2 is de bestemming; smaak 1 is de overgang.
 #
 # Gebruik in caller-repo (.github/workflows/pages.yml). De caller bepaalt zelf de triggers en
 # moet de Pages-permissies en concurrency meegeven; die kunnen niet vanuit deze workflow
@@ -28,9 +34,6 @@ name: Pages voor documentatierepo's (herbruikbaar)
 #   jobs:
 #     pages:
 #       uses: security-commons-nl/.github/.github/workflows/pages-docs.yml@main
-#
-# Geen inputs: de twee huidige callers verschillen alleen in hun site/config.json, niet in de
-# bouwstappen. Komt er een repo bij met een andere bouwopdracht, voeg dan pas een input toe.
 
 on:
   workflow_call:
@@ -40,12 +43,47 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
+
+      - name: Eigen build of de gedeelde?
+        id: keuze
+        run: |
+          if [ -f site/build.mjs ]; then
+            echo "eigen=ja" >> "$GITHUB_OUTPUT"
+          else
+            test -f site/config.json || { echo "::error::site/config.json ontbreekt; zonder eigen build is dat het enige wat deze repo moet leveren"; exit 1; }
+            echo "eigen=nee" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: De gedeelde build ophalen
+        if: steps.keuze.outputs.eigen == 'nee'
+        uses: actions/checkout@v6
+        with:
+          repository: security-commons-nl/.github
+          path: .sitebuild
+
       - uses: actions/setup-node@v6
         with:
           node-version: 24
           cache: npm
-      - run: npm ci
-      - run: node site/build.mjs
+          cache-dependency-path: ${{ steps.keuze.outputs.eigen == 'ja' && 'package-lock.json' || '.sitebuild/package-lock.json' }}
+
+      - name: Bouwen met de eigen build
+        if: steps.keuze.outputs.eigen == 'ja'
+        run: |
+          npm ci
+          node site/build.mjs
+
+      - name: Bouwen met de gedeelde build
+        if: steps.keuze.outputs.eigen == 'nee'
+        env:
+          SITE_ROOT: ${{ github.workspace }}
+        run: |
+          npm ci --prefix .sitebuild
+          node .sitebuild/site/build.mjs
+
+      - name: Er moet een pagina uit komen
+        run: test -s dist/index.html
+
       - uses: actions/upload-pages-artifact@v5
         with:
           path: dist

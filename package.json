@@ -1,0 +1,11 @@
+{
+  "name": "commons-leesversie",
+  "private": true,
+  "version": "1.0.0",
+  "description": "De gedeelde leesversie-build van Security Commons NL. Repo's roepen hem aan via pages-docs.yml.",
+  "license": "EUPL-1.2",
+  "type": "module",
+  "dependencies": {
+    "marked": "18.0.11"
+  }
+}

@@ -3,9 +3,9 @@ name: Tests van de controlescripts
 on:
   push:
     branches: [main]
-    paths: ["tools/**", ".github/workflows/tools-ci.yml"]
+    paths: ["tools/**", "site/**", "package*.json", ".github/workflows/tools-ci.yml"]
   pull_request:
-    paths: ["tools/**"]
+    paths: ["tools/**", "site/**", "package*.json"]
 
 jobs:
   tests:
@@ -14,3 +14,20 @@ jobs:
       python-version: "3.12"
       test-command: "python -m pytest tools/ -v"
       install-extras: "pytest"
+
+  # De gedeelde leesversie-build draait op node; python-ci.yml kent dat niet, dus die tests krijgen
+  # een eigen job. Zonder node_modules slaan ze zichzelf over, en dan zou de bouw stil ongetest zijn.
+  leesversie:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: python -m pip install --upgrade pip pytest
+      - run: python -m pytest tools/test_leesversie.py -v
