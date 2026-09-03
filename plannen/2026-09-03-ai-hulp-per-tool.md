@@ -301,10 +301,12 @@ secrets, nergens.
 
 ## 10. Stappen
 
-1. **Meting.** `ai/haal_kern.py` + kopie van kern, ai.js, ai.css, index.html, bouw.py; `opdrachten.json`
-   met de opdracht `contract`; het schema per bron in de browser opbouwen; `Voorstel laden` in
-   `meting/bron/app.js`; fixtures opnemen; tests; CI-job; Pages; README, werkwijze, BESLUITEN.
-   Klaar als de tests groen zijn en `/aanvalspaden/meting/ai/` live staat.
+1. **Meting. Gedaan 03-09-2026**, live op `/aanvalspaden/meting/ai/`, 25 tests. Drie dingen liepen
+   anders dan hier voorzien, en dat staat in `meting/ai/LEESMIJ.md`: het samenvoegen van stukken kan
+   niet met `kern.voeg_stukken_samen` (die ontdubbelt op een sleutelveld dat een omgezette tabel niet
+   heeft), de citaatcontrole gebeurt op de AI-pagina en gaat als oordeel per rij mee in het voorstel
+   (de tool krijgt de invoer niet, alleen de sha256), en het vastgelegde antwoord is met de hand
+   geschreven omdat er geen opname met een echte sleutel is gedaan; `neem_op.py` staat klaar.
 2. **Zelfcheck.** Zelfde kopieerstap in dezelfde repo (kern staat er dan al); `opdrachten.json` met de
    opdracht `antwoorden`; de twee kleine wijzigingen in de importmelding; tests, waaronder de tweeling
    van `test_antwoorden_uit_meting_laden`. Klaar als `/aanvalspaden/ai/` live staat.
