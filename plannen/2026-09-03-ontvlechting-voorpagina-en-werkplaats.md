@@ -9,4 +9,6 @@
 2. **Werkplaats (`github.com`):** `profile/README.md` wordt een compacte visitekaart van ~25 regels met een duidelijke verwijzing naar de website. Daaronder toont GitHub direct de repositories.
 3. **Voorkant (`github.io`):** De website krijgt een eigen inhoudsbestand (`site/content.md`). `build.mjs` bouwt de voorpagina uit `content.md` gecombineerd met de kaarten uit `PROJECTEN.md`, overzichtelijk gegroepeerd naar vorm (Browser-instrumenten, Kennis, Normbronnen, Scripts).
 
-**Status:** In uitvoering (03-09-2026).
+**Status:** Uitgevoerd (03-09-2026, stand omgezet 04-09-2026).
+
+**Wat er staat:** `.github/PROJECTEN.md` is de enige projectenlijst (29 regels, statuut B9); `profile/README.md` is een visitekaart van 23 regels zonder tabel, dus GitHub toont direct de repositories; `site/content.md` is de brontekst van de voorpagina en `site/build.mjs` combineert die met de kaarten uit `PROJECTEN.md`, gegroepeerd naar vorm.

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 640" width="1180" height="640" role="img" aria-labelledby="titel beschrijving">
   <title id="titel">Roadmap van Security Commons NL</title>
-  <desc id="beschrijving">Vier banen: wat er live staat, wat er nu gebouwd wordt, wat daarna komt en wat later komt. Peildatum 3 september 2026. Van de negentien bouwplannen zijn er twaalf uitgevoerd. Live staan de kennisbank, de aanvalspaden-keten met zelfcheck, normverankering en meting, procescheck met AI-hulp, de CSIR-tool, de weerbaarheidsgame, de anonimizer en ai-gebruik-in-beeld. Nu aan de beurt is applicatiecheck F1, de enige tool die live staat zonder te werken. Daarna de AI-hulp voor de zelfcheck en CSIR, en diepte 1 van de aanvalspaden. Later dpiacheck en de weerbaarheidsgame v2.</desc>
+  <desc id="beschrijving">Vier banen: wat er live staat, wat er nu gebouwd wordt, wat daarna komt en wat later komt. Peildatum 3 september 2026. Van de negentien bouwplannen zijn er dertien uitgevoerd. Live staan de kennisbank, de aanvalspaden-keten met zelfcheck, normverankering en meting, procescheck met AI-hulp, de CSIR-tool, de weerbaarheidsgame, de anonimizer en ai-gebruik-in-beeld. Nu aan de beurt is applicatiecheck F1, de enige tool die live staat zonder te werken. Daarna de AI-hulp voor de zelfcheck en CSIR, en diepte 1 van de aanvalspaden. Later dpiacheck en de weerbaarheidsgame v2.</desc>
 
   <defs>
     <style>
@@ -26,7 +26,7 @@
   <rect width="1180" height="640" fill="#ffffff"/>
 
   <text class="t h1" x="40" y="48">Roadmap Security Commons NL</text>
-  <text class="t sub" x="40" y="72">Peildatum 3 september 2026 &#183; twaalf van de negentien bouwplannen uitgevoerd &#183; de volgorde staat in plannen/README.md</text>
+  <text class="t sub" x="40" y="72">Peildatum 3 september 2026 &#183; dertien van de negentien bouwplannen uitgevoerd &#183; de volgorde staat in plannen/README.md</text>
 
   <line class="pijl" x1="40" y1="104" x2="1140" y2="104" marker-end="url(#punt)"/>
 
