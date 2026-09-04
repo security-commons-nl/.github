@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 640" width="1180" height="640" role="img" aria-labelledby="titel beschrijving">
+  <title id="titel">Roadmap van Security Commons NL</title>
+  <desc id="beschrijving">Vier banen: wat er live staat, wat er nu gebouwd wordt, wat daarna komt en wat later komt. Peildatum 3 september 2026. Van de negentien bouwplannen zijn er twaalf uitgevoerd. Live staan de kennisbank, de aanvalspaden-keten met zelfcheck, normverankering en meting, procescheck met AI-hulp, de CSIR-tool, de weerbaarheidsgame, de anonimizer en ai-gebruik-in-beeld. Nu aan de beurt is applicatiecheck F1, de enige tool die live staat zonder te werken. Daarna de AI-hulp voor de zelfcheck en CSIR, en diepte 1 van de aanvalspaden. Later dpiacheck en de weerbaarheidsgame v2.</desc>
+
+  <defs>
+    <style>
+      .t     { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; fill: #1a1d21; }
+      .h1    { font-size: 26px; font-weight: 700; fill: #1f4e79; letter-spacing: -0.3px; }
+      .sub   { font-size: 14px; fill: #5c6570; }
+      .baan  { font-size: 12px; font-weight: 700; fill: #8a94a0; letter-spacing: 1.4px; }
+      .kop   { font-size: 15px; font-weight: 700; fill: #1f4e79; }
+      .lbl   { font-size: 12.5px; fill: #3c434b; }
+      .klein { font-size: 11px; fill: #5c6570; }
+      .live  { font-size: 11px; font-weight: 700; fill: #2e7d68; }
+      .nu    { font-size: 11px; font-weight: 700; fill: #b45309; }
+      .card  { fill: #ffffff; stroke: #dfe3e8; stroke-width: 1.5; }
+      .kaart-nu { fill: #fffaf2; stroke: #e1a54a; stroke-width: 2; }
+      .strook { fill: #f6f7f9; stroke: #dfe3e8; stroke-width: 1; }
+      .pijl  { stroke: #c8ced6; stroke-width: 2; fill: none; }
+    </style>
+    <marker id="punt" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#c8ced6"/>
+    </marker>
+  </defs>
+
+  <rect width="1180" height="640" fill="#ffffff"/>
+
+  <text class="t h1" x="40" y="48">Roadmap Security Commons NL</text>
+  <text class="t sub" x="40" y="72">Peildatum 3 september 2026 &#183; twaalf van de negentien bouwplannen uitgevoerd &#183; de volgorde staat in plannen/README.md</text>
+
+  <line class="pijl" x1="40" y1="104" x2="1140" y2="104" marker-end="url(#punt)"/>
+
+  <!-- ═══ Baan 1: live ═══ -->
+  <text class="t baan" x="40" y="136">LIVE, IN GEBRUIK</text>
+  <rect class="strook" x="40" y="148" width="252" height="300" rx="10"/>
+
+  <text class="t kop" x="58" y="176">De keten van vier vragen</text>
+  <text class="t lbl" x="58" y="198">Zelfcheck &#183; 18 aanvalspaden</text>
+  <text class="t lbl" x="58" y="218">Kennisbank &#183; 52 stukken</text>
+  <text class="t lbl" x="58" y="238">Normverankering &#183; BIO2, NIST, Wpg</text>
+  <text class="t lbl" x="58" y="258">Meting &#183; 41 meetregels</text>
+  <text class="t live" x="58" y="278">alle vier op github.io</text>
+
+  <text class="t kop" x="58" y="312">Instrumenten</text>
+  <text class="t lbl" x="58" y="334">procescheck &#183; BIA per proces</text>
+  <text class="t lbl" x="58" y="354">CSIR &#183; objecten met IA/OT</text>
+  <text class="t lbl" x="58" y="374">weerbaarheidsgame &#183; bestuur</text>
+  <text class="t lbl" x="58" y="394">anonimizer &#183; publicatiescan</text>
+  <text class="t lbl" x="58" y="414">ai-gebruik-in-beeld</text>
+  <text class="t live" x="58" y="434">opt-in AI-hulp: procescheck, meting</text>
+
+  <!-- ═══ Baan 2: nu ═══ -->
+  <text class="t baan" x="316" y="136">NU AAN DE BEURT</text>
+  <rect class="kaart-nu" x="316" y="148" width="252" height="196" rx="10"/>
+
+  <text class="t kop" x="334" y="176">applicatiecheck F1</text>
+  <text class="t lbl" x="334" y="200">Regels als data, toets.py,</text>
+  <text class="t lbl" x="334" y="219">generieke parser, fixtures.</text>
+  <text class="t klein" x="334" y="245">De enige tool die live staat</text>
+  <text class="t klein" x="334" y="262">zonder te werken: status concept.</text>
+  <text class="t klein" x="334" y="279">Meting is de vorm die hij volgt.</text>
+  <text class="t nu" x="334" y="308">plan 2026-09-02, deel 2</text>
+  <text class="t klein" x="334" y="328">schatting: een sessie</text>
+
+  <rect class="card" x="316" y="364" width="252" height="84" rx="10"/>
+  <text class="t kop" x="334" y="392">Klein onderhoud</text>
+  <text class="t lbl" x="334" y="414">Repo Handelingsperspectief weg</text>
+  <text class="t klein" x="334" y="434">laatste punt van plan 30-08</text>
+
+  <!-- ═══ Baan 3: daarna ═══ -->
+  <text class="t baan" x="592" y="136">DAARNA</text>
+  <rect class="card" x="592" y="148" width="252" height="140" rx="10"/>
+  <text class="t kop" x="610" y="176">AI-hulp, stap 2 en 3</text>
+  <text class="t lbl" x="610" y="198">Zelfcheck, dan CSIR.</text>
+  <text class="t klein" x="610" y="222">De zelfcheck is goedkoop: kern.js</text>
+  <text class="t klein" x="610" y="239">staat er al, importformaat bestaat.</text>
+  <text class="t klein" x="610" y="266">plan 2026-09-03-ai-hulp-per-tool</text>
+
+  <rect class="card" x="592" y="308" width="252" height="140" rx="10"/>
+  <text class="t kop" x="610" y="336">Diepte 1</text>
+  <text class="t lbl" x="610" y="358">Kroonjuwelen maal clusters,</text>
+  <text class="t lbl" x="610" y="377">met procescheck als bron.</text>
+  <text class="t klein" x="610" y="402">Fase 7 van lichte commons;</text>
+  <text class="t klein" x="610" y="419">maakt de keten compleet.</text>
+
+  <!-- ═══ Baan 4: later ═══ -->
+  <text class="t baan" x="868" y="136">LATER</text>
+  <rect class="card" x="868" y="148" width="272" height="140" rx="10"/>
+  <text class="t kop" x="886" y="176">dpiacheck</text>
+  <text class="t lbl" x="886" y="198">Leunen op MinBZK/par-dpia-form;</text>
+  <text class="t lbl" x="886" y="217">commons levert de catalogus.</text>
+  <text class="t klein" x="886" y="242">Fase O: oogst 27 camera-DPIA's,</text>
+  <text class="t klein" x="886" y="259">stoppen bij minder dan vijf bruikbaar.</text>
+
+  <rect class="card" x="868" y="308" width="272" height="140" rx="10"/>
+  <text class="t kop" x="886" y="336">weerbaarheidsgame v2</text>
+  <text class="t lbl" x="886" y="358">Inhoud naar spel.json, datalek</text>
+  <text class="t lbl" x="886" y="377">naast uitval, dossier met besluiten.</text>
+  <text class="t klein" x="886" y="402">Drie sessies. Grootste inhaalslag:</text>
+  <text class="t klein" x="886" y="419">toegankelijkheid, want nu nul.</text>
+
+  <!-- ═══ Voet: wat het geheel bij elkaar houdt ═══ -->
+  <rect class="strook" x="40" y="480" width="1100" height="116" rx="10"/>
+  <text class="t baan" x="58" y="506">WAT HET GEHEEL BIJ ELKAAR HOUDT</text>
+  <text class="t lbl" x="58" y="532">paden.json is de enige bron van de achttien aanvalspaden; alle drie de diepten lezen hem rechtstreeks.</text>
+  <text class="t lbl" x="58" y="554">De normbronnen komen uit normen, de projectentabel uit PROJECTEN.md, de leesversies uit de gedeelde build in .github/site.</text>
+  <text class="t lbl" x="58" y="576">Een project is een instrument of een script, nooit een applicatie (statuut B14). AI is opt-in, met je eigen sleutel: /ai-hulp/.</text>
+
+  <text class="t klein" x="1140" y="620" text-anchor="end">Bron: .github/plannen/README.md &#183; deze tekening hoort bij ARCHITECTUUR.md</text>
+</svg>

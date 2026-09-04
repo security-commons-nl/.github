@@ -7,6 +7,11 @@ Een plan is geen norm. Wat er nu geldt staat in [REDACTIESTATUUT.md](../REDACTIE
 is in [ARCHITECTUUR.md](../ARCHITECTUUR.md) en op het
 [organisatieprofiel](../profile/README.md). Wijkt een plan daarvan af, dan heeft het plan het nakijken.
 
+![Roadmap van Security Commons NL](../roadmap.svg)
+
+De tekening hierboven is de korte versie: wat er live staat, wat er nu wordt gebouwd, en wat
+daarna komt. De tabel hieronder is de volledige stand, plan voor plan.
+
 | Plan | Waarover | Stand |
 |---|---|---|
 | [2026-08-28-aanvalspaden-keten.md](2026-08-28-aanvalspaden-keten.md) | De keten zelfcheck, risicoanalyse en meting rond een gedeelde `paden.json` | uitgevoerd |
