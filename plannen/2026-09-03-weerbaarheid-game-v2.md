@@ -1,7 +1,8 @@
 # Bouwplan: de weerbaarheidsgame naar v2
 
 **Status:** geschreven 03-09-2026, op verzoek van Bas ("werkt, maar nog niet optimaal; moderner, iets
-uitgebreider"). Alleen het plan; niets gebouwd. De game draait sinds maart 2026 live en wordt gebruikt
+uitgebreider"). De drie open vragen zijn dezelfde dag beantwoord (hoofdstuk 8), dus het plan is
+uitvoerbaar; nog niets gebouwd. De game draait sinds maart 2026 live en wordt gebruikt
 in bestuursgesprekken, dus dit is een verbouwing van iets dat werkt, geen herstart.
 
 Geschreven om door een minder sterk model uitgevoerd te kunnen worden, in de vorm van
@@ -200,12 +201,35 @@ gehaald zonder dat het gesprek in de raadzaal erop achteruit gaat.
 
 ---
 
-## 8. Openstaand voor Bas
+## 8. Besluiten (03-09-2026)
 
-- **De drie nieuwe diensten** (belastingen, vergunningen, verkiezingen) zijn mijn voorstel. Andere
-  keuze mag; het formaat verandert er niet van.
-- **De voorbeeldstatussen.** De huidige statussen komen uit de rapportages van één organisatie uit maart
-  2026. Blijven die het voorbeeld, of wordt het voorbeeld neutraler (alles op `onbekend`, invullen doe je
-  zelf)? Neutraal is eerlijker maar minder overtuigend als demonstratie.
-- **De naam.** "Game" belooft een spel; het is een gespreksinstrument. Hernoemen kost een redirect en
-  een regel in de projectentabel, en het maakt de belofte scherper. Alleen doen als jij dat wilt.
+De drie vragen die hier open stonden, zijn beantwoord. Bas gaf de keuze uit handen; hieronder staat wat
+er is besloten en waarom.
+
+**1. De drie nieuwe diensten worden belastingen en invordering, vergunningen en toezicht, en
+verkiezingen.** Na uitkering en paspoort raken die de meeste inwoners, en verkiezingen zijn periodiek
+onvermijdelijk en politiek zichtbaar: een dienst waarvan het college de datum al kent, maakt het gesprek
+concreet. Daarmee komt de game op twaalf diensten. Het formaat verandert er niet van; wie een dienst wil
+toevoegen zet een blok in `spel.json`.
+
+**2. De voorbeeldcijfers blijven, maar zichtbaar als voorbeeld, en je eigen organisatie begint leeg.**
+Een demonstratie met alles op `onbekend` zegt een bestuurder niets: grijze tandwielen maken geen gesprek
+los. Tegelijk is het risico reeel dat een CISO de game opent, hem aan zijn college laat zien, en de
+statussen van een andere organisatie presenteert als de zijne. Daarom twee dingen:
+
+- de meegeleverde set (`spel-voorbeeld.json`) draagt een balk bovenaan het scherm en op de uitdraai:
+  *voorbeeldcijfers uit de rapportages van een gemeentelijke organisatie, maart 2026*;
+- zodra je een organisatienaam invult, springt de game naar een lege set: alle statussen op `onbekend`,
+  met de knop *voorbeeldcijfers overnemen* als je ze bewust als vertrekpunt wilt.
+
+Zo blijft de demonstratie overtuigend en kan niemand per ongeluk andermans cijfers tonen.
+
+**3. De naam blijft `weerbaarheid-game`; de ondertitel wordt scherper.** "Game" belooft inderdaad een
+spel terwijl het een gespreksinstrument is, maar de repo staat op 23 plekken buiten zijn eigen map
+genoemd (architectuur, projectentabel, kennisbank, llms.txt, sitemap, de voorpagina) en de URL
+`/weerbaarheid-game/` wordt gebruikt in bestuursgesprekken. Een dode link bij een bestuurder weegt
+zwaarder dan een naam die net niet klopt.
+
+Wat wel verandert: op de pagina en in de projectentabel heet hij *weerbaarheidsgame, gespreksinstrument
+voor college en directie*. Bij de oplevering van v2 kan de repo alsnog hernoemd worden, met een redirect
+vanaf het oude pad; dan verandert het instrument toch, en is een nieuwe naam te verdedigen. Nu niet.
