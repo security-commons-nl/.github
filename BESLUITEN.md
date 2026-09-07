@@ -6,6 +6,47 @@ krijgt hier een regel: datum, wat er is besloten, en waarom. Nieuwste bovenaan. 
 
 Dit log begint op 29-08-2026, toen bleek dat het statuut er wel naar verwees maar het nergens stond.
 
+## 07-09-2026 · Een backlog: drie labels, een gegenereerde pagina, en vraag boven aanbod
+
+**Besloten.** Het besluit van 30-08 (issues voor wat mensen bedenken, een gegenereerde pagina voor wat
+het systeem zelf ziet) is afgemaakt en op drie punten aangescherpt.
+
+1. **Elk open bouwplan is ook een issue**, met het label `plan`, in de repo waar het werk landt. Het
+   planbestand blijft het waarom, het issue is de stand. Een plan dat alleen als markdown bestaat, is
+   voor wie op GitHub kijkt onzichtbaar; daardoor stond het grootste werk nergens in een lijst.
+2. **Drie labels in plaats van een.** `plan` (bouwwerk met een plan), `schrijfopdracht` (een onderwerp
+   dat de kennisbank mist), `idee` (een sprong zonder plan). Alles droeg `idee`, en dan is een label
+   geen onderscheid meer. Geen vierde label: dat breekt de eenvoud.
+3. **De pagina** [/backlog/](https://security-commons-nl.github.io/backlog/), bij elke build gemaakt uit
+   de open issues en pull requests van de organisatie en uit `mappingen/gevraagd.json` van de
+   aanvalspaden. Met de hand geschreven is alleen het blok *Nu aan de beurt*, drie regels. Valt de API
+   uit, dan bouwt de site door en zegt de pagina dat de lijst ontbreekt.
+
+**Twee keuzes in de indeling, die zeggen wat we belangrijk vinden.**
+
+*Vraag gaat voor aanbod.* De gaten uit de zelfcheck staan boven de schrijfopdrachten. Die gaten zijn
+barrieres waar de zelfcheck iemand naartoe stuurt en waar niets staat; de schrijfopdrachten zijn
+grotendeels restanten uit de catalogus van de oude security-shop, die niemand heeft gevraagd en die
+volgens hun eigen tekst geen barriere raken. Ze stonden andersom.
+
+*Het lijstje bovenaan noemt wie de pen heeft.* Twee bouwregels en een schrijfregel. Stonden er alleen
+bouwklussen, dan meet "waar we nu aan werken" maar de helft: een commons komt niet vooruit op code
+alleen, en de plek waar een lezer iets mist is de kennisbank.
+
+**Waarom.** Tussen 30-08 en vandaag waren er vier plekken ontstaan waar werk kon staan: planbestanden
+zonder issue, issues die allemaal `idee` heetten, pull requests van de robot, en een tekening. Vier
+plekken is hetzelfde probleem als het projectbord dat op 30-08 juist is weggehaald. Nu is er een plek om
+te lezen en een om te werken, en het enige handwerk zijn die drie regels: prioriteren is een keuze, geen
+berekening.
+
+**Meteen toegepast.** De vijf openstaande ideeen zijn gewogen, iets dat sinds april niet was gebeurd.
+Kroonjuwelen game is gesloten en opgegaan in het plan voor weerbaarheidsgame v2; raakt-mij is de
+eerstvolgende plankandidaat; leveranciersadvisories-nl verhuist van de bouwrij naar het gesprek met de
+sector, want dat staat of valt met deelnemers en met de vraag of je een leveranciersbericht mag
+herpubliceren; Angsthaas blijft staan met de voorwaarde dat de transcriptie lokaal draait, anders
+streamt een pagina van ons een vergadering naar een Amerikaanse dienst; uit het vCISO-idee is de oogst
+van `docs/vciso/research/` losgetrokken als schrijfopdracht, voordat die archiefrepo uit beeld raakt.
+
 ## 03-09-2026 · Meting gaat vóór applicatiecheck F1
 
 **Besloten.** De ombouw van `security-posture-tool` en `iamscan` naar `aanvalspaden/meting/` (fase 5 van
