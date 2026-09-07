@@ -63,9 +63,9 @@
   <text class="t klein" x="334" y="328">schatting: een sessie</text>
 
   <rect class="card" x="316" y="364" width="252" height="84" rx="10"/>
-  <text class="t kop" x="334" y="392">De backlog</text>
-  <text class="t lbl" x="334" y="414">Open plannen, schrijfopdrachten en</text>
-  <text class="t klein" x="334" y="434">ideeen als issue, op /backlog/</text>
+  <text class="t kop" x="334" y="392">Handleiding: browsers dichtzetten</text>
+  <text class="t lbl" x="334" y="414">Schrijfwerk, geen bouwwerk. Het gat</text>
+  <text class="t klein" x="334" y="434">op de meeste aanvalspaden (3 van 18).</text>
 
   <!-- ═══ Baan 3: daarna ═══ -->
   <text class="t baan" x="592" y="136">DAARNA</text>
