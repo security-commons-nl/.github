@@ -12,12 +12,12 @@ Iedereen die aan de commons meebouwt of wil begrijpen waarom iets is zoals het i
 
 ## Snel starten
 
-- [REDACTIESTATUUT.md](REDACTIESTATUUT.md): de regels waaraan elke publicatie voldoet (A1 tot A10, B1 tot B12).
+- [REDACTIESTATUUT.md](REDACTIESTATUUT.md): de regels waaraan elke publicatie voldoet (A1 tot A11, B1 tot B14).
 - [ARCHITECTUUR.md](ARCHITECTUUR.md): welke repo's er zijn, hoe ze samenhangen, en waar het werk ligt.
 - [PRINCIPLES.md](PRINCIPLES.md): waarom we dit doen.
 - [BESLUITEN.md](BESLUITEN.md): append-only log van elke wijziging aan het statuut of aan de opzet.
-- [profile/README.md](profile/README.md): de enige projectenlijst (statuut B9). Wijkt een ander stuk daarvan af, dan heeft het profiel gelijk.
-- [plannen/](plannen/): de bouwplannen achter de commons, ook nadat ze zijn uitgevoerd.
+- [PROJECTEN.md](PROJECTEN.md): de enige projectenlijst (statuut B9). Wijkt een ander stuk daarvan af, dan heeft die tabel gelijk. [profile/README.md](profile/README.md) is de visitekaart op github.com en verwijst ernaar.
+- [plannen/](plannen/): de bouwplannen achter de commons, ook nadat ze zijn uitgevoerd. Wat er nu open staat, over alle repo's heen, staat op [de backlog](https://security-commons-nl.github.io/backlog/): open plannen, schrijfopdrachten en ideeen als issue, de gaten uit de data, en bovenaan waar we nu aan werken.
 - [profile/avatar-github.jpeg](profile/avatar-github.jpeg): het logo van de organisatie.
 
 ## Controles

@@ -10,6 +10,15 @@ van drie, en beschrijft de laag die op 30-08-2026 is gebouwd.
 
 > **Stand 30-08-2026.** Het handelingsperspectief is gebouwd en staat live. Het GitHub Project
 > *Ideeen & Backlog* is verwijderd; de drie items staan als issue met het label `idee`.
+>
+> **Stand 07-09-2026.** De gegenereerde pagina uit hoofdstuk 2 staat er nu:
+> [/backlog/](https://security-commons-nl.github.io/backlog/), bij elke build opnieuw gemaakt uit de
+> open issues en pull requests van de org en uit `mappingen/gevraagd.json`, met bovenaan het
+> handgeschreven blok *Nu aan de beurt*. Daarbij drie labels in plaats van een: `plan` (bouwwerk met
+> een plan in deze map; elk open plan heeft nu zo'n issue in de repo waar het werk landt),
+> `schrijfopdracht` (een stuk dat de kennisbank mist) en `idee` (een sprong). Tussen 30-08 en 07-09
+> waren er vier plekken ontstaan (planbestanden zonder issue, alles onder `idee`, de robot-PR's en de
+> tekening); nu is er een plek om te lezen en een om te werken.
 
 ---
 
