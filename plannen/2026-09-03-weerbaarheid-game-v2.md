@@ -234,6 +234,16 @@ walkthrough binnen beeld op drie schermmaten, en een volledige doorloop). Daar k
 - **Geen nieuwe huisstijl.** De vorm die er is werkt in de raadzaal; dit plan raakt de inhoud, de
   bediening en de toegankelijkheid.
 
+**Wel te overwegen bij stap 1: een sessiemodus waarin de zaal zelf benoemt wat er toe doet.** Dit komt
+uit het idee *Kroonjuwelen game* (.github#2, gesloten op 07-09-2026 en hierin opgegaan). De gedachte
+daar: de host weet vaak niet welke kroonjuwelen er zijn, de deelnemers wel, en met een spelvorm komt dat
+naar boven. De kroonjuwelenlijst zelf hoeft de game niet te maken, want procescheck levert die al als
+uitdraai; wat de sessievorm toevoegt is het ophalen bij mensen die het weten. Concreet zou dat een
+schermmodus zijn waarin deelnemers diensten of processen inbrengen voordat het scenario begint, en die
+inbreng in `spel.json`-vorm het dossier in gaat. Zodra `spel.json` bestaat (stap 1) is dit klein; ervoor
+is het een tweede tool. Blijkt bij het bouwen dat het toch een zelfstandig instrument moet zijn, dan gaat
+.github#2 weer open.
+
 ---
 
 ## 8. Stappen
