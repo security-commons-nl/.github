@@ -1,6 +1,6 @@
 # Redactiestatuut security-commons-nl
 
-Vastgesteld 28-08-2026, B3 en B10 aangevuld op 29-08-2026, B4 op 30-08-2026, A11 toegevoegd op 31-08-2026, B13 en B14 op 02-09-2026, Cbw in B2 op 02-09-2026, B9 herzien op 03-09-2026 (PROJECTEN.md), B14 verduidelijkt op 03-09-2026. Geldt voor alle repo's van de organisatie. De inhoudsregels (A) gelden overal
+Vastgesteld 28-08-2026, B3 en B10 aangevuld op 29-08-2026, B4 op 30-08-2026, A11 toegevoegd op 31-08-2026, B13 en B14 op 02-09-2026, Cbw in B2 op 02-09-2026, B9 herzien op 03-09-2026 (PROJECTEN.md), B14 verduidelijkt op 03-09-2026, B2 aangevuld en B15 toegevoegd op 25-09-2026. Geldt voor alle repo's van de organisatie. De inhoudsregels (A) gelden overal
 letterlijk; de structuurregels (B) gelden overal in vorm, met per repo één afspraak over wat de eerste
 laag betekent (zie B1). Waar een repo een script heeft dat deze regels controleert, verwijst elke melding
 naar het regelnummer hieronder.
@@ -100,7 +100,8 @@ context, de wet voor de Nederlandse verplichting (aangevuld 02-09-2026, issue #1
 `auteur` bestaat niet (A1). `licentie` alleen als het item afwijkt van EUPL-1.2 (B5). Bij type
 `handleiding` komen daar drie velden bij: `barrieres` (verplicht, `vraag_id`'s uit `paden.json`),
 `rol` (`fundering`, `alternatief` of `verdieping`) en `pijler` (het item waar de handleiding uit
-voortkomt). Andere velden niet.
+voortkomt). Elk item mag daarnaast `bronnen` dragen: een lijst met id's uit `bronnen.json` op de
+root van de kennisbank (B15). Andere velden niet.
 
 **B3. Bestandsvormen.** Markdown is de bron. Elk tekstitem heeft daarnaast een self-contained HTML-leesversie
 (geen externe fonts of scripts, print op A4, plakbaar in Word). Binaire bestanden (docx, pptx, xlsx, pdf)
@@ -200,6 +201,42 @@ instrument geen applicatie, mits: een aparte pagina met eigen Content-Security-P
 uitkomst een voorstel dat de gebruiker per regel overneemt, nooit een schrijfactie in het dossier; en
 toestemming per sessie met de melding wat waarheen gaat (verduidelijkt 03-09-2026, issue #18; het
 patroon staat in het plan *AI-hulp*).
+
+**B15. Verwijs naar wat anderen al hebben.** De commons staat niet naast het stelsel maar erin. Heeft
+een andere partij over hetzelfde onderwerp al een handreiking, factsheet, tool of uitleg, dan verwijst
+het item daar met naam en adres naar, naar het specifieke stuk en niet naar een homepage. Dat maakt een
+item bruikbaarder, voorkomt dat de commons dubbel werk doet, en doet het werk van anderen recht.
+
+- **Een register, een plek per stuk.** Verwijzingen staan in `bronnen.json` op de root van de
+  kennisbank: titel, adres, partij, toegang en de datum waarop iemand het stuk zag. Een item noemt alleen
+  de id's, in het veld `bronnen` (B2). Verhuist een stuk, dan verandert een regel en niet elk item dat
+  ernaar wijst.
+- **De partij komt uit de stelselkaart.** Elke bron hoort bij een partij uit
+  `security/stelselkaart-security-gremia/`, en die partij heeft een adres. Dat adres is de terugval:
+  blijkt een stuk weg, dan krijgt de bron `vervallen` met de datum en wijst de leesversie naar de partij
+  zelf, zo mogelijk met een archiefversie. Een dode link wordt zo een aanwijzing waar je verder zoekt.
+- **Eerlijk over de toegang.** `open`, `inlog` of `onbekend`. Bij `inlog` staat erbij wie er wel bij
+  kan (de `kring`, bijvoorbeeld "gemeenten, via de community van de IBD"). Wat achter een inlog staat,
+  kan de commons niet controleren; daarom staat de datum `gezien` op de pagina. Een verwijzing naar een
+  besloten stuk noemt de titel en de plek, nooit de inhoud (A9).
+- **Alleen wat al openbaar bestaat.** Een besloten stuk komt alleen in het register als zijn *bestaan*
+  openbaar is en alleen het stuk zelf achter de inlog staat, bijvoorbeeld een product dat op een
+  openbare productpagina staat maar pas na inloggen te downloaden is. Nooit in het register: stukken met
+  een TLP-markering (GREEN, AMBER of RED; ook een titel op een openbare pagina doorbreekt die), en
+  samenwerkruimtes met eigen gedragsregels of een kring waar een lezer niet in kan komen. De build
+  weigert een bron waarvan titel of adres naar een TLP-markering verwijst.
+- **Wat de lezer ziet.** Onderaan de leesversie een blok *Wat anderen al hebben*, gegenereerd door
+  `tools/build.py`. Een verwijzing in de lopende tekst, met een zin over wat het andere stuk wel en dit
+  stuk niet doet, blijft daarnaast gewoon mogen en is vaak waardevoller dan de lijst.
+- **Wat de build controleert.** Elk id in een item bestaat in het register; elke bron heeft de
+  verplichte velden, een https-adres, een partij uit de stelselkaart met een adres, en bij `inlog` een
+  kring; hetzelfde adres staat er niet twee keer in. A5 geldt: geen sociale media.
+- **Wat maandelijks gebeurt.** `tools/linkcheck.py` loopt elk adres na en opent een issue met label
+  `linkcheck` bij een dood of veranderd adres. Het script wijzigt niets; een mens beslist of een stuk
+  verhuisd is of weg.
+
+Vastgesteld 25-09-2026. Reden: van de 56 items verwees er op die datum een naar het werk van een andere
+partij in het stelsel, terwijl de stelselkaart van dezelfde kennisbank er 83 in kaart brengt.
 
 ## Wijzigen van dit statuut
 
