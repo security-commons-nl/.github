@@ -219,6 +219,12 @@ item bruikbaarder, voorkomt dat de commons dubbel werk doet, en doet het werk va
   kan (de `kring`, bijvoorbeeld "gemeenten, via de community van de IBD"). Wat achter een inlog staat,
   kan de commons niet controleren; daarom staat de datum `gezien` op de pagina. Een verwijzing naar een
   besloten stuk noemt de titel en de plek, nooit de inhoud (A9).
+- **Alleen wat al openbaar bestaat.** Een besloten stuk komt alleen in het register als zijn *bestaan*
+  openbaar is en alleen het stuk zelf achter de inlog staat, bijvoorbeeld een product dat op een
+  openbare productpagina staat maar pas na inloggen te downloaden is. Nooit in het register: stukken met
+  een TLP-markering (GREEN, AMBER of RED; ook een titel op een openbare pagina doorbreekt die), en
+  samenwerkruimtes met eigen gedragsregels of een kring waar een lezer niet in kan komen. De build
+  weigert een bron waarvan titel of adres naar een TLP-markering verwijst.
 - **Wat de lezer ziet.** Onderaan de leesversie een blok *Wat anderen al hebben*, gegenereerd door
   `tools/build.py`. Een verwijzing in de lopende tekst, met een zin over wat het andere stuk wel en dit
   stuk niet doet, blijft daarnaast gewoon mogen en is vaak waardevoller dan de lijst.
