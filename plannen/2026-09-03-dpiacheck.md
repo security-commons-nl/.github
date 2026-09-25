@@ -134,6 +134,12 @@ bepaalt of de rest doorgaat.
     Die bibliotheek staat onder een voorwaarde (overnemen mag, veranderen niet) die zich niet verdraagt
     met het normaliseren van maatregelen. Ze wordt in het instrument genoemd als plek voor voorbeelden,
     en er wordt niets uit overgenomen. Voor cameratoezicht is dat geen verlies (hoofdstuk 1).
+    **Noot 25-09-2026.** De pagina *Collectieve DPIA's* van de IBD formuleert de voorwaarde inmiddels
+    ruimer: gemeenten kunnen de inhoud overnemen en bij bepaalde delen aanpassen en aanvullen, mits de
+    DPIA klopt met het eigen proces. Het besluit blijft staan (de Leidse set is de bron), maar de reden
+    "veranderen mag niet" gaat niet meer op; als fase O aan de vergelijking toe is, weegt opnieuw of de
+    27 collectieve DPIA's als tweede bron mee kunnen. De bibliotheek is openbaar en staat als verwijzing
+    in de kennisbank (`privacy/dpia-uitvoeren/`, B15).
 22. **Afbakening met `applicatiecheck`: verwerking tegenover techniek.** `dpiacheck` stelt de eis,
     `applicatiecheck` levert het bewijs. Ze verwijzen naar elkaar en delen geen bron. Een applicatie
     *levert bewijs voor* een maatregel, nooit "voldoet aan" de DPIA.
