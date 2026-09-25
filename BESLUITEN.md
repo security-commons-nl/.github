@@ -6,6 +6,33 @@ krijgt hier een regel: datum, wat er is besloten, en waarom. Nieuwste bovenaan. 
 
 Dit log begint op 29-08-2026, toen bleek dat het statuut er wel naar verwees maar het nergens stond.
 
+## 25-09-2026 · B15: de kennisbank verwijst naar wat anderen al hebben
+
+**Besloten.** Elk kennisbankitem mag verwijzen naar specifieke stukken van andere partijen in het
+stelsel (IBD, NCSC, CIP, VNG, Digitale Overheid en de rest van de stelselkaart), via een register
+`bronnen.json` op de root van de kennisbank en een veld `bronnen` in de frontmatter. B2 is daarop
+aangevuld, B15 is nieuw. De leesversie krijgt onderaan een blok *Wat anderen al hebben*; een maandelijkse
+linkcheck opent een issue bij een dood adres. Eerste vulling: de Cbw-toets en de handleiding
+DDoS-scrubbing.
+
+**Onderbouwing.** Van de 53 items verwees er geen enkel naar het werk van een andere partij. Alle
+externe links gingen naar de eigen site, op twee na. Dat is precies het beeld van een commons die naast
+het stelsel staat in plaats van erin, en het maakt elk item minder bruikbaar dan het kan zijn: wie de
+Cbw-toets doet, heeft ook de uitleg van Digitale Overheid en het NCSC nodig.
+
+**Waarom een register en niet losse links.** Hetzelfde stuk hoort vaak bij meerdere items, en
+overheidssites verhuizen hun pagina's regelmatig. Met een register verandert bij een verhuizing een
+regel. Met losse links in de tekst moet iemand eerst weten waar ze allemaal staan.
+
+**Waarom de partij uit de stelselkaart.** Het koppelt twee dingen die al bestonden maar los stonden, en
+het geeft elke verwijzing een terugval die blijft werken als het specifieke stuk verdwijnt: het adres van
+de partij zelf, met de datum waarop het stuk er nog stond.
+
+**Bewust niet gekozen.** De linkcheck laten repareren: of een stuk verhuisd is of weg, en wat de
+opvolger is, kan een script niet beoordelen. En besloten stukken weglaten: juist die zijn voor een
+gemeente vaak het nuttigst, en wie de kring kent, weet waar hij moet aankloppen. Wel staat erbij dat de
+commons niet kan controleren wat erachter ligt.
+
 ## 07-09-2026 · Een backlog: drie labels, een gegenereerde pagina, en vraag boven aanbod
 
 **Besloten.** Het besluit van 30-08 (issues voor wat mensen bedenken, een gegenereerde pagina voor wat
