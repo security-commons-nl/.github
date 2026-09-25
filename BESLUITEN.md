@@ -15,8 +15,9 @@ aangevuld, B15 is nieuw. De leesversie krijgt onderaan een blok *Wat anderen al 
 linkcheck opent een issue bij een dood adres. Eerste vulling: de Cbw-toets en de handleiding
 DDoS-scrubbing.
 
-**Onderbouwing.** Van de 53 items verwees er geen enkel naar het werk van een andere partij. Alle
-externe links gingen naar de eigen site, op twee na. Dat is precies het beeld van een commons die naast
+**Onderbouwing.** Van de 56 items verwees er een naar het werk van een andere partij in het stelsel (een
+pagina van Digitale Overheid). De andere externe links gingen naar wetteksten, documentatie van tooling
+en de eigen site. Dat is precies het beeld van een commons die naast
 het stelsel staat in plaats van erin, en het maakt elk item minder bruikbaar dan het kan zijn: wie de
 Cbw-toets doet, heeft ook de uitleg van Digitale Overheid en het NCSC nodig.
 

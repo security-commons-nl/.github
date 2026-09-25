@@ -229,8 +229,8 @@ item bruikbaarder, voorkomt dat de commons dubbel werk doet, en doet het werk va
   `linkcheck` bij een dood of veranderd adres. Het script wijzigt niets; een mens beslist of een stuk
   verhuisd is of weg.
 
-Vastgesteld 25-09-2026. Reden: van de 53 items verwees er op die datum geen enkel naar het werk van een
-andere partij in het stelsel, terwijl de stelselkaart van dezelfde kennisbank er 83 in kaart brengt.
+Vastgesteld 25-09-2026. Reden: van de 56 items verwees er op die datum een naar het werk van een andere
+partij in het stelsel, terwijl de stelselkaart van dezelfde kennisbank er 83 in kaart brengt.
 
 ## Wijzigen van dit statuut
 
