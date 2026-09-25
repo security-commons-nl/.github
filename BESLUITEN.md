@@ -6,6 +6,30 @@ krijgt hier een regel: datum, wat er is besloten, en waarom. Nieuwste bovenaan. 
 
 Dit log begint op 29-08-2026, toen bleek dat het statuut er wel naar verwees maar het nergens stond.
 
+## 25-09-2026 · Het hele register is vindbaar: de catalogi van IBD en CIP in het zoekvak
+
+**Besloten.** Het zoekvak van de kennisbank doorzoekt voortaan ook het bronnenregister. De openbare
+catalogi van de IBD (321 stukken) en CIP (58) staan er in hun geheel in, ongefilterd, opgehaald met
+`tools/haal_catalogi.py`. Samen met de eerdere verwijzingen 389 bronnen van zeven partijen (IBD 323, CIP 58, en BZK, NCSC, RDI, NBIP en de Anti-DDoS-Coalitie). Een zoekterm toont de eigen stukken en daaronder
+*Bij anderen*, met link en partij. Zoeken gaat per woord (elk woord moet voorkomen, in willekeurige volgorde),
+accenten en koppeltekens tellen niet, korte woorden alleen aan het begin van een woord, en synoniemen en
+zoekwoorden per partij staan als data in het register. `tools/test_zoeken.js` toetst dat in CI op de gebouwde
+voorpagina.
+
+**Onderbouwing.** De proef was een ISO van een andere gemeente die "iets van de VNG over beleid" zoekt. Met
+alleen wegwijzers vond ze niets: de zoekbalk doorzocht alleen de 57 eigen stukken, terwijl bij de IBD (onderdeel
+van de VNG) achttien beleidsstukken en -sjablonen openbaar klaarliggen. Een wegwijzer helpt wie een onderwerp
+heeft; wie een soort stuk van een partij zoekt, heeft een zoekvak nodig dat verder kijkt dan het eigen werk. De
+maintainer: "Ja, dat mag" (ongefilterd) en "Moet vindbaar zijn!"
+
+**Getest op echte zoektermen.** Na de eerste bouw gaf "continuiteit" iets anders dan "continuïteit", vond
+"backup" niets naast "back-up", vonden "cbw" en "mfa" niets bij anderen, en gaf "privacy" 119 treffers omdat de
+volledige naam van CIP als zoekwoord elk CIP-stuk liet matchen. Alle vier opgelost en in de test vastgelegd.
+
+**Bewust niet gekozen.** Een aparte pagina met alle 389 bronnen: niemand leest een lijst van die lengte; de
+zoekterm is de ingang. En filteren op wat een mens heeft afgevinkt: dan blijft het grootste deel onvindbaar tot
+iemand tijd heeft. De linkcheck vangt wat verdwijnt, `haal_catalogi.py` haalt op wat er bijkomt.
+
 ## 25-09-2026 · Het werk van anderen komt in de kennisbank als wegwijzer per onderwerp
 
 **Besloten.** Stukken van andere partijen (IBD, CIP, het Rijk, NCSC en de rest van de stelselkaart) krijgen
