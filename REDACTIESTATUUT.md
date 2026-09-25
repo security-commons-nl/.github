@@ -1,6 +1,6 @@
 # Redactiestatuut security-commons-nl
 
-Vastgesteld 28-08-2026, B3 en B10 aangevuld op 29-08-2026, B4 op 30-08-2026, A11 toegevoegd op 31-08-2026, B13 en B14 op 02-09-2026, Cbw in B2 op 02-09-2026, B9 herzien op 03-09-2026 (PROJECTEN.md), B14 verduidelijkt op 03-09-2026, B2 aangevuld en B15 toegevoegd op 25-09-2026. Geldt voor alle repo's van de organisatie. De inhoudsregels (A) gelden overal
+Vastgesteld 28-08-2026, B3 en B10 aangevuld op 29-08-2026, B4 op 30-08-2026, A11 toegevoegd op 31-08-2026, B13 en B14 op 02-09-2026, Cbw in B2 op 02-09-2026, B9 herzien op 03-09-2026 (PROJECTEN.md), B14 verduidelijkt op 03-09-2026, B2 aangevuld en B15 toegevoegd op 25-09-2026 (vindbaarheid van het register aangevuld dezelfde dag). Geldt voor alle repo's van de organisatie. De inhoudsregels (A) gelden overal
 letterlijk; de structuurregels (B) gelden overal in vorm, met per repo één afspraak over wat de eerste
 laag betekent (zie B1). Waar een repo een script heeft dat deze regels controleert, verwijst elke melding
 naar het regelnummer hieronder.
@@ -228,9 +228,17 @@ item bruikbaarder, voorkomt dat de commons dubbel werk doet, en doet het werk va
 - **Wat de lezer ziet.** Onderaan de leesversie een blok *Wat anderen al hebben*, gegenereerd door
   `tools/build.py`. Een verwijzing in de lopende tekst, met een zin over wat het andere stuk wel en dit
   stuk niet doet, blijft daarnaast gewoon mogen en is vaak waardevoller dan de lijst.
+- **Alles in het register is vindbaar, ook zonder item.** Het zoekvak van de kennisbank doorzoekt de
+  eigen stukken en het register samen; een bron hoeft niet aan een item te hangen om gevonden te worden.
+  Daarom staan de openbare catalogi van de IBD en CIP er in hun geheel in (`tools/haal_catalogi.py`).
+  Zoekwoorden per partij en synoniemen staan als data in hetzelfde register; een zoekwoord per partij
+  alleen als het niet vervuilt (een woord als "privacy" of "gemeenten" zou elke bron van die partij
+  opleveren).
 - **Wat de build controleert.** Elk id in een item bestaat in het register; elke bron heeft de
   verplichte velden, een https-adres, een partij uit de stelselkaart met een adres, en bij `inlog` een
-  kring; hetzelfde adres staat er niet twee keer in. A5 geldt: geen sociale media.
+  kring; hetzelfde adres staat er niet twee keer in; zoekwoorden horen bij een bestaande partij en een
+  synoniemgroep heeft minstens twee woorden. A5 geldt: geen sociale media. `tools/test_zoeken.js` toetst
+  het zoekvak zelf, op de gebouwde voorpagina.
 - **Wat maandelijks gebeurt.** `tools/linkcheck.py` loopt elk adres na en opent een issue met label
   `linkcheck` bij een dood of veranderd adres. Het script wijzigt niets; een mens beslist of een stuk
   verhuisd is of weg.
