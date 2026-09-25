@@ -1,0 +1,1934 @@
+{
+ "partij": "ibd",
+ "peildatum": "2026-09-25",
+ "toelichting": "Openbare productcatalogus, opgehaald van de publieke site. Werkmateriaal voor de vulling van bronnen.json in de kennisbank; geen bron op zichzelf. Een stuk gaat pas het register in na koppeling aan een item en controle door een mens.",
+ "aantal": 321,
+ "producten": [
+  {
+   "titel": "Aandachtspunten back-up en recovery inclusief SaaS-leveranciers",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/aandachtspunten-back-up-en-recovery-inclusief-saas-leveranciers/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/11/202212-Aandachtspunten-back-up-en-recovery-incl-SaaS-leveranciers-v1.0.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Aandachtspunten en richtlijn en Monitoring & Response",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/aandachtspunten-en-richtlijn-en-monitoring-response/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/10/Aandachtspunten-en-richtlijnen-MR-1.0.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Addendum Informatiebeveiligingsdienst voor Gemeenten",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/addendum-informatiebeveiligingsdienst-voor-gemeenten-ibd-addendum/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2020/12/20201223-Addendum-Informatiebeveiligingsdienst-voor-gemeenten-BIO.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Addendum privacybeleid Wet politiegegevens",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/addendum-privacybeleid-wet-politiegegevens/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/11/20221028-Addendum-privacybeleid-Wpg.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Addendum rechten van betrokkenen Wet politiegegevens",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/addendum-rechten-van-betrokkenen-wet-politiegegevens/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2024/11/20221028-Addendum-Rechten-van-betrokkenen-Wpg.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "AI-specifieke toelichting voor DPIA’s",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/ai-specifieke-toelichting-voor-dpias/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2026/08/202608_AI-specifieke-toelichting-voor-DPIAs_v1.0.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Anti-malware beleid BIO",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/anti-malware-beleid/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2023/03/202002-Handreiking-Anti-malware-beleid-v1.23.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "AVG Borgingsproduct 3.1 Documentatie",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/avg-borgingsproduct-3-1-documentatie/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2025/09/Borgingsproduct-3.1-Documentatie.xlsx",
+   "soort": "XLSX"
+  },
+  {
+   "titel": "AVG Borgingsproduct 3.1 Handreiking",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/avg-borgingsproduct-3-1-handreiking/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2025/11/20251117-H-Borgingsproduct-3.1.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "AVG Borgingsproduct 3.1 Rapportage en Verbeterplan",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/avg-borgingsproduct-3-0-rapportage-en-verbeterplan/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2026/01/Borgingsproduct-3.1-Rapportage-en-Verbeterplan_1.1.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "AVG Borgingsproduct 3.1 Toetsingskader",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/avg-borgingsproduct-3-1-toetsingskader/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2025/11/202511-Borgingsproduct-3.1-Toetsingskader.xlsx",
+   "soort": "XLSX"
+  },
+  {
+   "titel": "AVG Klachtenprocedure",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/avg-klachtenprocedure/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2023/12/AVG-klachtenprocedure-2.0.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Back-up Plan",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/back-up-plan/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/03/202203-Back-up-Plan-v1.0.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Back-up Strategie",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/back-up-strategie/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/03/202203-Back-up-Strategie-v1.0.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Back-up versus Archivering",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/back-up-versus-archivering/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/03/202203-Verschil-back-up-en-archivering-v1.0.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Baseline Informatiebeveiliging Overheid (BIO) v1.04",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/baseline-informatiebeveiliging-overheid-bio/",
+   "download": "https://bio-overheid.nl/media/1572/bio-versie-104zv_def.pdf",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Basisopzet CMDB (bijlage bij factsheet configuratiemanagement)",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/basisopzet-cmdb-bijlage-bij-factsheet-configuratiemanagement/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2020/03/2020-01-08-Basisopzet-CMDB.xlsx",
+   "soort": "XLSX"
+  },
+  {
+   "titel": "Bedrijfsimpactanalyse (BIA)",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/bedrijfsimpactanalyse-bia/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/07/202206-BIA-template-obv-Baselinetoets-1.0.xlsx",
+   "soort": "XLSX"
+  },
+  {
+   "titel": "Beleid Wet politiegegevens",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/beleid-wet-politiegegevens/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/12/Beleid-Wet-politiegegevens.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Bepalen bedrijfscontinuïteitsvereisten",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/bepalen-bedrijfscontinuiteitsvereisten/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/03/202203-Bepalen-bedrijfscontinuiteitsvereisten-v1.0.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Bepalen kritische bedrijfsprocessen",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/bepalen-kritische-bedrijfsprocessen/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/03/202203-Criteria-bepalen-kritische-bedrijfsprocessen-v1.0.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Bewustwordingsmateriaal Wet politiegegevens",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/bewustwordingsmateriaal-wet-politiegegevens/",
+   "download": "https://www.sfranken.nl/Downloads/Praktijkhandboek_Wpg.pdf",
+   "soort": "ZIP"
+  },
+  {
+   "titel": "BIO 2 Template Risicoanalyse tabel",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/bio-2-template-risicoanalyse-tabel/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2025/08/202508-Template-Risicoanalyse-tabel_leeg.xlsx",
+   "soort": "XLSX"
+  },
+  {
+   "titel": "BIO2 Beschrijving ISMS verantwoordelijkheden binnen de gemeente",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/bio2-beschrijving-isms-verantwoordelijkheden-binnen-de-gemeente/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2025/01/Beschrijving-ISMS-verantwoordelijkheden-gemeente-V1.0.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "BIO2 Business Model Canvas uitwerkingen",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/bio2-business-model-canvas-uitwerkingen/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2026/01/202512-Business-Model-Canvas-uitwerkingen-V1.1.pptx",
+   "soort": "PPTX"
+  },
+  {
+   "titel": "BIO2 Factsheet Informatiebeveiliging en de lijnmanager",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/bio2-factsheet-informatiebeveiliging-en-de-lijnmanager/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2026/01/202512-Factsheet-Informatiebeveiliging-en-de-lijnmanager.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "BIO2 Factsheet Uitleg verschillende analysemethodieken",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/bio2-factsheet-uitleg-verschillende-analysemethodieken/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2026/02/202602-Factsheet-uitleg-verschillende-analysemethodieken.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "BIO2 Gap-analyse",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/bio2-gap-analyse/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2025/03/BIO2-Gap-analyse-versie-1.2.xlsx",
+   "soort": "XLSX"
+  },
+  {
+   "titel": "BIO2 Handreiking ISMS",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/bio2-handreiking-isms/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2025/03/BIO2-Handreiking-ISMS-V3.0.1.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "BIO2 Handreiking ISMS Proces implementatie",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/bio2-handreiking-isms-proces-implementatie/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2025/03/BIO2-Handreiking-ISMS-Proces-implementatie-v1.1.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "BIO2 Handreiking Realistische Implementatie Aanpak (BRIA)",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/bio2-handreiking-realistische-implementatie-aanpak-bria/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2025/12/202512-BIO2-Handreiking-Realistische-Implementatie-Aanpak-BRIA.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "BIO2 Handreiking risicomanagement voor gemeenten",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/bio-handreiking-risicomanagement-voor-gemeenten/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2025/06/2025-06-02-Template-BMC-en-PRMG-leeg.pptx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "BIO2 Handreiking Strategisch Informatiebeveiligings- en Privacybeleid",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/bio2-handreiking-strategisch-informatiebeveiligings-en-privacybeleid/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2025/11/202511-BIO2-Handreiking-Strategisch-Informatiebeveiligings-en-Privacybeleid-v2.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "BIO2 Infographic – Wat is een ISMS",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/bio2-infographic-wat-is-een-isms/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2025/02/BIO2-Infographic-Wat-is-een-ISMS_v1.0.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "BIO2 Kans en Impact tabellen gemeenten",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/bio2-kans-en-impact-tabellen-gemeenten/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2025/11/BIO2-Kans-en-Impacttabellen-gemeenten-v1.1.xlsx",
+   "soort": "XLSX"
+  },
+  {
+   "titel": "BIO2 Kritieke processen gemeenten",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/bio2-kritieke-processen-gemeenten/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2026/01/202512-BIO2-Kritieke-processen-gemeenten-V1.1.xlsx",
+   "soort": "XLSX"
+  },
+  {
+   "titel": "BIO2 RASCI Tabel Controls Informatieveiligheid en Privacy",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/bio2-rasci-tabel-controls-informatieveiligheid-en-privacy/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2026/02/202602-BIO2-RASCI-tabel-controls-Informatieveiligheid-en-Privacy.xlsx",
+   "soort": "XLSX"
+  },
+  {
+   "titel": "BIO2 Template Strategisch Informatiebeveiligings- en Privacybeleid",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/bio2-template-strategisch-informatiebeveiligings-en-privacybeleid/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2025/11/202511-BIO2-Template-Strategisch-Informatiebeveiligings-en-privacybeleid-v2.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Business Continuity Management (BCM) agenderen binnen de organisatie",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/business-continuity-management-bcm-agenderen-binnen-de-organisatie/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/11/202212-BCM-agenderen-binnen-de-organisatie-v1.0.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Casuïstiek gegevensbescherming gemeenteraad",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/casuistiek-gegevensbescherming-gemeenteraad/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/06/Casuistiek-gegevensbescherming-gemeenteraad.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Criteriaset Privacy by Design – IBD instrumenten",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/criteriaset-privacy-by-design-ibd-instrumenten/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2020/01/202001-Criteriaset-Privacy-by-Design_v1.0.xlsx",
+   "soort": "XLSX"
+  },
+  {
+   "titel": "Dataclassificatietoets BIO2 gemeenten",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/dataclassificatie-bio2/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2026/07/202607-Dataclassificatietoets-BIO2_v2.02.xlsx",
+   "soort": "XLSX"
+  },
+  {
+   "titel": "De 10 bestuurlijke principes voor informatiebeveiliging",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/de-10-bestuurlijke-principes-voor-informatiebeveiliging/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2019/01/De-10-bestuurlijke-principes-voor-Informatiebeveiliging_20190109.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Diepgaande Risicoanalyse Methode Gemeenten (Excel)",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/diepgaande-risicoanalyse-methode-excel/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2025/12/202512-BIO2-Diepgaande-Risicoanalyse-methode-gemeenten-3.1.xlsx",
+   "soort": "XLSX"
+  },
+  {
+   "titel": "Dreigingsbeeld Informatiebeveiliging Nederlandse Gemeenten 2018",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/dreigingsbeeld-informatiebeveiliging-nederlandse-gemeenten-2018/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/06/IBD-Dreigingsbeeld-Informatiebeveiliging-Gemeenten-2018.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Dreigingsbeeld Informatiebeveiliging Nederlandse Gemeenten 2019/2020",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/dreigingsbeeld-informatiebeveiliging-nederlandse-gemeenten-2019-2020/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/06/IBD-Dreigingsbeeld-2019-20.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Dreigingsbeeld Informatiebeveiliging Nederlandse Gemeenten 2021/2022",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/dreigingsbeeld-informatiebeveiliging-nederlandse-gemeenten-2021-2022/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2020/09/Dreigingsbeeld-informatiebeveiliging-IBD-2021-22-1.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Dreigingsbeeld informatiebeveiliging Nederlandse gemeenten 2023/2024",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/dreigingsbeeld-informatiebeveiliging-nederlandse-gemeenten-2023-2024/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/10/IBD_dreigingsbeeld_2023-2024_DEF-versie.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Dreigingsbeeld informatiebeveiliging Nederlandse gemeenten 2025/2026",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/dreigingsbeeld-informatiebeveiliging-nederlandse-gemeenten-2025-2026/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2025/06/IBD-Dreigingsbeeld-informatiebeveiliging-2025-2026.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Edam-Volendam scherpt informatiebeveiliging aan: Beveiliging draait om bewustwording",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/edam-volendam-scherpt-informatiebeveiliging-aan-beveiliging-draait-om-bewustwording/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2015/05/Edam-Volendam-artikel-met-Remco.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Eenvoudig hulpmiddel voor bepalen maatregelen, BBN en schade voor betrokkenen",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/eenvoudig-hulpmiddel-voor-bepalen-maatregelen-bbn-en-schade-voor-betrokkenen/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2020/03/20200318-Eenvoudig-hulpmiddel-voor-bepaling-maatregelen-1.2.xlsx",
+   "soort": "XLSX"
+  },
+  {
+   "titel": "Factsheet Adviezen aan CISO’s met betrekking tot de Gemeenteraadsverkiezingen 18 maart 2026",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/factsheet-adviezen-aan-cisos-met-betrekking-tot-de-gemeenteraadsverkiezingen-18-maart-2026/",
+   "download": "https://www.weerbaarbestuur.nl/sites/default/files/inline-files/Handreiking%20signaleren%20van%20desinformatie.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Factsheet Adviezen aan CISO’s met betrekking tot de Tweede Kamerverkiezingen 2025",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/factsheet-adviezen-aan-cisos-met-betrekking-tot-de-verkiezingen-2025/",
+   "download": "https://www.weerbaarbestuur.nl/sites/default/files/inline-files/Handreiking%20signaleren%20van%20desinformatie.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Factsheet Assurance",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/factsheet-assurance/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2018/02/20180207-IBD-Factsheet-assurance-v1.00.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Factsheet AVG Basisregels voor gemeenten",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/factsheet-avg-basisregels-voor-gemeenten/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2019/12/201911-Factsheet-AVG-Basisregels-v1.1-1.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Factsheet Changemanagement",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/factsheet-changemanagement/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/05/20201007-Factsheet-Changemanagement-TLP_WIT-v1.0.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Factsheet Configuratiemanagement",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/factsheet-configuratiemanagement/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/06/20200320-Factsheet-Configuratiemanagement-TLP_WIT-v1.0.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Factsheet en beslismodel “Is mijn leverancier wel of geen verwerker?”",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/factsheet-en-beslismodel-verwerkingsverantwoordelijke-of-verwerker/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/05/IBD-Memo-dummi-met-verwijzing-nieuwe-factsheet.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Factsheet en toolkit Veilige e-mail in het zorgdomein",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/factsheet-en-toolkit-veilige-e-mail-in-het-zorgdomein/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/04/201912-Factsheet-en-Toolkit-Veilige-e-mail-in-de-zorg-v1.01.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Factsheet Gehackt, hoe nu verder?",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/factsheet-gehackt-hoe-nu-verder/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/06/202106-IBD-Factsheet-gehackt-hoe-nu-verder.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Factsheet IACS",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/factsheet-iacs/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2024/03/IBD-FACTSHEET-IACS-02.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Factsheet ICS/SCADA",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/icsscada/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2015/01/BID-Operationale-producten-025-ICS-SCADA-v1-0.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Factsheet Incidentmanagement",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/factsheet-incidentmanagement/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/05/20210526-Factsheet-Incidentmanagement-TLP_WIT-1.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Factsheet Integriteit – Wat kunnen HRM, CISO en PO voor elkaar betekenen?",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/factsheet-integriteit-wat-kunnen-hrm-ciso-en-po-voor-elkaar-betekenen/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/06/20200915-Factsheet-Integriteit-CISO-FG-en-HRM-v1.0-1.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Factsheet Juridische Aspecten van Monitoring & Response",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/factsheet-juridische-aspecten-van-monitoring-response/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/05/09FACT2.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Factsheet Lijnmanager",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/factsheet-lijnmanager/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2018/10/Factsheet-lijnmanager-v1.0.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Factsheet Patchmanagement",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/factsheet-patchmanagement/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/06/20200630-Factsheet-Patchmanagement-TLP_WIT-v1.0.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Factsheet Security Information & Event Management (SIEM) en Security Operations Center (SOC) binnen uw gemeente",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/factsheet-security-information-event-management-siem-en-security-operations-center-soc-binnen-gemeente/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2019/12/201912-Facsheet-SIEM-SOC-BIO_v1.01.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Factsheet Social Engineering",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/factsheet-social-engineering/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/04/Factsheet-Social-Engineering-v1.01.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Factsheet Threat Intelligence (TI) binnen uw gemeente",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/factsheet-threat-intelligence-ti-binnen-gemeente/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2019/12/201912-Facsheet-Threat-Intelligence-BIO_v1.01.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Factsheet Veilig verwerken van persoonsgegevens van Oekraïense vluchtelingen",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/factsheet-veilig-verwerken-van-persoonsgegevens-van-oekrainse-vluchtelingen/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/04/Factsheet-veilig-verwerken-van-persoonsgegevens-van-Oekraiense-vluchtelingen-1.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Factsheet Verwerker of Verwerkingsverantwoordelijke en beslisboom",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/factsheet-verwerker-of-verwerkingsverantwoordelijke/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/07/Factsheet-Verwerker-of-verwerkingsverantwoordelijke-en-beslisboom-v1.1.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Factsheet Visie Monitoring & Response",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/factsheet-visie-monitoring-response/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/10/VNG_IBD_Factsheet_MR_04102022-DEF.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "FG Jaarrapportage 2024",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/fg-jaarrapportage-2024/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2025/05/FG-Jaarrapportage-2024.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "FG-gesprekskaart AI en algoritmen",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/fg-gesprekskaart-ai-en-algoritmen/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2026/08/202608_FG-gesprekskaart-AI-en-algoritmen_v1.0.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Format Projectplan implementatie NIS2",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/format-projectplan-implementatie-nis2/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2024/12/Format-Projectplan-implementatie-NIS2.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "GAP-analyse BIO (alle sheets)",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/gap-analyse-1-2-alle-sheets/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2020/03/202002-GAP-analyse-BIO-v2.3-ISO27701.xlsx",
+   "soort": "XLSX"
+  },
+  {
+   "titel": "GAP-analyse Business Continuity Management (BCM)",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/gap-analyse-business-continuity-management-bcm/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/11/202211-GAP-analyse-PvA-BCM-v1.0.xlsx",
+   "soort": "XLSX"
+  },
+  {
+   "titel": "GAP-analyse NTA 7516",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/gap-analyse-nta-7516/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2019/12/201912-GAP-analyse-NTA-7516-v1.0.xlsx",
+   "soort": "XLSX"
+  },
+  {
+   "titel": "GAP-analyse uitleg BIO",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/gap-analyse-uitleg/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/04/201904-Handreiking-GAP-analyse-v2.01.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Gegevensdeling in het Sociaal Domein – de basis bestendigen",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/gegevensdeling-in-het-sociaal-domein-de-basis-bestendigen/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/10/Cursusmateriaal-Gegevensdeling-sociaal-domein-De-basis-bestendigen-mei-2023.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Gesprekskaartjes voor de Gemeentesecretaris",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/gesprekskaartjes-voor-de-gemeentesecretaris/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2024/03/GESPREKSKAARTJES-17.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Gespreksstarter Gebruik social media door gemeenten",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/gespreksstarter-gebruik-social-media-door-gemeenten/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2024/06/Gespreksstarter-gebruik-social-media-door-gemeenten.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Grip op privacy – artikel iBestuur 2017-nr 21 – interview IBD",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/grip-op-privacy-artikel-ibestuur-2017-nr-21-interview-ibd/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2017/01/iBestuur_21_artikel_IBD_Grip_op_privacy.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Groeimodel digitale weerbaarheid",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/groeimodel-digitale-weerbaarheid/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/01/Groeimodel-V1.1.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Groeimodel digitale weerbaarheid – ondersteunend document",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/groeimodel-digitale-weerbaarheid-ondersteunend-document/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/01/Groeimodel-SOC_SIEM-ondersteuning-V1.0.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handelingskader voor generatieve AI",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/handelingskader-voor-generatieve-ai/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2026/08/202608_Handelingskader-GenAI_v1.0.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Handleiding MijnIBD omgeving",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/handleiding-mijnibd-omgeving/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2024/10/Handleiding-MijnIBD-omgeving-v1.1.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Handreiking 2-Factor authenticatie (2FA) voor gemeenten",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/handreiking-2-factor-authenticatie-2fa-voor-gemeenten/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/04/202010-Handreiking-2FA-v1.01.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking Afvoer ICT middelen BIO",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/afvoer-ict-middelen/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/04/201902-Handreiking-Veilige-afvoer-van-ICT-middelen-v2.01.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking AI en Algoritmen",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/handreiking-ai-en-algoritmen/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2024/01/AI-Handreiking-1.0.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking Back-up en recovery gemeente BIO",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/back-up-en-recovery-gemeente/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2023/03/202012-Handreiking-Back-up-en-recovery-gemeente-v2.22.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking Bedrijfscontinuïteitsbeheer (BCM)",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/handreiking-bedrijfscontinuiteitsbeheer/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/04/201912-Handreiking-bedrijfscontinuiteit_v2.01.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking Beleid logische toegangsbeveiliging BIO",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/beleid-logische-toegangsbeveiliging-v1-0/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2023/03/202109-Handreiking-Beleid-logische-toegangsbeveiliging-v2.21.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking BIO voor kleine gemeenten",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/handreiking-bio-voor-kleine-gemeenten/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/04/201907-Handreiking-BIO-voor-kleine-gemeenten-v1.01.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking Cloudcomputing en Privacy",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/handreiking-cloudcomputing-en-privacy/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/04/201911_Handreiking-Coudcomputing-en-Privacy_v2.01.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking Configuratiemanagement BIO",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/handreiking-configuratiemanagement/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2024/01/202002-Handreiking-configuratiemanagement-v2.1.2.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking Coordinated Vulnerability Disclosure BIO",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/handreiking-coordinated-vulnerability-disclosure-bio/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/04/202001-Handreiking-Coordinated-Vulnerability-Disclosure-v2.02.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking Diepgaande Risicoanalyse Methode Gemeenten",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/handreiking-diepgaande-risicoanalyse-methode-gemeenten/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2025/12/202512-Handreiking-diepgaande-risicoanalyse-3.1.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking DigiD-assessment aanpak DigiD-norm B.01",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/handreiking-digid-assessment-aanpak-digid-norm-b-01/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/12/Handreiking-DigiD-assessment-DigiD-norm-B.01-versie-1.0.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking Digitaal Forensisch Onderzoek BIO",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/digitaal-forensisch-onderzoek/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2023/03/201907-Handreiking-Digitaal-forensisch-onderzoek-v2.12.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking Dossiervorming Participatiewet",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/handreiking-dossiervorming-participatiewet/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2025/08/202508-IBD-Handreiking-Dossiervorming-Participatiewet_versie-1.2.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking en voorbeeld privacybeleid gemeente Leidschendam-Voorburg",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/handreiking-en-voorbeeld-privacybeleid-gemeente-leidschendam-voorburg/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2019/03/Handreiking-en-voorbeeld-privacybeleid-Leidschendam-Voorburg.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Handreiking Encryptiebeleid (PKI) BIO",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/encryptiebeleid-pki-gemeente-v1-0/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2023/03/201903-Handreiking-Encryptiebeleid-PKI-v2.02.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking FG Jaarverslag (AVG en WPG)",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/handreiking-fg-jaarverslag-avg-en-wpg/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2024/03/IBD-Handreiking_Format_FG-Jaarverslag-v1.3-maart-2024.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking Functieprofiel Functionaris Gegevensbescherming (FG)",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/handreiking-functieprofiel-functionaris-gegevensbescherming-fg/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2023/08/Functieprofiel-FG-.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking Functieprofiel Privacy Officer (PO)",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/handreiking-functieprofiel-privacy-officer-po/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2023/11/20231128-Functieprofiel-PO-.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking Functieprofielen informatiebeveiliging",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/handreiking-functieprofielen-informatiebeveiliging/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2026/07/20260708-Functieprofielen-IB-CISO-DISO-TISO-v1_2_1.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking Gebruik Inlichtingenbureau-signalen (IB-signalen)",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/handreiking-gebruik-ib-signalen/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2023/02/Handreiking-IB-signalen.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking Geheimhoudingsverklaringen BIO",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/geheimhoudingsverklaringen/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2023/03/202004-Handreiking-Geheimhoudingsverklaringen_v2.05.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking Hardening-beleid voor gemeenten",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/hardening-beleid-voor-gemeenten/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2023/03/201908-Handreiking-Hardening-beleid-voor-gemeenten-v2.13.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking Impact Cloudcomputing",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/handreiking-impact-cloudcomputing/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/04/201911_Handreiking-Impact-Cloudcomputing_v2.01.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking Incident en response management",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/voorbeeld-incidentmanagement-en-response-beleid-2/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2023/03/20210912-Handreiking-Incident-en-response-management-v2.21.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking Inkoop Clouddiensten",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/handreiking-inkoop-clouddiensten/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2023/03/201911_Handreiking-Inkoop-Clouddiensten_v2.02.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking Inkoopvoorwaarden en informatiebeveiligingseisen BIO",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/inkoopvoorwaarden-en-informatiebeveiligingseisen/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2020/02/202002-Handreiking-Inkoopvoorwaarden-en-informatiebeveiligingseisen-v2.01.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking IoT beveiliging BIO",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/handreiking-iot-beveiliging/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2023/03/202106-Handreiking-IoT-beveiliging-v1.31.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking Ketenrisicoanalyses",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/handreiking-ketenrisicoanalyses/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/01/20220104-Handreiking-Ketenrisicoanalyses.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking Logging BIO",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/aanwijzing-logging/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2023/03/202312-Handreiking-Logging-v2.2.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking Mobiele gegevensdragers BIO",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/mobiele-gegevensdragers/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2023/03/202002-Handreiking-Mobiele-Gegevensdragers_v2.03.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking Mobile Device Management BIO",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/mobile-device-management/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2023/03/201812-Handreiking-Mobile-Device-Management-v2.02.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking Patchmanagement voor gemeenten BIO",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/patch-management-voor-gemeenten/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2023/03/202112-Handreiking-Patchmanagement-voor-gemeenten-v2.11.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking Personeelsbeleid gemeente BIO",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/personeelsbeleid/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/04/202005-Handreiking-Personeelsbeleid-gemeente-v2.1.4.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking Positionering en taken van de FG",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/handreiking-positionering-en-taken-van-de-fg/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2020/06/20230222-Handreiking-positionering-en-taken-FG.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking Privacy by Design – gebruik IBD instrumenten",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/handreiking-privacy-by-design-gebruik-ibd-instrumenten/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/04/202001-Handreiking-Privacy-by-Design_v1.01.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking Privacy en Integrale toeleiding en dienstverlening sociaal domein",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/handreiking-privacy-en-integrale-toeleiding-en-dienstverlening-sociaal-domein/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2020/01/Handreiking-Privacy-en-Integrale-toeleiding-en-dienstverlening-sociaal-domein-2.0.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking Privacy Risicomanagement",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/handreiking-privacy-risicomanagement/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2025/10/202510-H-Privacy-Risicomanagement-v1.0.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking Privacy- en cookieverklaring",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/handreiking-privacy-en-cookieverklaring/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/05/202204-Handreiking-Privacy-en-cookieverklaring-v1.0.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking Procedure nieuwe ICT-voorzieningen BIO",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/procedure-nieuwe-ict-voorzieningen-v1-0/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/10/Handreiking-Procedure-nieuwe-ICT-voorzieningen-v2.01.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking Proces wijzigingsbeheer BIO",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/handreiking-proces-wijzigingsbeheer/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2019/04/201903-Handreiking-proces-wijzigingsbeheer-v2.02.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking Procesautomatisering (PA) Beleid",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/handreiking-procesautomatisering-pa-beleid/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/03/2022-03-Handreiking-PA-beleid-V10.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking Randvoorwaarden Monitoring & Response",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/handreiking-randvoorwaarden-monitoring-response/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/05/03-Handreiking-Randvoorwaarden-MR-v1.1.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking Rechten van Betrokkenen",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/handreiking-rechten-van-betrokkenen/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/05/Handreiking-rechten-van-betrokkenen.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking Risicoregister en Risico Acceptatie Overeenkomst (RAO)",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/handreiking-risicoregister-en-risico-acceptatie-overeenkomst-rao/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/04/20200327-Risicoregister-en-RAO-1.02.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking Samenhang beheerprocessen en informatiebeveiliging BIO",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/samenhang-beheerprocessen-en-informatiebeveiliging/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/04/201906-Handreiking-Samenhang-Beheerprocessen-en-Informatiebeveiliging-v2.02.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking screening personeel BIO",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/handleiding-screening-personeel/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/04/202002-Handreiking-screening-personeel-v2.02.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking Service Level Agreement (SLA) BIO",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/handreiking-service-level-agreements-sla/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/04/201912-Handreiking-Service-Level-Agreement-v2.3.1.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking Standaard Verwerkersovereenkomst (VWO) Gemeenten",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/handreiking-standaard-verwerkersovereenkomst-gemeenten/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2026/06/202605-Standaard-VWO-v2.54.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking Starten met Monitoring & Response",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/handreiking-starten-met-monitoring-response/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/05/05-Handreiking-Starten-met-MR-v1.1.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking Team op sterkte",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/handreiking-team-op-sterkte/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2023/11/20231128-Handreiking-Team-op-sterkte-v1.0.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking Telewerkbeleid BIO",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/telewerkbeleid/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2023/03/201908-Handreiking-Telewerkbeleid-v2.12.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking Toegangsbeleid BIO",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/toegangsbeleid/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2023/03/201903-Handreiking-Toegangsbeleid-v2.02.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking Uitbreiden van Monitoring & Response",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/handreiking-uitbreiden-van-monitoring-response/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/05/07-Handreiking-Uitbreiden-van-MR-v1.1.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking Verhogen bewustzijn informatiebeveiliging",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/handreiking-verhogen-bewustzijn-informatiebeveiliging/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/05/202105-Handreiking-Verhogen-bewustzijn-informatiebeveiliging_v1.02.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking verwerkingsregister gemeenten – toelichting bij het vooringevulde register van verwerkingsactiviteiten",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/handreiking-verwerkingsregister-gemeenten-toelichting-bij-het-vooringevulde-register-van-verwerkingsactiviteiten/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2019/11/201911-Handreiking-verwerkingsregister-v1.2.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking Voorbereiden op digitale crisis",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/handreiking-voorbereiden-op-digitale-crisis/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2025/01/Handreiking-Voorbereiden-op-digitale-crisis_v1.0.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking Wachtwoordbeleid BIO",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/wachtwoordbeleid-2/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2023/03/201909-Handreiking-Wachtwoordbeleid-v2.12.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Handreiking Wachtwoordkluizen BIO",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/handreiking-wachtwoordkluizen/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2023/03/202106-Handreiking-Wachtwoordkluizen-v1.04.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Het autorisatieproces Wet politiegegevens",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/het-autorisatieproces-wet-politiegegevens/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/12/20221222-Autorisatieproces-Wpg.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "IBD Aansluitformulier kwetsbaarheidswaarschuwingen",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/ibd-aansluitformulier-kwetsbaarheidswaarschuwingen/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/04/Aansluitformulier-kwetsbaarheidswaarschuwingen-v9.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "IBD Aansluitformulier Lijst met IP-adressen en URL’s",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/lijst-met-gemeentelijke-ip-adressen-en-urls/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/04/Lijst-met-IP-adressen-en-URLs-v12.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "IBD Factsheet Geautomatiseerde individuele besluitvorming",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/ibd-factsheet-geautomatiseerde-individuele-besluitvorming/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2025/06/IBD-Factsheet-geautomatiseerde-besluitvorming.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "IBD Factsheet Verstrekken persoonsgegevens",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/ibd-factsheet-verstrekken-persoonsgegevens/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2025/06/IBD-Factsheet-verstrekken-persoonsgegevens.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "IBD Handreiking Register van Verwerkingen",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/ibd-handreiking-register-van-verwerkingen/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2025/06/202506-H-Register-van-Verwerkingen_v1.0.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "IBD Jaaroverzicht 2016",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/ibd-jaaroverzicht-2016/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2017/01/Jaaroverzicht-2016-IBD.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "IBD Jaaroverzicht 2017",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/ibd-jaaroverzicht-2017/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2018/03/IBD-Jaaroverzicht-2017.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "IBD Jaaroverzicht 2018",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/ibd-jaaroverzicht-2018/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2019/01/IBD-Jaaroverzicht-2018.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "IBD Jaaroverzicht 2019",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/ibd-jaaroverzicht-2019/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2020/01/IBD-Jaaroverzicht-2019.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "IBD Jaaroverzicht 2020",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/ibd-jaaroverzicht-2020/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/01/202101-IBD-Jaaroverzicht-2020-TLP-Wit-1.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "IBD Jaaroverzicht 2021",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/ibd-jaaroverzicht-2021/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/01/202201-IBD-Jaaroverzicht-2021-TLP-Wit.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "IBD Jaaroverzicht 2022",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/ibd-jaaroverzicht-2022/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2023/01/20230124-IBD-Jaaroverzicht.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "IBD Jaaroverzicht 2024",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/ibd-jaaroverzicht-2024/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2025/02/IBD-Jaaroverzicht-2024.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "IBD Jaaroverzicht 2025: digitale veiligheid vraagt om samenwerking",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/ibd-jaaroverzicht-2025-digitale-veiligheid-vraagt-om-samenwerking/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2026/01/Jaaroverzicht-2025-PPT-3.0.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "IBD Notitie DPIA Microsoft Copilot",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/ibd-notitie-dpia-microsoft-copilot/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2026/09/202608-N-DPIA-M365-Copilot.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "IBD Notitie Toegang tot Suwinet door externe medewerkers en commerciële dienstverleners",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/ibd-notitie-toegang-tot-suwinet-door-externe-medewerkers-en-commerciele-dienstverleners/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2025/10/20251021-N-Toegang-tot-Suwinet_v1.1.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "IBD PGP-sleutel",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/ibd-asc/",
+   "download": null,
+   "soort": "ASC"
+  },
+  {
+   "titel": "IBD-Factsheet Meldplicht Datalekken",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/ibd-leaflet-meldplicht-datalekken/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2024/08/Factsheet-Datalekken-Versie-2.0.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Introductie aanpak BIO",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/introductie-aanpak-bio/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/04/201904-introductie-aanpak-BIO-voor-de-CISO-1.04.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Kaartje in de meterkast voor de gemeentesecretaris",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/kaartje-in-de-meterkast-voor-de-gemeentesecretaris/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2023/04/20230406-Kaartje-in-de-Meterkast-IBD.zip",
+   "soort": "ZIP"
+  },
+  {
+   "titel": "Kwetsbaarheden in Citrix: Lessen voor gemeenten en de IBD",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/kwetsbaarheden-in-citrix-lessen-voor-gemeenten-en-de-ibd/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/06/20200310-Lessen-Citrix-Crisis-TLP_WIT.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Kwetsbaarheden in Log4j – Lessen voor de gemeenten en de IBD",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/kwetsbaarheden-in-log4j-lessen-voor-de-gemeenten-en-de-ibd/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/02/20220207-Lessen-Log4J-TLP_WIT.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Leeg verwerkingsregister gemeenten",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/leeg-verwerkingsregister-gemeenten/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/10/201908-Verwerkingsregister-gemeenten-v1.0-leeg.xlsx",
+   "soort": "XLSX"
+  },
+  {
+   "titel": "Leren van Lochem: lessen uit een informatiebeveiligingsincident",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/leren-van-lochem-lessen-uit-een-informatiebeveiligingsincident/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/06/20190830-Leren-van-Lochem-Definitief-TLP_WIT.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Lessen uit de hack bij gemeente Hof van Twente",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/lessen-uit-de-hack-bij-hof-van-twente/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/06/20210315-Lessen-HvT-TLP_WIT-v1.0.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Lessen uit de hack en datalek bij Gemeente Buren",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/lessen-uit-de-hack-en-datalek-bij-gemeente-buren/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/10/VNG_IBD_Factsheet_Lessons-Learned-1.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Lijst met Borgingsproduct-criteria ten behoeve van het inkoopproces",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/lijst-met-borgingsproduct-criteria-ten-behoeve-van-het-inkoopproces/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2025/07/Lijst-met-Borgingsproduct-criteria-t.b.v.-inkoopproces-v1.0.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Maatregelenset BBN2+",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/maatregelenset-bbn2/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2020/09/20200831-BBN2plus-maatregelen-tbv-gemeenten-BIO-10.4-1.01.xlsx",
+   "soort": "XLSX"
+  },
+  {
+   "titel": "Mindmap Randvoorwaarden Monitoring & Response",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/mindmap-randvoorwaarden-monitoring-response/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/05/02MIND1.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Mindmap Starten met Monitoring & Response",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/mindmap-starten-met-monitoring-response/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/05/04-Mindmap-Starten-met-MR-v1.0_LR.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Mindmap Uitbreiden Monitoring & Response",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/mindmap-uitbreiden-monitoring-response/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/05/08-Mindmap-Uitbreiden-van-MR_LR.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Model Continuïteitsplan BIO (BCM)",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/model-continuiteitsplan/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/04/201903-Model-Continuiteitsplan_v2.01.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Model Continuïteitsstrategie BIO (BCM)",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/model-continuiteitsstrategie/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2019/04/201903-Model-Continuiteitsstrategie-v2.01-.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Modelgegevensleveringsovereenkomst voor zelfstandige verwerkingsverantwoordelijken",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/modelgegevensleveringsovereenkomst-voor-zelfstandige-verwerkingsverantwoordelijken/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2023/04/Modelgegevensleveringsovereenkomst-voor-zelfstandige-verwerkingsverantwoordelijken.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Modelovereenkomst voor gezamenlijke verantwoordelijken",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/modelovereenkomst-voor-gezamenlijke-verantwoordelijken/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/10/Model-Overeenkomst-Gezamenlijke-Verwerkingsverantwoordelijken-1.0.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Overzicht maatregelen Wpg voorbeeld",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/overzicht-maatregelen-wpg-voorbeeld/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/07/Overzicht-maatregelen-Wpg-voorbeeld.xlsx",
+   "soort": "XLSX"
+  },
+  {
+   "titel": "Overzicht privacyproducten",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/overzicht-privacyproducten/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2025/02/Overzicht-privacyproducten.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Overzicht versiebeheer Standaard Verwerkersovereenkomst",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/overzicht-versiebeheer-standaard-verwerkersovereenkomst/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2026/06/Standaard-VWO-versiebeheer-v2.54.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Plan van Aanpak Bedrijfscontinuïteitsbeheer (BCM)",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/plan-van-aanpak-bedrijfscontinuiteitsbeheer/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/04/2020-06-19-Plan-van-aanpak-bedrijfscontinuiteit-v1.11.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Poster Hoe richt je IB en P goed in binnen een gemeente?",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/poster-hoe-richt-je-ib-en-p-goed-in-binnen-een-gemeente/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2023/11/SAMENHANG-05-poster-A3.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Praktijkvoorbeelden Verwerker of Verwerkingsverantwoordelijke",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/praktijkvoorbeelden-verwerker-of-verwerkingsverantwoordelijke/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2025/07/20230418-O-Praktijkvoorbeelden-verwerker-verwerkingsverantwoordelijke-versie-1.61.xlsx",
+   "soort": "XLSX"
+  },
+  {
+   "titel": "Praktische aanpak 3-2-1 back-up regel",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/praktische-aanpak-3-2-1-back-up-regel/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/11/202212-Praktische-aanpak-3-2-1-back-up-regel-v1.0.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Presentatie (be)Spreekuur Privacy Actualiteiten voor Gemeenten",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/presentatie-bespreekuur-privacy-actualiteiten-gemeenten/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/07/2021-06-Presentatie-Bespreekuur-Privacy-Actualiteiten-Gemeenten.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Presentatie (be)Spreekuur Privacy Actualiteiten voor Gemeenten (21 september 2021)",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/presentatie-bespreekuur-privacy-actualiteiten-voor-gemeenten-21-september-2021/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/09/20210921-Bespreekuur-Privacy-Actualiteiten-voor-gemeenten.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Presentatie (be)Spreekuur Privacy Actualiteiten voor Gemeenten (7 december 2021)",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/presentatie-bespreekuur-privacy-actualiteiten-voor-gemeenten-7-december-2021/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/12/20211207_Presentatie-Privacy-Actualiteiten-bespreekuur.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Presentatie (be)Spreekuur thema Beïnvloeding",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/presentatie-ibd-bespreekuur-thema-beinvloeding/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2020/11/2020-11-workshop-beinvloeding-v1.0.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Presentatie 2FA webinar door Microsoft",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/presentatie-2fa-webinar-door-microsoft/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/04/20210408-VNG-Zero-Trust-MFA.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Presentatie 2FA webinar door Microsoft: vragen en antwoorden",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/presentatie-2fa-webinar-door-microsoft-vragen-en-antwoorden/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/04/20210408-Vragen-MFA-webinar-Microsoft.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Presentatie bespreekuur Risicomanagement",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/presentatie-bespreekuur-risicomanagement/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2020/09/Presentatie-Bespreekuur-risicomanagement-24-9-2020.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Presentatie BIO / ENSIA Congrestival VNG",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/presentatie-bio-ensia-congrestival-vng/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2019/03/201903-BIO-ENSIA-Fasterclass.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Presentatie IBD/Privacy bespreekuur thema Beveiligen persoonlijke gezondheidsinformatie",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/presentatie-ibd-privacy-bespreekuur-thema-beveiligen-persoonlijke-gezondheidsinformatie/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/05/IBD-PBU-Medische-Persoonsgegeven-20210211v1.1.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Presentatie interactieve workshop Changemanagement",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/presentatie-interactieve-workshop-changemanagement/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2020/11/2020-11-VDW-Interactieve-workshop-Change-M-v1.1.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Presentatie interactieve workshop Incidentmanagement",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/presentatie-interactieve-workshop-incidentmanagement/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/01/2021-01-VDW-Interactieve-workshop-Incident-M-v1.11.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Presentatie Online (be)Spreekuur Privacy Actualiteiten voor gemeenten – december",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/presentatie-online-bespreekuur-privacy-actualiteiten-voor-gemeenten-december/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/12/Presentatie-Online-beSpreekuur-Privacy-Actualiteiten-13-12-2022.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Presentatie Online (be)Spreekuur Privacy Actualiteiten voor gemeenten – juni",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/presentatie-online-bespreekuur-privacy-actualiteiten-voor-gemeenten-juni/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2023/06/20230605-Online-bespreekuur-Privacy-Actualiteiten-voor-gemeenten.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Presentatie online bijeenkomst Informatiebeveiliging voor de Privacyfunctionaris",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/presentatie-online-bijeenkomst-informatiebeveiliging-voor-de-privacyfunctionaris/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/02/20220224-Informatiebeveiliging-voor-de-Privacyfunctionaris.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Presentatie online bijeenkomst Privacy voor de CISO",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/presentatie-online-bijeenkomst-privacy-voor-de-ciso/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/02/20220215-Privacy-voor-de-CISO.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Presentatie Privacy (be)Spreekuren thema 2 jaar AVG: Waar sta je als FG?",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/presentatie-privacy-bespreekuren-thema-2-jaar-avg-waar-sta-je-als-fg/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2020/05/BeSpreekuur-25-mei-2020.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Presentatie Privacy (be)Spreekuren thema Corona en Privacy",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/presentatie-privacy-bespreekuren-31-maart-en-1-april-2020/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2020/04/Presentatie-Bespreekuur-Privacy-31-maart-en-1-april-2020.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Presentatie Privacy (be)Spreekuren thema Samenwerkingsverbanden",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/presentatie-privacy-bespreekuren-thema-samenwerkingsverbanden/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2020/05/Presentatie-Privacy-bespreekuur-23-april.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Presentatie Privacy (be)Spreekuren thema Zorg en Veiligheid",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/presentatie-privacy-bespreekuren-thema-zorg-en-veiligheid/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2020/05/Privacy-beSpreekuur-IBD-zorg-en-veiligheid-13-en-14-mei-2020.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Presentatie Privacy (be)Spreekuur Het Inlichtingenbureau",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/presentatie-privacy-bespreekuur-het-inlichtingenbureau/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/06/20220602_Privacy-beSpreekuur-Het-Inlichtingenbureau.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Presentatie Privacy (be)Spreekuur Privacy Actualiteiten voor gemeenten",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/presentatie-privacy-bespreekuur-privacy-actualiteiten-voor-gemeenten/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/04/20220331-Presentatie-Bespreekuur-Privacy-Actualiteiten-voor-gemeenten.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Presentatie Privacy (be)Spreekuur Privacy Actualiteiten voor gemeenten – september",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/presentatie-privacy-bespreekuur-privacy-actualiteiten-voor-gemeenten-september/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/09/20220926-Presentatie-Privacy-Actualiteiten-bespreekuur.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Presentatie Privacy (be)Spreekuur thema Big Data en Open Data",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/presentatie-privacy-bespreekuur-thema-big-data-en-open-data/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2020/06/BeSpreekuur-Open-Data-Big-Data.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Presentatie Privacy (be)Spreekuur thema Factsheet verwerkingsverantwoordelijke en verwerker",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/presentatie-privacy-bespreekuur-thema-factsheet-verwerkingsverantwoordelijke-en-verwerker/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/04/20210415_Factsheet-en-nieuwe-beslisboom-Verwerker-Verwerkingsverantwoordelijke-deelversie.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Presentatie Privacy (be)Spreekuur thema Jeugd en veiligheid",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/presentatie-privacy-bespreekuur-thema-jeugd-en-veiligheid/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2020/12/201217_Training-JenV-Amsterdam-VNG-voor-verspreiding.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Presentatie Privacy (be)Spreekuur thema Pettenvraagstuk in het sociaal domein",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/presentatie-privacy-bespreekuur-thema-pettenvraagstuk-in-het-sociaal-domein/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/02/20210209.Webinar-Pettenproblematiek.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Presentatie Privacy (be)Spreekuur Thema Privacy Volwassenheidsniveaus",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/presentatie-privacy-bespreekuur-thema-volwassenheidsniveaus/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2020/09/Presentatie-Privacy-beSpreekuur-thema-Privacy-Volwassenheidsniveaus.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Presentatie Privacy (be)Spreekuur thema Schrems II",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/presentatie-privacy-bespreekuur-thema-schrems-ii/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/01/Presentatie-Schrems-II.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Presentatie Privacy (be)Spreekuur thema Terug naar de werkplek – Corona 2",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/presentatie-privacy-bespreekuur-thema-terug-naar-de-werkplek-corona-2/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2020/08/Privacy-bespreekuur-25-augustus-terug-naar-de-werkplek.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Presentatie Privacy (be)Spreekuur thema Vroegsignalering",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/presentatie-privacy-bespreekuur-thema-vroegsignalering/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2020/10/2020.10.08-BeSpreekuur-WGS.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Presentatie Privacy (be)Spreekuur thema “Waar sta je als FG (deel 2): Positionering en effectief toezicht”",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/presentatie-privacy-bespreekuur-thema-waar-sta-je-als-fg-deel-2-positionering-en-effectief-toezicht/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2020/06/BeSpreekuur-FG-Positionering-en-Toezichthouden-23-juni-2020-.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Presentatie webinar 2FA",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/presentatie-webinar-2fa/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2020/11/2020-11-Slides-webinar-2-factor-authenticatie-V1.0.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Presentatie webinar Beheer Toegangsbeveiliging",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/presentatie-webinar-beheer-toegangsbeveiliging/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/05/2021-05-06-VDW-Module-1-Webinar-beheer-toegangsbeveiliging-v1.0.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Presentatie webinar Changemanagement – deel 1",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/presentatie-webinar-change-management/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2020/10/VDW-Change-Management-Webinar-deel-1-v.1.0.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Presentatie webinar Changemanagement – deel 2",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/presentatie-webinar-changemanagement-deel-2/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2020/10/VDW-Change-Management-Webinar-deel-2-v.1.0.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Presentatie webinar Dreigingsbeeld 2021-2022",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/presentatie-webinar-dreigingsbeeld-2021-2022/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/05/2021-01-IBD-Presentatie-dreigingsbeeld-v03.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Presentatie webinar Gestructureerde aanpak verhogen beveiligingsbewustzijn",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/presentatie-webinar-gestructureerde-aanpak-verhogen-beveiligingsbewustzijn/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/04/200414-webinar-verhogen-bewustzijn-v1.01.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Presentatie webinar Incident Management",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/presentatie-webinar-incident-management/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2020/12/VDW-Incident-Management-Webinar-v.1.0.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Presentatie webinar NIS2 en AVG",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/presentatie-webinar-nis2-en-avg/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2024/03/NIS2_vs_AVG_20240304_.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Presentatie webinar Patchmanagement deel 1 proces",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/presentatie-webinar-patchmanagement-deel-1-proces/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2020/07/Webinar-Patch-management-deel-1-1-7-2020.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Presentatie webinar Patchmanagement deel 2 techniek",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/presentatie-webinar-patchmanagement-deel-2-techniek/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2020/07/Webinar-Patch-management-deel-2-16-7-2020.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Presentatie webinar Plan van aanpak Business Continuity Management",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/presentatie-webinar-plan-van-aanpak-bcm/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2020/05/PVA-BCM-regiobijeenkomst-22-4-2020-versie-1.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Presentatie webinar Pragmatische aanpak BIO",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/presentatie-webinar-pragmatische-aanpak-bio/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/04/Presentatie-Webinar-Pragmatische-aanpak-BIO-1.01-23-januari-2021.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Presentatie webinar Randvoorwaarden en starten met Monitoring & Response",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/presentatie-webinar-randvoorwaarden-en-starten-met-monitoring-response/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/06/VDW-2-Randvoorwaarden-en-starten-met-webinar.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Presentatie webinar Relatie en taken IBD – GGI-Veilig",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/presentatie-webinar-relatie-en-taken-ibd-ggi-veilig/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2020/12/IBD-GGI-Veilig-relatie-v1.1.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Presentatie webinar Wachtwoordkluizen",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/presentatie-webinar-wachtwoordkluizen/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2020/07/2020-07-Webinar-Wachtwoordkluizen-IBD-v.1.1.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Presentatie webinar “Praktische Back-up-aanpak”",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/presentatie-webinar-praktische-back-up-aanpak/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2023/05/20230530-Presentatie-IBD-webinar-Praktische-Back-up-aanpak.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Presentatie webinar “Praktische BCM-aanpak” (gemeente Tilburg)",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/presentatie-webinar-praktische-bcm-aanpak-gemeente-tilburg/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2023/05/20230516-BCM-Aanpak-gemeente-Tilburg.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Presentatie webinar “Praktische BCM-aanpak” (IBD)",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/presentatie-webinar-praktische-bcm-aanpak-ibd/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2023/05/20230516-IBD-Presentatie-Praktische-BCM-aanpak.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Presentatie workshop Beheer Toegangsbeveiliging",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/presentatie-workshop-beheer-toegangsbeveiliging/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/05/2021-05-VDW-Module-1-Workshop-beheer-toegangsbeveiliging-v1.0.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Presentatie Workshop VDW Module 2 Monitoring & Response: Use case met een technische trigger",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/presentatie-workshop-vdw-module-2-monitoring-response-use-case-met-een-technische-trigger/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/02/20220201-VDW-Workshop-use-case-met-technische-trigger-werkdocument.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Privacy & AVG Contentbibliotheek",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/privacy-avg-contentbibliotheek/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2019/10/20191023-AVG-Contentbibliotheek-VNG-IBD.zip",
+   "soort": "ZIP"
+  },
+  {
+   "titel": "Privacybeleid",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/privacybeleid/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/12/Privacybeleid-1.0.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Privacybeleid IBD",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/privacybeleid-ibd/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2025/02/IBD-Privacybeleid-v1.4.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Privacyverklaring Wet politiegegevens",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/privacyverklaring-wet-politiegegevens/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/11/20221028-Privacyverklaring-Wpg.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Proces- / Stroomschema BCM",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/proces-stroomschema-bcm/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/07/202206-Stroomschema-BCM-v1.0.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Producten en diensten van de IBD (PDC)",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/producten-en-diensten-van-de-ibd-pdc/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/05/IBD-producten-en-dienstencatalogus-update-2021.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Projectplan implementatie Monitoring & Response",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/projectplan-implementatie-monitoring-response/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/05/10-Projectplan-MR-v1.1.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Quick Reference kaart 1 – Uitval gebouw",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/quick-reference-kaart-1-uitval-gebouw/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2023/06/202306-Quick-Reference-1-Uitval-gebouw.zip",
+   "soort": "ZIP"
+  },
+  {
+   "titel": "Quick Reference kaart 2 – Uitval door stroomstoring",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/quick-reference-kaart-2-uitval-door-stroomstoring/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2023/06/202306-Quick-Reference-2-Uitval-door-stroomstoring.zip",
+   "soort": "ZIP"
+  },
+  {
+   "titel": "Quick Reference kaart 3 – Uitval ICT",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/quick-reference-kaart-3-uitval-ict/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2023/06/202306-Quick-Reference-3-Uitval-ICT.zip",
+   "soort": "ZIP"
+  },
+  {
+   "titel": "Quick Reference kaart 4 – Cybercrisis",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/quick-reference-kaart-4-cybercrisis/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2023/06/202306-Quick-Reference-4-Cybercrisis.zip",
+   "soort": "ZIP"
+  },
+  {
+   "titel": "Quick Reference kaart 5 – Uitval datacommunicatie (internet)",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/quick-reference-kaart-5-uitval-datacommunicatie-internet/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2023/06/202306-Quick-Reference-5-Uitval-datacommunicatie-internet.zip",
+   "soort": "ZIP"
+  },
+  {
+   "titel": "Quick Reference kaart 6 – Uitval telefonie",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/quick-reference-kaart-6-uitval-telefonie/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2023/06/202306-Quick-Reference-6-Uitval-telefonie.zip",
+   "soort": "ZIP"
+  },
+  {
+   "titel": "Quick Reference kaart 7 – Uitval personeel",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/quick-reference-kaart-7-uitval-personeel/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2023/06/202306-Quick-Reference-7-Uitval-personeel.zip",
+   "soort": "ZIP"
+  },
+  {
+   "titel": "Quickscan Videoconferencing tools",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/quickscan-videoconferencing-tools/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2020/06/20200410-quickscan-VC-tools-v10-web.xlsx",
+   "soort": "XLSX"
+  },
+  {
+   "titel": "RASCI Tabel BIO controls en Privacy borgingsproduct controls",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/rasci-tabel-bio-controls-en-privacy-borgingsproduct-controls/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2026/02/202602-BIO2-RASCI-tabel-controls-Informatieveiligheid-en-Privacy.xlsx",
+   "soort": "XLSX"
+  },
+  {
+   "titel": "Referentiekader Privacy by Design – IBD instrumenten",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/referentiekader-privacy-by-design-ibd-instrumenten/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2020/01/202001-Referentiekader-Privacy-by-Design_v1.0.xlsx",
+   "soort": "XLSX"
+  },
+  {
+   "titel": "Regiobijeenkomst Informatiebeveiliging Najaar 2022 Plenaire opening",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/regiobijeenkomst-informatiebeveiliging-najaar-2022-plenaire-opening/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/12/Presentatie-plenaire-opening-Regiobijeenkomsten-najaar-2022.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Regiobijeenkomst Informatiebeveiliging Najaar 2022 Workshop Betrekken van het lijnmanagement",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/regiobijeenkomst-informatiebeveiliging-najaar-2022-workshop-betrekken-van-het-lijnmanagement/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/12/Workshop-Betrekken-van-het-lijnmanagement-najaar-2022.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Regiobijeenkomst Privacy Najaar 2022 Workshop AVG Borgingsproduct 3.0",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/regiobijeenkomst-privacy-najaar-2022-workshop-avg-borgingsproduct-3-0/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/12/Presentatie-workshop-AVG-Borgingsproduct-3.0-najaarsreeks-2022.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Regiobijeenkomst Privacy Najaar 2022 Workshop Team op Sterkte",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/regiobijeenkomst-privacy-najaar-2022-workshop-team-op-sterkte/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/12/Presentatie-workshop-Team-op-Sterkte-najaarsreeks-2022.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Register van verwerkingen Wpg (basis)",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/register-van-verwerkingen-wpg-basis/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/07/Register-van-Verwerkingen-Wpg-basis.xlsx",
+   "soort": "XLSX"
+  },
+  {
+   "titel": "Resolutie Informatieveiligheid, randvoorwaarde voor de professionele gemeente",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/resolutie-informatieveiligheid/",
+   "download": "https://vng.nl/sites/default/files/2020-12/resolutie-digitale-veiligheid-versie-3-december-2020.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "RFC-2350",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/rfc-2350/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/01/RFC-2350-v1.4.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Risicoregister (inclusief risicobehandelplan en dashboards)",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/risicoregister-inclusief-risicobehandelplan-en-dashboards/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2025/10/Risicoregister-incl-risicobehandelplan.xlsx",
+   "soort": "XLSX"
+  },
+  {
+   "titel": "Scenariokaart 1 – Uitval gebouw",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/scenariokaart-1-uitval-gebouw/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/07/202204-Scenariokaart-1-Uitval-gebouw-v1.1.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Scenariokaart 2 – Uitval door stroomstoring",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/scenariokaart-2-uitval-door-stroomstoring/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/07/202204-Scenariokaart-2-Uitval-door-stroomstoring-v1.1.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Scenariokaart 3 – Uitval ICT",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/scenariokaart-3-uitval-ict/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/07/202204-Scenariokaart-3-Uitval-ICT-v1.1.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Scenariokaart 4 – Cybercrisis",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/scenariokaart-4-cybercrisis/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/07/202204-Scenariokaart-4-Cybercrisis-v1.1.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Scenariokaart 5 – Uitval datacommunicatie (internet)",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/scenariokaart-5-uitval-datacommunicatie-internet/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/07/202204-Scenariokaart-5-Uitval-datacommunicatie-internet-v1.1.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Scenariokaart 6 – Uitval telefonie",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/scenariokaart-6-uitval-telefonie/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/07/202204-Scenariokaart-6-Uitval-telefonie-v1.1.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Scenariokaart 7 – Uitval Personeel",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/scenariokaart-7-uitval-personeel/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/07/202204-Scenariokaart-7-Uitval-personeel-v1.1.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Schadescenario’s BIO",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/schadescenarios-bio/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2020/10/20201006-Schadescenarios-Versie0.9-voor-werkgroep-BIO.xlsx",
+   "soort": "XLSX"
+  },
+  {
+   "titel": "Schematisch overzicht ransomware aanval",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/schematisch-overzicht-ransomware-aanval/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/02/Ransomware.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Spelmateriaal Privacy Pubquiz – Antwoordformulier",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/antwoordformulier-privacy-pubquiz/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2019/10/20910-IBD-Pubquiz-blocknote.3.0.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Spelmateriaal Privacy Pubquiz – editie 2023",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/spelmateriaal-privacy-pubquiz-editie-2023/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2023/01/Privacy-Pubquiz-2023.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Spelmateriaal Privacy Pubquiz – Fotoronde",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/spelmateriaal-pubquiz-fotoronde/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2019/10/Fotoronde.pptx",
+   "soort": "PPTX"
+  },
+  {
+   "titel": "Spelmateriaal Privacy Pubquiz – Handleiding en Spelregels",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/instructie-pubquiz/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/04/201910-Handleiding-en-spelregels-IBD-Pubquiz-1.1.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Spelmateriaal Privacy Pubquiz – Poster",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/poster-pubquiz/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2019/10/20910-IBD-Pubquiz_poster.3.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Spelmateriaal Privacy Pubquiz – Ronde Algemeen",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/spelmateriaal-pubquiz-ronde-algemeen/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2019/10/Ronde-algemeen.pptx",
+   "soort": "PPTX"
+  },
+  {
+   "titel": "Spelmateriaal Privacy Pubquiz – Ronde Bestuur",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/spelmateriaal-pubquiz-ronde-bestuur/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2019/10/Ronde-Bestuur-v1-1-1.pptx",
+   "soort": "PPTX"
+  },
+  {
+   "titel": "Spelmateriaal Privacy Pubquiz – Ronde HRM",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/spelmateriaal-pubquiz-ronde-hrm/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2019/10/Ronde-HRM-v1-1.pptx",
+   "soort": "PPTX"
+  },
+  {
+   "titel": "Spelmateriaal Privacy Pubquiz – Ronde Publiekszaken",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/spelmateriaal-pubquiz-ronde-publiekszaken/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2019/10/Ronde-Publiekszaken-v1-2.pptx",
+   "soort": "PPTX"
+  },
+  {
+   "titel": "Spelmateriaal Privacy Pubquiz – Ronde Schatten",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/spelmateriaal-pubquiz-ronde-schatten/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2019/10/Ronde-schatten-1.pptx",
+   "soort": "PPTX"
+  },
+  {
+   "titel": "Spelmateriaal Privacy Pubquiz – Ronde Sociaal Domein",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/spelmateriaal-pubquiz-ronde-sociaal-domein/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2019/10/Ronde-SD-v1-1.pptx",
+   "soort": "PPTX"
+  },
+  {
+   "titel": "Spelmateriaal Privacy Pubquiz – Ronde Waar of niet waar",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/spelmateriaal-pubquiz-ronde-waar-of-niet-waar/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2019/10/Ronde-waar-of-niet-waar-1.pptx",
+   "soort": "PPTX"
+  },
+  {
+   "titel": "Spelmateriaal Serious game Telekwetsbaarheid – Draaiboek",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/spelmateriaal-serious-game-telekwetsbaarheid-draaiboek/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/04/Draaiboek-TKBH-v1.21.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Spelmateriaal Serious game Telekwetsbaarheid – Handreiking evaluatie",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/spelmateriaal-serious-game-telekwetsbaarheid-handreiking-evaluatie/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2024/04/Handreiking-evaluatie-TKBH-v1.2.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Spelmateriaal Serious game Telekwetsbaarheid – Handreiking moderator",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/spelmateriaal-serious-game-telekwetsbaarheid-handreiking-moderator/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/04/Handreiking-moderatoren-TKBH-v.1.11.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Spelmateriaal Serious game Telekwetsbaarheid – Presentatie",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/spelmateriaal-serious-game-telekwetsbaarheid-presentatie/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2024/04/Serious-Game-Telekwetsbaarheid-invoegtoepassing-youtube-1.1.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Spion op je pad – Achtergrond en toelichting",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/spion-op-pad-achtergrond-en-toelichting/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/04/Achtergrond-en-toelichting-Spion-op-je-pad-1.1.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Spion op je pad – Handleiding spelleider",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/spion-op-pad-handleiding-spelleider/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/04/20161209-Spion-op-je-pad-Handleiding-spelleider-1.1.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Spion op je pad – Speelbord 1",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/spion-op-pad-speelbord-1/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2016/12/Spion-op-je-pad-speelbord-1.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Spion op je pad – Speelbord 2",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/spion-op-pad-speelbord-2/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2016/12/Spion-op-je-pad-speelbord-2.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Spion op je pad – Spelregels spelers",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/spion-op-pad-spelregels-spelers/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2016/12/Spion-op-je-pad-spelregels.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Spion op je pad – Spelvragen kaartjes",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/spion-op-pad-spelvragen-kaartjes/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2016/12/Vragenkaartjes.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Spion op je pad – Spelvragen ppt",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/spion-op-pad-spelvragen-ppt/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2016/12/20161208-Vragen-Spion-op-je-pad.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Spion op je pad – Vraag en antwoord document spelleider",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/spion-op-pad-vraag-en-antwoord-document-spelleider/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2016/12/20161217-Spion-op-je-pad-Vraag-en-antwoord-document-spelleider.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Standaard Incidentindeling IBD",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/standaard-incidentindeling-ibd/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2018/08/Standaard-Incidentindeling-IBD-1.1.xlsx",
+   "soort": "XLSX"
+  },
+  {
+   "titel": "Standard Data Processing Agreement (DPA) for Dutch Municipalities",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/standard-data-processing-agreement-dpa-for-dutch-municipalities-standaard-verwerkersovereenkomst-engelse-vertaling/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2026/07/202605-Standaard-VWO-v2.54_EN.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Standpuntbepaling en stappenplan Operationele Technologie (OT)",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/standpuntbepaling-en-stappenplan-ot/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2025/05/202504-OT-bij-gemeenten-verdient-meer-aandacht_v1.0.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Stappenplan voor AI-incidenten",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/stappenplan-voor-ai-incidenten/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2026/08/202608_Stappenplan-AI-incidenten_v1.0.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Systeemeisenset Privacy by Design – IBD Documenten",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/systeemeisenset-privacy-by-design-ibd-documenten/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2020/01/202001-Systeemeisenset-Privacy-by-Design_v1.0.xlsx",
+   "soort": "XLSX"
+  },
+  {
+   "titel": "Tactische Baseline Informatiebeveiliging Nederlandse Gemeenten (BIG)",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/tactische-baseline-informatiebeveiliging-nederlandse-gemeenten-2/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/05/16-0601-Tactische-Baseline-Informatiebeveiliging-Nederlandse-Gemeenten-1.03.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Template beschrijving kritische bedrijfsprocessen",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/template-beschrijving-kritische-bedrijfsprocessen/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/07/202206-Template-beschrijving-kritische-bedrijfsprocessen-BIO-v1.1.xlsx",
+   "soort": "XLSX"
+  },
+  {
+   "titel": "Template Change Implementatie Plan",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/template-change-implementatie-plan/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2020/12/20201201-Change-Implementatie-Plan-incl-voorbeelden.zip",
+   "soort": "ZIP"
+  },
+  {
+   "titel": "Toolkit ‘Behaviour by Design’",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/toolkit-behaviour-by-design/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/05/Toolkit-Behaviour-by-Design.zip",
+   "soort": "ZIP"
+  },
+  {
+   "titel": "Top kritische bedrijfsprocessen",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/top-kritische-bedrijfsprocessen/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/03/202203-Top-kritische-bedrijfsprocessen-v1.0.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Uitgangspunten Standaard Verwerkersovereenkomst (VWO)",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/uitgangspunten-standaard-verwerkersovereenkomst-vwo/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2020/11/20201126-Uitgangspunten-Standaard-VWO.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "VDW Module 1: Mindmap maatregelen",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/vdw-module-1-mindmap-maatregelen/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/11/20111_IBD-Mindmap-VDW-Module-1-Maatregelen_v1.3.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "VDW Module 1: Mindmap processen",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/vdw-module-1-mindmap-processen/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2019/12/201912_IBD-Mindmap-Processen_v1.1.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "VDW Module 4: Mindmap Bedrijfscontinuiteit management",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/vdw-module-4-mindmap-bedrijfscontinuiteit-management/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2020/07/VDW-Module-4-Mindmap-BCM.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Verslag Privacy (be)Spreekuur Samenwerken binnen het IKZ",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/verslag-privacy-bespreekuur-samenwerken-binnen-het-ikz/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2020/09/Verslag-Bespreekuur-IKZ.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Verwerkersovereenkomst AVG én Wpg",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/verwerkersovereenkomst-avg-en-wpg/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2026/06/202605-Standaard-VWO-AVG-Wpg-v2.54.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Voorbeeld IB&P beleid",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/voorbeeld-ibp-beleid/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2023/06/20230608-Template-strategisch-informatiebeveiliging-en-privacy-beleid-v1.3-definitief.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Voorbeeld Privacybeleid",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/voorbeeld-privacybeleid/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2023/06/20230608-Template-aanvullend-privacybeleid-BIO-V1.2-definitief.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Voorbeeld tijdspad Wpg audit",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/voorbeeld-tijdspad-wpg-audit/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2022/11/20221028-Tijdspad-Wpg-audit-.docx",
+   "soort": "DOCX"
+  },
+  {
+   "titel": "Voorbeeldaanpak NIS2 – een veilige (digitale) gemeente",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/voorbeeldaanpak-nis2-een-veilige-digitale-gemeente/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2024/11/Voorbeeldaanpak-NIS2-een-veilige-digitale-gemeente.pdf",
+   "soort": "PDF"
+  },
+  {
+   "titel": "Vooringevuld register van verwerkingen gemeenten",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/vooringevuld-verwerkingsregister-gemeenten/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2025/12/202512-Register-van-Verwerkingen.xlsx",
+   "soort": "XLSX"
+  },
+  {
+   "titel": "Werkdocument Audit Wet politiegegevens voor gemeenten",
+   "url": "https://www.informatiebeveiligingsdienst.nl/product/werkdocument-audit-wet-politiegegevens-voor-gemeenten/",
+   "download": "https://www.informatiebeveiligingsdienst.nl/wp-content/uploads/2021/09/202109-Werkdocument-Audit-Wet-politiegegevens-voor-gemeenten.docx",
+   "soort": "DOCX"
+  }
+ ]
+}

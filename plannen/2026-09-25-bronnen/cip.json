@@ -1,0 +1,298 @@
+{
+ "partij": "cip",
+ "peildatum": "2026-09-25",
+ "toelichting": "Openbare productcatalogus, opgehaald van de publieke site. Werkmateriaal voor de vulling van bronnen.json in de kennisbank; geen bron op zichzelf. Een stuk gaat pas het register in na koppeling aan een item en controle door een mens.",
+ "aantal": 58,
+ "producten": [
+  {
+   "titel": "ABDO",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/abdo",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "Agile Security Management",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/asm",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "Baseline Informatiebeveiliging Overheid",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/bio-tekst",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "BIO Thema-uitwerking Applicatieontwikkeling",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/applicatieontwikkeling",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "BIO Thema-uitwerking Clouddiensten",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/clouddiensten",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "BIO Thema-uitwerking Communicatievoorzieningen",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/communicatievoorzieningen",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "BIO Thema-uitwerking Huisvesting Informatievoorzieningen",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/huisvesting-informatievoorzieningen",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "BIO Thema-uitwerking Middleware",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/middleware",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "BIO Thema-uitwerking Serverplatform",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/serverplatform",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "BIO Thema-uitwerking Softwarepakketten",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/softwarepakketten",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "BIO Thema-uitwerking Toegangsbeveiliging",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/toegangsbeveiliging",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "BIO Thema-uitwerkingen Privacy-supplementen",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/privacy-supplementen",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "Brochure Uw digitale veiligheid",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/uw-digitale-veiligheid",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "CIP-cast BIO",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/cip-cast-bio",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "CIP-casts aanbesteden en inkopen",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/cip-casts-aanbesteden-en-inkopen",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "CIP-casts Awareness",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/cip-casts-awareness",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "CIP-casts Ethiek",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/cip-casts-ethiek",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "CIP-casts IoT",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/cip-casts-iot",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "CIP-casts Privacy",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/cip-casts-privacy",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "CIP-casts Secure Software",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/cip-casts-ssd",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "Datalekken",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/datalekken",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "Doe je voordeel met PET",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/doe-je-voordeel-met-pet",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "DPIA Rijksoverheid – Cisco Webex",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/dpia-rijksoverheid-cisco-webex",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "Een bestuursmanifest voor informatieveiligheid",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/bestuurlijke-principes",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "FG-Enquête 2018 en 2022",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/fg-enqute-2022",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "FG-enquête 2026",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/fg-enquete-2026",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "Grip op SSD 3.0: De methode",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/gripopssddemethode30",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "Grip op SSD: De normen v3.0",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/grip-op-ssd",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "Grip op SSD: De normen voor Mobile Apps",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/grip-op-ssd-de-normen-voor-mobiele-apps",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "Grip op SSD: Testraamwerk",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/grip-op-ssd-testraamwerk",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "Handleiding Privacy by Design",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/handleiding-privacy-by-design",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "Handreiking gebruik IAMA samen met Model DPIA Rijksdienst",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/handreiking-gebruik-iama-samen-met-model-dpia-rijksdienst",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "IB&P-hulp",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/ib-en-p-hulp-themasessie",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "ICO-Wizard",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/ico",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "Internet of Things, Whitepaper I",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/cip-whitepaper-iot",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "Internet of Things, Whitepaper II",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/internet-of-things",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "Keten Service Library",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/keten-practices",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "Ketencommunicatie bij crisis",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/ketencommunicatiebijcrises",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "Microlearnings 'Privacy, de fundamenten'",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/microlearnings-privacy-de-fundamenten",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "Model DPIA Rijksdienst",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/de-8216-rijkspia-8217",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "Pre-scan DPIA",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/ps-pia",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "Privacy afspraken in ketens",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/privacy-afspraken-in-ketens",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "Privacy Baseline",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/privacy-baseline",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "Privacy Governance - een handleiding voor de implementatie en borging van privacy in organisaties",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/handleiding-borging-van-privacy-in-organisaties",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "Privacy Self Assessment (PriSA)",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/privacyselfassessmenttool",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "Privacy Top 10",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/privacy-top-10",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "Privacy Volwassenheidsmodel",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/handreiking-borging-van-privacy-en-volwassenheidsmodel",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "Procesautomatisering (CSIR)",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/csir",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "Ransomware game",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/serious-games",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "Responsible Disclosure",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/responsible-disclosure",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "Testen in ketens",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/testdorp",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "Testen met Persoonsgegevens",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/testen-met-persoonsgegevens",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "Veilig Thuiswerken",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/thuiswerken",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "Vragenformulier 'Ransomware' ​",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/ransomware",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "Whitepaper Red Teaming",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/whitepaperredteaming",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "​​Invulhulpen voor het invullen van een pre-scan, DPIA en IAMA",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/invulhulpen-pre-scan-dpia-iama",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "​​Kennisproducten Ransomware en Datadiefstal​",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/kennisproducten-ransomware-en-datadiefstal",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  },
+  {
+   "titel": "​​​​BIO Self-Assessment (BIO-SA)​​",
+   "url": "https://www.cip-overheid.nl/producten-en-diensten/bio-sa",
+   "download": "https://www.cip-overheid.nl/media/1ybd0bui/cip-favicon.png"
+  }
+ ]
+}
