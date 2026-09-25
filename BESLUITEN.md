@@ -6,6 +6,24 @@ krijgt hier een regel: datum, wat er is besloten, en waarom. Nieuwste bovenaan. 
 
 Dit log begint op 29-08-2026, toen bleek dat het statuut er wel naar verwees maar het nergens stond.
 
+## 25-09-2026 · Het werk van anderen komt in de kennisbank als wegwijzer per onderwerp
+
+**Besloten.** Stukken van andere partijen (IBD, CIP, het Rijk, NCSC en de rest van de stelselkaart) krijgen
+in de kennisbank geen eigen kaart per document. Per onderwerp komt er een wegwijzer: een item van type
+`referentie` dat zegt welk stuk je wanneer pakt, met de stukken als `bronnen` (B15) en zonder eigen model.
+De eerste is `privacy/dpia-uitvoeren/`. Volgorde: eerst de vakgebieden die vrijwel leeg zijn (privacy, bcm),
+dan de barrieres zonder handleiding. Verwijs naar de bron van herkomst, niet naar wie hem doorgeeft: het
+Rijksmodel DPIA staat bij het Rijk, niet bij CIP.
+
+**Onderbouwing.** Zoek op 25-09 in de kennisbank op "DPIA" en je vindt niets, terwijl bij het Rijk en de IBD
+alles ligt wat je nodig hebt. Een wegwijzer maakt dat vindbaar en zegt er meteen bij in welke volgorde. De
+openbare catalogi van de IBD (321 stukken) en CIP (58) zijn compleet genoeg om per onderwerp uit te kiezen.
+
+**Bewust niet gekozen.** Een gegenereerde kaart per document: bij honderden stukken verdwijnt het eigen werk
+en wordt elke kaart een dubbeling van een regel in het register. Dat het eigen werk minder opvalt weegt op
+zichzelf niet zwaar (de maintainer: "eigen werk verdwijnen is niet heel erg"), de dubbeling wel. De kaart per
+document kan er later alsnog bij als wegwijzers tekort blijken te schieten.
+
 ## 25-09-2026 · B15: de kennisbank verwijst naar wat anderen al hebben
 
 **Besloten.** Elk kennisbankitem mag verwijzen naar specifieke stukken van andere partijen in het
