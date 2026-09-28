@@ -20,8 +20,8 @@ De volgorde is die van de eigenaar: eerst vinden, dan vullen, dan de rest.
 |---|---|---|---|
 | 1 | **Zoekvak op de voorpagina.** Een vak voor de hele commons: instrumenten, kennisbank, normwijzer en de stukken van anderen, in groepen. | bouwwerk | uitgevoerd 28-09-2026 |
 | 2 | **Privacy vullen.** De privacy officer in de doelgroep; wegwijzers naar wat er al ligt. | schrijfwerk | open |
-| 3 | **De normwijzer op de voorpagina.** De kaart "Wat toon ik aan?" en vraag 3 van de keten wijzen naar de normwijzer; de normverankering gaat daarin op. | bouwwerk | open |
-| 4 | **Een voordeur per rol.** CISO, ISO, privacy officer, bestuurder: per rol drie stukken om mee te beginnen. | bouwwerk | open |
+| 3 | **De normwijzer op de voorpagina.** De kaart "Wat toon ik aan?" en vraag 3 van de keten wijzen naar de normwijzer; de normverankering gaat daarin op. | bouwwerk | uitgevoerd 28-09-2026 |
+| 4 | **Een voordeur per rol.** CISO, ISO, privacy officer, bestuurder: per rol drie stukken om mee te beginnen. | bouwwerk | uitgevoerd 28-09-2026; de keuze van de stukken is voorlopig |
 | 5 | **Jaarritme.** Wat komt wanneer terug: ENSIA, de Cbw-meldplicht, de managementreview, de begroting. Per moment de stukken die helpen. | schrijfwerk | open |
 | 6 | **Eerste honderd dagen.** Een route voor een nieuwe CISO of ISO: wat je in welke week doet, met de stukken erbij. | schrijfwerk | open |
 | 7 | **Status eerlijker.** Veel stukken staan op concept terwijl ze in gebruik zijn; de status zegt nu te weinig. | redactie | open |
@@ -42,6 +42,21 @@ acht, de rest achter een knop. Een zoekvraag in het adres (`?q=dpia`) is deelbaa
 
 Waarom de index bij de normwijzer en niet bij de kennisbank: de normwijzer voegt kennisbank, register en
 normen al samen. Een tweede plek die dat doet, gaat vroeg of laat uit de pas lopen.
+
+## Stap 3: de normwijzer op de voorpagina (uitgevoerd)
+
+De derde kaart en vraag 3 van de keten wijzen naar de normwijzer in plaats van naar de dataset; de projectentabel
+zet de normwijzer als eerste link bij `normen`, met de dataset erachter. De normverankering (van aanvalspad naar
+norm, in `aanvalspaden`) blijft bestaan als de weergave per barriere, want de handleidingen per barriere en de
+zelfcheck linken ernaar. "Opgaan" betekent: de voorpagina noemt alleen de normwijzer, en de twee pagina's
+verwijzen naar elkaar.
+
+## Stap 4: een voordeur per rol (uitgevoerd, keuze voorlopig)
+
+Onder het zoekvak een blok "Begin bij je rol" met vier rollen en per rol drie stukken, uit `site/rollen.json` in
+de repo van de voorpagina. De keuze is een eerste gok van de redactie en wordt later herzien; wijzigen is een
+regel in dat bestand. Een test bewaakt de vorm (vier rollen, drie stukken, alleen adressen van de commons) en de
+linkcheck of ze bestaan. De privacy officer staat sindsdien ook in de doelgroepregel.
 
 ## Stap 2: privacy vullen
 
