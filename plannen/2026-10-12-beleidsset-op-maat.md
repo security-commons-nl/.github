@@ -26,6 +26,13 @@ met aanwijzingen waarmee zijn eigen AI-agent het stuk gericht afmaakt. Daarvoor 
 profielschema waarmee varianten vergelijkbaar zijn, meer dan één variant per domein, en per variant een blok
 dat zegt wat er nog in te vullen is en welke vraag daarbij hoort.
 
+**Twee ingangen, de vragen zijn een filter en geen poort.** De pagina van de beleidsset heeft een ingang
+*bladeren*: per domein alle varianten en het sjabloon naast elkaar, elk met het profiel van de herkomst, de
+status en de dekking, direct te lezen en als markdown te downloaden. De tweede ingang, *op maat*, stelt de
+vragen en sorteert en filtert dezelfde lijst op wat bij de gebruiker past. Alles wat via de vragen te vinden
+is, is ook zonder vragen te vinden. De meeste bezoekers zoeken één stuk; wie eerst vragen moet beantwoorden,
+haakt af. En wie zijn eigen AI-agent gebruikt, heeft het formulier niet nodig: die leest het maatwerkblok.
+
 De kennisbank levert de inhoud: het corpus met metadata en toets. De beleidsassistent in cisochat is de
 agent die erop draait. De domeinindeling moet daarvoor één zijn: cisochat gebruikt nu vijftien domeinen, het
 controleraamwerk eenentwintig.
@@ -38,7 +45,7 @@ controleraamwerk eenentwintig.
 | 2 | Profielschema: zes tot acht vragen met vaste antwoordruimte (grootte, beheermodel, hosting, OT, samenwerking, Wpg-domeinen) in `profiel.yaml`; elk stuk krijgt in de frontmatter de profielkenmerken van zijn herkomst en de maatregelen die het dekt | Varianten zijn vergelijkbaar en selecteerbaar | 1 sessie | open |
 | 3 | Per stuk een blok "maatwerk": invulvelden, keuzes per profielantwoord, vervolgvragen voor een AI-agent; `llms.txt` wijst ernaar | Een agent kan het stuk gericht afmaken | 1 sessie | open |
 | 4 | De eerste variant uniform maken naar het format van het beleid fysieke toegang: per ISO-control de eisen met maatregelnummer, bijlage normen, bijlage controls, rollen als invulveld; de vijf sjablonen gevuld met een voorgestelde regel per maatregel | Variant 1 compleet voor alle 21 domeinen | 2 tot 3 sessies | open |
-| 5 | Selectie: `build.py` genereert per domein een tabel van profiel naar variant, met uitleg; later een invulpagina | De gebruiker krijgt per domein de beste match | 1 sessie | open |
+| 5 | Bladeren en sorteren: `build.py` genereert per domein de lijst van varianten en het sjabloon met profiel, status en dekking (ingang *bladeren*); de vragen zijn een filter en sortering bovenop diezelfde lijst (ingang *op maat*), geen aparte inhoud | De gebruiker vindt elk stuk zonder vragen, en met vragen eerst wat bij hem past | 1 sessie | open |
 | 6 | Aanleverformulier voor andere organisaties: dezelfde profielkenmerken, dezelfde toets; een script geeft per aangeleverd stuk een eerste oordeel per maatregel, een mens corrigeert | Volgende inzenders hoeven niets te verzinnen | 1 sessie | open |
 | 7 | Uitvraag aan gemeenten en het corpus vullen | Meer dan één herkomst per domein | doorlopend | open |
 | 8 | Eén domeinindeling voor kennisbank en beleidsassistent | De agent en het corpus spreken dezelfde taal | klein | open |
@@ -55,6 +62,6 @@ controleraamwerk eenentwintig.
 
 ## Wat dit niet is
 
-Geen generator die beleid schrijft: de set levert concepten en vragen, de organisatie schrijft en stelt vast.
+Geen poort: niemand hoeft vragen te beantwoorden om een concept of sjabloon te zien. Geen generator die beleid schrijft: de set levert concepten en vragen, de organisatie schrijft en stelt vast.
 Geen tweede indeling naast de BIO 2.0-domeinen. Geen vervanging van de IBD-templates; die blijven het
 vertrekpunt voor wie van nul begint.
