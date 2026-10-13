@@ -9,6 +9,8 @@
 **Ben je CISO, ISO of bestuurder en wil je direct aan de slag?**  
 Ga naar de voorkant op **[security-commons-nl.github.io](https://security-commons-nl.github.io/)**: alle instrumenten (zoals de zelfcheck, de CSIR Assessment Tool en de BIA-procescheck) en de kennisbank werken direct in je browser, zonder account, server of installatie.
 
+**Zoek je beleid?** De kennisbank heeft een [beleidsset informatiebeveiliging](https://security-commons-nl.github.io/kennisbank/governance/beleidsset-informatiebeveiliging/) naar de 21 BIO 2.0-domeinen, met een [strategisch informatiebeveiligingsbeleid](https://security-commons-nl.github.io/kennisbank/governance/beleidsset-informatiebeveiliging/strategisch-ib-beleid.html), en een [privacybeleid met handboek](https://security-commons-nl.github.io/kennisbank/privacy/privacybeleid-en-handboek/).
+
 ---
 
 ## De Werkplaats
