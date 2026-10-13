@@ -38,7 +38,9 @@ markdown-vorm is, en dan met een README die zegt wat erin zit. Wat in de map lig
 in de README, anders kan een lezer er vanaf de pagina niet bij.
 
 De indexpagina's genereert `tools/build.py`; die hoef je niet te maken en met de hand bewerken
-heeft geen zin, want de volgende build overschrijft ze (statuut B4).
+heeft geen zin, want de volgende build overschrijft ze (statuut B4). Hetzelfde geldt voor de leesversie
+van elk los stuk naast de README, voor `llms.txt` en voor `sitemap.xml`. Draai `python tools/build.py`
+(daarvoor is `pip install markdown` nodig) en commit wat hij maakt.
 
 **Anonimiseren:** zorg dat je document geen namen, emailadressen of andere persoonsgegevens bevat. Gebruik de [anonimizer](https://github.com/security-commons-nl/anonimizer-local) als die beschikbaar is, of vervang handmatig door functieomschrijvingen.
 
@@ -100,6 +102,21 @@ Pull requests worden beoordeeld door de maintainers. We kijken naar:
 - Anonimisering (geen persoonsgegevens)
 - Plaatsing in de juiste map
 - Documentatie bijgewerkt (bij software-repos)
+
+## Wanneer is een bijdrage klaar?
+
+Geen poort, wel een lijstje. De build blokkeert alleen op wat een lezer echt raakt: een stuk zonder
+frontmatter, een bestand dat nergens gelinkt is, een dode link of een leesversie die achterloopt op de
+markdown. De rest is afspraak, en het PR-sjabloon zet die als vinkjes voor je klaar:
+
+- **De build is groen.** In de kennisbank: `python tools/build.py --check`. Waarschuwt hij dat
+  `llms.txt` of `sitemap.xml` achterloopt, dan is dat geen fout; na de merge werkt de CI ze bij.
+- **Vindbaar voor mensen en systemen.** Een nieuw stuk staat na de build vanzelf in de sectiepagina,
+  `llms.txt` en de sitemap van de kennisbank, en na de nacht in het zoekvak op de voorpagina. Een nieuw
+  project zet je in `PROJECTEN.md`; voorpagina, `llms.txt` en sitemap van het domein volgen daaruit.
+- **Geen getallen met de hand.** Noem je een aantal (stukken, maatregelen, barrieres) in een tekst die
+  niet gegenereerd wordt, zoals `ARCHITECTUUR.md` of een roadmap, zet er dan een peildatum bij.
+- **Geanonimiseerd** en op de juiste plek, zoals hierboven.
 
 ## Links controleren
 

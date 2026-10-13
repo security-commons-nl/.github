@@ -24,4 +24,7 @@ Vul alleen in wat relevant is — velden die niet van toepassing zijn mag je weg
 - [ ] Documentatie bijgewerkt als gedrag zichtbaar is voor gebruikers (`docs/gebruik.md`, `docs/architectuur.md`, `docs/configuratie.md`)
 - [ ] Geen persoonsgegevens of organisatie-specifieke informatie in de wijziging (gebruik [anonimizer](https://github.com/security-commons-nl/anonimizer-local) bij twijfel)
 - [ ] Commit-messages beschrijven het *waarom*, niet alleen het *wat*
+- [ ] Bij inhoud in de kennisbank: `python tools/build.py` gedraaid en wat hij maakte meegecommit (leesversies; een waarschuwing over `llms.txt` of `sitemap.xml` mag, die werkt de CI na de merge bij)
+- [ ] Nieuw project: opgenomen in `PROJECTEN.md` (voorpagina, `llms.txt` en sitemap volgen daaruit)
+- [ ] Getallen in handgeschreven tekst (`ARCHITECTUUR.md`, roadmap) bijgewerkt of met peildatum
 - [ ] Als deze PR de API, het schema of een zichtbare workflow wijzigt: overwogen of het breaking is en eventueel een migratienotitie toegevoegd
