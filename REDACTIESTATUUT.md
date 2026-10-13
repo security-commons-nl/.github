@@ -1,6 +1,6 @@
 # Redactiestatuut security-commons-nl
 
-Vastgesteld 28-08-2026, B3 en B10 aangevuld op 29-08-2026, B4 op 30-08-2026, A11 toegevoegd op 31-08-2026, B13 en B14 op 02-09-2026, Cbw in B2 op 02-09-2026, B9 herzien op 03-09-2026 (PROJECTEN.md), B14 verduidelijkt op 03-09-2026, B2 aangevuld en B15 toegevoegd op 25-09-2026 (vindbaarheid van het register aangevuld dezelfde dag). Geldt voor alle repo's van de organisatie. De inhoudsregels (A) gelden overal
+Vastgesteld 28-08-2026, B3 en B10 aangevuld op 29-08-2026, B4 op 30-08-2026, A11 toegevoegd op 31-08-2026, B13 en B14 op 02-09-2026, Cbw in B2 op 02-09-2026, B9 herzien op 03-09-2026 (PROJECTEN.md), B14 verduidelijkt op 03-09-2026, B2 aangevuld en B15 toegevoegd op 25-09-2026 (vindbaarheid van het register aangevuld dezelfde dag), B3 aangevuld op 13-10-2026 (leesversie per stuk). Geldt voor alle repo's van de organisatie. De inhoudsregels (A) gelden overal
 letterlijk; de structuurregels (B) gelden overal in vorm, met per repo één afspraak over wat de eerste
 laag betekent (zie B1). Waar een repo een script heeft dat deze regels controleert, verwijst elke melding
 naar het regelnummer hieronder.
@@ -110,6 +110,9 @@ Wat in de map van een item staat, staat als **link** in de README en op de leesv
 alleen als bestandsnaam wordt genoemd, bestaat niet voor een lezer die op de pagina binnenkomt: hij ziet
 de beschrijving en kan er niet bij. Verwijzingen wijzen naar bestanden die bestaan en blijven binnen de
 eigen repo. In de kennisbank blokkeert `tools/build.py` op alle drie.
+Een los stuk naast de README (een procedure, een brief, een beleidsstuk) heeft een eigen leesversie met
+dezelfde naam en `.html`, met een link terug naar de markdown; de leesversie van het item linkt naar die
+leesversie. In de kennisbank maakt `tools/build.py` hem en blokkeert hij als hij ontbreekt of achterloopt.
 
 **B4. Indexpagina's worden gegenereerd.** De overzichtspagina's (`index.html` per categorie en op de root)
 zijn output van een script dat eerst alle regels controleert en dan bouwt. Handmatig bewerken is
