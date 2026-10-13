@@ -123,12 +123,11 @@ De **volgorde van de items** op die pagina's is redactioneel en staat als genumm
 lijst zet er een oordeel in: wat je morgen kunt toepassen bovenaan, naslag in het midden, verwijzingen
 naar het werk van anderen onderaan. Zelfde principe als B9 voor de projectentabel. Ontbreekt een item in
 de lijst, of staat er een naam die niet bestaat, dan blokkeert de build.
-De **inhoudswijzers op de domeinroot** (`sitemap.xml` en `llms.txt` in `security-commons-nl.github.io`)
-vallen onder dezelfde regel: ze worden afgeleid, nooit met de hand bijgewerkt. Projecten komen uit
-`PROJECTEN.md` (B9), de stukken van de kennisbank en hun aantal uit `kennisbank/llms.txt`, die de
-kennisbank bij elke build zelf schrijft. De root-site bouwt elk uur, dus een nieuw stuk staat binnen een
-uur in de sitemap; een stuk dat verdwijnt, gaat eruit. `site/test_inhoudswijzers.mjs` blokkeert in CI als
-die afleiding niet werkt.
+De **inhoudswijzers** vallen onder dezelfde regel: `sitemap.xml` en `llms.txt` worden afgeleid, nooit met
+de hand bijgehouden. De kennisbank schrijft ze bij elke build zelf uit de frontmatter, met elk stuk en elke
+losse leesversie. De root-site telt en somt de kennisbank niet op, maar verwijst: `robots.txt` naar beide
+sitemaps, `llms.txt` naar `kennisbank/llms.txt`. Een uitgelicht stuk in de root-`llms.txt` mag, een
+handgeteld aantal niet. `site/test_inhoudswijzers.mjs` in de root-site blokkeert als dat terugkomt.
 
 **B5. Licentie.** EUPL-1.2 voor alles. Wijkt een bron af (CC-BY, MIT, "alleen met toestemming"), dan is
 `licentie:` in de frontmatter verplicht en staat er een zin in de README.
