@@ -206,3 +206,20 @@ Toe te voegen aan `bronnen.json` (partij bestaat in de stelselkaart of komt erbi
 
 Elke bron krijgt in het register wat het statuut vraagt (titel, partij, url, wat je eraan hebt); de
 pagina zelf heeft geen bronnenlijst in de tekst, alleen de frontmatter.
+
+## 9. Uitgevoerd 14-10-2026 (kennisbank#72), en waar het afwijkt
+
+- **Bestanden.** `voorbeeld-register.json` is de bron; `tools/bouw_risicoregister.py` schrijft daaruit
+  `voorbeeld-register.md` (de build maakt er een leesversie van) en `voorbeeld-register-verkenner.html`.
+  De verkenner heeft een eigen naam omdat de build elke `.md` naast een `.html` met dezelfde naam zet.
+- **Voorbeeld.** Zeven OR's in plaats van zes, zodat ook "buiten de risicoanalyse" te zien is; zes
+  bevindingen, één per bronsoort plus een geaccepteerde. De gemeente is Duinstad, dezelfde verzonnen
+  gemeente als in de risicoanalyse langs aanvalspaden.
+- **Bronnen.** ISO 31000, NIST CSF 2.0 en de open-source tools staan niet in `bronnen.json`: B15 vraagt een
+  partij uit de stelselkaart, en die kaart gaat over het Nederlandse overheidsstelsel. CISO Assistant
+  (AGPLv3) en Eramba (gratis community-editie) staan als link in de tekst bij route A; ISO 22301 alleen in
+  `normen:`.
+- **Build.** Twee kleine wijzigingen in `tools/build.py`: een HTML-bijlage zonder markdown komt in sitemap
+  en llms.txt, en een link naar een leesversie die de build zelf maakt telt niet als dode link.
+- **Na de merge open:** stap 10 (normwijzer-workflow met de hand starten, live toetsen), stap 11
+  (overdracht) en stap 12 (roadmap).
