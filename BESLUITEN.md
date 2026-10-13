@@ -6,6 +6,20 @@ krijgt hier een regel: datum, wat er is besloten, en waarom. Nieuwste bovenaan. 
 
 Dit log begint op 29-08-2026, toen bleek dat het statuut er wel naar verwees maar het nergens stond.
 
+## 14-10-2026 · B4 aangevuld: inhoudswijzers worden afgeleid, de root-site verwijst
+
+**Besloten.** `sitemap.xml` en `llms.txt` vallen onder B4: afgeleid, nooit met de hand. De kennisbank
+schrijft ze zelf bij elke build (sinds 13-10-2026); de root-site verwijst ernaar in `robots.txt` en
+`llms.txt` en telt de stukken niet. Een test in de root-site bewaakt dat.
+
+**Waarom.** De root-`llms.txt` noemde tot 13-10 een handgeteld aantal (52) terwijl de kennisbank er 67 had,
+en de root-sitemap kende 15 stukken. Dat is op 13-10 opgelost met een eigen sitemap voor de kennisbank. Bij
+het plan voor een nieuw governance-stuk
+([plannen/2026-10-14-risicogestuurd-managementsysteem.md](plannen/2026-10-14-risicogestuurd-managementsysteem.md))
+bleek dat de oplossing nergens als regel stond en door niets werd bewaakt; een volgende handmatige
+aanvulling zou hem stil terugdraaien. De zoekindex van het zoekvak was al afgeleid: de normwijzer bouwt
+hem elke nacht uit de kennisbank.
+
 ## 25-09-2026 · Het hele register is vindbaar: de catalogi van IBD en CIP in het zoekvak
 
 **Besloten.** Het zoekvak van de kennisbank doorzoekt voortaan ook het bronnenregister. De openbare

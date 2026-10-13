@@ -1,6 +1,6 @@
 # Redactiestatuut security-commons-nl
 
-Vastgesteld 28-08-2026, B3 en B10 aangevuld op 29-08-2026, B4 op 30-08-2026, A11 toegevoegd op 31-08-2026, B13 en B14 op 02-09-2026, Cbw in B2 op 02-09-2026, B9 herzien op 03-09-2026 (PROJECTEN.md), B14 verduidelijkt op 03-09-2026, B2 aangevuld en B15 toegevoegd op 25-09-2026 (vindbaarheid van het register aangevuld dezelfde dag), B3 aangevuld op 13-10-2026 (leesversie per stuk). Geldt voor alle repo's van de organisatie. De inhoudsregels (A) gelden overal
+Vastgesteld 28-08-2026, B3 en B10 aangevuld op 29-08-2026, B4 op 30-08-2026, A11 toegevoegd op 31-08-2026, B13 en B14 op 02-09-2026, Cbw in B2 op 02-09-2026, B9 herzien op 03-09-2026 (PROJECTEN.md), B14 verduidelijkt op 03-09-2026, B2 aangevuld en B15 toegevoegd op 25-09-2026 (vindbaarheid van het register aangevuld dezelfde dag), B3 aangevuld op 13-10-2026 (leesversie per stuk), B4 aangevuld op 14-10-2026 (inhoudswijzers op de domeinroot). Geldt voor alle repo's van de organisatie. De inhoudsregels (A) gelden overal.
 letterlijk; de structuurregels (B) gelden overal in vorm, met per repo één afspraak over wat de eerste
 laag betekent (zie B1). Waar een repo een script heeft dat deze regels controleert, verwijst elke melding
 naar het regelnummer hieronder.
@@ -123,6 +123,11 @@ De **volgorde van de items** op die pagina's is redactioneel en staat als genumm
 lijst zet er een oordeel in: wat je morgen kunt toepassen bovenaan, naslag in het midden, verwijzingen
 naar het werk van anderen onderaan. Zelfde principe als B9 voor de projectentabel. Ontbreekt een item in
 de lijst, of staat er een naam die niet bestaat, dan blokkeert de build.
+De **inhoudswijzers** vallen onder dezelfde regel: `sitemap.xml` en `llms.txt` worden afgeleid, nooit met
+de hand bijgehouden. De kennisbank schrijft ze bij elke build zelf uit de frontmatter, met elk stuk en elke
+losse leesversie. De root-site telt en somt de kennisbank niet op, maar verwijst: `robots.txt` naar beide
+sitemaps, `llms.txt` naar `kennisbank/llms.txt`. Een uitgelicht stuk in de root-`llms.txt` mag, een
+handgeteld aantal niet. `site/test_inhoudswijzers.mjs` in de root-site blokkeert als dat terugkomt.
 
 **B5. Licentie.** EUPL-1.2 voor alles. Wijkt een bron af (CC-BY, MIT, "alleen met toestemming"), dan is
 `licentie:` in de frontmatter verplicht en staat er een zin in de README.
