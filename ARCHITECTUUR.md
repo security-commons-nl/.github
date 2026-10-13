@@ -8,7 +8,7 @@ schrijven in [REDACTIESTATUUT.md](REDACTIESTATUUT.md), en hoe je bijdraagt in
 [CONTRIBUTING.md](CONTRIBUTING.md). [PROJECTEN.md](PROJECTEN.md) is de enige projectenlijst (statuut B9,
 herzien 03-09-2026); wijkt dit stuk daarvan af, dan heeft die lijst gelijk.
 
-**Peildatum: 3 september 2026.** De rationalisatie uit
+**Peildatum: 13 oktober 2026.** De rationalisatie uit
 [het plan](plannen/2026-08-30-rationalisatie.md) is uitgevoerd: de security-shop is opgegaan in de
 kennisbank, de kennisbank is de bron van het handelingsperspectief, en 35 van de 44 barrieres hebben
 een handleiding. Daarna is *Meten voordat je ingrijpt* opgesplitst
@@ -22,6 +22,14 @@ veld `pijler` is zichtbaar geworden op de site. Op 1 en 2 september kwamen er tw
 daarin op en werd `aanvalspaden#4` gesloten. Ook op 3 september kwam de derde diepte van de
 aanvalspaden-keten er ([plan](plannen/2026-09-03-meting.md)): `aanvalspaden/meting/` toetst 41 items aan
 echte exports, en `security-posture-tool` en `iamscan` zijn daarin opgegaan.
+
+Na 3 september is vooral de kennisbank gegroeid, niet het landschap. Er kwamen veertien
+items bij, de meeste op 12 oktober: de privacystukken (datalekken, rechten van betrokkenen, register, overeenkomsten, eisen bij de
+start en Wpg), een privacybeleid met handboek en een
+[beleidsset informatiebeveiliging](https://security-commons-nl.github.io/kennisbank/governance/beleidsset-informatiebeveiliging/)
+naar de 21 BIO 2.0-domeinen, met een toets op de 117 overheidsmaatregelen, sjablonen voor de lege domeinen
+en een profielschema (`profiel.json`, `varianten.json`) waarmee varianten van andere organisaties
+vergelijkbaar worden ([plan](plannen/2026-10-12-beleidsset-op-maat.md)).
 
 ---
 
@@ -74,15 +82,17 @@ door een minder sterk model gebouwd te worden, en dat is ook zo gegaan.
 worden gegenereerd uit de projectentabel in `.github/PROJECTEN.md`; die tabel is de enige projectenlijst
 (statuut B9).
 
-**Kennis.** `kennisbank`, tweeënvijftig items, waarvan eenenveertig van het type
-`handleiding`. Verdeeld over de vier vakgebieden is dat scheef: achtenveertig staan onder
-`security`, twee onder `governance`, twee onder `bcm`, en `privacy` is nog leeg. Een handleiding draagt het veld `barrieres:` en is daarmee de bron van het
+**Kennis.** `kennisbank`, zesenzestig items, waarvan eenenveertig van het type
+`handleiding`. Verdeeld over de vier vakgebieden is dat nog steeds scheef: eenenvijftig staan onder
+`security`, negen onder `privacy`, vier onder `governance` en twee onder `bcm`. Onder `governance` staat
+de beleidsset: per BIO 2.0-domein een beleidsstuk of sjabloon, met een profielschema zodat er per domein
+meer dan één variant kan komen. Een handleiding draagt het veld `barrieres:` en is daarmee de bron van het
 handelingsperspectief: `tools/build.py` exporteert `handelingsperspectief.json`, en `aanvalspaden`
 kopieert dat met `tools/haal_handelingsperspectief.py`, met een sha256 eronder zodat een verlopen kopie
 opvalt. Zo staat een handleiding op een plek in plaats van twee. Een barriere mag meer dan een
 handleiding hebben; de rol (`fundering`, `alternatief`, `verdieping`) zegt waar je begint en wat
 ernaast kan. Een stuk kan daarnaast een `pijler` dragen: dan hangt het onder een groter geheel, en tonen
-de pijler en het stuk elkaar. Stand: 38 van de 44 barrieres gedekt met 57 koppelingen, 6 open, en die
+de pijler en het stuk elkaar. Stand: 38 van de 44 barrieres gedekt met 64 koppelingen, 6 open, en die
 zes staan met een schrijfopdracht in `aanvalspaden/mappingen/gevraagd.json`.
 
 **Keten.** `aanvalspaden`, met alle drie de diepten in één repo; hierboven beschreven.
