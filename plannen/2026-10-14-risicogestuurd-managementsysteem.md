@@ -111,16 +111,12 @@ generatorscript doet hetzelfde deterministisch; de prompt is er voor wie geen Py
 
 ## 5. Bouwvolgorde
 
-0. **Vindbaarheid afdwingen, vóór de pagina.** In `security-commons-nl.github.io/site/build.mjs`:
-   de sitemap-kandidaten uitbreiden met elke URL uit `https://security-commons-nl.github.io/kennisbank/llms.txt`
-   (opgehaald tijdens de build; de workflow draait elk uur, dus een nieuwe pagina staat binnen een uur in
-   de sitemap), en het aantal stukken in de root `llms.txt` uit dezelfde lijst halen in plaats van het
-   vaste getal "52". Test ernaast (`site/test_sitemap.mjs`): faalt als een kennisbank-URL in de gebouwde
-   sitemap ontbreekt of het getal niet klopt; draait in `ci.yml`. Fixture met een vaste llms.txt, zodat
-   de test niet van het netwerk afhangt. Statuutregel erbij (B3-aanvulling): de inhoudswijzers op de
-   domeinroot zijn afgeleid en worden nooit met de hand bijgewerkt. Eén PR in de github.io-repo, één in
-   `.github` voor het statuut. Pas daarna de pagina, zodat de eerste echte toets op dit mechanisme deze
-   pagina is.
+0. **Vindbaarheid afdwingen, vóór de pagina (uitgevoerd 14-10-2026).** Bij het bouwen bleek dat de
+   kennisbank sinds 13-10 zelf een volledige `sitemap.xml` en `llms.txt` schrijft, dat de root-`robots.txt`
+   naar beide sitemaps wijst en dat het handgetelde aantal uit de root-`llms.txt` is. Wat ontbrak, was een
+   regel en een bewaking. Nu: statuut B4 aangevuld (.github#37) en `site/test_inhoudswijzers.mjs` in de CI
+   van de root-site (security-commons-nl.github.io#15). Een eerste versie die de root-sitemap uit
+   `kennisbank/llms.txt` afleidde, is vervangen omdat ze dubbel werk deed.
 1. **Map en frontmatter.** Aanmaken, `governance/README.md` regel 5, `python tools/build.py --check`
    groen op een lege pagina met alleen frontmatter en titel.
 2. **`model.md`** uit de architectuur 0.4, geanonimiseerd: geen Leidse aantallen, geen namen, geen
@@ -150,10 +146,12 @@ generatorscript doet hetzelfde deterministisch; de prompt is er voor wie geen Py
 9. **PR en merge.** Eén PR, expliciet stagen (geen `git add -A`), geen Co-Authored-By, geen
    auteursvermelding. Bas leest de diff vóór de merge. CI bouwt op main de indexpagina's en
    `kennisbank/llms.txt` en commit ze terug.
-10. **Na de merge: de vindbaarheid toetsen.** Binnen een uur: zoekvak op de live site vindt "grc",
-    "pdca" en "risicoregister"; `kennisbank/llms.txt` noemt de pagina; `sitemap.xml` op de root heeft de
-    regel (stap 0); het aantal stukken in de root `llms.txt` klopt; `robots.txt` ongewijzigd; `curl -I`
-    op pagina, leesversie en voorbeeldboom geeft 200. Faalt een van deze, dan is stap 0 niet af.
+10. **Na de merge: de vindbaarheid toetsen.** De kennisbank-CI bouwt op main `llms.txt` en `sitemap.xml`
+    en commit ze terug; controleren dat de pagina en elk los stuk erin staan. De zoekindex van het zoekvak
+    (`normen/zoekindex.json`) wordt elke nacht gebouwd; na de merge de workflow *Normwijzer bijwerken* in
+    de normen-repo met de hand starten, zodat de pagina dezelfde dag vindbaar is. Dan op de live site: het
+    zoekvak vindt "grc", "pdca" en "risicoregister"; `curl -I` op pagina, leesversies en voorbeeld geeft
+    200; `robots.txt` ongewijzigd.
 11. **Overdracht bijwerken.** Intake-item 02 op gepubliceerd zetten met PR-nummer, in
     `INTAKE.md` en `herkomst.tsv`; regel in `OVERDRACHT\PLAN-commons.md`. Dat is werk-domein en
     gebeurt vanaf de werk-balie of met vermelding in de stand.
