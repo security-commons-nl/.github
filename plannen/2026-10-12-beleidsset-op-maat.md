@@ -1,8 +1,10 @@
 # Plan: de beleidsset op maat, van één herkomst naar profielgestuurd
 
 Vastgesteld 12-10-2026. Werkt stap 8 van [de ingang en de vulling](2026-09-28-ingang-en-vulling.md) uit
-(tweede herkomst) en hoort bij de beleidsassistent in
-[cisochat](https://github.com/security-commons-nl/cisochat/blob/main/docs/capabilities/beleidsassistent/concept.md).
+(tweede herkomst). Waar een AI-agent het stuk afmaakt, is dat de agent van de gebruiker zelf, met zijn eigen
+sleutel bij zijn eigen leverancier: het patroon van [AI-hulp met eigen sleutel](2026-09-03-ai-hulp.md). De
+commons host geen agent (statuut B14); cisochat, waar de beleidsassistent eerder als ontwerp lag, is op
+03-09-2026 gearchiveerd.
 
 ## Waarom
 
@@ -33,22 +35,24 @@ vragen en sorteert en filtert dezelfde lijst op wat bij de gebruiker past. Alles
 is, is ook zonder vragen te vinden. De meeste bezoekers zoeken één stuk; wie eerst vragen moet beantwoorden,
 haakt af. En wie zijn eigen AI-agent gebruikt, heeft het formulier niet nodig: die leest het maatwerkblok.
 
-De kennisbank levert de inhoud: het corpus met metadata en toets. De beleidsassistent in cisochat is de
-agent die erop draait. De domeinindeling moet daarvoor één zijn: cisochat gebruikt nu vijftien domeinen, het
-controleraamwerk eenentwintig.
+De kennisbank levert de inhoud: het corpus met metadata, profiel en toets. Wie er een agent op zet, doet
+dat zelf: zijn eigen AI-agent leest het maatwerkblok en `llms.txt`, of een instrument biedt een opt-in
+AI-pagina volgens het patroon [AI-hulp met eigen sleutel](2026-09-03-ai-hulp.md), die een voorstel levert
+en geen besluit. De domeinindeling is daarvoor één: de 21 domeinen van het controleraamwerk, ook in het
+profielschema en in de varianten.
 
 ## Stappen
 
 | Stap | Wat | Resultaat | Omvang | Stand |
 |---|---|---|---|---|
 | 1 | Toets op de 117 overheidsmaatregelen, sjablonen voor de vijf lege domeinen en een uitgewerkt voorbeeld (fysieke toegang met controleraamwerk) publiceren | De eerste variant staat, met de gaten zichtbaar | | uitgevoerd 12-10-2026 (kennisbank #60) |
-| 2 | Profielschema: zes tot acht vragen met vaste antwoordruimte (grootte, beheermodel, hosting, OT, samenwerking, Wpg-domeinen) in `profiel.yaml`; elk stuk krijgt in de frontmatter de profielkenmerken van zijn herkomst en de maatregelen die het dekt | Varianten zijn vergelijkbaar en selecteerbaar | 1 sessie | open |
+| 2 | Profielschema: zestien vragen met vaste antwoordruimte (type, grootte, samenwerking, beheer, hosting, werkplek, OT, Wpg en meer) in `profiel.json`; per variant in `varianten.json` het profiel van de herkomst en de maatregelen die het stuk dekt | Varianten zijn vergelijkbaar en selecteerbaar | 1 sessie | uitgevoerd 12-10-2026 (kennisbank #64) |
 | 3 | Per stuk een blok "maatwerk": invulvelden, keuzes per profielantwoord, vervolgvragen voor een AI-agent. Daarbij hoort wat de agent leest voordat hij het stuk opent: een regel per stuk in `kennisbank/llms.txt`, een `llms-full.txt`, en een blok "voor agents" in de root-`llms.txt` (issue [github.io#10](https://github.com/security-commons-nl/security-commons-nl.github.io/issues/10)) | Een agent kan het stuk vinden en gericht afmaken | 1 sessie | open |
 | 4 | De eerste variant uniform maken naar het format van het beleid fysieke toegang: per ISO-control de eisen met maatregelnummer, bijlage normen, bijlage controls, rollen als invulveld; de vijf sjablonen gevuld met een voorgestelde regel per maatregel | Variant 1 compleet voor alle 21 domeinen | 2 tot 3 sessies | open |
 | 5 | Bladeren en sorteren: `build.py` genereert per domein de lijst van varianten en het sjabloon met profiel, status en dekking (ingang *bladeren*); de vragen zijn een filter en sortering bovenop diezelfde lijst (ingang *op maat*), geen aparte inhoud | De gebruiker vindt elk stuk zonder vragen, en met vragen eerst wat bij hem past | 1 sessie | open |
 | 6 | Aanleverformulier voor andere organisaties: dezelfde profielkenmerken, dezelfde toets; een script geeft per aangeleverd stuk een eerste oordeel per maatregel, een mens corrigeert | Volgende inzenders hoeven niets te verzinnen | 1 sessie | open |
 | 7 | Uitvraag aan gemeenten en het corpus vullen | Meer dan één herkomst per domein | doorlopend | open |
-| 8 | Eén domeinindeling voor kennisbank en beleidsassistent | De agent en het corpus spreken dezelfde taal | klein | open |
+| 8 | AI-hulp bij het afmaken volgens het patroon [AI-hulp met eigen sleutel](2026-09-03-ai-hulp.md): een opt-in pagina die met de sleutel van de gebruiker een gekozen variant en de antwoorden op de maatwerkvragen omzet naar een voorstel voor het eigen stuk, op de 21 domeinen; geen gehoste agent in de commons (B14) | Wie geen eigen agent heeft, krijgt dezelfde hulp, en de gebruiker beslist per regel | 1 sessie | open |
 
 ## Randvoorwaarden
 
