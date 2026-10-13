@@ -6,6 +6,19 @@ krijgt hier een regel: datum, wat er is besloten, en waarom. Nieuwste bovenaan. 
 
 Dit log begint op 29-08-2026, toen bleek dat het statuut er wel naar verwees maar het nergens stond.
 
+## 14-10-2026 · B4 aangevuld: de sitemap en llms.txt op de domeinroot worden afgeleid
+
+**Besloten.** De sitemap op de domeinroot neemt de stukken van de kennisbank over uit `kennisbank/llms.txt`,
+en het aantal stukken in de root-`llms.txt` komt uit dezelfde lijst. Nieuwe stukken komen er vanzelf in,
+verdwenen stukken gaan eruit. Valt het ophalen uit, dan blijft de vorige stand staan. Een test in de
+root-site blokkeert als de afleiding niet werkt.
+
+**Waarom.** De sitemap kende 15 van de 67 kennisbankstukken en `llms.txt` noemde er 52. Beide werden met de
+hand bijgewerkt, en dat bleef achter. Aanleiding was het plan voor een nieuw governance-stuk
+([plannen/2026-10-14-risicogestuurd-managementsysteem.md](plannen/2026-10-14-risicogestuurd-managementsysteem.md)):
+een stuk dat niet in de sitemap komt, vindt een zoekmachine laat of niet. De zoekindex van het zoekvak
+was al afgeleid (de normwijzer bouwt hem elke nacht uit de kennisbank).
+
 ## 25-09-2026 · Het hele register is vindbaar: de catalogi van IBD en CIP in het zoekvak
 
 **Besloten.** Het zoekvak van de kennisbank doorzoekt voortaan ook het bronnenregister. De openbare
