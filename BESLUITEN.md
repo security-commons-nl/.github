@@ -6,6 +6,19 @@ krijgt hier een regel: datum, wat er is besloten, en waarom. Nieuwste bovenaan. 
 
 Dit log begint op 29-08-2026, toen bleek dat het statuut er wel naar verwees maar het nergens stond.
 
+## 14-10-2026 · Beleidsset teruggetrokken; hij komt terug op BIO 2.0, gegenereerd uit contextvragen
+
+**Besloten.** De beleidsset informatiebeveiliging is uit de kennisbank gehaald (kennisbank #74). Hij komt
+terug als set bouwstenen die op BIO 2.0 versie 1.3 zijn geschreven, waaruit een generator per antwoordprofiel
+op de zestien contextvragen een eigen set samenstelt. De dekking van de 117 overheidsmaatregelen is een test
+op elk profiel, geen oordeel achteraf. Het plan
+[beleidsset op maat](plannen/2026-10-12-beleidsset-op-maat.md) is daarop herzien.
+
+**Waarom.** De meeste stukken waren onder BIO 1 vastgesteld. Een toets die de gaten laat zien, helpt wie
+toetst, niet wie vandaag beleid nodig heeft. Varianten van andere organisaties als enige route naar maatwerk
+wachten op inzenders; regels die afhangen van een contextvraag maken maatwerk nu al mogelijk. De generator
+stelt vaste tekst samen zonder taalmodel, dus dezelfde antwoorden geven dezelfde tekst (B14).
+
 ## 14-10-2026 · B4 aangevuld: inhoudswijzers worden afgeleid, de root-site verwijst
 
 **Besloten.** `sitemap.xml` en `llms.txt` vallen onder B4: afgeleid, nooit met de hand. De kennisbank
