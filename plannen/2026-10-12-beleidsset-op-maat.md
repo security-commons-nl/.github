@@ -51,10 +51,10 @@ dan faalt de build. Dekking is daarmee geen oordeel achteraf meer, maar een eige
 |---|---|---|---|
 | 1 | Toets, sjablonen en voorbeeld fysieke toegang | De eerste set, met de gaten zichtbaar | uitgevoerd 12-10-2026 (kennisbank #60), teruggetrokken 14-10-2026 |
 | 2 | Profielschema: zestien contextvragen in `profiel.json` | Vragen met vaste antwoordruimte per domein | uitgevoerd 12-10-2026 (kennisbank #64); blijft |
-| 3 | Bouwsteenformaat en generator (Python), met de dekkingstest per profiel | Een bouwsteen is te toetsen en om te zetten | open |
-| 4 | De 21 bouwstenen schrijven op BIO 2.0 versie 1.3, met de oude set en de IBD-templates als bron | Een volledige set die elke overheidsmaatregel dekt, voor elk profiel | open |
-| 5 | Generatorpagina (JavaScript) met spiegeltest; download per stuk en als geheel, in markdown en HTML | Een gebruiker beantwoordt de vragen en krijgt een eigen set | open |
-| 6 | Terug online in de kennisbank, met `llms.txt`-regels zodat een eigen AI-agent bouwstenen en profiel vindt | Ook een agent kan de set op maat maken | open |
+| 3 | Bouwsteenformaat en generator (Python), met de dekkingstest per profiel | Een bouwsteen is te toetsen en om te zetten | uitgevoerd 14-10-2026 (kennisbank #75) |
+| 4 | De 21 bouwstenen schrijven op BIO 2.0 versie 1.3, met de oude set en de IBD-templates als bron | Een volledige set die elke overheidsmaatregel dekt, voor elk profiel | uitgevoerd 14-10-2026 (kennisbank #75); alle 21 stukken langs dezelfde lat: zes hoofdstukken, elke regel herleidbaar, dekking en controleraamwerk voor alle 157 maatregelen |
+| 5 | Generatorpagina (JavaScript) met spiegeltest; download per stuk en als geheel, in markdown en HTML | Een gebruiker beantwoordt de vragen en krijgt een eigen set | uitgevoerd 14-10-2026 (kennisbank #75) |
+| 6 | Terug online in de kennisbank, met `llms.txt`-regels zodat een eigen AI-agent bouwstenen en profiel vindt | Ook een agent kan de set op maat maken | uitgevoerd 14-10-2026 (kennisbank #75, root-site) |
 | 7 | IBD-materiaal en stukken van andere organisaties verwerken als regel of blok in de bouwsteen | Meer dan één herkomst | doorlopend |
 | 8 | AI-hulp bij het afmaken van de invulvelden volgens [AI-hulp met eigen sleutel](2026-09-03-ai-hulp.md) | Wie geen eigen agent heeft, krijgt dezelfde hulp | open |
 
