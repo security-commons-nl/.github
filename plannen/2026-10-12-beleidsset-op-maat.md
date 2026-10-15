@@ -56,7 +56,7 @@ dan faalt de build. Dekking is daarmee geen oordeel achteraf meer, maar een eige
 | 5 | Generatorpagina (JavaScript) met spiegeltest; download per stuk en als geheel, in markdown en HTML | Een gebruiker beantwoordt de vragen en krijgt een eigen set | uitgevoerd 14-10-2026 (kennisbank #75) |
 | 6 | Terug online in de kennisbank, met `llms.txt`-regels zodat een eigen AI-agent bouwstenen en profiel vindt | Ook een agent kan de set op maat maken | uitgevoerd 14-10-2026 (kennisbank #75, root-site) |
 | 7 | IBD-materiaal en stukken van andere organisaties verwerken als regel of blok in de bouwsteen | Meer dan één herkomst | doorlopend |
-| 8 | AI-hulp bij het afmaken van de invulvelden volgens [AI-hulp met eigen sleutel](2026-09-03-ai-hulp.md) | Wie geen eigen agent heeft, krijgt dezelfde hulp | open |
+| 8 | AI-hulp bij het afmaken van de invulvelden volgens [AI-hulp met eigen sleutel](2026-09-03-ai-hulp.md) | Wie geen eigen agent heeft, krijgt dezelfde hulp | uitgevoerd 15-10-2026 (kennisbank #77): `beleidsset-ai.html` met twee opdrachten (contextvragen, invulvelden), kern gedeeld met procescheck; daarnaast een instructieblok voor een eigen AI-assistent op de generatorpagina (kennisbank #76) |
 
 ## Randvoorwaarden
 
