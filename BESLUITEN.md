@@ -6,6 +6,23 @@ krijgt hier een regel: datum, wat er is besloten, en waarom. Nieuwste bovenaan. 
 
 Dit log begint op 29-08-2026, toen bleek dat het statuut er wel naar verwees maar het nergens stond.
 
+## 15-10-2026 · Een huisstijl op het scherm, op twee bronplekken
+
+**Besloten.** Alle pagina's van de commons krijgen op het scherm de huisstijl van de voorpagina: dezelfde
+letter (system-ui), dezelfde kleuren (donkerblauw #0d2b4d, blauw #154273, oranje #e17000) en de donkere balk
+met het kruimelpad bovenaan. De opmaak staat op twee plekken: `kennisbank/tools/huisstijl.py` voor de
+leesversies en instrumenten van de kennisbank, en `site/base.css` in deze repo voor de projectpagina's. De
+instrumenten in de andere repo's hebben een kopie van het instrumentblok, met een verwijzing naar de bron.
+Afdrukken en plakken in Word houden de eigen opmaak van het sjabloon (B3). Een instrument met een eigen
+ontwerp houdt zijn opbouw en krijgt alleen letter, kleuren en balk. Gearchiveerde repo's (security-shop)
+blijven zoals ze zijn.
+
+**Waarom.** Alleen de voorpagina zag er bij de start van vandaag modern uit; de leesversies hadden een
+Word-sjabloon, de instrumenten drie blauwtinten en vier letterstacks, en de leesversies misten de
+viewport-regel, waardoor een telefoon ze verkleind toonde. Een controle over alle 204 pagina's (1440 en
+390 px: zijwaarts scrollen, balk, letter, keuzeopties, consolefouten) gaf na de wijziging een bevinding:
+het gearchiveerde security-shop. Wie een kleur of de balk wijzigt, wijzigt beide bronplekken en de kopieen.
+
 ## 14-10-2026 · Beleidsset teruggetrokken; hij komt terug op BIO 2.0, gegenereerd uit contextvragen
 
 **Besloten.** De beleidsset informatiebeveiliging is uit de kennisbank gehaald (kennisbank #74). Hij komt
