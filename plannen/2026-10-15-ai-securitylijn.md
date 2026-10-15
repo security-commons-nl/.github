@@ -108,7 +108,7 @@ Drie instrumenten van de sprekers die als gedeeld materiaal in de commons kunnen
    kolom, het advies aan de proceseigenaar. De commons voegt toe wat er nu niet in zit: per kolom welk
    commons-stuk of welke kenniskaart je gebruikt.
 2. **De aansluitvoorwaarden-tabel** (risico, eis, categorie per GIBIT-artikel). Het raamwerk staat op het
-   Governancekader; de vraag is of de ingevulde eisen per risico openbaar zijn. Zo ja: verwijzen. Zo nee:
+   Governancekader; de vraag is of de ingevulde eisen per risico openbaar zijn. Ze zijn openbaar (zie §7), dus: verwijzen, en waar de commons concreter kan aanvullen. De oorspronkelijke afweging was: zo ja, verwijzen; zo nee:
    de commons vult ze vanuit de eigen stukken en biedt dat terug aan.
 3. **De toets-agent** uit de proefopstelling. De slide zegt "open source". Vraag: welk model, waar draait
    het, is de skill zelf open, en mag hij in de werkplaats van de commons. Dit is tegelijk het eerste
@@ -177,6 +177,8 @@ Elke fase sluit met een regel in `kennisbank/ROADMAP.md` en een issue met label 
 ## 7. Open vragen
 
 - Reactie VNG op de aanmelding: pas daarna weet je of spoor 3 een werkgroep is of een mailwisseling.
-- Status van de ingevulde aansluitvoorwaarden: openbaar of alleen het raamwerk.
+- ~~Status van de ingevulde aansluitvoorwaarden: openbaar of alleen het raamwerk.~~ Openbaar en ingevuld: de
+  aansluitvoorwaarden van Utrecht (versie 0.98, 15-10-2026) staan als pdf op de VNG-kenniskaart Inkoopvoorwaarden en
+  zijn op 15-10-2026 in het bronnenregister gezet (kennisbank #88).
 - Dekt de privacy-lijn FRIA al, of hoort dat bij governance.
 - Of de proefopstelling-skill echt open is en onder welke licentie.
