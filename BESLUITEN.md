@@ -6,6 +6,20 @@ krijgt hier een regel: datum, wat er is besloten, en waarom. Nieuwste bovenaan. 
 
 Dit log begint op 29-08-2026, toen bleek dat het statuut er wel naar verwees maar het nergens stond.
 
+## 28-10-2026 · Een stuk staat op een plek, maar mag in een andere sectie als kaart verschijnen
+
+**Besloten.** Een item van de kennisbank staat in een sectie (B1). Hoort het ook bij een andere sectie, dan
+verwijst die sectie ernaar onder het kopje `## Elders in de kennisbank` in haar README, als lijstregel met
+een link naar `../<vakgebied>/<item>/`. De build zet die verwijzing als kaart op de sectiepagina, onder een
+eigen kopje, met het vakgebied van herkomst in de metaregel. De build blokkeert als het doel niet bestaat of
+in de eigen sectie staat. Eerste gebruik: *Quantumveilig per laag* staat onder governance omdat het over
+rollen en besluiten gaat, en security toont het als kaart (kennisbank #103).
+
+**Waarom.** De sectie bepaalt waar een stuk staat, niet wie het zoekt. Een CISO zoekt cryptografie onder
+security; een bestuursstuk daar neerzetten maakt de sectie onzuiver, en kopiëren geeft twee bronnen. Een
+verwijzing die de build controleert, houdt één bron en twee ingangen. Het zoekvak vond het stuk al via de
+normen; de kaart is voor wie bladert.
+
 ## 15-10-2026 · Een huisstijl op het scherm, op twee bronplekken
 
 **Besloten.** Alle pagina's van de commons krijgen op het scherm de huisstijl van de voorpagina: dezelfde
