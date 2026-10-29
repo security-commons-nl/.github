@@ -145,31 +145,49 @@ catalogus; de voorpagina volgt C2 en C3". B8 krijgt bij `in gebruik` de eis van 
 
 ## 3. De instrumenten langs de lat
 
-Stand op 29-10-2026, op het oog uit de werkmap (aantal testbestanden en workflows; de lat zelf is nog niet
-per instrument getoetst, dat is stap 3 hieronder):
+Gemeten op 29-10-2026, avond: de repo's in de werkmap (testbestanden, CI-workflows, referentie-implementatie,
+export en import in de code) en de live pagina's met een headless browser (laden op 375 px en 1280 px,
+consolefouten, versie of peildatum in de tekst, `thema.css` of een topbalk geladen, kruimelpad, tests of status
+zichtbaar). Het script staat niet in een repo; het is een eenmalige meting en de kolommen zijn de lat van C5.
+"Op de pagina" betekent zichtbaar voor de lezer, niet aanwezig in de repo.
 
-| Instrument | Status (B8) | Tests | CI | Referentie-implementatie | Export en import | In een route? |
-|---|---|---|---|---|---|---|
-| zelfcheck (aanvalspaden) | prototype | ja | ja | nee | ? | ja, stap 1 |
-| meting (aanvalspaden/meting) | prototype | ja | ja | ja (41 meetregels) | ? | ja, stap 4 |
-| normwijzer (normen) | in gebruik | ja | ja | n.v.t. (naslag) | n.v.t. | ja, stap 3 |
-| procescheck | prototype | ja | ja | ja (`reken.py` en `app.js`) | JSON | nee |
-| csir-assessment-tool | prototype | ja | ja | ja (`reken.py` en `app.js`) | xlsx-export | nee |
-| beleidsset-generator (kennisbank) | in gebruik | ja | ja | ja (py en js gespiegeld) | md, docx | nee |
-| weerbaarheid-game | in gebruik | mager | ja | nee | nee | ja (bestuurder) |
-| anonimizer-browser | in gebruik | ja | ja | n.v.t. | n.v.t. | ja (privacy) |
-| publicatiescan | in gebruik (script) | ja | ja | n.v.t. | n.v.t. | ja (privacy) |
-| applicatiecheck | concept | mager | ja | ? | ? | nee |
-| policy-as-code | concept | nee | ja | ? | ? | nee |
+| Instrument | Status (B8) | Testbestanden | CI | Referentie-implementatie | Export / import | Versie of peildatum op de pagina | 375 px zonder scroll | Consolefouten | Thema of topbalk | Kruimelpad | Tests zichtbaar | In een route (na PR 25) |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| zelfcheck (aanvalspaden) | prototype | 15 | ja | alleen `check/bron/app.js`, geen `reken.py` | ja / ja | nee | ja | geen | nee | ja | nee | ja, stap 1 in drie routes |
+| meting (aanvalspaden/meting) | prototype | (zelfde repo) | ja | ja, `meting/reken.py` en `bron/app.js` | ja / ja | ja | ja | geen | nee | ja | nee | ja, CISO en ISO |
+| normwijzer (normen) | in gebruik | 3 | ja | n.v.t. (naslag met zoekvak) | nee / nee | nee | ja | geen | ja | ja | nee | ja, drie routes |
+| procescheck | prototype | 8 | ja | ja, `reken.py` en `bron/app.js` | ja / ja (JSON) | ja | ja | geen | nee | ja | nee | ja, ISO stap 3 |
+| csir-assessment-tool | prototype | 4 | ja | ja, `reken.py` en `bron/app.js` | ja / ja | nee (wel de versie van de richtlijn) | ja | geen | ja | ja | nee | nee |
+| beleidsset-generator (kennisbank) | in gebruik | 7 (kennisbank) | ja | ja, py en js gespiegeld | ja (md, docx) / ja | nee | ja | geen | nee | ja | nee | ja, ISO en eerste honderd dagen |
+| weerbaarheid-game | in gebruik | 1 | ja | nee | nee / nee | nee | ja | geen | nee | **nee** (B10) | nee | ja, bestuurder stap 2 |
+| anonimizer-browser | in gebruik | 5 | ja | n.v.t. | n.v.t. / bestand inlezen | nee | ja | geen | nee | ja | nee | ja, privacy officer |
+| publicatiescan (script, leesversie) | in gebruik | 22 | ja | n.v.t. | n.v.t. | nee | ja | geen | nee | ja | ja | ja, privacy officer |
+| applicatiecheck (ontwerp) | concept | 1 | ja | nee | nee | ja (peildatum) | ja | geen | nee | ja | nee | nee |
+| policy-as-code (ontwerp) | concept | 0 | ja | nee | nee | ja | ja | geen | nee | ja | nee | nee |
 
-Wat opvalt: de drie instrumenten met de strakste bouw (procescheck, CSIR-tool, beleidsset-generator) staan
-in geen enkele route, terwijl de weerbaarheidsgame met magere tests `in gebruik` heet en op de voordeur
-staat. Dat is precies de omkering die consultant 1 ziet. De lat corrigeert dit in beide richtingen.
+Wat de meting zegt, tegenover het beeld "op het oog" van eerder op de dag:
+- **Geen enkel instrument toont zijn tests op de pagina**, en maar drie tonen een versie of peildatum. De lat is
+  op dat punt voor iedereen nieuw; dat is de eerste klus bij elke aanraking.
+- **Alle twaalf pagina's laden schoon**: geen consolefouten, geen horizontale scroll op 375 px. Het "zooitje"
+  zit niet in kapotte pagina's maar in samenhang en uniformiteit.
+- **De weerbaarheidsgame mist het kruimelpad** (B10, al verplicht) naast alles van C5 behalve het laden. Hij
+  staat op de bestuurdersroute (keuze 29-10) en is daarmee de eerste aanraking: kruimelpad, versie, tests,
+  export van de ingevulde stand.
+- **De zelfcheck heeft wel export en import, maar geen referentie-implementatie** voor de check zelf (de meting
+  heeft die wel). Dat is de tweede aanraking, want hij is stap 1 in drie routes.
+- Procescheck, CSIR-tool en meting halen de lat op de bouw (referentie, export, import) en missen alleen de
+  zichtbaarheid (versie, tests). Dat is per instrument een klein werk.
+- De thema-detectie (`thema.css` of een topbalk) vond maar twee pagina's; de kennisbank gebruikt sinds 15-10 een
+  eigen huisstijlbron (`huisstijl.py` en `base.css`). Of dat hetzelfde gezicht is, is een redactionele toets
+  met het oog, geen regex; C4 vraagt die toets bij elke aanraking.
 
-Volgorde van aanraken, naar waar een route hem nodig heeft: zelfcheck (stap 1 van de keten, mist een
-referentie-implementatie en een export) · weerbaarheidsgame (op de bestuurdersroute met de minste tests) ·
-procescheck en beleidsset-generator krijgen een plek in de ISO-route en de eerste-honderd-dagen-route (ze
-halen de lat al grotendeels) · de rest op het moment dat iemand ze aanraakt.
+Volgorde van aanraken, naar waar een route hem nodig heeft en wat de meting zegt: weerbaarheidsgame ·
+zelfcheck · beleidsset-generator (versie en tests zichtbaar) · procescheck, CSIR-tool en meting (idem) · de
+rest op het moment dat iemand ze aanraakt. Statuslabels: de game en de normwijzer heten `in gebruik` zonder de
+lat; volgens B8 zoals aangevuld zijn ze prototype tot ze hem halen. Bas koos op 29-10 de game op de route te
+laten staan met een korte termijn; de normwijzer is naslag en valt onder B14 niet als instrument, dus de lat
+geldt daar alleen voor versie en peildatum. Beide labels blijven staan tot de eerste aanraking; daarna geldt
+de regel zonder uitzondering.
 
 **De munt (nog geen besluit).** Zodra drie instrumenten een JSON-export hebben (procescheck heeft hem, de
 zelfcheck en de beleidsset-generator volgen uit C5), wordt zichtbaar waar een gebruiker nu met de hand
@@ -184,7 +202,7 @@ eigen plan, pas te schrijven als de exports er zijn; nu vastleggen zou bouwen op
 |---|---|---|---|---|
 | 1 | Statuut: blok C1 tot en met C5 en de aanpassingen aan B8, B9, B13; regel in `BESLUITEN.md` | De eenheid is de route, niet de repo | PR op `.github` gemerged; `repo-compliance.yml` bijgewerkt in dezelfde PR (procedure statuut) | redactie · **in PR 29-10**; de compliance-controle volgt als de meetbare delen van C5 zijn uitgewerkt |
 | 2 | Voorpagina: projectenlijst en infrastructuur naar `/werkplaats/`, tellingen weg, één link naar de werkplaats onderaan | Vier stations, geen twintig deuren | `test_voorpagina.py` aangepast: geen repo-naam en geen github.com-link boven "Meedoen"; linkcheck groen | bouwer · **in PR 29-10** (site #25; de tellingen per vakgebied staan in de kennisbank-index, stap 5) |
-| 3 | Lat toetsen: per instrument in de tabel van §3 de zes punten van C5 nalopen en de kolommen invullen | Een eerlijke stand per instrument, geen "op het oog" | tabel in dit plan bijgewerkt; afwijkende statuslabels in `PROJECTEN.md` gecorrigeerd | bouwer |
+| 3 | Lat toetsen: per instrument in de tabel van §3 de zes punten van C5 nalopen en de kolommen invullen | Een eerlijke stand per instrument, geen "op het oog" | tabel in dit plan bijgewerkt; afwijkende statuslabels in `PROJECTEN.md` gecorrigeerd | bouwer · **gemeten 29-10** (tabel in §3); statuslabels blijven tot de eerste aanraking |
 | 4 | Routes: `routes.json` met vijf routes (CISO, ISO, privacy officer, bestuurder, eerste honderd dagen), per stap één zin waarom; `rollen.json` gaat erin op; frontmatter-veld `route` in de kennisbank | De leesroute per rol | elk adres in de routes bestaat (linkcheck); elk stuk in de kennisbank heeft `route:` gevuld of `geen` (build faalt anders) | redactie · **routes in PR 29-10** (site #25, 34 stappen, elk adres 200); het frontmatter-veld in de kennisbank staat open |
 | 5 | Kennisbank-index: routes bovenaan per vakgebied, route-vermelding per stuk | De catalogus wijst naar de routes | `build.py`-test op aanwezigheid | bouwer |
 | 6 | Zelfcheck langs de lat: referentie-implementatie met tests, JSON-export en -import, versie en peildatum op de pagina | Stap 1 van de keten haalt de lat | tests groen in CI; export-import rondgang als test | bouwer |
