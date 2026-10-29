@@ -204,6 +204,27 @@ intake ervoor: het dossier `mijn-organisatie.json` is de uitkomst van het gespre
 het in plaats van opnieuw te vragen. Past bij de AI-hulp met eigen sleutel (opt-in, voorstel in plaats van
 wijziging) en bij B14 (geen account, geen opslag). Nog niet uitgewerkt; hoort bij stap 9.
 
+**Stap 9 bij het sparren (29-10-2026, avond).** Doel: context verzamelen zodat de generieke kennis van de commons
+specifiek wordt voor één organisatie, zoals de beleidsset nu al doet met zestien contextvragen. Drie keuzes:
+1. *Alleen kenmerken, nooit inventaris.* Een profielveld beschrijft wat voor organisatie je bent, nooit wat je
+   hebt: "cloudwerkplek" wel, een tenant of leveranciersnaam niet; "uitbesteed SOC" wel, een bevinding niet.
+   Elk veld is een vaste keuze; het enige vrije veld is de naam van de organisatie (voor de titel op
+   gegenereerde stukken). Gevoelige context hoort niet in de commons. De assistent mag vrije tekst lezen om het
+   profiel te vullen, maar zet alleen keuzes in het bestand.
+2. *De vragenlijst (het profielschema) woont op de root van de kennisbank*, `kennisbank/profiel.json`. Het schema
+   van de beleidsset verhuist daarheen; de beleidsset is de eerste afnemer, instrumenten halen een kopie met
+   `--check`, zoals het handelingsperspectief. Het *ingevulde* profiel staat nooit in de commons.
+3. *Het ingevulde profiel blijft in de browser*, onder één bewaarnaam voor de hele commons (alle pagina's staan
+   op één domein), met daarnaast een bestand (back-up, andere computer) en een link met het profiel achter de
+   `#` (delen met een collega; verlaat de browser niet). Elke pagina die het profiel leest, laat dat zien en
+   heeft een wisknop. Dit kan alleen omdat keuze 1 het profiel ongevoelig houdt; de AI-sleutel blijft in
+   sessionStorage. Vraagt een regel in B14 bij het uitvoeren.
+Stand van de code: alleen de beleidsset reageert op het profiel (bewaarnaam `beleidsset-profiel`); de
+instrumenten bewaren elk hun eigen invoer (`aanvalspaden-zelfcheck-v1`, `procescheck-dossier`, en zo verder) en
+lezen niets van elkaar; kennisbank, routes en voorpagina zijn voor iedereen gelijk. Open bij het sparren: hoe een
+stuk aangeeft welke profielvelden het leest en wat er dan verandert, welke vragen erbij komen, en waar te
+beginnen.
+
 ## 4. Stappen
 
 | # | Stap | Wat het oplevert | Controle | Wie |
