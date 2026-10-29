@@ -42,6 +42,8 @@ een route te persen (een stuk dat nergens past gaat naar de catalogus, niet op d
 consultants of hun bureau.
 
 **Stand:** vastgesteld 29-10-2026; issue [.github#49](https://github.com/security-commons-nl/.github/issues/49) met de stappen als afvinklijst.
+Stap 1 (statuut, deze repo) en stap 2 en 4 (voorpagina, werkplaats, vijf routes; site-repo PR #25) zijn op 29-10-2026
+voorbereid op branches en getest; het veld `route` in de kennisbank en de controle in `repo-compliance.yml` staan nog open.
 
 **Keuzes op de acht dilemma's (29-10-2026, na sparren):** C2 streng, ook voor de zeven nieuwe AI-stukken
 (geen route, geen voordeur) · de weerbaarheidsgame blijft op de bestuurdersroute en haalt als eerste de lat,
@@ -180,10 +182,10 @@ eigen plan, pas te schrijven als de exports er zijn; nu vastleggen zou bouwen op
 
 | # | Stap | Wat het oplevert | Controle | Wie |
 |---|---|---|---|---|
-| 1 | Statuut: blok C1 tot en met C5 en de aanpassingen aan B8, B9, B13; regel in `BESLUITEN.md` | De eenheid is de route, niet de repo | PR op `.github` gemerged; `repo-compliance.yml` bijgewerkt in dezelfde PR (procedure statuut) | redactie |
-| 2 | Voorpagina: projectenlijst en infrastructuur naar `/werkplaats/`, tellingen weg, één link naar de werkplaats onderaan | Vier stations, geen twintig deuren | `test_voorpagina.py` aangepast: geen repo-naam en geen github.com-link boven "Meedoen"; linkcheck groen | bouwer |
+| 1 | Statuut: blok C1 tot en met C5 en de aanpassingen aan B8, B9, B13; regel in `BESLUITEN.md` | De eenheid is de route, niet de repo | PR op `.github` gemerged; `repo-compliance.yml` bijgewerkt in dezelfde PR (procedure statuut) | redactie · **in PR 29-10**; de compliance-controle volgt als de meetbare delen van C5 zijn uitgewerkt |
+| 2 | Voorpagina: projectenlijst en infrastructuur naar `/werkplaats/`, tellingen weg, één link naar de werkplaats onderaan | Vier stations, geen twintig deuren | `test_voorpagina.py` aangepast: geen repo-naam en geen github.com-link boven "Meedoen"; linkcheck groen | bouwer · **in PR 29-10** (site #25; de tellingen per vakgebied staan in de kennisbank-index, stap 5) |
 | 3 | Lat toetsen: per instrument in de tabel van §3 de zes punten van C5 nalopen en de kolommen invullen | Een eerlijke stand per instrument, geen "op het oog" | tabel in dit plan bijgewerkt; afwijkende statuslabels in `PROJECTEN.md` gecorrigeerd | bouwer |
-| 4 | Routes: `routes.json` met vijf routes (CISO, ISO, privacy officer, bestuurder, eerste honderd dagen), per stap één zin waarom; `rollen.json` gaat erin op; frontmatter-veld `route` in de kennisbank | De leesroute per rol | elk adres in de routes bestaat (linkcheck); elk stuk in de kennisbank heeft `route:` gevuld of `geen` (build faalt anders) | redactie |
+| 4 | Routes: `routes.json` met vijf routes (CISO, ISO, privacy officer, bestuurder, eerste honderd dagen), per stap één zin waarom; `rollen.json` gaat erin op; frontmatter-veld `route` in de kennisbank | De leesroute per rol | elk adres in de routes bestaat (linkcheck); elk stuk in de kennisbank heeft `route:` gevuld of `geen` (build faalt anders) | redactie · **routes in PR 29-10** (site #25, 34 stappen, elk adres 200); het frontmatter-veld in de kennisbank staat open |
 | 5 | Kennisbank-index: routes bovenaan per vakgebied, route-vermelding per stuk | De catalogus wijst naar de routes | `build.py`-test op aanwezigheid | bouwer |
 | 6 | Zelfcheck langs de lat: referentie-implementatie met tests, JSON-export en -import, versie en peildatum op de pagina | Stap 1 van de keten haalt de lat | tests groen in CI; export-import rondgang als test | bouwer |
 | 7 | Weerbaarheidsgame langs de lat, of terug naar `prototype` en van de bestuurdersroute af tot hij de lat haalt | Geen instrument op de voordeur zonder lat | idem | bouwer |

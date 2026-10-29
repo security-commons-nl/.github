@@ -1,6 +1,6 @@
 # Redactiestatuut security-commons-nl
 
-Vastgesteld 28-08-2026, B3 en B10 aangevuld op 29-08-2026, B4 op 30-08-2026, A11 toegevoegd op 31-08-2026, B13 en B14 op 02-09-2026, Cbw in B2 op 02-09-2026, B9 herzien op 03-09-2026 (PROJECTEN.md), B14 verduidelijkt op 03-09-2026, B2 aangevuld en B15 toegevoegd op 25-09-2026 (vindbaarheid van het register aangevuld dezelfde dag), B3 aangevuld op 13-10-2026 (leesversie per stuk), B4 aangevuld op 14-10-2026 (inhoudswijzers op de domeinroot). Geldt voor alle repo's van de organisatie. De inhoudsregels (A) gelden overal.
+Vastgesteld 28-08-2026, B3 en B10 aangevuld op 29-08-2026, B4 op 30-08-2026, A11 toegevoegd op 31-08-2026, B13 en B14 op 02-09-2026, Cbw in B2 op 02-09-2026, B9 herzien op 03-09-2026 (PROJECTEN.md), B14 verduidelijkt op 03-09-2026, B2 aangevuld en B15 toegevoegd op 25-09-2026 (vindbaarheid van het register aangevuld dezelfde dag), B3 aangevuld op 13-10-2026 (leesversie per stuk), B4 aangevuld op 14-10-2026 (inhoudswijzers op de domeinroot), blok C toegevoegd en B8, B9 en B13 aangevuld op 29-10-2026 (de site is het product). Geldt voor alle repo's van de organisatie. De inhoudsregels (A) gelden overal.
 letterlijk; de structuurregels (B) gelden overal in vorm, met per repo één afspraak over wat de eerste
 laag betekent (zie B1). Waar een repo een script heeft dat deze regels controleert, verwijst elke melding
 naar het regelnummer hieronder.
@@ -63,6 +63,64 @@ waar je zelf al staat, wat je zoekt, en wat er met het antwoord gebeurt. Zonder 
 niemand waarom hij zou antwoorden. Een beantwoorde vraag verdwijnt niet maar wijst naar het stuk dat
 eruit voortkwam; dat is het bewijs dat het werkt. Een vraag die een jaar open staat wordt herschreven
 of weggehaald, want een lijst met onbeantwoorde vragen leest binnen een half jaar als een kerkhof.
+
+## C. De publicatie
+
+De eenheid van de commons is de route, niet de repository. Blok A zegt wat erin mag, blok B hoe een stuk en
+een repo eruitzien; dit blok zegt hoe het geheel leest. Toegevoegd 29-10-2026 na feedback van twee externe
+lezers die losse bouwstenen zagen in plaats van een geheel; het plan
+[de site is het product](plannen/2026-10-29-site-is-het-product.md) legt de afwegingen vast.
+
+**C1. De site is het product, GitHub de werkplaats.** Alles wat een lezer nodig heeft staat op
+`security-commons-nl.github.io`. Een link naar github.com staat alleen waar de lezer iets moet doen dat de
+site niet kan: code draaien (een script of een lokale tool), een issue of discussion openen, meebouwen. In een
+leesroute komt geen repo-naam voor; een instrument heet naar wat het doet ("de zelfcheck", "de meting"),
+niet naar zijn repository. Reden: wie kennis zoekt en een organisatieprofiel van een ontwikkelaar krijgt,
+haakt af; de repositories zijn het hoe, niet het wat. B13 blijft bestaan en geldt voor de werkplaats: elk
+project heeft een pagina, maar die pagina is pas voordeur als het project in een route zit (C2). De
+projectenlijst staat op `security-commons-nl.github.io/werkplaats/`, niet op de voorpagina.
+
+**C2. Elk stuk zit in een route, of het staat in de catalogus.** Een leesroute is een geordende reeks stukken
+voor één rol in één situatie: de eerste honderd dagen als ISO, een CISO die op de Cbw voorsorteert, een
+privacy officer vóór een DPIA. De routes staan in `site/routes.json` van de site-repo, met per stap één zin
+waarom nu; de voorpagina toont ze onder "Begin bij je rol". Een stuk dat in geen enkele route past, blijft
+vindbaar via zoeken en de catalogus (de kennisbank-index per vakgebied), maar staat niet op de voorpagina en
+niet in de voordeur per rol. Een nieuw stuk in de kennisbank noemt in de frontmatter zijn route(s) in het
+veld `route`, of expliciet `route: geen`; de build van de kennisbank blokkeert een stuk zonder dat veld
+zodra die controle er is (stap 4 van het plan). Reden: dit is de rem op de breedte. De vraag "in welke
+route hoort dit, en op welke plek" wordt gesteld vóór het schrijven, niet erna. Geldt streng, ook voor nieuwe
+stukken die al gepland zijn; bestaande stukken krijgen het veld bij de eerstvolgende wijziging.
+
+**C3. Een instrument is een stap in een route, geen product in een lijst.** Een instrument staat op de
+voorpagina alleen als stap in een route, met de vraag die het beantwoordt als titel. De projectentabel (B9)
+blijft de bron voor de werkplaats en de catalogus, maar wordt niet als lijst op de voorpagina getoond.
+Reden: een lezer merkt fragmentatie van software pas als hij software gebruikt; een instrument dat als
+bijlage bij een handleiding komt ("lees dit, en als je het wilt meten, hier is een pagina die rekent") is
+een hulpmiddel, geen product dat moet concurreren met twintig andere.
+
+**C4. Eén publicatie, één gezicht.** Elke pagina op de site, instrument of tekst, deelt dezelfde huisstijl
+(`thema.css` van de site-build, besluit 15-10-2026), hetzelfde kruimelpad (B10), dezelfde taal (A10:
+Nederlands, ook knoppen, labels en foutmeldingen), en toont onderaan versie of peildatum (A6) en de status
+(B8). Reden: de commons komt van meer dan één maker en dat mag je niet zien.
+
+**C5. De lat voor instrumenten in een route.** Een instrument staat pas in een route als het:
+- volledig in de browser rekent (B14) en offline werkt na één keer laden;
+- zijn rekenregels in één referentie-implementatie heeft met tests, en de browserversie daartegen toetst
+  (zoals procescheck en de CSIR-tool doen met `reken.py` en `app.js`);
+- tests in CI heeft die groen zijn, met het aantal of de badge zichtbaar op de pagina;
+- een versienummer en peildatum op de pagina toont;
+- geen fouten in de browserconsole geeft en werkt op een telefoon (375 px breed, zonder horizontale scroll);
+- een export heeft in een open formaat (JSON of Markdown) die de gebruiker zelf bewaart, en die import weer
+  inleest (geen account, geen opslag: de gebruiker is zijn eigen dossier).
+
+Een instrument dat de lat niet haalt, draagt status `prototype` of `concept` (B8) en staat in de catalogus,
+niet in een route. De lat wordt gehaald op het moment dat een instrument wordt aangeraakt, niet in één
+operatie; een instrument dat niemand aanraakt, blijft prototype en dat is eerlijk. Uitzondering bij
+invoering (29-10-2026): de weerbaarheidsgame blijft op de bestuurdersroute en haalt als eerste de lat.
+Reden: "vibe-coded" is geen probleem van herkomst maar van toetsbaarheid; wat getest, versienummerd en
+uniform is, hoeft zich niet te verdedigen. `repo-compliance.yml` controleert de meetbare delen zodra ze
+zijn uitgewerkt (versie en peildatum op de pagina, tests in CI, huisstijl geladen); tot die tijd is de tabel
+in het plan de controle.
 
 ## B. Structuur
 
@@ -143,7 +201,7 @@ het org-profiel; dat profiel is de enige bron (B9).
 
 | Label | Criterium |
 |---|---|
-| **in gebruik** | Draait echt (gehost, of geinstalleerd bij een organisatie) en heeft tests of CI die groen staan. Iemand gebruikt het vandaag. |
+| **in gebruik** | Draait echt (gehost, of geinstalleerd bij een organisatie) en heeft tests of CI die groen staan. Iemand gebruikt het vandaag. Een instrument haalt daarnaast de lat van C5; haalt het die niet, dan is het een prototype (29-10-2026). |
 | **prototype** | Werkt en is te draaien, maar zonder belofte over volledigheid, onderhoud of ondersteuning. |
 | **concept** | Ontwerp, plan of documentatie; geen werkende code. Ook een mockup valt hieronder. |
 | **gearchiveerd** | Niet meer onderhouden. Blijft leesbaar, krijgt hooguit kritieke beveiligingsfixes. |
@@ -162,6 +220,10 @@ redactioneel: de eerste drie rijen met een live link zijn de uitgelichte kaarten
 die geen project zijn (infrastructuur, gearchiveerd, opgegaan in een ander project) staan in de alinea's
 onder de tabel, met de reden erbij; `repo-compliance.yml` eist dat elke repo op een van die plekken staat.
 Het organisatieprofiel (`profile/README.md`) verwijst naar deze lijst en naar de voorkant op Pages.
+Sinds 29-10-2026 (C1, C3) toont de voorpagina de tabel niet meer als lijst; de kaarten staan op
+`security-commons-nl.github.io/werkplaats/`, en de eerste drie rijen met een live link blijven de
+uitgelichte kaarten op de voorpagina, met een naam die zegt wat het instrument doet in plaats van de
+repo-naam.
 
 **B10. Elke pagina wijst terug.** Elke pagina op Pages begint met een kruimelpad naar de hoofdpagina en
 naar het niveau erboven, bijvoorbeeld: Security Commons NL > Kennisbank > Security > Passkeys invoeren. Een
@@ -192,7 +254,9 @@ rij met alleen een ontwerp staat niet in de eerste drie rijen, want dat zijn de 
 de site is de etalage, GitHub de werkplaats. Een project dat alleen op GitHub bestaat is onvindbaar voor
 wie via de voorpagina of een zoekmachine binnenkomt, en een concept op de site nodigt uit tot meedenken.
 Infrastructuurrepo's (B8) vallen buiten deze regel. De uitrol naar bestaande repo's staat in
-[het plan van 02-09-2026](plannen/2026-09-02-elk-project-een-pagina.md).
+[het plan van 02-09-2026](plannen/2026-09-02-elk-project-een-pagina.md). Sinds 29-10-2026 geldt deze regel
+voor de werkplaats en de catalogus: een projectpagina is pas voordeur als het project in een leesroute zit
+(C2, C3).
 
 **B14. Een project is een instrument of een script, nooit een applicatie.** Een instrument rekent
 volledig in de browser, zonder server, account of telemetrie, en is het enige dat in de projectentabel
