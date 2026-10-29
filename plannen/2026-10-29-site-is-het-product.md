@@ -44,7 +44,9 @@ consultants of hun bureau.
 **Stand:** vastgesteld 29-10-2026; issue [.github#49](https://github.com/security-commons-nl/.github/issues/49) met de stappen als afvinklijst.
 Op 29-10-2026 voorbereid op branches en getest, te mergen in deze volgorde: site #25 (voorpagina, werkplaats, routes) ·
 `.github` #51 (statuut) · kennisbank #109 (veld `route`, routes per vakgebied; CI leest routes.json van de site, dus na #25) ·
-weerbaarheid-game #5 en aanvalspaden #14 (lat). Open: de C5-controle in `repo-compliance.yml`, de referentie-implementatie van de game, en stap 9.
+weerbaarheid-game #5 en aanvalspaden #14 (lat); alle vijf gemerged en live op 29-10-2026. Stap 9 is uitgewerkt in
+[het profiel](2026-10-29-profiel.md) en op dezelfde dag live gegaan. Open: de C5-controle in `repo-compliance.yml` en de
+referentie-implementatie van de rekenregels van de game.
 
 **Keuzes op de acht dilemma's (29-10-2026, na sparren):** C2 streng, ook voor de zeven nieuwe AI-stukken
 (geen route, geen voordeur) · de weerbaarheidsgame blijft op de bestuurdersroute en haalt als eerste de lat,
