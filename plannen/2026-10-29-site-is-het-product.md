@@ -245,6 +245,7 @@ specifiek wordt voor één organisatie, zoals de beleidsset nu al doet met zesti
    Gebouwd 29-10 (avond): kennisbank#112 (schema naar de root, generator leest `commons-profiel`) en site PR
    (`/profiel/` met bestand, link en wissen; onbekende waarden vallen weg bij laden). Volgende PR: regelbestand,
    voorpagina en catalogus.
+   Het bouwplan voor stap 2 tot en met 4 staat in [het profiel](2026-10-29-profiel.md).
 Toets van de aannames (29-10, avond): de beleidsset bewaart het profiel al als `{vraag-id: antwoord-id}`; één
 domein dus één bewaarnaam werkt (niet voor een met Ctrl+S opgeslagen offline kopie); de frontmatter draagt genoeg
 om op te sorteren (van 83 stukken 68 BIO2, 18 Cbw, 18 AVG, 12 NIS2, 10 ISO 22301, 6 Wpg, 6 AI Act; 53 met
