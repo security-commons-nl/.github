@@ -205,7 +205,7 @@ het in plaats van opnieuw te vragen. Past bij de AI-hulp met eigen sleutel (opt-
 wijziging) en bij B14 (geen account, geen opslag). Nog niet uitgewerkt; hoort bij stap 9.
 
 **Stap 9 bij het sparren (29-10-2026, avond).** Doel: context verzamelen zodat de generieke kennis van de commons
-specifiek wordt voor één organisatie, zoals de beleidsset nu al doet met zestien contextvragen. Vijf keuzes:
+specifiek wordt voor één organisatie, zoals de beleidsset nu al doet met zestien contextvragen. Zes keuzes:
 1. *Alleen kenmerken, nooit inventaris.* Een profielveld beschrijft wat voor organisatie je bent, nooit wat je
    hebt: "cloudwerkplek" wel, een tenant of leveranciersnaam niet; "uitbesteed SOC" wel, een bevinding niet.
    Elk veld is een vaste keuze; het enige vrije veld is de naam van de organisatie (voor de titel op
@@ -227,6 +227,13 @@ specifiek wordt voor één organisatie, zoals de beleidsset nu al doet met zesti
    vakgebied, barrieres, route): bijvoorbeeld Cbw essentieel of belangrijk naar de stukken met norm Cbw, OT
    substantieel naar de OT-stukken, geen eigen ISO naar de route van de eerste honderd dagen. Geen nieuw veld per
    stuk; waar de regels tekortschieten, later per stuk bij aanraking.
+6. *Organisatie, rol en situatie zijn drie dingen.* Het profiel gaat alleen over de organisatie: stabiel en
+   deelbaar binnen de organisatie (een ISO vult het in en stuurt de link naar de CISO). De rol is van de persoon,
+   een aparte keuze die de browser onthoudt, met meerdere rollen tegelijk (in een kleine gemeente is de ISO vaak
+   ook privacy officer). Een situatie is tijdelijk ("nieuw in de functie", "voorsorteren op de Cbw", "voor een
+   DPIA", "na een incident") en wordt een eigen soort route; "eerste honderd dagen" verhuist van rol naar situatie.
+   Het regelbestand kan een situatie voorstellen (capaciteit "geen eigen ISO" of volwassenheid "startend" naar
+   eerste honderd dagen). Zonder rol toont de voorpagina alle routes, zoals nu.
 Stand van de code: alleen de beleidsset reageert op het profiel (bewaarnaam `beleidsset-profiel`); de
 instrumenten bewaren elk hun eigen invoer (`aanvalspaden-zelfcheck-v1`, `procescheck-dossier`, en zo verder) en
 lezen niets van elkaar; kennisbank, routes en voorpagina zijn voor iedereen gelijk. Open bij het sparren: hoe een
