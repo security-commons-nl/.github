@@ -78,9 +78,10 @@ door een minder sterk model gebouwd te worden, en dat is ook zo gegaan.
 
 ### De acht groepen
 
-**Voorkant.** `security-commons-nl.github.io` is de etalage. De voorpagina, `llms.txt` en `sitemap.xml`
-worden gegenereerd uit de projectentabel in `.github/PROJECTEN.md`; die tabel is de enige projectenlijst
-(statuut B9).
+**Voorkant.** `security-commons-nl.github.io` is het product (statuut C1, 29-10-2026). De voorpagina toont
+de leesroutes per rol uit `site/routes.json` en de keten van vier vragen; de projectenlijst staat op
+`/werkplaats/`. Werkplaats, `llms.txt` en `sitemap.xml` worden gegenereerd uit de projectentabel in
+`.github/PROJECTEN.md`; die tabel is de enige projectenlijst (statuut B9).
 
 **Kennis.** `kennisbank`, zesenzestig items, waarvan eenenveertig van het type
 `handleiding`. Verdeeld over de vier vakgebieden is dat nog steeds scheef: eenenvijftig staan onder

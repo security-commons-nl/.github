@@ -6,6 +6,28 @@ krijgt hier een regel: datum, wat er is besloten, en waarom. Nieuwste bovenaan. 
 
 Dit log begint op 29-08-2026, toen bleek dat het statuut er wel naar verwees maar het nergens stond.
 
+## 29-10-2026 · De site is het product, de werkplaats staat erachter (blok C in het statuut)
+
+**Besloten.** De eenheid van de commons is de route, niet de repository. Nieuw blok C in het statuut:
+C1 de site is het product en GitHub de werkplaats (geen repo-naam of github.com-link in een leesroute);
+C2 elk stuk zit in een leesroute of in de catalogus, en een nieuw stuk noemt zijn route in de frontmatter
+(streng, ook voor al geplande stukken); C3 een instrument is een stap in een route, geen product in een
+lijst; C4 één gezicht (huisstijl, kruimelpad, taal, versie en status op elke pagina); C5 de lat voor
+instrumenten in een route (browser en offline, referentie-implementatie met tests, CI zichtbaar, versie en
+peildatum, geen consolefouten en werkend op 375 px, export en import in open formaat), per aanraking gehaald
+en anders prototype. B8 (in gebruik vraagt de lat), B9 en B13 (gelden voor de werkplaats en de catalogus)
+zijn daarop aangepast. De projectenlijst verhuist van de voorpagina naar `/werkplaats/`; "Begin bij je rol"
+wordt een leesroute van vijf tot acht stappen per rol, voor vijf rollen. Een gedeeld dossier dat elk
+instrument inleest en aanvult is uitgesteld tot drie instrumenten een export hebben.
+
+**Waarom.** Twee externe lezers gaven op 29-10-2026 dezelfde terugkoppeling: losse bouwstenen, geen
+geheel, "een Excel met veel tabbladen". De initiatiefnemer herkent dat. De oplossing is niet één platform
+(dat is het grc-platform dat op 02-09-2026 bewust is gearchiveerd) maar een publicatie met routes en een
+werkplaats erachter. De echte waarde zit in de pagina's op github.io, de kennis en de routes; de
+repositories zijn relevant waar iets te draaien of te bouwen valt. De kennisbank is daarnaast te breed en
+de software is toetsbaar noch uniform genoeg; C2 remt de breedte, C5 maakt de software toetsbaar zonder
+herbouw. Plan: [2026-10-29-site-is-het-product](plannen/2026-10-29-site-is-het-product.md), issue #49.
+
 ## 28-10-2026 · Een stuk staat op een plek, maar mag in een andere sectie als kaart verschijnen
 
 **Besloten.** Een item van de kennisbank staat in een sectie (B1). Hoort het ook bij een andere sectie, dan
