@@ -196,6 +196,13 @@ de normwijzer. Dan is een gedeeld schema (`mijn-organisatie.json`: één lokaal 
 inleest en aanvult) de logische volgende stap: de munt én de tas van de markt, zonder platform. Dat is een
 eigen plan, pas te schrijven als de exports er zijn; nu vastleggen zou bouwen op aannames.
 
+Aanvulling van de initiatiefnemer (29-10-2026, 's avonds, als idee om later over te sparren): een
+**extractielaag** die zonder inlog, via een assistent, de organisatie uitvraagt (processen, applicaties,
+leveranciers, barrières, contextvragen) en daarmee elk afzonderlijk instrument vult. Dat is de munt met een
+intake ervoor: het dossier `mijn-organisatie.json` is de uitkomst van het gesprek, en elk instrument leest
+het in plaats van opnieuw te vragen. Past bij de AI-hulp met eigen sleutel (opt-in, voorstel in plaats van
+wijziging) en bij B14 (geen account, geen opslag). Nog niet uitgewerkt; hoort bij stap 9.
+
 ## 4. Stappen
 
 | # | Stap | Wat het oplevert | Controle | Wie |
@@ -203,8 +210,8 @@ eigen plan, pas te schrijven als de exports er zijn; nu vastleggen zou bouwen op
 | 1 | Statuut: blok C1 tot en met C5 en de aanpassingen aan B8, B9, B13; regel in `BESLUITEN.md` | De eenheid is de route, niet de repo | PR op `.github` gemerged; `repo-compliance.yml` bijgewerkt in dezelfde PR (procedure statuut) | redactie · **in PR 29-10**; de compliance-controle volgt als de meetbare delen van C5 zijn uitgewerkt |
 | 2 | Voorpagina: projectenlijst en infrastructuur naar `/werkplaats/`, tellingen weg, één link naar de werkplaats onderaan | Vier stations, geen twintig deuren | `test_voorpagina.py` aangepast: geen repo-naam en geen github.com-link boven "Meedoen"; linkcheck groen | bouwer · **in PR 29-10** (site #25; de tellingen per vakgebied staan in de kennisbank-index, stap 5) |
 | 3 | Lat toetsen: per instrument in de tabel van §3 de zes punten van C5 nalopen en de kolommen invullen | Een eerlijke stand per instrument, geen "op het oog" | tabel in dit plan bijgewerkt; afwijkende statuslabels in `PROJECTEN.md` gecorrigeerd | bouwer · **gemeten 29-10** (tabel in §3); statuslabels blijven tot de eerste aanraking |
-| 4 | Routes: `routes.json` met vijf routes (CISO, ISO, privacy officer, bestuurder, eerste honderd dagen), per stap één zin waarom; `rollen.json` gaat erin op; frontmatter-veld `route` in de kennisbank | De leesroute per rol | elk adres in de routes bestaat (linkcheck); elk stuk in de kennisbank heeft `route:` gevuld of `geen` (build faalt anders) | redactie · **routes in PR 29-10** (site #25, 34 stappen, elk adres 200); het frontmatter-veld in de kennisbank staat open |
-| 5 | Kennisbank-index: routes bovenaan per vakgebied, route-vermelding per stuk | De catalogus wijst naar de routes | `build.py`-test op aanwezigheid | bouwer |
+| 4 | Routes: `routes.json` met vijf routes (CISO, ISO, privacy officer, bestuurder, eerste honderd dagen), per stap één zin waarom; `rollen.json` gaat erin op; frontmatter-veld `route` in de kennisbank | De leesroute per rol | elk adres in de routes bestaat (linkcheck); elk stuk in de kennisbank heeft `route:` gevuld of `geen` (build faalt anders) | redactie · **routes in PR 29-10** (site #25, 34 stappen, elk adres 200); het frontmatter-veld `route` in de kennisbank is gevuld voor alle 83 items met controle in twee richtingen (kennisbank-PR 29-10) |
+| 5 | Kennisbank-index: routes bovenaan per vakgebied, route-vermelding per stuk | De catalogus wijst naar de routes | `build.py`-test op aanwezigheid | bouwer · **in kennisbank-PR 29-10** (blok "Routes door dit vakgebied" op elke vakgebiedpagina, etiket "route: ISO stap 3" op de kaart) |
 | 6 | Zelfcheck langs de lat: referentie-implementatie met tests, JSON-export en -import, versie en peildatum op de pagina | Stap 1 van de keten haalt de lat | tests groen in CI; export-import rondgang als test | bouwer |
 | 7 | Weerbaarheidsgame langs de lat, of terug naar `prototype` en van de bestuurdersroute af tot hij de lat haalt | Geen instrument op de voordeur zonder lat | idem | bouwer |
 | 8 | Procescheck en beleidsset-generator in de ISO-route en de eerste-honderd-dagen-route | De sterkste instrumenten staan waar ze horen | routes-linkcheck | redactie |

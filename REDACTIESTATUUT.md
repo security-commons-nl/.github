@@ -87,7 +87,7 @@ waarom nu; de voorpagina toont ze onder "Begin bij je rol". Een stuk dat in geen
 vindbaar via zoeken en de catalogus (de kennisbank-index per vakgebied), maar staat niet op de voorpagina en
 niet in de voordeur per rol. Een nieuw stuk in de kennisbank noemt in de frontmatter zijn route(s) in het
 veld `route`, of expliciet `route: geen`; de build van de kennisbank blokkeert een stuk zonder dat veld
-zodra die controle er is (stap 4 van het plan). Reden: dit is de rem op de breedte. De vraag "in welke
+(sinds 29-10-2026, kennisbank-PR bij stap 4 van het plan). Reden: dit is de rem op de breedte. De vraag "in welke
 route hoort dit, en op welke plek" wordt gesteld vóór het schrijven, niet erna. Geldt streng, ook voor nieuwe
 stukken die al gepland zijn; bestaande stukken krijgen het veld bij de eerstvolgende wijziging.
 
@@ -137,7 +137,7 @@ in het plan de controle.
 Geen losse bestanden in een categorie-map behalve `README.md` en gegenereerde `index.html`. Geen derde laag.
 Mapnamen: kleine letters, cijfers en koppeltekens; geen spaties, geen versies of woorden als "definitief".
 
-**B2. Frontmatter, acht velden, vast.** Elke item-README begint met:
+**B2. Frontmatter, negen velden, vast.** Elke item-README begint met (het negende veld, `route`, sinds 29-10-2026, C2):
 
 ```yaml
 ---
@@ -149,6 +149,7 @@ peildatum: JJJJ-MM-DD          # óf versie: "1.3 (herzien BIO2), 2026-08"; éé
 herkomst: rol of organisatietype, geen naam
 status: concept | in gebruik | sjabloon | gearchiveerd
 samenvatting: twee tot vier zinnen; dit wordt de kaarttekst op de website
+route: [iso, eerste-honderd-dagen]   # id's uit routes.json van de site, of: geen
 ---
 ```
 
@@ -159,7 +160,9 @@ context, de wet voor de Nederlandse verplichting (aangevuld 02-09-2026, issue #1
 `handleiding` komen daar drie velden bij: `barrieres` (verplicht, `vraag_id`'s uit `paden.json`),
 `rol` (`fundering`, `alternatief` of `verdieping`) en `pijler` (het item waar de handleiding uit
 voortkomt). Elk item mag daarnaast `bronnen` dragen: een lijst met id's uit `bronnen.json` op de
-root van de kennisbank (B15). Andere velden niet.
+root van de kennisbank (B15). `route` noemt de leesroute(s) waarin het stuk een stap is, of `geen`;
+`tools/build.py` controleert in twee richtingen tegen `routes.json` (kopie van de site, `tools/haal_routes.py`).
+Andere velden niet.
 
 **B3. Bestandsvormen.** Markdown is de bron. Elk tekstitem heeft daarnaast een self-contained HTML-leesversie
 (geen externe fonts of scripts, print op A4, plakbaar in Word). Binaire bestanden (docx, pptx, xlsx, pdf)
