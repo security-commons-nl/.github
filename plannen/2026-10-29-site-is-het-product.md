@@ -204,6 +204,60 @@ intake ervoor: het dossier `mijn-organisatie.json` is de uitkomst van het gespre
 het in plaats van opnieuw te vragen. Past bij de AI-hulp met eigen sleutel (opt-in, voorstel in plaats van
 wijziging) en bij B14 (geen account, geen opslag). Nog niet uitgewerkt; hoort bij stap 9.
 
+**Stap 9 bij het sparren (29-10-2026, avond).** Doel: context verzamelen zodat de generieke kennis van de commons
+specifiek wordt voor één organisatie, zoals de beleidsset nu al doet met zestien contextvragen. Zeven keuzes:
+1. *Alleen kenmerken, nooit inventaris.* Een profielveld beschrijft wat voor organisatie je bent, nooit wat je
+   hebt: "cloudwerkplek" wel, een tenant of leveranciersnaam niet; "uitbesteed SOC" wel, een bevinding niet.
+   Elk veld is een vaste keuze en er is geen vrij veld: de naam van de organisatie hoort niet in het profiel
+   (herzien na de toets van 29-10: naam plus kenmerken als "geen detectie, geen eigen ISO" is een uitspraak
+   over de weerbaarheid van een genoemde organisatie, en die hoort niet in een deelbare link of bestand). De
+   generator vraagt de naam apart als invulveld, zoals nu. Gevoelige context hoort niet in de commons. De assistent mag vrije tekst lezen om het
+   profiel te vullen, maar zet alleen keuzes in het bestand.
+2. *De vragenlijst (het profielschema) woont op de root van de kennisbank*, `kennisbank/profiel.json`. Het schema
+   van de beleidsset verhuist daarheen; de beleidsset is de eerste afnemer, instrumenten halen een kopie met
+   `--check`, zoals het handelingsperspectief. Het *ingevulde* profiel staat nooit in de commons.
+3. *Het ingevulde profiel blijft in de browser*, onder één bewaarnaam voor de hele commons (alle pagina's staan
+   op één domein), met daarnaast een bestand (back-up, andere computer) en een link met het profiel achter de
+   `#` (delen met een collega; verlaat de browser niet). Elke pagina die het profiel leest, laat dat zien en
+   heeft een wisknop. Dit kan alleen omdat keuze 1 het profiel ongevoelig houdt; de AI-sleutel blijft in
+   sessionStorage. Vraagt een regel in B14 bij het uitvoeren.
+4. *Eerst de routes en de catalogus, niet de stukken.* Met een profiel toont de voorpagina de route die past, en
+   zet de kennisbank de relevante stukken bovenaan; de stukken zelf blijven gelijk. Daarna per aanraking een
+   markering per stuk ("voor jouw profiel: stap 1, 3 en 7"), en wisselende blokken zoals de beleidsset alleen
+   waar het antwoord echt per organisatie verschilt.
+5. *De koppeling profiel naar stuk is één regelbestand* naast de vragenlijst, op velden die er al zijn (normen,
+   vakgebied, barrieres, route): bijvoorbeeld Cbw essentieel of belangrijk naar de stukken met norm Cbw, OT
+   substantieel naar de OT-stukken, geen eigen ISO naar de route van de eerste honderd dagen. Geen nieuw veld per
+   stuk; waar de regels tekortschieten, later per stuk bij aanraking.
+6. *Organisatie, rol en situatie zijn drie dingen.* Het profiel gaat alleen over de organisatie: stabiel en
+   deelbaar binnen de organisatie (een ISO vult het in en stuurt de link naar de CISO). De rol is van de persoon,
+   een aparte keuze die de browser onthoudt, met meerdere rollen tegelijk (in een kleine gemeente is de ISO vaak
+   ook privacy officer). Een situatie is tijdelijk ("nieuw in de functie", "voorsorteren op de Cbw", "voor een
+   DPIA", "na een incident") en wordt een eigen soort route; "eerste honderd dagen" verhuist van rol naar situatie.
+   Het regelbestand kan een situatie voorstellen (capaciteit "geen eigen ISO" of volwassenheid "startend" naar
+   eerste honderd dagen). Zonder rol toont de voorpagina alle routes, zoals nu.
+7. *Volgorde van bouwen.* Eerst het contract: de vragenlijst naar de root van de kennisbank, één bewaarnaam voor
+   de commons (met overname van `beleidsset-profiel`), een profielpagina op de site (invullen, wissen, bestand,
+   link) en de beleidsset die het gedeelde profiel leest. Daarna in één PR de voorpagina (route die past) en de
+   catalogus (sorteren) met het regelbestand; als laatste de assistent, die alleen een bestand vult dat dan al
+   werkt. Bouwen gebeurt door de balie, Bas merget; zijn eigen schrijftijd gaat tot 1 december naar de
+   AI-securitylijn.
+   Gebouwd 29-10 (avond): kennisbank#112 (schema naar de root, generator leest `commons-profiel`) en site PR
+   (`/profiel/` met bestand, link en wissen; onbekende waarden vallen weg bij laden). Volgende PR: regelbestand,
+   voorpagina en catalogus.
+   Het bouwplan voor stap 2 tot en met 4 staat in [het profiel](2026-10-29-profiel.md).
+Toets van de aannames (29-10, avond): de beleidsset bewaart het profiel al als `{vraag-id: antwoord-id}`; één
+domein dus één bewaarnaam werkt (niet voor een met Ctrl+S opgeslagen offline kopie); de frontmatter draagt genoeg
+om op te sorteren (van 83 stukken 68 BIO2, 18 Cbw, 18 AVG, 12 NIS2, 10 ISO 22301, 6 Wpg, 6 AI Act; 53 met
+barrières); "OT substantieel" wijst naar de CSIR-tool, niet naar stukken; B14 verbiedt server, account en
+telemetrie, geen browseropslag, dus keuze 3 is een verduidelijking; de verhuizing raakt ook `bouw_beleidsset.py`
+en de dekkingstoets; rol en situatie scheiden vraagt een veld `soort` in routes.json met behoud van de id's.
+Stand van de code: alleen de beleidsset reageert op het profiel (bewaarnaam `beleidsset-profiel`); de
+instrumenten bewaren elk hun eigen invoer (`aanvalspaden-zelfcheck-v1`, `procescheck-dossier`, en zo verder) en
+lezen niets van elkaar; kennisbank, routes en voorpagina zijn voor iedereen gelijk. Open bij het sparren: hoe een
+stuk aangeeft welke profielvelden het leest en wat er dan verandert, welke vragen erbij komen, en waar te
+beginnen.
+
 ## 4. Stappen
 
 | # | Stap | Wat het oplevert | Controle | Wie |

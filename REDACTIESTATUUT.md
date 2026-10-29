@@ -275,7 +275,10 @@ instrument geen applicatie, mits: een aparte pagina met eigen Content-Security-P
 `default-src 'none'` houdt; de sleutel alleen in `sessionStorage`, nooit in dossier, voorstel of URL; de
 uitkomst een voorstel dat de gebruiker per regel overneemt, nooit een schrijfactie in het dossier; en
 toestemming per sessie met de melding wat waarheen gaat (verduidelijkt 03-09-2026, issue #18; het
-patroon staat in het plan *AI-hulp*).
+patroon staat in het plan *AI-hulp*). Browseropslag op het eigen apparaat is geen opslag in de zin van deze regel:
+het profiel van de commons (zestien vaste keuzes, geen naam of inventaris) staat onder één bewaarnaam
+`commons-profiel` voor alle pagina's op het domein, elke pagina die het leest zegt dat en heeft een wisknop, en
+niets ervan gaat naar een server (verduidelijkt 29-10-2026, plan *de site is het product*, stap 9).
 
 **B15. Verwijs naar wat anderen al hebben.** De commons staat niet naast het stelsel maar erin. Heeft
 een andere partij over hetzelfde onderwerp al een handreiking, factsheet, tool of uitleg, dan verwijst
