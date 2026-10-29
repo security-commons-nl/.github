@@ -205,7 +205,7 @@ het in plaats van opnieuw te vragen. Past bij de AI-hulp met eigen sleutel (opt-
 wijziging) en bij B14 (geen account, geen opslag). Nog niet uitgewerkt; hoort bij stap 9.
 
 **Stap 9 bij het sparren (29-10-2026, avond).** Doel: context verzamelen zodat de generieke kennis van de commons
-specifiek wordt voor één organisatie, zoals de beleidsset nu al doet met zestien contextvragen. Drie keuzes:
+specifiek wordt voor één organisatie, zoals de beleidsset nu al doet met zestien contextvragen. Vier keuzes:
 1. *Alleen kenmerken, nooit inventaris.* Een profielveld beschrijft wat voor organisatie je bent, nooit wat je
    hebt: "cloudwerkplek" wel, een tenant of leveranciersnaam niet; "uitbesteed SOC" wel, een bevinding niet.
    Elk veld is een vaste keuze; het enige vrije veld is de naam van de organisatie (voor de titel op
@@ -219,6 +219,10 @@ specifiek wordt voor één organisatie, zoals de beleidsset nu al doet met zesti
    `#` (delen met een collega; verlaat de browser niet). Elke pagina die het profiel leest, laat dat zien en
    heeft een wisknop. Dit kan alleen omdat keuze 1 het profiel ongevoelig houdt; de AI-sleutel blijft in
    sessionStorage. Vraagt een regel in B14 bij het uitvoeren.
+4. *Eerst de routes en de catalogus, niet de stukken.* Met een profiel toont de voorpagina de route die past, en
+   zet de kennisbank de relevante stukken bovenaan; de stukken zelf blijven gelijk. Daarna per aanraking een
+   markering per stuk ("voor jouw profiel: stap 1, 3 en 7"), en wisselende blokken zoals de beleidsset alleen
+   waar het antwoord echt per organisatie verschilt.
 Stand van de code: alleen de beleidsset reageert op het profiel (bewaarnaam `beleidsset-profiel`); de
 instrumenten bewaren elk hun eigen invoer (`aanvalspaden-zelfcheck-v1`, `procescheck-dossier`, en zo verder) en
 lezen niets van elkaar; kennisbank, routes en voorpagina zijn voor iedereen gelijk. Open bij het sparren: hoe een
