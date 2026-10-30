@@ -46,6 +46,22 @@ body:
       required: true
 
   - type: dropdown
+    id: route
+    attributes:
+      label: Voor wie of in welke situatie is dit het meest nuttig? (optioneel)
+      description: Helpt ons het een plek te geven in een leesroute op de voorpagina. Weet je het niet, kies dan 'Weet ik niet'; dat is prima.
+      multiple: true
+      options:
+        - CISO
+        - ISO
+        - Privacy officer
+        - Bestuurder
+        - Nieuw in de functie (eerste honderd dagen)
+        - Weet ik niet
+    validations:
+      required: false
+
+  - type: dropdown
     id: persoonsgegevens
     attributes:
       label: Bevat het persoonsgegevens of organisatie-specifieke informatie?

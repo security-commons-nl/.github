@@ -117,6 +117,15 @@ markdown. De rest is afspraak, en het PR-sjabloon zet die als vinkjes voor je kl
 - **Geen getallen met de hand.** Noem je een aantal (stukken, maatregelen, barrieres) in een tekst die
   niet gegenereerd wordt, zoals `ARCHITECTUUR.md` of een roadmap, zet er dan een peildatum bij.
 - **Geanonimiseerd** en op de juiste plek, zoals hierboven.
+- **Een stuk in de kennisbank noemt zijn route of `geen`** (statuut C2, veld `route`). Weet je het niet, kies
+  `geen`: het stuk is dan vindbaar in de catalogus en het zoekvak, maar staat niet op de voordeur. Een plek in
+  een route regelt een maintainer samen met je.
+- **Een instrument met status *in gebruik* haalt de lat** (statuut C5): tests in CI, een versie of peildatum en
+  de regel `status: in gebruik` op de pagina, en een kruimelpad naar de voorpagina. `repo-compliance.yml`
+  controleert dat bij elke push; haalt een instrument de lat niet, dan heet het *prototype*.
+- **Het profiel bevat nooit een naam of vrije tekst.** Wie iets bouwt dat het profiel van de commons leest of
+  schrijft (`commons-profiel` in de browser), laat alleen antwoord-id's uit `kennisbank/profiel.json` toe en gooit
+  de rest weg; zie het plan [het profiel](plannen/2026-10-29-profiel.md).
 
 ## Links controleren
 
