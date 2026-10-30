@@ -105,3 +105,79 @@ def test_gearchiveerd_over_een_regeleinde_wordt_gevonden(tmp_path):
     readme = GOED.replace("# voorbeeld", "# oud").replace("Status: prototype", "Status: gearchiveerd")
     code, uit = draai(tmp_path, readme, naam="oud")
     assert code == 0, uit
+
+
+# C5: de meetbare delen van de lat, alleen voor een instrument met status in gebruik.
+PROFIEL_C5 = textwrap.dedent("""\
+    | Project | Status | Vorm | Wat is het? | Direct openen | Doelgroep | Waarvoor |
+    |---|---|---|---|---|---|---|
+    | [werktuig](https://github.com/security-commons-nl/werktuig) | in gebruik | instrument | Iets | | CISO's | vaststellen |
+    | [leeswerk](https://github.com/security-commons-nl/leeswerk) | in gebruik | kennis | Iets | | CISO's | aanpakken |
+    """)
+LAT_PAGINA = ('<nav aria-label="Kruimelpad"><a href="https://security-commons-nl.github.io/">Security Commons NL</a></nav>'
+              '<footer>versie 1.0.0 (peildatum 2026-10-30) · status: in gebruik</footer>')
+LAT_CI = "jobs:\n  t:\n    steps:\n      - run: npm test\n"
+
+
+def maak_instrument(tmp, naam="werktuig", pagina=LAT_PAGINA, ci=LAT_CI):
+    readme = GOED.replace("# voorbeeld", f"# {naam}").replace("Status: prototype.", "Status: in gebruik.")
+    repo = tmp / naam
+    (repo / ".github" / "workflows").mkdir(parents=True)
+    (repo / "README.md").write_text(readme, encoding="utf-8")
+    (repo / "LICENSE").write_text(LICENTIE, encoding="utf-8")
+    if pagina is not None:
+        (repo / "index.html").write_text(pagina, encoding="utf-8")
+    if ci is not None:
+        (repo / ".github" / "workflows" / "ci.yml").write_text(ci, encoding="utf-8")
+    prof = tmp / "profiel.md"
+    prof.write_text(PROFIEL_C5, encoding="utf-8")
+    r = subprocess.run([sys.executable, str(HIER / "repo_compliance.py"), str(repo), "--projecten", str(prof)],
+                       capture_output=True, text=True)
+    return r.returncode, r.stdout
+
+
+def test_instrument_dat_de_lat_haalt_is_groen(tmp_path):
+    code, uit = maak_instrument(tmp_path)
+    assert code == 0, uit
+
+
+def test_instrument_zonder_teststap_is_c5(tmp_path):
+    code, uit = maak_instrument(tmp_path, ci="jobs:\n  t:\n    steps:\n      - run: npm run build\n")
+    assert code == 1 and "[C5] geen teststap" in uit, uit
+
+
+def test_instrument_zonder_versie_is_c5(tmp_path):
+    code, uit = maak_instrument(tmp_path, pagina=LAT_PAGINA.replace("versie 1.0.0 (peildatum 2026-10-30) · ", ""))
+    assert code == 1 and "[C5] geen versie" in uit, uit
+
+
+def test_versie_als_constante_telt(tmp_path):
+    pagina = LAT_PAGINA.replace("versie 1.0.0 (peildatum 2026-10-30) · ", "") + "<script>const VERSIE = '2026-10-30';</script>"
+    code, uit = maak_instrument(tmp_path, pagina=pagina)
+    assert code == 0, uit
+
+
+def test_instrument_zonder_status_op_de_pagina_is_c5(tmp_path):
+    code, uit = maak_instrument(tmp_path, pagina=LAT_PAGINA.replace("status: in gebruik", "klaar"))
+    assert code == 1 and "status: in gebruik" in uit, uit
+
+
+def test_instrument_zonder_kruimelpad_is_b10(tmp_path):
+    code, uit = maak_instrument(tmp_path, pagina=LAT_PAGINA.replace('href="https://security-commons-nl.github.io/"', 'href="/"'))
+    assert code == 1 and "[B10]" in uit, uit
+
+
+def test_een_versie_in_een_testbestand_telt_niet(tmp_path):
+    pagina = LAT_PAGINA.replace("versie 1.0.0 (peildatum 2026-10-30) · ", "")
+    code, uit = maak_instrument(tmp_path, pagina=pagina)
+    (tmp_path / "werktuig" / "tests").mkdir()
+    (tmp_path / "werktuig" / "tests" / "x.test.ts").write_text("versie 9.9.9", encoding="utf-8")
+    r = subprocess.run([sys.executable, str(HIER / "repo_compliance.py"), str(tmp_path / "werktuig"), "--projecten",
+                        str(tmp_path / "profiel.md")], capture_output=True, text=True)
+    assert r.returncode == 1 and "[C5] geen versie" in r.stdout, r.stdout
+
+
+def test_kennis_in_gebruik_valt_niet_onder_c5(tmp_path):
+    code, uit = maak_instrument(tmp_path, naam="leeswerk", pagina=None, ci=None)
+    assert code == 0, uit
+

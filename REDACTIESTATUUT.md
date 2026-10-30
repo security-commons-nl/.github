@@ -118,9 +118,10 @@ niet in een route. De lat wordt gehaald op het moment dat een instrument wordt a
 operatie; een instrument dat niemand aanraakt, blijft prototype en dat is eerlijk. Uitzondering bij
 invoering (29-10-2026): de weerbaarheidsgame blijft op de bestuurdersroute en haalt als eerste de lat.
 Reden: "vibe-coded" is geen probleem van herkomst maar van toetsbaarheid; wat getest, versienummerd en
-uniform is, hoeft zich niet te verdedigen. `repo-compliance.yml` controleert de meetbare delen zodra ze
-zijn uitgewerkt (versie en peildatum op de pagina, tests in CI, huisstijl geladen); tot die tijd is de tabel
-in het plan de controle.
+uniform is, hoeft zich niet te verdedigen. `repo-compliance.yml` controleert sinds 30-10-2026 bij elk instrument
+met status `in gebruik` de meetbare delen: een teststap in CI, een versie of peildatum op de pagina, de status op
+de pagina gelijk aan de projectentabel, en een kruimelpad naar de voorpagina (B10). Huisstijl, telefoonbreedte en
+consolefouten zijn een toets met het oog bij elke aanraking, en staan per instrument in de tabel van het plan.
 
 ## B. Structuur
 
