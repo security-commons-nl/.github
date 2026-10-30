@@ -1,56 +1,98 @@
-# Principes — security-commons-nl
+# Principes van Security Commons NL
 
-Dit zijn de principes die alle projecten in deze organisatie sturen — van architectuurkeuzes tot community-beslissingen.
+Waarom de commons is zoals hij is. Tien principes, geschreven vanuit wie de commons gebruikt: een CISO, ISO,
+privacy officer of bestuurder bij een publieke organisatie. Onder elk principe staat in één regel wat het
+betekent voor wie bouwt of schrijft; de afdwingbare regels staan in het [redactiestatuut](REDACTIESTATUUT.md),
+waarom ze zo zijn in [BESLUITEN.md](BESLUITEN.md).
 
----
-
-## 1. Samenwerken is sterker dan inkopen
-
-Één gemeente die bouwt is kwetsbaar. Tien gemeenten die samen bouwen zijn een beweging. Collectieve tooling is beter onderhoudbaar, beter getoetst, en minder afhankelijk van de agenda van een leverancier.
-
-## 2. Publiek geld, publieke code
-
-Software gefinancierd met publiek geld hoort publiek beschikbaar te zijn. Open source is niet een keuze maar een verplichting die volgt uit de aard van de publieke sector.
-
-## 3. EU-soevereiniteit is geen luxe
-
-Data van publieke organisaties en de AI die die data verwerkt, blijven binnen de EU. Geen afhankelijkheid van niet-EU cloud providers voor kritieke processen. Lokale alternatieven waar mogelijk.
-
-## 4. AI is adviserend, nooit beslissend
-
-AI bereidt voor. De mens beslist. Geen autonome AI-beslissingen op governance-vraagstukken zonder expliciete menselijke beoordeling. Dit is geen beperking — het is het ontwerp.
-
-## 5. Auditbaarheid by design
-
-Elke beslissing, elke AI-interactie, elke datamutatie is traceerbaar. Audit trails zijn geen afterthought maar een ontwerpvereiste. Governance-tooling die zichzelf niet kan verantwoorden, is geen governance-tooling.
-
-## 6. Proportionaliteit
-
-Maatregelen zijn proportioneel aan het risico. Niet elk systeem vereist hetzelfde beveiligingsniveau. Classificeer eerst, ontwerp daarna. Over-engineering is ook een risico.
-
-## 7. Eenvoud boven complexiteit
-
-Kies de simpelste oplossing die werkt. Voeg complexiteit alleen toe als het aantoonbaar nodig is. Een tool die te complex is om te begrijpen, wordt niet gebruikt — en een niet-gebruikte tool lost niets op.
-
-## 8. Transparantie naar gebruikers
-
-Gebruikers begrijpen wat de tool doet en waarom. Geen black-box besluitvorming. Geen verborgen aannames. Als een AI-assistent onzeker is, zegt hij dat.
-
-## 9. Governance versnelt — als het goed is ingericht
-
-Governance is geen rem maar een versneller. Geautomatiseerde guardrails en gestandaardiseerde controles elimineren handmatige review-bottlenecks. Organisaties die governance inbakken in hun architectuur gaan sneller en veiliger dan organisaties die het achteraf toevoegen.
-
-## 10. Least privilege
-
-Toegang tot data en systemen is minimaal. Componenten — menselijk of AI — krijgen alleen de rechten die ze nodig hebben. Row Level Security op databaseniveau is geen optie maar de standaard.
+Herschreven op 30-10-2026. De eerste versie (april 2026) hoorde bij een platform met database en
+gebruikersbeheer; sinds de commons een publicatie is met instrumenten in de browser (besluiten van 02-09 en
+29-10-2026) gingen een paar principes over iets dat niet meer bestaat, en ontbraken er die nu het meest tellen.
 
 ---
 
-*Deze principes zijn leidend bij architectuurkeuzes, feature-beslissingen en community-governance. Zie [CONTRIBUTING.md](CONTRIBUTING.md) voor hoe je kunt bijdragen aan de projecten die deze principes uitvoeren.*
+## 1. Kennis eerst: de site is het product
 
-## 11. Toetsen, niet aanvallen
+Wat je nodig hebt, staat op de site: uitleg, routes en de instrumenten die erbij horen. De code erachter is de
+werkplaats, voor wie wil meelezen of meebouwen. Je hoeft GitHub niet te kennen om de commons te gebruiken.
 
-Tooling die van buitenaf of uit een export kijkt, leest alleen: ze verandert niets, belast niets en
-gaat niet verder dan wat openbaar zichtbaar is of wat de organisatie zelf aanlevert. Een bevinding is
-een startpunt voor onderzoek, geen oordeel en geen bewijs. Wie een scan draait, doet dat op wat van
-hemzelf is of waarvoor hij toestemming heeft.
+*In de werkplaats:* een link naar GitHub staat alleen waar je iets draait of bouwt (statuut C1).
+
+## 2. Pak wat je nodig hebt, langs een route
+
+De commons is een markt, geen pakket: je neemt een stuk, een instrument of een hele route, en laat de rest
+liggen. Een route zegt in welke volgorde je begint en waarom, per rol en per situatie.
+
+*In de werkplaats:* elk stuk zit in een route of staat in de catalogus; een instrument is een stap, geen
+product in een lijst (C2, C3).
+
+## 3. Generiek, nooit over een genoemde organisatie
+
+De commons gaat over wat werkt, niet over wie het deed. Wat je over je eigen organisatie vastlegt, blijft van
+jou. Ook het profiel waarmee de commons zich aanpast, bevat alleen kenmerken: wat voor organisatie je bent,
+nooit een naam, een leverancier of een zwakke plek.
+
+*In de werkplaats:* geen auteurs, geen namen, geen interne stukken (A1 tot A3, A9); code die het profiel leest
+of schrijft, laat alleen vaste antwoorden toe (B14).
+
+## 4. Werkt vandaag, zonder account
+
+Je opent het en gebruikt het. Geen inlog, geen installatie, geen server die je gegevens ziet. Wat je invult,
+blijft in je browser of in een bestand dat jij bewaart: je bent je eigen dossier.
+
+*In de werkplaats:* een instrument rekent in de browser, een script lokaal; een applicatie met backend of
+gedeelde opslag hoort niet in de commons (B14).
+
+## 5. Toetsbaar, niet beloofd
+
+Wat de commons zegt, kun je nagaan. Een instrument laat zien welke versie het is, of het getest is en wat zijn
+status is. Wat nog niet af is, heet zo.
+
+*In de werkplaats:* de lat voor instrumenten, waar het kan automatisch gecontroleerd; bij twijfel het lagere
+label (C5, B8).
+
+## 6. Verwijs naar wat er al is
+
+De commons staat niet naast het stelsel maar erin. Heeft de VNG, de IBD, het NCSC of een andere partij al een
+goed antwoord, dan wijzen we daarnaar in plaats van het opnieuw te schrijven.
+
+*In de werkplaats:* elk stuk noemt wat anderen over hetzelfde onderwerp hebben, naar het specifieke stuk
+(B15).
+
+## 7. Samen bouwen, publiek en open
+
+Eén organisatie die het wiel opnieuw uitvindt is kwetsbaar; tien die kennis en tooling delen, vormen een
+beweging. Wat met publiek geld is gemaakt, is publiek: alle tekst en code is vrij te gebruiken en aan te
+passen.
+
+*In de werkplaats:* alles onder EUPL-1.2; een bijdrage kan ook een issue of een formulier zijn, zonder
+Git-ervaring (B5, B7).
+
+## 8. AI bereidt voor, de mens beslist
+
+AI is een middel, nooit een doel, en altijd controleerbaar. Waar een instrument AI-hulp biedt, levert die een
+voorstel met een citaat uit je eigen document, en neem jij per regel over wat klopt. Er verandert niets
+zonder jouw keuze.
+
+*In de werkplaats:* AI-hulp is opt-in, op een aparte pagina, met de sleutel van de gebruiker alleen in de
+sessie; de uitkomst is een voorstel, nooit een schrijfactie (B14, plan *AI-hulp*).
+
+## 9. Europees waar het kan, de keuze bij jou
+
+Gegevens van publieke organisaties en de AI die ze verwerkt, horen zo veel mogelijk in Europa. De commons
+kiest Europese en lokale opties als standaard, en laat de keuze voor een leverancier bij jou.
+
+*In de werkplaats:* Mistral of een lokaal model als standaard, geen afhankelijkheid van een dienst buiten de
+EU voor wat de commons zelf doet.
+
+## 10. Toetsen, niet aanvallen
+
+Tooling die van buitenaf of uit een export kijkt, leest alleen: ze verandert niets, belast niets en gaat niet
+verder dan wat openbaar is of wat je zelf aanlevert. Een bevinding is een startpunt voor onderzoek, geen
+oordeel en geen bewijs.
+
+*In de werkplaats:* een scan alleen op wat van jou is of waarvoor je toestemming hebt.
+
+---
+
+Bijdragen aan de projecten die deze principes uitvoeren: [CONTRIBUTING.md](CONTRIBUTING.md).
