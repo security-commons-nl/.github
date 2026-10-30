@@ -6,6 +6,23 @@ krijgt hier een regel: datum, wat er is besloten, en waarom. Nieuwste bovenaan. 
 
 Dit log begint op 29-08-2026, toen bleek dat het statuut er wel naar verwees maar het nergens stond.
 
+## 30-10-2026 · Nieuwe principes; aanvalspaden in gebruik; een prototype in een route geeft een waarschuwing
+
+**Besloten.** (1) `PRINCIPLES.md` is herschreven: tien principes vanuit wie de commons gebruikt, met per
+principe één regel voor de werkplaats die naar het statuut wijst. Vervallen: Row Level Security als standaard
+(er is geen database meer) en auditbaarheid van elke datamutatie (platformtaal); proportionaliteit is goed
+advies maar inhoud voor de kennisbank. Nieuw: de site is het product, pak wat je nodig hebt langs een route,
+generiek en nooit over een genoemde organisatie, toetsbaar in plaats van beloofd, verwijs naar wat er al is.
+(2) Aanvalspaden (zelfcheck en meting) heet *in gebruik*: beide halen de lat en staan in routes. (3) C5 is
+rechtgezet: de tests zijn zichtbaar als link (niet als aantal of badge), de uitzondering voor de game is
+vervallen (hij haalt de lat), en een prototype dat al in een route stond, blijft daar tot zijn eerstvolgende
+aanraking, met een waarschuwing in de CI van de site. Nu geldt dat alleen voor de procescheck.
+
+**Waarom.** De oude principes beschreven een platform dat sinds 02-09-2026 niet meer bestaat. En C5 zei dat een
+prototype niet in een route hoort, terwijl er drie in stonden en de controle alleen naar *in gebruik* keek: een
+regel die we zelf niet halen, ondermijnt het statuut. Keuze A van 30-10: het instrument dat de lat haalt een
+hoger label geven, het andere zichtbaar laten waarschuwen in plaats van stil te tolereren.
+
 ## 30-10-2026 · De lat (C5) wordt automatisch gecontroleerd voor instrumenten in gebruik
 
 **Besloten.** `repo-compliance.yml` toetst bij elk project met vorm `instrument` en status `in gebruik` de

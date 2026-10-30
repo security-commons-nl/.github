@@ -1,6 +1,6 @@
 # Redactiestatuut security-commons-nl
 
-Vastgesteld 28-08-2026, B3 en B10 aangevuld op 29-08-2026, B4 op 30-08-2026, A11 toegevoegd op 31-08-2026, B13 en B14 op 02-09-2026, Cbw in B2 op 02-09-2026, B9 herzien op 03-09-2026 (PROJECTEN.md), B14 verduidelijkt op 03-09-2026, B2 aangevuld en B15 toegevoegd op 25-09-2026 (vindbaarheid van het register aangevuld dezelfde dag), B3 aangevuld op 13-10-2026 (leesversie per stuk), B4 aangevuld op 14-10-2026 (inhoudswijzers op de domeinroot), blok C toegevoegd en B8, B9 en B13 aangevuld op 29-10-2026 (de site is het product). Geldt voor alle repo's van de organisatie. De inhoudsregels (A) gelden overal.
+Vastgesteld 28-08-2026, B3 en B10 aangevuld op 29-08-2026, B4 op 30-08-2026, A11 toegevoegd op 31-08-2026, B13 en B14 op 02-09-2026, Cbw in B2 op 02-09-2026, B9 herzien op 03-09-2026 (PROJECTEN.md), B14 verduidelijkt op 03-09-2026, B2 aangevuld en B15 toegevoegd op 25-09-2026 (vindbaarheid van het register aangevuld dezelfde dag), B3 aangevuld op 13-10-2026 (leesversie per stuk), B4 aangevuld op 14-10-2026 (inhoudswijzers op de domeinroot), blok C toegevoegd en B2, B8, B9, B13 en B14 aangevuld op 29-10-2026 (de site is het product, het profiel), C5 aangevuld op 30-10-2026 (automatische controle, prototype in een route). Geldt voor alle repo's van de organisatie. De inhoudsregels (A) gelden overal.
 letterlijk; de structuurregels (B) gelden overal in vorm, met per repo één afspraak over wat de eerste
 laag betekent (zie B1). Waar een repo een script heeft dat deze regels controleert, verwijst elke melding
 naar het regelnummer hieronder.
@@ -39,7 +39,7 @@ dreigingsbeeld) of `versie` (document dat de bron zelf nummert). Die staat in de
 git-metadata. Een changelog in een README ("bijgewerkt na review") mag, omdat die over de inhoud gaat.
 
 **A7. AI-gebruik.** Wordt niet per stuk vermeld; dat is consistent met A1. Wat wel geldt: een mens heeft
-elk stuk gelezen en begrepen voordat het op `main` staat. Principe 4 (AI is adviserend) blijft leidend.
+elk stuk gelezen en begrepen voordat het op `main` staat. Principe 8 (AI bereidt voor, de mens beslist) blijft leidend.
 
 **A8. Git-historie.** Wordt niet herschreven om namen of herkomst te verwijderen; fix vooruit in een nieuwe
 commit. Uitzondering: persoonsgegevens van derden of geheimen (sleutels, wachtwoorden). Dan wél
@@ -87,9 +87,9 @@ waarom nu; de voorpagina toont ze onder "Begin bij je rol". Een stuk dat in geen
 vindbaar via zoeken en de catalogus (de kennisbank-index per vakgebied), maar staat niet op de voorpagina en
 niet in de voordeur per rol. Een nieuw stuk in de kennisbank noemt in de frontmatter zijn route(s) in het
 veld `route`, of expliciet `route: geen`; de build van de kennisbank blokkeert een stuk zonder dat veld
-(sinds 29-10-2026, kennisbank-PR bij stap 4 van het plan). Reden: dit is de rem op de breedte. De vraag "in welke
+(sinds 29-10-2026; alle bestaande stukken hebben het veld). Reden: dit is de rem op de breedte. De vraag "in welke
 route hoort dit, en op welke plek" wordt gesteld vóór het schrijven, niet erna. Geldt streng, ook voor nieuwe
-stukken die al gepland zijn; bestaande stukken krijgen het veld bij de eerstvolgende wijziging.
+stukken die al gepland zijn.
 
 **C3. Een instrument is een stap in een route, geen product in een lijst.** Een instrument staat op de
 voorpagina alleen als stap in een route, met de vraag die het beantwoordt als titel. De projectentabel (B9)
@@ -107,7 +107,7 @@ Nederlands, ook knoppen, labels en foutmeldingen), en toont onderaan versie of p
 - volledig in de browser rekent (B14) en offline werkt na één keer laden;
 - zijn rekenregels in één referentie-implementatie heeft met tests, en de browserversie daartegen toetst
   (zoals procescheck en de CSIR-tool doen met `reken.py` en `app.js`);
-- tests in CI heeft die groen zijn, met het aantal of de badge zichtbaar op de pagina;
+- tests in CI heeft die groen zijn, met een link naar die tests op de pagina;
 - een versienummer en peildatum op de pagina toont;
 - geen fouten in de browserconsole geeft en werkt op een telefoon (375 px breed, zonder horizontale scroll);
 - een export heeft in een open formaat (JSON of Markdown) die de gebruiker zelf bewaart, en die import weer
@@ -115,8 +115,10 @@ Nederlands, ook knoppen, labels en foutmeldingen), en toont onderaan versie of p
 
 Een instrument dat de lat niet haalt, draagt status `prototype` of `concept` (B8) en staat in de catalogus,
 niet in een route. De lat wordt gehaald op het moment dat een instrument wordt aangeraakt, niet in één
-operatie; een instrument dat niemand aanraakt, blijft prototype en dat is eerlijk. Uitzondering bij
-invoering (29-10-2026): de weerbaarheidsgame blijft op de bestuurdersroute en haalt als eerste de lat.
+operatie; een instrument dat niemand aanraakt, blijft prototype en dat is eerlijk. Een prototype dat al in een
+route stond toen deze regel kwam (29-10-2026), blijft daar tot het de lat haalt bij zijn eerstvolgende aanraking;
+de CI van de site waarschuwt bij elke build voor een prototype in een route (`site/test_routes.mjs`), zodat het
+zichtbaar blijft en niet stil wordt vergeten.
 Reden: "vibe-coded" is geen probleem van herkomst maar van toetsbaarheid; wat getest, versienummerd en
 uniform is, hoeft zich niet te verdedigen. `repo-compliance.yml` controleert sinds 30-10-2026 bij elk instrument
 met status `in gebruik` de meetbare delen: een teststap in CI, een versie of peildatum op de pagina, de status op
@@ -277,7 +279,7 @@ instrument geen applicatie, mits: een aparte pagina met eigen Content-Security-P
 uitkomst een voorstel dat de gebruiker per regel overneemt, nooit een schrijfactie in het dossier; en
 toestemming per sessie met de melding wat waarheen gaat (verduidelijkt 03-09-2026, issue #18; het
 patroon staat in het plan *AI-hulp*). Browseropslag op het eigen apparaat is geen opslag in de zin van deze regel:
-het profiel van de commons (zestien vaste keuzes, geen naam of inventaris) staat onder één bewaarnaam
+het profiel van de commons (zestien vragen, twee met een vervolgvraag, alleen vaste keuzes, geen naam of inventaris) staat onder één bewaarnaam
 `commons-profiel` voor alle pagina's op het domein, elke pagina die het leest zegt dat en heeft een wisknop, en
 niets ervan gaat naar een server (verduidelijkt 29-10-2026, plan *de site is het product*, stap 9).
 
