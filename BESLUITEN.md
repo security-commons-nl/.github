@@ -6,6 +6,17 @@ krijgt hier een regel: datum, wat er is besloten, en waarom. Nieuwste bovenaan. 
 
 Dit log begint op 29-08-2026, toen bleek dat het statuut er wel naar verwees maar het nergens stond.
 
+## 30-10-2026 · De lat (C5) wordt automatisch gecontroleerd voor instrumenten in gebruik
+
+**Besloten.** `repo-compliance.yml` toetst bij elk project met vorm `instrument` en status `in gebruik` de
+meetbare delen van C5: een teststap in een workflow, een versie of peildatum in de paginabronnen, de regel
+`status: in gebruik` op de pagina, en een kruimelpad naar de voorpagina (B10). Voor alle andere projecten
+verandert er niets.
+
+**Waarom.** C5 beloofde een controle zodra de meetbare delen vaststonden; de meting van 29-10 en de aanrakingen
+van de game, de zelfcheck en de anonimizer hebben ze vastgelegd. Wat alleen met het oog te zien is, blijft een
+redactionele toets, zodat de controle niet groen liegt.
+
 ## 29-10-2026 · De site is het product, de werkplaats staat erachter (blok C in het statuut)
 
 **Besloten.** De eenheid van de commons is de route, niet de repository. Nieuw blok C in het statuut:

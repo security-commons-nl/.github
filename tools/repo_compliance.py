@@ -6,6 +6,9 @@
   B11  README-kop: #-kop, Status-regel, en de vier koppen in de vaste volgorde
   B12  het label in de README is het label uit het profiel
   A5   geen links naar sociale media in markdown
+  C5   een instrument met status 'in gebruik' haalt de meetbare delen van de lat: tests in CI, een versie of
+       peildatum op de pagina, de status op de pagina gelijk aan de tabel, en een kruimelpad naar de voorpagina
+       (B10). Wat alleen met het oog te toetsen is (huisstijl, telefoonbreedte, consolefouten) zit hier niet in.
 
 Gebruik: python repo_compliance.py <repo-map> --profiel <profile/README.md>
 Exitcode 0 = groen, 1 = één of meer overtredingen. Alleen standaardbibliotheek.
@@ -22,6 +25,12 @@ KOPPEN = ["Voor wie", "Snel starten", "Bijdragen", "Licentie"]
 LABELS = {"in gebruik", "prototype", "concept", "gearchiveerd", "infrastructuur"}
 SOCIAAL = re.compile(r"https?://(?:[a-z0-9-]+\.)*(linkedin\.com|x\.com|twitter\.com|facebook\.com|instagram\.com|tiktok\.com|threads\.net)", re.I)
 OVERSLAAN = {".git", "node_modules", "dist", "org-profile", "_wachtkamer", ".venv"}
+# C5: wat telt als een test in CI, een versie op de pagina, en waar de pagina staat.
+TESTSTAP = re.compile(r"^\s*(?:-\s*)?run:\s*.*\b(pytest|npm (?:run )?test|vitest|playwright test|node \S*test\S*)", re.M | re.I)
+VERSIE = re.compile(r"versie\W{0,3}(?:<[^>]*>\s*)?(?:\d+\.\d+(?:\.\d+)?|\d{4}-\d{2}(?:-\d{2})?)"
+                    r"|VERSIE(?:_APP)?\s*=\s*['\"]\d", re.I)
+PAGINA_SOORTEN = {".html", ".js", ".mjs", ".ts"}
+NIET_PAGINA = {"tests", "test", ".github", "__pycache__"}
 
 
 def status_in_profiel(profiel: str, naam: str) -> str | None:
@@ -36,6 +45,42 @@ def status_in_profiel(profiel: str, naam: str) -> str | None:
         if m and re.search(r"\[" + re.escape(naam) + r"\]", m.group(1)):
             return label
     return None
+
+
+def vorm_in_profiel(profiel: str, naam: str) -> str | None:
+    """De kolom Vorm uit de projectentabel (instrument, kennis, dataset, script), of None."""
+    for regel in profiel.splitlines():
+        cellen = [c.strip() for c in regel.strip().strip("|").split("|")]
+        if len(cellen) >= 7 and re.match(r"\[" + re.escape(naam) + r"\]\(", cellen[0]):
+            return cellen[2].lower()
+    return None
+
+
+def paginabronnen(repo: Path) -> list[Path]:
+    """De bestanden waaruit de pagina van een instrument bestaat: html en scripts, zonder tests en bouwresten."""
+    uit = []
+    for p in repo.rglob("*"):
+        rel = p.relative_to(repo).parts
+        if p.is_file() and p.suffix in PAGINA_SOORTEN and not (OVERSLAAN | NIET_PAGINA) & set(rel) \
+                and ".test." not in p.name and not p.name.startswith("test_"):
+            uit.append(p)
+    return uit
+
+
+def controleer_lat(repo: Path, status: str) -> list[str]:
+    """C5, de meetbare delen. Alleen voor een instrument met status 'in gebruik' (B8)."""
+    fouten = []
+    workflows = list((repo / ".github" / "workflows").glob("*.y*ml")) if (repo / ".github" / "workflows").is_dir() else []
+    if not any(TESTSTAP.search(w.read_text(encoding="utf-8", errors="replace")) for w in workflows):
+        fouten.append("[C5] geen teststap in .github/workflows (pytest, npm test, vitest, playwright of node ...test)")
+    teksten = [p.read_text(encoding="utf-8", errors="replace") for p in paginabronnen(repo)]
+    if not any(VERSIE.search(t) for t in teksten):
+        fouten.append("[C5] geen versie of peildatum op de pagina (bijvoorbeeld 'versie 1.2.0' of een constante VERSIE = '2026-10-30')")
+    if not any(re.search(r"status:\s*" + re.escape(status), t, re.I) for t in teksten):
+        fouten.append(f"[C5] de pagina noemt de status niet als 'status: {status}'")
+    if not any('href="https://security-commons-nl.github.io/"' in t for t in teksten):
+        fouten.append("[B10] geen kruimelpad naar https://security-commons-nl.github.io/ op de pagina")
+    return fouten
 
 
 def markdown_bestanden(repo: Path) -> list[Path]:
@@ -82,6 +127,8 @@ def controleer(repo: Path, profiel: str) -> list[str]:
         fouten.append(f"[B9] '{naam}' staat niet in de projectentabel en niet in de alinea's eronder")
     elif gevonden and gevonden != verwacht:
         fouten.append(f"[B12] status in README is '{gevonden}', profiel zegt '{verwacht}'")
+    if verwacht == "in gebruik" and vorm_in_profiel(profiel, naam) == "instrument":
+        fouten.extend(controleer_lat(repo, verwacht))
 
     for bestand in markdown_bestanden(repo):
         if not bestand.exists():
@@ -113,7 +160,7 @@ def main() -> int:
     if fouten:
         print(f"\n{len(fouten)} overtreding(en). Regels: https://github.com/security-commons-nl/.github/blob/main/REDACTIESTATUUT.md")
         return 1
-    print("Repo voldoet aan het statuut (B5, B9, B11, B12, A5).")
+    print("Repo voldoet aan het statuut (B5, B9, B11, B12, A5, en C5 voor een instrument in gebruik).")
     return 0
 
 
